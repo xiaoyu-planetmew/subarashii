@@ -51,7 +51,7 @@ public class WavyCirclePointsController : MonoBehaviour
     private float nowDragDis;
     private float timer;
 
-    [SerializeField] private bool dragPowelfully;
+    [SerializeField] private bool dragPowerfuly;
     private bool hasStartDragging;
     private bool hasArriveMaxDragDis;
 
@@ -110,10 +110,11 @@ public class WavyCirclePointsController : MonoBehaviour
         RenderWave();
     }
 
-    public void DragCircle()
+    public void DragCircle(bool powerful = false)
     {
         hasStartDragging = true;
-        nowDragDis = originRadius * (dragPowelfully ? dragPowerAmgMax : dragPowerAmgMin);
+        nowDragDis = originRadius * (dragPowerfuly ? dragPowerAmgMax : dragPowerAmgMin);
+        dragPowerfuly = powerful;
     }
 
     /// <summary>
@@ -212,13 +213,13 @@ public class WavyCirclePointsController : MonoBehaviour
         //直径变化
         if(!hasArriveMaxDragDis) //收缩
         {
-            radius -= (originRadius * (1 - (dragPowelfully ? dragShrinkMax : dragShrinkMin))/(dragShrinkTime / Time.deltaTime) * dragShrinkSpeed);
+            radius -= (originRadius * (1 - (dragPowerfuly ? dragShrinkMax : dragShrinkMin))/(dragShrinkTime / Time.deltaTime) * dragShrinkSpeed);
 
             SetRadius(radius);
 
-            randomWaveSpeed = originRandomSpeed * dragWaveSpeed * (dragPowelfully ? 1 : 0.5f); //加速旋转
+            randomWaveSpeed = originRandomSpeed * dragWaveSpeed * (dragPowerfuly ? 1 : 0.5f); //加速旋转
 
-            if (radius <= originRadius * (dragPowelfully ? dragShrinkMax : dragShrinkMin))
+            if (radius <= originRadius * (dragPowerfuly ? dragShrinkMax : dragShrinkMin))
             {
                 hasArriveMaxDragDis = true;
             }
@@ -245,7 +246,7 @@ public class WavyCirclePointsController : MonoBehaviour
 
             for (int i = 0; i < pointsNum; i++)
             {
-                float nowRange = dragRange * (dragPowelfully ? 0.75f : 1);
+                float nowRange = dragRange * (dragPowerfuly ? 0.75f : 1);
 
                 if (ang > (dragAngle- nowRange) && ang < (dragAngle + nowRange))
                 {
