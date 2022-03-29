@@ -157,8 +157,6 @@ public class WavyCirclePointsController : MonoBehaviour
 
             renderPos[i] = originalPos[i] + wave;
 
-            //line.SetPosition(i, originalPos[i] + wave);
-
             staticWaveAngle += (Mathf.Deg2Rad * 360 / segments * waveSegments);
         }
 
@@ -171,8 +169,6 @@ public class WavyCirclePointsController : MonoBehaviour
             Vector3 wave = new Vector3(x, y, z);
 
             renderPos[i] = renderPos[i] + wave;
-
-            //line.SetPosition(i, line.GetPosition(i) + wave);
 
             randomWaveAngle += (Mathf.Deg2Rad * 360 / segments * randomWaveSeg);
         }
@@ -273,7 +269,7 @@ public class WavyCirclePointsController : MonoBehaviour
             timer = 0;
             hasStartDragging = false;
             hasArriveMaxDragDis = false;
-            //dragDrection = DragDrection.Stop;
+            dragDrection = DragDrection.Stop;
         }
     }
 
