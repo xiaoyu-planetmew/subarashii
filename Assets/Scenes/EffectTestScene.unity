@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 512799200}
   - component: {fileID: 512799199}
   - component: {fileID: 512799204}
+  - component: {fileID: 512799205}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -175,7 +176,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a7f9b9f3a7ec88a42bcdef7463ccbffe, type: 2}
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -238,8 +239,8 @@ MonoBehaviour:
   dragPowerAmgMin: 1
   dragRange: 90
   dragTime: 0.5
-  renderType: 0
-  dragPowelfully: 0
+  renderType: 1
+  dragPowerfuly: 0
 --- !u!4 &512799203
 Transform:
   m_ObjectHideFlags: 0
@@ -352,6 +353,22 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 1
+--- !u!114 &512799205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512799198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac3b9c0002d630044ae475e97436fc4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elasticity: 1
+  mass: 1
+  stiffness: 0.2
+  damping: 0.75
 --- !u!1 &754910398
 GameObject:
   m_ObjectHideFlags: 0

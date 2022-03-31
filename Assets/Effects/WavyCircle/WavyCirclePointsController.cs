@@ -43,7 +43,8 @@ public class WavyCirclePointsController : MonoBehaviour
     private Vector3[] originalPos;
     private Vector3[] renderPos;
     private LineRenderer line;
-    WavePointsFilling fillingRenderer;
+    private WavePointsFilling fillingRenderer;
+    private WaveJellyEffect jellyEffect;
     private int segments;
     private float originRadius;
     private float originRandomSpeed;
@@ -70,6 +71,8 @@ public class WavyCirclePointsController : MonoBehaviour
 
         fillingRenderer = GetComponent<WavePointsFilling>();
 
+        jellyEffect = GetComponent<WaveJellyEffect>();
+
         originalPos = new Vector3[pointsNum];
 
         renderPos = new Vector3[pointsNum];
@@ -90,8 +93,11 @@ public class WavyCirclePointsController : MonoBehaviour
         {
             DragCircle();
         }
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            DragCircle(true);
+        }
 
-        
 
         //正常波浪
         SimulateWave();
@@ -109,6 +115,14 @@ public class WavyCirclePointsController : MonoBehaviour
         //渲染
         RenderWave();
     }
+
+    private void FixedUpdate()
+    {
+        // 果冻
+        if(jellyEffect != null)
+            jellyEffect.CalculateJelly(originalPos);
+    }
+
 
     public void DragCircle(bool powerful = false)
     {
@@ -146,6 +160,8 @@ public class WavyCirclePointsController : MonoBehaviour
         staticWaveAngle = startAngle;
         startRandomWaveAngle += randomWaveSpeed;
         randomWaveAngle = startRandomWaveAngle;
+
+        
 
         // 添加三角函数波动
         for (int i = 0; i < pointsNum; i++)

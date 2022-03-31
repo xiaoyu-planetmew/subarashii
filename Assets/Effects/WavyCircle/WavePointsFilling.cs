@@ -40,5 +40,6 @@ public class WavePointsFilling : MonoBehaviour
         // set filter
         filter.mesh.Clear();
         filter.mesh = filledGraphMesh;
+
     }
 }
