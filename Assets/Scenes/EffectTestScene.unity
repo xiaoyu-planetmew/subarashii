@@ -652,7 +652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputDelayTime: 0.1
-  force: 7.5
-  powerfulRate: 4
-  accelationTime: 0.075
-  decelation: 1.5
+  force: 15
+  powerfulRate: 3
+  accelationTime: 0.02
+  decelation: 2
