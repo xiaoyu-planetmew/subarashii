@@ -22,7 +22,7 @@ public class WavyCirclePointsController : MonoBehaviour
     public float rotateRatio = 30f;
 
     [Header("拖拽")]
-    public DragDrection dragDrection;
+    public MoveDirection dragDrection;
     public float dragShrinkMax = 0.5f; //大力的收缩
     public float dragShrinkMin = 0.75f; //小力的收缩
     public float dragShrinkTime = 0.3f;
@@ -30,7 +30,8 @@ public class WavyCirclePointsController : MonoBehaviour
     public float dragWaveSpeed = 2f;
     public float dragPowerAmgMax = 1.5f;
     public float dragPowerAmgMin = 1.2f;
-    public float dragRange = 30f;
+    public float dragRange = 60f;
+    public float dragRangePowerful = 50f;
     public float dragTime = 0.5f;
 
     [Header("渲染")]
@@ -41,12 +42,14 @@ public class WavyCirclePointsController : MonoBehaviour
     private float staticWaveAngle = 0f;
     private float randomWaveAngle = 0f;
     private Vector3[] originalPos;
+    private Vector3[] afterJellyPos;
     private Vector3[] renderPos;
     private LineRenderer line;
     private WavePointsFilling fillingRenderer;
     private WaveJellyEffect jellyEffect;
     private int segments;
     private float originRadius;
+    private float nowRadius;
     private float originRandomSpeed;
     private float dragAngle;
     private float nowDragDis;
@@ -75,15 +78,19 @@ public class WavyCirclePointsController : MonoBehaviour
 
         originalPos = new Vector3[pointsNum];
 
+        afterJellyPos = new Vector3[pointsNum];
+
         renderPos = new Vector3[pointsNum];
 
         originRadius = radius;
 
+        nowRadius = originRadius;
+
         originRandomSpeed = randomWaveSpeed;
 
-        dragDrection = DragDrection.Stop;
+        dragDrection = MoveDirection.Stop;
 
-        SetRadius(radius);
+        InitialRadius();
     }
 
     private void Update()
@@ -91,11 +98,11 @@ public class WavyCirclePointsController : MonoBehaviour
         //Test
         if(Input.GetKeyDown(KeyCode.G))
         {
-            DragCircle();
+            //DragCircle();
         }
         if (Input.GetKeyDown(KeyCode.F))
         {
-            DragCircle(true);
+            //DragCircle(true);
         }
 
 
@@ -123,18 +130,25 @@ public class WavyCirclePointsController : MonoBehaviour
             jellyEffect.CalculateJelly(originalPos);
     }
 
-
-    public void DragCircle(bool powerful = false)
+    /// <summary>
+    /// 拖拽接口
+    /// </summary>
+    /// <param name="dragDir"></param>
+    /// <param name="powerful"></param>
+    public void DragCircle(MoveDirection dragDir, bool powerful = false)
     {
         hasStartDragging = true;
+        timer = 0;
+
+        dragDrection = dragDir;
         nowDragDis = originRadius * (dragPowerfuly ? dragPowerAmgMax : dragPowerAmgMin);
         dragPowerfuly = powerful;
     }
 
     /// <summary>
-    /// 画圆
+    /// 画基础圆
     /// </summary>
-    private void SetRadius(float radius)
+    private void InitialRadius()
     {
         float x;
         float y;
@@ -144,13 +158,41 @@ public class WavyCirclePointsController : MonoBehaviour
 
         for (int i = 0; i < pointsNum; i++)
         {
-            x = Mathf.Sin(Mathf.Deg2Rad * ang) * radius;
-            y = Mathf.Cos(Mathf.Deg2Rad * ang) * radius;
+            x = Mathf.Sin(Mathf.Deg2Rad * ang) * originRadius;
+            y = Mathf.Cos(Mathf.Deg2Rad * ang) * originRadius;
 
             originalPos[i] = new Vector3(x, y, z);
+            afterJellyPos[i] = originalPos[i];
 
             ang += (360f / segments);
         }
+    }
+
+    /// <summary>
+    /// 根据相对大小缩放基础圆
+    /// </summary>
+    /// <param name="radius"></param>
+    private void SetRadius(float newRadius)
+    {
+        float x;
+        float y;
+        float z = 0f;
+
+        float ang = 0f;  // start from 0 degree
+
+        for (int i = 0; i < pointsNum; i++)
+        {
+            x = Mathf.Sin(Mathf.Deg2Rad * ang) * (newRadius - originRadius);
+            y = Mathf.Cos(Mathf.Deg2Rad * ang) * (newRadius - originRadius);
+
+            afterJellyPos[i] = originalPos[i] + new Vector3(x, y, z);
+
+            ang += (360f / segments);
+        }
+
+        nowRadius = newRadius;
+
+
     }
 
     private void SimulateWave()
@@ -161,7 +203,9 @@ public class WavyCirclePointsController : MonoBehaviour
         startRandomWaveAngle += randomWaveSpeed;
         randomWaveAngle = startRandomWaveAngle;
 
-        
+        //果冻后的基础圆
+        SetRadius(nowRadius);
+
 
         // 添加三角函数波动
         for (int i = 0; i < pointsNum; i++)
@@ -171,7 +215,7 @@ public class WavyCirclePointsController : MonoBehaviour
             float z = 0;
             Vector3 wave = new Vector3(x, y, z);
 
-            renderPos[i] = originalPos[i] + wave;
+            renderPos[i] = afterJellyPos[i] + wave;
 
             staticWaveAngle += (Mathf.Deg2Rad * 360 / segments * waveSegments);
         }
@@ -225,57 +269,88 @@ public class WavyCirclePointsController : MonoBehaviour
         //直径变化
         if(!hasArriveMaxDragDis) //收缩
         {
-            radius -= (originRadius * (1 - (dragPowerfuly ? dragShrinkMax : dragShrinkMin))/(dragShrinkTime / Time.deltaTime) * dragShrinkSpeed);
+            nowRadius -= (originRadius * (1 - (dragPowerfuly ? dragShrinkMax : dragShrinkMin))/(dragShrinkTime / Time.deltaTime) * dragShrinkSpeed);
 
-            SetRadius(radius);
+            SetRadius(nowRadius);
 
             randomWaveSpeed = originRandomSpeed * dragWaveSpeed * (dragPowerfuly ? 1 : 0.5f); //加速旋转
 
-            if (radius <= originRadius * (dragPowerfuly ? dragShrinkMax : dragShrinkMin))
+            if (nowRadius <= originRadius * (dragPowerfuly ? dragShrinkMax : dragShrinkMin))
             {
                 hasArriveMaxDragDis = true;
             }
         }
         else // 复原
         {
-            radius = Mathf.Lerp(radius, originRadius * 1.2f, Time.deltaTime * dragShrinkSpeed);
+            nowRadius = Mathf.Lerp(radius, originRadius * 1.2f, Time.deltaTime * dragShrinkSpeed);
 
 
-            if(radius >= originRadius)
+            if(nowRadius >= originRadius)
             {
-                radius = originRadius;
+                nowRadius = originRadius;
             }
 
-            SetRadius(radius);
+            SetRadius(nowRadius);
         }
 
         //拉拽特效
-        if(dragDrection != DragDrection.Stop)
+        if(dragDrection != MoveDirection.Stop)
         {
             CalculateDragDerection();
 
-            float ang = - transform.localEulerAngles.z;
+            float ang = (360 - transform.localEulerAngles.z) % 360;
+
+            float nowRange =  dragPowerfuly ? dragRangePowerful : dragRange;
+            float angMin = dragAngle - nowRange;
+            float angMax = dragAngle + nowRange;
 
             for (int i = 0; i < pointsNum; i++)
             {
-                float nowRange = dragRange * (dragPowerfuly ? 0.75f : 1);
 
-                if (ang > (dragAngle- nowRange) && ang < (dragAngle + nowRange))
+                if(dragAngle != 0)
                 {
-                    float disAngle = Mathf.Deg2Rad * (ang - dragAngle) * 90 / nowRange;
+                    if (ang > angMin && ang < angMax)
+                    {
+                        float disAngle = Mathf.Deg2Rad * (ang - dragAngle) * 90 / nowRange;
 
-                    nowDragDis = Mathf.Max(Mathf.Lerp(nowDragDis, 0, Time.deltaTime/10), 0);
+                        nowDragDis = Mathf.Max(Mathf.Lerp(nowDragDis, 0, Time.deltaTime / 5), 0);
 
-                    float x = Mathf.Sin(Mathf.Deg2Rad * (ang + transform.localEulerAngles.z)) * nowDragDis
-                        * Mathf.Pow(Mathf.Cos(disAngle), 4);
-                    float y = Mathf.Cos(Mathf.Deg2Rad * (ang + transform.localEulerAngles.z)) * nowDragDis
-                        * Mathf.Pow(Mathf.Cos(disAngle), 4);
+                        float x = Mathf.Sin(Mathf.Deg2Rad * (ang + transform.localEulerAngles.z)) * nowDragDis
+                            * Mathf.Pow(Mathf.Cos(disAngle), 4);
+                        float y = Mathf.Cos(Mathf.Deg2Rad * (ang + transform.localEulerAngles.z)) * nowDragDis
+                            * Mathf.Pow(Mathf.Cos(disAngle), 4);
 
-                    renderPos[i] += new Vector3(x, y, 0);
-                        
+                        renderPos[i] += new Vector3(x, y, 0);
+                    }
+
+                }
+                else // dragAngle = 0, Up的时候
+                {
+                    if (ang < angMax || ang > (angMin + 360) % 360)
+                    {
+                        float disAngle = 0;
+
+                        if(ang < angMax)
+                            disAngle = Mathf.Deg2Rad * (ang) * 90 / nowRange;
+                        if(ang > (angMin + 360) % 360)
+                            disAngle = Mathf.Deg2Rad * (360 - ang) * 90 / nowRange;
+
+                        nowDragDis = Mathf.Max(Mathf.Lerp(nowDragDis, 0, Time.deltaTime / 5), 0);
+
+                        float x = Mathf.Sin(Mathf.Deg2Rad * (ang + transform.localEulerAngles.z)) * nowDragDis
+                            * Mathf.Pow(Mathf.Cos(disAngle), 4);
+                        float y = Mathf.Cos(Mathf.Deg2Rad * (ang + transform.localEulerAngles.z)) * nowDragDis
+                            * Mathf.Pow(Mathf.Cos(disAngle), 4);
+
+                        renderPos[i] += new Vector3(x, y, 0);
+                    }
+
                 }
 
-                ang += (360f / segments);
+
+                
+
+                ang = (ang + (360f / segments)) % 360;
             }
         }
 
@@ -285,7 +360,7 @@ public class WavyCirclePointsController : MonoBehaviour
             timer = 0;
             hasStartDragging = false;
             hasArriveMaxDragDis = false;
-            dragDrection = DragDrection.Stop;
+            dragDrection = MoveDirection.Stop;
         }
     }
 
@@ -296,28 +371,28 @@ public class WavyCirclePointsController : MonoBehaviour
     {
         switch (dragDrection)
         {
-            case DragDrection.Up:
+            case MoveDirection.Up:
                 dragAngle = 0;
                 break;
-            case DragDrection.UpLeft:
+            case MoveDirection.UpRight:
                 dragAngle = 45;
                 break;
-            case DragDrection.Left:
+            case MoveDirection.Right:
                 dragAngle = 90;
                 break;
-            case DragDrection.DownLeft:
+            case MoveDirection.DownRight:
                 dragAngle = 135;
                 break;
-            case DragDrection.Down:
+            case MoveDirection.Down:
                 dragAngle = 180;
                 break;
-            case DragDrection.DownRight:
+            case MoveDirection.DownLeft:
                 dragAngle = 225;
                 break;
-            case DragDrection.Right:
+            case MoveDirection.Left:
                 dragAngle = 270;
                 break;
-            case DragDrection.UpRight:
+            case MoveDirection.UpLeft:
                 dragAngle = 315;
                 break;
         }
@@ -351,20 +426,20 @@ public class WavyCirclePointsController : MonoBehaviour
         Filling,
     }
 
-    public enum DragDrection
-    {
-        Stop,
-        Up,
-        UpLeft,
-        Left,
-        DownLeft,
-        Down,
-        DownRight,
-        Right,
-        UpRight,
-    }
+    
 
 }
 
 
-
+public enum MoveDirection
+{
+    Stop,
+    Up,
+    UpLeft,
+    Left,
+    DownLeft,
+    Down,
+    DownRight,
+    Right,
+    UpRight,
+}

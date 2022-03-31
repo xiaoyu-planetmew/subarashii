@@ -16,7 +16,7 @@ public class WaveJellyEffect : MonoBehaviour
     private JellyVertex[] jvs;
 
 
-    public void CalculateJelly(Vector3[] linePoints)
+    public void CalculateJelly(Vector3[] linePoints, bool pauseCaculating = false)
     {
         if(!hasInitiated)
         {
@@ -41,9 +41,11 @@ public class WaveJellyEffect : MonoBehaviour
             Vector3 target = transform.TransformPoint(originLinePos[i]);
             Vector2 boundY = GetYPointsBound(linePoints);
             float intensity = (1 - (boundY.y - target.y) / (boundY.y - boundY.x)) * elasticity;
+            
             jvs[i].Shake(target, mass, stiffness, damping);
             target = transform.InverseTransformPoint(jvs[i].position);
-            linePoints[i] = Vector3.Lerp(linePoints[i], target, intensity);
+            if (!pauseCaculating)
+                linePoints[i] = Vector3.Lerp(linePoints[i], target, intensity);
 
         }
 
