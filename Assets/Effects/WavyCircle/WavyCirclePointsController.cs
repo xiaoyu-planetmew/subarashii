@@ -37,12 +37,19 @@ public class WavyCirclePointsController : MonoBehaviour
     [Header("渲染")]
     public WaveRenderType renderType = WaveRenderType.Stroke;
 
+    [Header("碰撞")]
+    public WayyCollider[] triggers;
+    public float colliderRange = 45f;
+    public float colliderIntense = 2f;
+
     private float startAngle = 0f;
     private float startRandomWaveAngle = 0f;
     private float staticWaveAngle = 0f;
     private float randomWaveAngle = 0f;
     private Vector3[] originalPos;
     private Vector3[] afterJellyPos;
+    private Vector3[] afterCollider;
+    private Vector3[] afterShrink;
     private Vector3[] renderPos;
     private LineRenderer line;
     private WavePointsFilling fillingRenderer;
@@ -80,6 +87,10 @@ public class WavyCirclePointsController : MonoBehaviour
 
         afterJellyPos = new Vector3[pointsNum];
 
+        afterCollider = new Vector3[pointsNum];
+
+        afterShrink = new Vector3[pointsNum];
+
         renderPos = new Vector3[pointsNum];
 
         originRadius = radius;
@@ -105,13 +116,9 @@ public class WavyCirclePointsController : MonoBehaviour
             //DragCircle(true);
         }
 
-
         //正常波浪
         SimulateWave();
-
-        //旋转
-        if(enableRotation)
-            RotateInWaving();
+        
 
         //时刻恢复运转速度
         KeepingWaveSpeed();
@@ -125,9 +132,111 @@ public class WavyCirclePointsController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        //旋转
+        if (enableRotation)
+            RotateInWaving();
+
         // 果冻
-        if(jellyEffect != null)
+        if (jellyEffect != null)
             jellyEffect.CalculateJelly(originalPos);
+
+        //碰撞
+        if (GetColliderEnter())
+        {
+            SimulateColliding();
+        }
+        else
+        {
+            for (int i = 0; i < pointsNum; i++)
+            {
+                afterCollider[i] = afterJellyPos[i];
+            }
+        }
+
+    }
+
+
+    private bool GetColliderEnter()
+    {
+        bool enter = false;
+
+        foreach(WayyCollider trigger in triggers)
+        {
+            enter = enter || trigger.triggerEnter;
+        }
+
+        return enter;
+    }
+
+    /// <summary>
+    /// 模拟碰撞变形
+    /// </summary>
+    private void SimulateColliding()
+    {
+        float segAngle = 360f / triggers.Length;
+
+        float ang = (360 - transform.localEulerAngles.z) % 360;
+
+        for (int i = 0; i < pointsNum; i++)
+        {
+            bool colliderEnter = false;
+
+            for (int t = 0; t < triggers.Length; t++)
+            {
+
+                if(triggers[t].triggerEnter)
+                {
+                    float nowRange = colliderRange;
+                    float angMin = t * segAngle - nowRange;
+                    float angMax = t * segAngle + nowRange;
+
+                    if (t != 0)
+                    {
+                        if (ang > angMin && ang < angMax)
+                        {
+                            float disAngle = Mathf.Deg2Rad * (ang - t * segAngle) * 90 / nowRange;
+                            Debug.Log("seg" + (ang));
+
+                            float x = Mathf.Sin(Mathf.Deg2Rad * (ang + transform.localEulerAngles.z)) * triggers[t].colliDis * colliderIntense
+                                * Mathf.Sqrt(Mathf.Cos(disAngle));
+                            float y = Mathf.Cos(Mathf.Deg2Rad * (ang + transform.localEulerAngles.z)) * triggers[t].colliDis * colliderIntense
+                                * Mathf.Sqrt(Mathf.Cos(disAngle));
+
+                            afterCollider[i] = afterJellyPos[i] - new Vector3(x, y, 0);
+
+                            colliderEnter = true;
+                        }
+                    }
+                    else // dragAngle = 0, Up的时候
+                    {
+                        if (ang < angMax || ang > (angMin + 360) % 360)
+                        {
+                            float disAngle = 0;
+
+                            if (ang < angMax)
+                                disAngle = Mathf.Deg2Rad * (ang) * 90 / nowRange;
+                            if (ang > (angMin + 360) % 360)
+                                disAngle = Mathf.Deg2Rad * (360 - ang) * 90 / nowRange;
+
+                            float x = Mathf.Sin(Mathf.Deg2Rad * (ang + transform.localEulerAngles.z)) * triggers[t].colliDis * colliderIntense
+                                * Mathf.Sqrt(Mathf.Cos(disAngle));
+                            float y = Mathf.Cos(Mathf.Deg2Rad * (ang + transform.localEulerAngles.z)) * triggers[t].colliDis * colliderIntense
+                                * Mathf.Sqrt(Mathf.Cos(disAngle));
+
+                            afterCollider[i] = afterJellyPos[i] - new Vector3(x, y, 0);
+
+                            colliderEnter = true;
+                        }
+                    }
+                }
+            }
+
+            //无碰撞区域重置
+            if (!colliderEnter) afterCollider[i] = afterJellyPos[i];
+
+            ang = (ang + (360f / segments)) % 360;
+        }
+
     }
 
     /// <summary>
@@ -165,6 +274,7 @@ public class WavyCirclePointsController : MonoBehaviour
 
             originalPos[i] = new Vector3(x, y, z);
             afterJellyPos[i] = originalPos[i];
+            afterCollider[i] = afterJellyPos[i];
 
             ang += (360f / segments);
         }
@@ -187,7 +297,7 @@ public class WavyCirclePointsController : MonoBehaviour
             x = Mathf.Sin(Mathf.Deg2Rad * ang) * (newRadius - originRadius);
             y = Mathf.Cos(Mathf.Deg2Rad * ang) * (newRadius - originRadius);
 
-            afterJellyPos[i] = originalPos[i] + new Vector3(x, y, z);
+            afterShrink[i] = afterCollider[i] + new Vector3(x, y, z);
 
             ang += (360f / segments);
         }
@@ -197,6 +307,9 @@ public class WavyCirclePointsController : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// 波浪模拟
+    /// </summary>
     private void SimulateWave()
     {
         // 滚动
@@ -205,9 +318,8 @@ public class WavyCirclePointsController : MonoBehaviour
         startRandomWaveAngle += randomWaveSpeed;
         randomWaveAngle = startRandomWaveAngle;
 
-        //果冻后的基础圆
+        //基础
         SetRadius(nowRadius);
-
 
         // 添加三角函数波动
         for (int i = 0; i < pointsNum; i++)
@@ -217,7 +329,8 @@ public class WavyCirclePointsController : MonoBehaviour
             float z = 0;
             Vector3 wave = new Vector3(x, y, z);
 
-            renderPos[i] = afterJellyPos[i] + wave;
+            renderPos[i] = afterShrink[i] + wave;
+            //renderPos[i] = afterShrink[i];
 
             staticWaveAngle += (Mathf.Deg2Rad * 360 / segments * waveSegments);
         }
@@ -237,7 +350,7 @@ public class WavyCirclePointsController : MonoBehaviour
     }
 
     /// <summary>
-    /// 时刻恢复运转速度
+    /// 时刻恢复波浪运转速度
     /// </summary>
     private void KeepingWaveSpeed()
     {
@@ -261,6 +374,9 @@ public class WavyCirclePointsController : MonoBehaviour
         transform.localRotation = Quaternion.Slerp(transform.localRotation, transform.localRotation * roQ, rotateSpeed * Time.deltaTime);
     }
 
+    /// <summary>
+    /// 拖拽特效
+    /// </summary>
     private void DragEffect()
     {
         if (!hasStartDragging)
@@ -348,10 +464,6 @@ public class WavyCirclePointsController : MonoBehaviour
                     }
 
                 }
-
-
-                
-
                 ang = (ang + (360f / segments)) % 360;
             }
         }
