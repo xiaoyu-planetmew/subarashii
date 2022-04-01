@@ -55,7 +55,7 @@ public class WavyCirclePointsController : MonoBehaviour
     private float nowDragDis;
     private float timer;
 
-    [SerializeField] private bool dragPowerfuly;
+    private bool dragPowerfuly;
     private bool hasStartDragging;
     private bool hasArriveMaxDragDis;
 
@@ -137,12 +137,14 @@ public class WavyCirclePointsController : MonoBehaviour
     /// <param name="powerful"></param>
     public void DragCircle(MoveDirection dragDir, bool powerful = false)
     {
+        ResetDragFlags();
+
         hasStartDragging = true;
-        timer = 0;
 
         dragDrection = dragDir;
         nowDragDis = originRadius * (dragPowerfuly ? dragPowerAmgMax : dragPowerAmgMin);
         dragPowerfuly = powerful;
+
     }
 
     /// <summary>
@@ -357,11 +359,16 @@ public class WavyCirclePointsController : MonoBehaviour
         //½áÊø
         if(timer >= dragTime)
         {
-            timer = 0;
-            hasStartDragging = false;
-            hasArriveMaxDragDis = false;
-            dragDrection = MoveDirection.Stop;
+            ResetDragFlags();
         }
+    }
+
+    private void ResetDragFlags()
+    {
+        timer = 0;
+        hasStartDragging = false;
+        hasArriveMaxDragDis = false;
+        dragDrection = MoveDirection.Stop;
     }
 
     /// <summary>

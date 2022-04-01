@@ -230,18 +230,17 @@ MonoBehaviour:
   rotateSpeed: 1
   rotateRatio: 30
   dragDrection: 3
-  dragShrinkMax: 0.5
-  dragShrinkMin: 0.75
+  dragShrinkMax: 0.6
+  dragShrinkMin: 0.8
   dragShrinkTime: 0.2
   dragShrinkSpeed: 3
   dragWaveSpeed: 4
   dragPowerAmgMax: 3
   dragPowerAmgMin: 1.5
-  dragRange: 60
-  dragRangePowerful: 50
+  dragRange: 90
+  dragRangePowerful: 60
   dragTime: 1.5
-  renderType: 0
-  dragPowerfuly: 0
+  renderType: 1
 --- !u!4 &512799203
 Transform:
   m_ObjectHideFlags: 0
