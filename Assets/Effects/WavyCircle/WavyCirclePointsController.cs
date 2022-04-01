@@ -251,8 +251,8 @@ public class WavyCirclePointsController : MonoBehaviour
         hasStartDragging = true;
 
         dragDrection = dragDir;
-        nowDragDis = originRadius * (dragPowerfuly ? dragPowerAmgMax : dragPowerAmgMin);
         dragPowerfuly = powerful;
+        nowDragDis = originRadius * (dragPowerfuly ? dragPowerAmgMax : dragPowerAmgMin);
 
     }
 
@@ -481,6 +481,7 @@ public class WavyCirclePointsController : MonoBehaviour
         hasStartDragging = false;
         hasArriveMaxDragDis = false;
         dragDrection = MoveDirection.Stop;
+        nowDragDis = originRadius * dragPowerAmgMin;
     }
 
     /// <summary>

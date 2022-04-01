@@ -143,7 +143,6 @@ public class SimpleMovement : MonoBehaviour
 
         if(inputAxisVec.magnitude < 0.001f) //输入太小时
         {
-            Debug.Log("太小" + inputAxisVec);
             return MoveDirection.Stop;
         }
 
