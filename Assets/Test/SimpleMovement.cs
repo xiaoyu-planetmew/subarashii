@@ -54,9 +54,9 @@ public class SimpleMovement : MonoBehaviour
                 dirAngle = new Vector2(axisX, axisY);
                 MoveDirection dir = GetInputDir(dirAngle);
                 if(waveController!=null)
-                    waveController.DragCircle(dir, Input.GetKey(KeyCode.LeftShift));
+                    waveController.DragCircle(dir, (Input.GetKey(KeyCode.RightShift) || Input.GetKey(KeyCode.LeftShift)));
 
-                rigid.AddForce(dirAngle.normalized * force * (Input.GetKey(KeyCode.LeftShift) ? powerfulRate : 1f), ForceMode2D.Impulse);
+                rigid.AddForce(dirAngle.normalized * force * ((Input.GetKey(KeyCode.RightShift) || Input.GetKey(KeyCode.LeftShift)) ? powerfulRate : 1f), ForceMode2D.Impulse);
                 impulseVelocity = rigid.velocity;
                 startAccelating = true;
 
