@@ -33,6 +33,7 @@ public class WavyCirclePointsController : MonoBehaviour
     public float dragRange = 60f;
     public float dragRangePowerful = 50f;
     public float dragTime = 0.5f;
+    public float dragSpeed = 2f;
 
     [Header("äÖÈ¾")]
     public WaveRenderType renderType = WaveRenderType.Stroke;
@@ -195,7 +196,6 @@ public class WavyCirclePointsController : MonoBehaviour
                         if (ang > angMin && ang < angMax)
                         {
                             float disAngle = Mathf.Deg2Rad * (ang - t * segAngle) * 90 / nowRange;
-                            Debug.Log("seg" + (ang));
 
                             float x = Mathf.Sin(Mathf.Deg2Rad * (ang + transform.localEulerAngles.z)) * triggers[t].colliDis * colliderIntense
                                 * Mathf.Sqrt(Mathf.Cos(disAngle));
@@ -431,7 +431,7 @@ public class WavyCirclePointsController : MonoBehaviour
                     {
                         float disAngle = Mathf.Deg2Rad * (ang - dragAngle) * 90 / nowRange;
 
-                        nowDragDis = Mathf.Max(Mathf.Lerp(nowDragDis, 0, Time.deltaTime / 5), 0);
+                        //nowDragDis = Mathf.Max(Mathf.Lerp(nowDragDis, 0, Time.deltaTime / 5), 0);
 
                         float x = Mathf.Sin(Mathf.Deg2Rad * (ang + transform.localEulerAngles.z)) * nowDragDis
                             * Mathf.Pow(Mathf.Cos(disAngle), 4);
@@ -449,11 +449,10 @@ public class WavyCirclePointsController : MonoBehaviour
                         float disAngle = 0;
 
                         if(ang < angMax)
-                            disAngle = Mathf.Deg2Rad * (ang) * 90 / nowRange;
+                            disAngle = Mathf.Deg2Rad * (ang + 0.5f) * 90 / nowRange;
                         if(ang > (angMin + 360) % 360)
-                            disAngle = Mathf.Deg2Rad * (360 - ang) * 90 / nowRange;
+                            disAngle = Mathf.Deg2Rad * (360 - ang - 0.5f) * 90 / nowRange;
 
-                        nowDragDis = Mathf.Max(Mathf.Lerp(nowDragDis, 0, Time.deltaTime / 5), 0);
 
                         float x = Mathf.Sin(Mathf.Deg2Rad * (ang + transform.localEulerAngles.z)) * nowDragDis
                             * Mathf.Pow(Mathf.Cos(disAngle), 4);
@@ -464,12 +463,16 @@ public class WavyCirclePointsController : MonoBehaviour
                     }
 
                 }
+
                 ang = (ang + (360f / segments)) % 360;
             }
+
+            nowDragDis = Mathf.Max(Mathf.Lerp(nowDragDis, 0, Time.deltaTime * dragSpeed), 0);
+
         }
 
         //½áÊø
-        if(timer >= dragTime)
+        if (timer >= dragTime)
         {
             ResetDragFlags();
         }
