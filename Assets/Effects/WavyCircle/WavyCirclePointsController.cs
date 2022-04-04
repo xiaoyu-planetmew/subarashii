@@ -542,17 +542,13 @@ public class WavyCirclePointsController : MonoBehaviour
             fillingRenderer.FillingPoints(renderPos);
         }
     }
-
-    public enum WaveRenderType
-    {
-        Stroke,
-        Filling,
-    }
-
-    
-
 }
 
+public enum WaveRenderType
+{
+    Stroke,
+    Filling,
+}
 
 public enum MoveDirection
 {
