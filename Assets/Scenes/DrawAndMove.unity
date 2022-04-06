@@ -225,8 +225,10 @@ MonoBehaviour:
   lsPoint: []
   sphere: {fileID: 82412535}
   speed: 50
+  t: 1
   length: 0
   line: {fileID: 0}
+  totalLength: 0
 --- !u!4 &82412535
 Transform:
   m_ObjectHideFlags: 0

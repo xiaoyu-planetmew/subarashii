@@ -14,10 +14,12 @@ public class DrawBesizerLine : MonoBehaviour
     public int baseCount = 50;  //两个基础点之间的取点数量   值越大曲线就越平滑  但同时计算量也也越大
     [SerializeField]private List<Vector3> lsPoint = new List<Vector3>();
     public Transform sphere;   //目标小球
-    public float speed;   //运动速度
+    [SerializeField]private float speed;   //运动速度
+    public float t;
     public float length = 0;   //小球当前的运动轨迹长度
     //LineRenderer lineRender;
     public GameObject line;
+    [SerializeField] float totalLength;
     void OnEnable()
     {
         foreach(Transform child in mainLine.transform)
@@ -33,6 +35,7 @@ public class DrawBesizerLine : MonoBehaviour
         basePoint.Clear();
         lsPoint.Clear();
         length = 0;
+        totalLength = 0;
         //basePoint = line.GetComponentsInChildren<GameObject>();
         foreach(Transform child in line.transform)
         {
@@ -66,9 +69,15 @@ public class DrawBesizerLine : MonoBehaviour
         Vector3[] pointPos = new Vector3[basePoint.Count];
         for (int i = 0; i < pointPos.Length; i++)
         {
+
             pointPos[i] = basePoint[i].position;
+            if(i>0)
+            {
+                totalLength += (pointPos[i] - pointPos[i-1]).magnitude; 
+            }
         }
         GetTrackPoint(pointPos);
+        speed = totalLength / (t / 100);
     }
 
     /// <summary>
