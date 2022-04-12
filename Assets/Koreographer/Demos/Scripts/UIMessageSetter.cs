@@ -7,19 +7,19 @@ using UnityEngine;
 
 namespace SonicBloom.Koreo.Demos
 {
-	[RequireComponent(typeof(GUIText))]
+	[RequireComponent(typeof(UnityEngine.UI.Text))]
 	[AddComponentMenu("Koreographer/Demos/UI Message Setter")]
 	public class UIMessageSetter : MonoBehaviour
 	{
 		[EventID]
 		public string eventID;
 
-		GUIText guiTextCom;
+		UnityEngine.UI.Text guiTextCom;
 		KoreographyEvent curTextEvent;
 		
 		void Start()
 		{
-			guiTextCom = GetComponent<GUIText>();
+			guiTextCom = GetComponent<UnityEngine.UI.Text>();
 
 			// Register for Koreography Events.  This sets up the callback.
 			Koreographer.Instance.RegisterForEventsWithTime(eventID, UpdateText);
