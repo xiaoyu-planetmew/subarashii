@@ -6,22 +6,31 @@ using UnityEngine.UI;
 [RequireComponent(typeof(MovePoint))]
 public class MovePointDisplay : MonoBehaviour
 {
-    public GameObject Up;
-    public GameObject UpLeft;
-    public GameObject Left;
-    public GameObject DownLeft;
-    public GameObject Down;
-    public GameObject DownRight;
-    public GameObject Right;
-    public GameObject UpRight;
-    public GameObject Space;
+    public ArrowDisplayType display;
 
-    private MovePointInputController inputController;
+    private GameObject arrowPrefab;
 
     private void Start()
     {
-        inputController = GetComponentInParent<MovePointInputController>();
+        InitiateDisplay();
     }
 
+    private void InitiateDisplay()
+    {
+        GetComponent<SpriteRenderer>().enabled = false;
 
+        if (GetComponent<MovePointInputController>() == null) return;
+
+        arrowPrefab = Instantiate(Resources.Load<GameObject>("Prefabs/Arrow"), transform);
+
+        arrowPrefab.transform.localPosition = Vector3.zero;
+
+        arrowPrefab.GetComponent<ArrowDisplay>().InitiateArrow(display);
+    }
+
+    
 }
+
+
+
+

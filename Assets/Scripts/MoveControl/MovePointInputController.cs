@@ -202,4 +202,5 @@ public enum KeyDirectionType
     Right,
     UpRight,
     Space,
+    Null,
 }

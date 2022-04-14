@@ -537,8 +537,7 @@ MonoBehaviour:
   timeToNextMovePoint: 2
   nextPoint: {fileID: 0}
   branchPoint: {fileID: 0}
-  besizerControlPoints:
-  - {fileID: 0}
+  besizerControlPoints: []
   basePoints: []
   toBranch: 0
 --- !u!58 &1212606273
@@ -590,6 +589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae58cc0e03b101846b284ba173e355e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  display: 6
 --- !u!1 &1379221771
 GameObject:
   m_ObjectHideFlags: 0
