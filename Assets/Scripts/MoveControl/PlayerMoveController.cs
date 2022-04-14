@@ -59,7 +59,8 @@ public class PlayerMoveController : MonoBehaviour
 
             if(nowMovePoint.nextPoint != null)
             {
-                MoveToPoint(nowMovePoint.nextPoint);
+                //计算下一段路线
+                MoveToPoint(nowMovePoint.GetNextOrBranchPoint());
             }
         }
     }

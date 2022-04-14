@@ -12,18 +12,31 @@ public class MovePoint : MonoBehaviour
     [Tooltip("链接到下一个节点")] 
     public MovePoint nextPoint;
 
+    [Tooltip("支线节点")]
+    public MovePoint branchPoint;
+
     [Tooltip("移动到下一个节点的中间贝塞尔点, 按移动顺序排列")] 
     public Transform[] besizerControlPoints;
 
 
     [HideInInspector] public Vector3[] basePoints;
+    [HideInInspector] public bool toBranch;
+    private MovePointDisplay display;
+    private MovePointInputController inputController;
 
     private void Start()
     {
+        toBranch = false;
+
+        display = GetComponent<MovePointDisplay>();
+
+        inputController = GetComponent<MovePointInputController>();
+
         //初始化基础点
         InitiateBasePoints();
 
         //控制节点显示图案
+
     }
 
     private void InitiateBasePoints()
@@ -40,6 +53,29 @@ public class MovePoint : MonoBehaviour
 
         if(nextPoint!=null)
             basePoints[besizerControlPoints.Length + 1] = nextPoint.transform.position;
+    }
+
+    public MovePoint GetNextOrBranchPoint()
+    {
+        if (!toBranch || branchPoint != null)
+            return nextPoint;
+        else
+        {
+            ChangeToBranch();
+            return branchPoint;
+        }
+    }
+
+    public void ChangeToBranch()
+    {
+        if (branchPoint != null)
+            basePoints[besizerControlPoints.Length + 1] = branchPoint.transform.position;
+    }
+
+    public void ResetMovePoint()
+    {
+        toBranch = false;
+        InitiateBasePoints();
     }
 }
 

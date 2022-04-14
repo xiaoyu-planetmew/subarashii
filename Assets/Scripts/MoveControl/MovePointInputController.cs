@@ -121,12 +121,6 @@ public class MovePointInputController : MonoBehaviour
         KeyboardInputChecker.Instance.ResetChecker();
         ResetThisPoint();
 
-        // 进入下一个 * 测试用
-        if(gameObject.name == "Point (1)")
-        {
-            //PlayerMoveController.Instance.MoveToPoint(GetComponent<MovePoint>());
-        }
-
 
         // 输入成功特效
         if(Vector3.Distance( PlayerMoveController.Instance.transform.position, transform.position) < goodCheckDistance)
