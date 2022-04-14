@@ -9,15 +9,25 @@ public class MovePointDisplay : MonoBehaviour
     public ArrowDisplayType display;
 
     private GameObject arrowPrefab;
+    private MovePoint mp;
 
     private void Start()
     {
+        mp = GetComponent<MovePoint>();
+
         InitiateDisplay();
     }
 
     private void InitiateDisplay()
     {
+        // 关闭MovePoint位置提示
         GetComponent<SpriteRenderer>().enabled = false;
+
+        // 关闭贝塞尔控制点位置提示
+        foreach(Transform besizer in mp.besizerControlPoints)
+        {
+            besizer.GetComponent<SpriteRenderer>().enabled = false;
+        }
 
         if (GetComponent<MovePointInputController>() == null) return;
 

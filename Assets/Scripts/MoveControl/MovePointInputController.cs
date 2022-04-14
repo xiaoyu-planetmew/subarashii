@@ -5,11 +5,6 @@ using UnityEngine;
 [RequireComponent(typeof(MovePoint))]
 public class MovePointInputController : MonoBehaviour
 {
-
-    [Header("Good距离")]
-    [Tooltip("Good")]
-    public float goodCheckDistance = 0.5f;
-
     [Header("输入命令")]
     [Tooltip("此节点输入命令")]
     public MovePointInput[] keyInputs;
@@ -123,16 +118,7 @@ public class MovePointInputController : MonoBehaviour
 
 
         // 输入成功特效
-        if(Vector3.Distance( PlayerMoveController.Instance.transform.position, transform.position) < goodCheckDistance)
-        {
-            //Good
-            Debug.Log("Good!");
-        }
-        else
-        {
-            //Normal
-            Debug.Log("Normal");
-        }
+
     }
 
     public void ResetThisPoint()

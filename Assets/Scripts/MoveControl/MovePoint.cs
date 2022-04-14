@@ -6,9 +6,6 @@ public class MovePoint : MonoBehaviour
 {
     [Header("移动节点参数")]
 
-    [Tooltip("移动到此点的时间")] 
-    public float timeToNextMovePoint = 1;
-
     [Tooltip("链接到下一个节点")] 
     public MovePoint nextPoint;
 
@@ -18,7 +15,7 @@ public class MovePoint : MonoBehaviour
     [Tooltip("移动到下一个节点的中间贝塞尔点, 按移动顺序排列")] 
     public Transform[] besizerControlPoints;
 
-
+    [HideInInspector] public float timeToNextMovePoint = 1;
     [HideInInspector] public Vector3[] basePoints;
     [HideInInspector] public bool toBranch;
     private MovePointDisplay display;
