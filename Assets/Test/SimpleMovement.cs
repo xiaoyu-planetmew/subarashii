@@ -52,7 +52,7 @@ public class SimpleMovement : MonoBehaviour
                 getKeyDown = false;
 
                 dirAngle = new Vector2(axisX, axisY);
-                MoveDirection dir = GetInputDir(dirAngle);
+                KeyDirectionType dir = GetInputDir(dirAngle);
                 if(waveController!=null)
                     waveController.DragCircle(dir, (Input.GetKey(KeyCode.RightShift) || Input.GetKey(KeyCode.LeftShift)));
 
@@ -138,12 +138,12 @@ public class SimpleMovement : MonoBehaviour
         }
     }
 
-    private MoveDirection GetInputDir(Vector2 inputAxisVec)
+    private KeyDirectionType GetInputDir(Vector2 inputAxisVec)
     {
 
         if(inputAxisVec.magnitude < 0.001f) //ÊäÈëÌ«Ð¡Ê±
         {
-            return MoveDirection.Stop;
+            return KeyDirectionType.Stop;
         }
 
         if(Vector2.Dot(inputAxisVec, Vector2.left)>=0)
@@ -152,23 +152,23 @@ public class SimpleMovement : MonoBehaviour
 
             if (ang < 30)
             {
-                return MoveDirection.Up;
+                return KeyDirectionType.Up;
             }
             else if(ang < 60)
             {
-                return MoveDirection.UpLeft;
+                return KeyDirectionType.UpLeft;
             }
             else if(ang < 120)
             {
-                return MoveDirection.Left;
+                return KeyDirectionType.Left;
             }
             else if(ang < 150)
             {
-                return MoveDirection.DownLeft;
+                return KeyDirectionType.DownLeft;
             }
             else
             {
-                return MoveDirection.Down;
+                return KeyDirectionType.Down;
             }
         }
         else
@@ -177,23 +177,23 @@ public class SimpleMovement : MonoBehaviour
 
             if (ang < 30)
             {
-                return MoveDirection.Up;
+                return KeyDirectionType.Up;
             }
             else if (ang < 60)
             {
-                return MoveDirection.UpRight;
+                return KeyDirectionType.UpRight;
             }
             else if (ang < 120)
             {
-                return MoveDirection.Right;
+                return KeyDirectionType.Right;
             }
             else if (ang < 150)
             {
-                return MoveDirection.DownRight;
+                return KeyDirectionType.DownRight;
             }
             else
             {
-                return MoveDirection.Down;
+                return KeyDirectionType.Down;
             }
         }
     }

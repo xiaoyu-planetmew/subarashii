@@ -9,7 +9,10 @@ public class MovePointInputController : MonoBehaviour
     [Tooltip("此节点输入命令")]
     public MovePointInput[] keyInputs;
 
-    [SerializeField] private bool waitingForInputs;
+    [Header("大力拖拽")]
+    public bool powerfulEffect = false;
+
+    private bool waitingForInputs;
     private float inputTimer;
     private int nowCheckingInputNum;
 
@@ -28,7 +31,7 @@ public class MovePointInputController : MonoBehaviour
             CheckingInput();
         }
 
-        if(Input.GetKeyDown(KeyCode.G) && gameObject.name == "Point (1)")
+        if(Input.GetKeyDown(KeyCode.G) && gameObject.name == "MovePoint")
         {
             StartCheckingInput();
             PlayerMoveController.Instance.MoveToPoint(GetComponent<MovePoint>());
@@ -76,6 +79,9 @@ public class MovePointInputController : MonoBehaviour
                     {
                         nowCheckingInputNum++;
                         keyInputs[nowCheckingInputNum].nowInputStatus = MovePointInput.NowStatus.WaitingForInput;
+
+                        // 小成功特效
+
                     }
                     else
                     {
@@ -109,6 +115,7 @@ public class MovePointInputController : MonoBehaviour
         // 失败扣分
 
         // 失败特效
+
     }
 
     public void PointInputSuccess()
@@ -117,7 +124,9 @@ public class MovePointInputController : MonoBehaviour
         ResetThisPoint();
 
 
-        // 输入成功特效
+        // 完全成功特效
+        // 按最后一个方向出拖拽特效
+        PlayerEffectController.Instance.DragCircleEffect(keyInputs[keyInputs.Length-1].keyInput, powerfulEffect);
 
     }
 
@@ -188,5 +197,5 @@ public enum KeyDirectionType
     Right,
     UpRight,
     Space,
-    Null,
+    Stop,
 }

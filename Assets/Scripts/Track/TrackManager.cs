@@ -19,6 +19,7 @@ public class TrackManager : MonoBehaviour
         else
         {
             Instance = this;
+            DontDestroyOnLoad(this.gameObject);
         }
 
         LoadTrackManager.GetInstance().LoadAllTrackAssetsConfig();

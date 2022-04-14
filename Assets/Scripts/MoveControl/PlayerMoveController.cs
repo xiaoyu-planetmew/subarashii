@@ -10,7 +10,7 @@ public class PlayerMoveController : MonoBehaviour
 
     public static PlayerMoveController Instance;
 
-    [SerializeField] private List<Vector3> movePoints; //离散化的待移动点
+    private List<Vector3> movePoints; //离散化的待移动点
     private float moveDeltaTime; //离散点之间的移动时间
     private bool startMove;
     private float timer;
@@ -18,16 +18,7 @@ public class PlayerMoveController : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance != null)
-        {
-            Destroy(this.gameObject);
-            return;
-        }
-        else
-        {
-            Instance = this;
-            DontDestroyOnLoad(this.gameObject);
-        }
+        Instance = this;
     }
 
     private void Start()

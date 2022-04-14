@@ -22,7 +22,7 @@ public class WavyCirclePointsController : MonoBehaviour
     public float rotateRatio = 30f;
 
     [Header("拖拽")]
-    public MoveDirection dragDrection;
+    public KeyDirectionType dragDrection;
     public float dragShrinkMax = 0.5f; //大力的收缩
     public float dragShrinkMin = 0.75f; //小力的收缩
     public float dragShrinkTime = 0.3f;
@@ -37,6 +37,7 @@ public class WavyCirclePointsController : MonoBehaviour
 
     [Header("渲染")]
     public WaveRenderType renderType = WaveRenderType.Stroke;
+    public GameObject scaleHintSprite;
 
     [Header("碰撞")]
     public WayyCollider[] triggers;
@@ -100,22 +101,16 @@ public class WavyCirclePointsController : MonoBehaviour
 
         originRandomSpeed = randomWaveSpeed;
 
-        dragDrection = MoveDirection.Stop;
+        dragDrection = KeyDirectionType.Stop;
 
         InitialRadius();
+
+        if (scaleHintSprite != null)
+            scaleHintSprite.SetActive(false);
     }
 
     private void Update()
     {
-        //Test
-        if(Input.GetKeyDown(KeyCode.G))
-        {
-            //DragCircle();
-        }
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            //DragCircle(true);
-        }
 
         //正常波浪
         SimulateWave();
@@ -244,7 +239,7 @@ public class WavyCirclePointsController : MonoBehaviour
     /// </summary>
     /// <param name="dragDir"></param>
     /// <param name="powerful"></param>
-    public void DragCircle(MoveDirection dragDir, bool powerful = false)
+    public void DragCircle(KeyDirectionType dragDir, bool powerful = false)
     {
         ResetDragFlags();
 
@@ -412,7 +407,7 @@ public class WavyCirclePointsController : MonoBehaviour
         }
 
         //拉拽特效
-        if(dragDrection != MoveDirection.Stop)
+        if(dragDrection != KeyDirectionType.Stop)
         {
             CalculateDragDerection();
 
@@ -483,7 +478,7 @@ public class WavyCirclePointsController : MonoBehaviour
         timer = 0;
         hasStartDragging = false;
         hasArriveMaxDragDis = false;
-        dragDrection = MoveDirection.Stop;
+        dragDrection = KeyDirectionType.Stop;
         nowDragDis = originRadius * dragPowerAmgMin;
     }
 
@@ -494,34 +489,37 @@ public class WavyCirclePointsController : MonoBehaviour
     {
         switch (dragDrection)
         {
-            case MoveDirection.Up:
+            case KeyDirectionType.Up:
                 dragAngle = 0;
                 break;
-            case MoveDirection.UpRight:
+            case KeyDirectionType.UpRight:
                 dragAngle = 45;
                 break;
-            case MoveDirection.Right:
+            case KeyDirectionType.Right:
                 dragAngle = 90;
                 break;
-            case MoveDirection.DownRight:
+            case KeyDirectionType.DownRight:
                 dragAngle = 135;
                 break;
-            case MoveDirection.Down:
+            case KeyDirectionType.Down:
                 dragAngle = 180;
                 break;
-            case MoveDirection.DownLeft:
+            case KeyDirectionType.DownLeft:
                 dragAngle = 225;
                 break;
-            case MoveDirection.Left:
+            case KeyDirectionType.Left:
                 dragAngle = 270;
                 break;
-            case MoveDirection.UpLeft:
+            case KeyDirectionType.UpLeft:
                 dragAngle = 315;
                 break;
         }
 
     }
 
+    /// <summary>
+    /// 渲染
+    /// </summary>
     private void RenderWave()
     {
         if(renderType == WaveRenderType.Stroke)
@@ -550,15 +548,3 @@ public enum WaveRenderType
     Filling,
 }
 
-public enum MoveDirection
-{
-    Stop,
-    Up,
-    UpLeft,
-    Left,
-    DownLeft,
-    Down,
-    DownRight,
-    Right,
-    UpRight,
-}
