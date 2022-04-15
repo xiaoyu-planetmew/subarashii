@@ -18,7 +18,7 @@ public class MovePointInputController : MonoBehaviour
 
     private void Start()
     {
-        ResetThisPoint();
+        ResetMovePointInput();
     }
 
     private void Update()
@@ -30,30 +30,32 @@ public class MovePointInputController : MonoBehaviour
 
             CheckingInput();
         }
-
-        if(Input.GetKeyDown(KeyCode.G) && gameObject.name == "MovePoint")
-        {
-            StartCheckingInput();
-            PlayerMoveController.Instance.MoveToPoint(GetComponent<MovePoint>());
-        }
     }
 
     public void StartCheckingInput()
     {
-        //开始等待玩家输入
-        waitingForInputs = true;
-        inputTimer = 0;
-        if(keyInputs.Length>0)
-            keyInputs[nowCheckingInputNum].nowInputStatus = MovePointInput.NowStatus.WaitingForInput;
+        if (PlayerController.Instance.startPlaying)
+        {
+            //开始等待玩家输入
+            waitingForInputs = true;
+            inputTimer = 0;
+            if (keyInputs.Length > 0)
+                keyInputs[nowCheckingInputNum].nowInputStatus = MovePointInput.NowStatus.WaitingForInput;
 
-        //节点输入开启特效
+            //节点输入开启特效
 
+        }
+        else
+        {
+            // 角色死亡后的节点特效
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Player")
         {
+
             StartCheckingInput();
             Debug.Log("等待输入：" + gameObject.name);
         }
@@ -110,9 +112,10 @@ public class MovePointInputController : MonoBehaviour
     public void PointInputFail()
     {
         KeyboardInputChecker.Instance.ResetChecker();
-        ResetThisPoint();
+        ResetMovePointInput();
 
         // 失败扣分
+        PlayerController.Instance.AddBlood();
 
         // 失败特效
 
@@ -121,7 +124,7 @@ public class MovePointInputController : MonoBehaviour
     public void PointInputSuccess()
     {
         KeyboardInputChecker.Instance.ResetChecker();
-        ResetThisPoint();
+        ResetMovePointInput();
 
 
         // 完全成功特效
@@ -130,7 +133,7 @@ public class MovePointInputController : MonoBehaviour
 
     }
 
-    public void ResetThisPoint()
+    public void ResetMovePointInput()
     {
         waitingForInputs = false;
         inputTimer = 0;

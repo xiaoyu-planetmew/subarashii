@@ -21,4 +21,9 @@ public class PlayerEffectController : MonoBehaviour
         }
     }
 
+    public void ResetPlayerEffect()
+    {
+
+    }
+
 }

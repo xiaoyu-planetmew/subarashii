@@ -142,7 +142,7 @@ public class PlayerMoveController : MonoBehaviour
     }
 
 
-    private void ResetMoveController()
+    public void ResetMoveController()
     {
         movePoints.Clear();
         startMove = false;

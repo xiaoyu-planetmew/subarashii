@@ -38,7 +38,10 @@ public class MovePointDisplay : MonoBehaviour
         arrowPrefab.GetComponent<ArrowDisplay>().InitiateArrow(display);
     }
 
-    
+    public void ResetMovePointDisplay()
+    {
+        arrowPrefab.GetComponent<ArrowDisplay>().ResetArrow();
+    }
 }
 
 

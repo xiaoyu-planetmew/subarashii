@@ -18,14 +18,14 @@ public class MovePoint : MonoBehaviour
     [HideInInspector] public float timeToNextMovePoint = 1;
     [HideInInspector] public Vector3[] basePoints;
     [HideInInspector] public bool toBranch;
-    private MovePointDisplay display;
+    private MovePointDisplay displayController;
     private MovePointInputController inputController;
 
     private void Start()
     {
         toBranch = false;
 
-        display = GetComponent<MovePointDisplay>();
+        displayController = GetComponent<MovePointDisplay>();
 
         inputController = GetComponent<MovePointInputController>();
 
@@ -73,6 +73,18 @@ public class MovePoint : MonoBehaviour
     {
         toBranch = false;
         InitiateBasePoints();
+
+        //重置输入
+        if(inputController != null)
+        {
+            inputController.ResetMovePointInput();
+        }
+
+        // 重置MovePoint显示和特效
+        if(displayController != null)
+        {
+            displayController.ResetMovePointDisplay();
+        }
     }
 }
 

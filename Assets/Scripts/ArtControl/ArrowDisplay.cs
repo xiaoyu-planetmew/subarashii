@@ -6,6 +6,8 @@ public class ArrowDisplay : MonoBehaviour
 {
     public ArrowPrefab[] arrows;
 
+    private ArrowDisplayType thisArrow;
+
     private void Awake()
     {
         ResetArrow();
@@ -16,17 +18,23 @@ public class ArrowDisplay : MonoBehaviour
         foreach(ArrowPrefab prefab in arrows)
         {
             prefab.arrow.SetActive(false);
+            
+            // 恢复成初始的显示
+
         }
     }
 
     public void InitiateArrow(ArrowDisplayType type)
     {
-        foreach(ArrowPrefab prefab in arrows)
+        thisArrow = type;
+
+        foreach (ArrowPrefab prefab in arrows)
         {
             if(type == prefab.type)
             {
-                // 初始化对应箭头
+                // 初始化对应箭头显示
                 prefab.arrow.SetActive(true);
+                //ResetArrow()；
             }
         }
     }
