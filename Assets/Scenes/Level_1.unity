@@ -639,6 +639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blood: 3
   restartPos: {fileID: 0}
+  startPlaying: 0
 --- !u!1 &643179578
 GameObject:
   m_ObjectHideFlags: 0
@@ -2089,6 +2090,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 1
+  startMovePoint: {fileID: 1152722334224814349}
   sceneChangeEvents:
     m_PersistentCalls:
       m_Calls: []
