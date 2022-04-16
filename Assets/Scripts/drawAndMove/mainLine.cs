@@ -18,7 +18,7 @@ public class mainLine : MonoBehaviour
     public void pointMove()
     {
         
-        GameObject.Find("player").GetComponent<DrawBesizerLine>().initializeLine();
+        GameObject.Find("Player").GetComponent<DrawBesizerLine>().initializeLine();
         nowLine++;
         StopAllCoroutines();
         StartCoroutine(move());
