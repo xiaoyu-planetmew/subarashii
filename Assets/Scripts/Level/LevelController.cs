@@ -5,16 +5,16 @@ using UnityEngine.Events;
 
 public class LevelController : MonoBehaviour
 {
-    [Header("µ±Ç°¹Ø¿¨")]
+    [Header("ï¿½ï¿½Ç°ï¿½Ø¿ï¿½")]
     public Level level = Level.Level_1;
 
-    [Header("ÆðÊ¼MovePoint")]
+    [Header("ï¿½ï¿½Ê¼MovePoint")]
     public MovePoint startMovePoint;
 
-    [Header("¹Ø¿¨½øÈëÊÂ¼þ")]
+    [Header("ï¿½Ø¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½")]
     public UnityEvent sceneChangeEvents;
 
-    [Header("¹Ø¿¨½áÊøÊÂ¼þ")]
+    [Header("ï¿½Ø¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½")]
     public UnityEvent scenLeaveEvents;
 
     public static LevelController Instance;
@@ -41,13 +41,18 @@ public class LevelController : MonoBehaviour
     }
 
     /// <summary>
-    /// ¿ªÊ¼±¾¹Ø¿¨ÓÎÏ·
+    /// ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½Ø¿ï¿½ï¿½ï¿½Ï·
     /// </summary>
     public void StartLevel()
     {
         PlayerController.Instance.startPlaying = true;
         if (startMovePoint != null)
+        {
             PlayerMoveController.Instance.MoveToPoint(startMovePoint);
+            WwiseManager.Instance.Init();
+            WwiseManager.Instance.LoadBank("SoundBank");
+            WwiseManager.Instance.Play("Play_Music_level1_BPM100_32bit48khz");
+        }
         else
             Debug.LogError("Miss Start MovePoint in LevelController!");
         
@@ -55,14 +60,14 @@ public class LevelController : MonoBehaviour
 
     public void ResetLevel()
     {
-        // ÖØÖÃËùÓÐMovePoint
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½MovePoint
         MovePoint[] mps = FindObjectsOfType<MovePoint>();
         foreach(MovePoint mp in mps)
         {
             mp.ResetMovePoint();
         }
 
-        // ÖØÖÃ½ÇÉ«£¨Î»ÖÃ¡¢¶¯»­¡¢ÑªÁ¿£©
+        // ï¿½ï¿½ï¿½Ã½ï¿½É«ï¿½ï¿½Î»ï¿½Ã¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñªï¿½ï¿½ï¿½ï¿½
         PlayerController.Instance.ResetPlayer();
         PlayerEffectController.Instance.ResetPlayerEffect();
         PlayerMoveController.Instance.ResetMoveController();
@@ -70,16 +75,16 @@ public class LevelController : MonoBehaviour
 
     public void GameOver()
     {
-        // Í£Ö¹½»»¥
+        // Í£Ö¹ï¿½ï¿½ï¿½ï¿½
         PlayerController.Instance.startPlaying = false;
 
-        // ½ÇÉ«ËÀÍöÌØÐ§ºÍ¶¯»­
+        // ï¿½ï¿½É«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§ï¿½Í¶ï¿½ï¿½ï¿½
 
-        // ÇÐ»»ÌØÐ§¿ª
+        // ï¿½Ð»ï¿½ï¿½ï¿½Ð§ï¿½ï¿½
 
-        // ÖØÖÃÕû¸ö³¡¾°
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-        // ÇÐ»»ÌØÐ§¹Ø
+        // ï¿½Ð»ï¿½ï¿½ï¿½Ð§ï¿½ï¿½
     }
 
 }

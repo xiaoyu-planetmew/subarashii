@@ -11,6 +11,18 @@
 
 namespace AK
 {
+    namespace EVENTS
+    {
+        static const AkUniqueID PLAY_MUSIC_LEVEL1_BPM100_32BIT48KHZ = 192345322U;
+        static const AkUniqueID PLAY_MUSIC_LEVEL1_TUTORIAL__BPM100_32BIT48KHZ = 2975100082U;
+    } // namespace EVENTS
+
+    namespace BANKS
+    {
+        static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID SOUNDBANK = 1661994096U;
+    } // namespace BANKS
+
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;

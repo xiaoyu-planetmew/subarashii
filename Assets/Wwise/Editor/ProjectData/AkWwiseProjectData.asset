@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d5f2fd580a4ae34f9909285e0919ae8f
     GuidInternal: 
-    m_lastTime: -8585517599172432428
-    List: []
+    m_lastTime: -8585514013923147421
+    List:
+    - name: SoundBank
+      guid: c0793be83b094f419f12d55481d60c77
+      id: 1661994096
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d5f2fd580a4ae34f9909285e0919ae8f
+      - ElementName: SoundBank
+        ObjectType: 7
+        guid: c0793be83b094f419f12d55481d60c77
+      Path: SoundBanks\Default Work Unit\SoundBank
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +94,42 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6e88041042cea04791b2de4cdade51e0
     GuidInternal: 
-    m_lastTime: -8585517599172512236
-    List: []
+    m_lastTime: -8585514013923027768
+    List:
+    - name: Play_Music_level1_BPM100_32bit48khz
+      guid: e76414383be9b94c859c0362eede1a52
+      id: 192345322
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6e88041042cea04791b2de4cdade51e0
+      - ElementName: Play_Music_level1_BPM100_32bit48khz
+        ObjectType: 3
+        guid: e76414383be9b94c859c0362eede1a52
+      Path: Events\Default Work Unit\Play_Music_level1_BPM100_32bit48khz
+      maxAttenuation: 0
+      maxDuration: 103.2
+      minDuration: 103.2
+    - name: Play_Music_level1_tutorial__BPM100_32bit48khz
+      guid: 0a58140d2e09464dbd265975606f021b
+      id: 2975100082
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6e88041042cea04791b2de4cdade51e0
+      - ElementName: Play_Music_level1_tutorial__BPM100_32bit48khz
+        ObjectType: 3
+        guid: 0a58140d2e09464dbd265975606f021b
+      Path: Events\Default Work Unit\Play_Music_level1_tutorial__BPM100_32bit48khz
+      maxAttenuation: 0
+      maxDuration: 9.6
+      minDuration: 9.6
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -139,7 +187,7 @@ MonoBehaviour:
     m_lastTime: -8585517599173400382
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 06000000070000000a0000000b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
