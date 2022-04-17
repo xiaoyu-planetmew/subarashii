@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C6ED9171-C5FA-40BC-BF7E-0DAB82A5A95A}" SchemaVersion="103">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{C6ED9171-C5FA-40BC-BF7E-0DAB82A5A95A}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C6ED9171-C5FA-40BC-BF7E-0DAB82A5A95A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Music_level1(tutorial)_BPM100_32bit48khz" ID="{07271715-F6F7-4293-B436-E2F4D9DB6B14}" ShortID="458575337">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{943BFE36-370F-4ACE-BBAC-C0274EC82E4A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{824F22E6-2C00-43C8-803A-5C90543CCD5C}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Music_level1(tutorial)_BPM100_32bit48khz" ID="{C5DDB147-B049-4153-B2C1-CD88DE234B24}">
+							<Language>SFX</Language>
+							<AudioFile>Music_level1(tutorial)_BPM100_32bit48khz.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="333219353"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Music_level1(tutorial)_BPM100_32bit48khz" ID="{C5DDB147-B049-4153-B2C1-CD88DE234B24}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Music_level1_BPM100_32bit48khz" ID="{7072CCD0-2100-41CB-8F05-68A94E11C7D6}" ShortID="273185037">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{943BFE36-370F-4ACE-BBAC-C0274EC82E4A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{824F22E6-2C00-43C8-803A-5C90543CCD5C}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Music_level1_BPM100_32bit48khz" ID="{ECB4B6D2-F61B-4A86-8FBB-F0E2AE073E29}">
+							<Language>SFX</Language>
+							<AudioFile>Music_level1_BPM100_32bit48khz.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="422418215"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Music_level1_BPM100_32bit48khz" ID="{ECB4B6D2-F61B-4A86-8FBB-F0E2AE073E29}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
