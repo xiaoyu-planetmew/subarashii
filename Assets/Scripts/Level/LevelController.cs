@@ -8,7 +8,7 @@ public class LevelController : MonoBehaviour
     [Header("当前关卡")]
     public Level level = Level.Level_1;
 
-    [Header("起始MovePoint")]
+    [Header("教学部分起始MovePoint")]
     public MovePoint startMovePoint;
 
     [Header("关卡进入事件")]
