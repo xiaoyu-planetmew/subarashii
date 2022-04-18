@@ -8,7 +8,7 @@ public class LevelController : MonoBehaviour
     [Header("当前关卡")]
     public Level level = Level.Level_1;
 
-    [Header("教学部分起始MovePoint")]
+    [Header("起始MovePoint(复活点)")]
     public MovePoint startMovePoint;
 
     [Header("关卡进入事件")]
@@ -60,14 +60,14 @@ public class LevelController : MonoBehaviour
 
     public void ResetLevel()
     {
-        // 重置所有MovePoint
+        // 重置所有MovePoint/ reset all MovePoints
         MovePoint[] mps = FindObjectsOfType<MovePoint>();
         foreach(MovePoint mp in mps)
         {
             mp.ResetMovePoint();
         }
 
-        // 重置角色（位置、动画、血量）
+        // 重置角色（位置、动画、血量） / reset Player(posisiton, display, blood)
         PlayerController.Instance.ResetPlayer();
         PlayerEffectController.Instance.ResetPlayerEffect();
         PlayerMoveController.Instance.ResetMoveController();
@@ -75,16 +75,19 @@ public class LevelController : MonoBehaviour
 
     public void GameOver()
     {
-        // 停止交互
+        // 停止交互 / halt interacting
         PlayerController.Instance.startPlaying = false;
 
-        // 角色死亡特效和动画
+        // 角色死亡特效和动画 / death effect and animation
 
-        // 切换特效开
+        // 主音乐切换 / main BGM change to tutorial BGM
 
-        // 重置整个场景
+        // 切换特效开 / scene changing effect ON
 
-        // 切换特效关
+        // 等待特效全开，重置整个场景 / reset all level after effect been completed
+
+        // 切换特效关  / turn scene changing effect OFF
+
     }
 
 }

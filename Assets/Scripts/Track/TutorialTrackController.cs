@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class TutorialTrackController : MonoBehaviour
 {
+    [Header("教学环节MovePoint")]
+    public MovePoint TutorialMovePoint;
+
     [Header("教学部分BGM")]
     public AudioClip TutorialBGM;
 
@@ -29,9 +32,9 @@ public class TutorialTrackController : MonoBehaviour
     {
         float time = GetLastOneBarPlayingTime();
 
-        LevelController.Instance.startMovePoint.timeToNextMovePoint = time + timeOfOneBar;
+        TutorialMovePoint.timeToNextMovePoint = time + timeOfOneBar;
 
-        PlayerMoveController.Instance.MoveToPoint(LevelController.Instance.startMovePoint);
+        LevelController.Instance.StartLevel(); //从教学起始点开始
 
         StartCoroutine(LateChangeBGM(time));
     }
@@ -41,6 +44,7 @@ public class TutorialTrackController : MonoBehaviour
         yield return new WaitForSeconds(time);
 
         // 切换主音乐
+
     }
 
 
