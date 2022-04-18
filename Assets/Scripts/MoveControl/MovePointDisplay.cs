@@ -6,8 +6,6 @@ using UnityEngine.UI;
 [RequireComponent(typeof(MovePoint))]
 public class MovePointDisplay : MonoBehaviour
 {
-    public ArrowDisplayType display;
-
     private GameObject arrowPrefab;
     private MovePoint mp;
 
@@ -15,10 +13,10 @@ public class MovePointDisplay : MonoBehaviour
     {
         mp = GetComponent<MovePoint>();
 
-        InitiateDisplay();
+        //InitiateDisplay();
     }
 
-    private void InitiateDisplay()
+    public void InitiateDisplay()
     {
         // 关闭MovePoint位置提示
         GetComponent<SpriteRenderer>().enabled = false;
@@ -35,7 +33,7 @@ public class MovePointDisplay : MonoBehaviour
 
         arrowPrefab.transform.localPosition = Vector3.zero;
 
-        arrowPrefab.GetComponent<ArrowDisplay>().InitiateArrow(display);
+        arrowPrefab.GetComponent<ArrowDisplay>().InitiateArrow(GetComponent<MovePointInputController>().keyInput.keyInput);
     }
 
     public void ResetMovePointDisplay()

@@ -42,7 +42,13 @@ public class TrackManager : MonoBehaviour
             for(int i = 0; i<trackTimeList.Count;i++)
             {
                 if (i == 0)
+                {
+                    // 时间
                     _mp.timeToNextMovePoint = trackTimeList[0];
+
+                    //显示
+                    _mp.GetComponent<MovePointDisplay>().InitiateDisplay();
+                }
                 else
                 {
                     if (_mp.nextPoint == null)
@@ -52,8 +58,17 @@ public class TrackManager : MonoBehaviour
                     }
 
                     _mp = _mp.nextPoint;
+
+                    // 时间
                     _mp.timeToNextMovePoint = trackTimeList[i];
+
+                    // 输入
+                    _mp.GetComponent<MovePointInputController>().keyInput.keyInput = LoadTrackManager.GetInstance().trackDirDic[track.trackFile][i];
+
+                    //显示
+                    _mp.GetComponent<MovePointDisplay>().InitiateDisplay();
                 }
+
             }
 
             if(_mp!=track.endPoint) Debug.LogError("Track点数少于场景中的点数！");

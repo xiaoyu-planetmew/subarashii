@@ -7,14 +7,13 @@ public class MovePointInputController : MonoBehaviour
 {
     [Header("输入命令")]
     [Tooltip("此节点输入命令")]
-    public MovePointInput[] keyInputs;
+    public MovePointInput keyInput;
 
     [Header("大力拖拽")]
     public bool powerfulEffect = false;
 
     private bool waitingForInputs;
     private float inputTimer;
-    private int nowCheckingInputNum;
 
     private void Start()
     {
@@ -26,8 +25,6 @@ public class MovePointInputController : MonoBehaviour
         //等待玩家输入
         if (waitingForInputs)
         {
-            if (keyInputs.Length == 0) return;
-
             CheckingInput();
         }
     }
@@ -39,8 +36,7 @@ public class MovePointInputController : MonoBehaviour
             //开始等待玩家输入
             waitingForInputs = true;
             inputTimer = 0;
-            if (keyInputs.Length > 0)
-                keyInputs[nowCheckingInputNum].nowInputStatus = MovePointInput.NowStatus.WaitingForInput;
+            keyInput.nowInputStatus = MovePointInput.NowStatus.WaitingForInput;
 
             //节点输入开启特效
 
@@ -68,45 +64,33 @@ public class MovePointInputController : MonoBehaviour
     {
         inputTimer += Time.deltaTime;
 
-        for (int i = 0; i < keyInputs.Length; i++)
+
+        if(keyInput.nowInputStatus == MovePointInput.NowStatus.WaitingForInput)
         {
-            if(keyInputs[i].nowInputStatus == MovePointInput.NowStatus.WaitingForInput)
+
+            if (keyInput.CheckInput(inputTimer) == MovePointInput.NowStatus.InputSuccess)
             {
+                //输入成功,开启下一个检查
+                inputTimer = 0;
 
-                if (keyInputs[i].CheckInput(inputTimer) == MovePointInput.NowStatus.InputSuccess)
-                {
-                    //输入成功,开启下一个检查
-                    inputTimer = 0;
-                    if(nowCheckingInputNum<keyInputs.Length-1)
-                    {
-                        nowCheckingInputNum++;
-                        keyInputs[nowCheckingInputNum].nowInputStatus = MovePointInput.NowStatus.WaitingForInput;
+                // 完全成功
+                PointInputSuccess();
 
-                        // 小成功特效
-
-                    }
-                    else
-                    {
-                        // 完全成功
-                        PointInputSuccess();
-
-                        Debug.Log("输入成功 " + gameObject.name);
-                        break;
-                    }
-                }
-                else if (keyInputs[i].CheckInput(inputTimer) == MovePointInput.NowStatus.Fail)
-                {
-                    //此次输入失败
-                    PointInputFail();
-                    Debug.Log("输入失败 " + gameObject.name);
-                    break;
-                }
-                else
-                {
-                    return;
-                }
+                Debug.Log("输入成功 " + gameObject.name);
+                
+            }
+            else if (keyInput.CheckInput(inputTimer) == MovePointInput.NowStatus.Fail)
+            {
+                //此次输入失败
+                PointInputFail();
+                Debug.Log("输入失败 " + gameObject.name);
+            }
+            else
+            {
+                return;
             }
         }
+        
     }
 
     public void PointInputFail()
@@ -129,7 +113,7 @@ public class MovePointInputController : MonoBehaviour
 
         // 完全成功特效
         // 按最后一个方向出拖拽特效
-        PlayerEffectController.Instance.DragCircleEffect(keyInputs[keyInputs.Length-1].keyInput, powerfulEffect);
+        PlayerEffectController.Instance.DragCircleEffect(keyInput.keyInput, powerfulEffect);
 
     }
 
@@ -137,7 +121,6 @@ public class MovePointInputController : MonoBehaviour
     {
         waitingForInputs = false;
         inputTimer = 0;
-        nowCheckingInputNum = 0;
     }
 
 }
@@ -146,11 +129,9 @@ public class MovePointInputController : MonoBehaviour
 [System.Serializable]
 public class MovePointInput
 {
-    public KeyDirectionType keyInput ;
     public float timeForOneInput; // 单个输入时长
+    public KeyDirectionType keyInput ;
     public NowStatus nowInputStatus = NowStatus.Freeze; 
-
-    private bool[] inputKey;
 
     public MovePointInput()
     {
@@ -201,4 +182,5 @@ public enum KeyDirectionType
     UpRight,
     Space,
     Stop,
+    Null,
 }

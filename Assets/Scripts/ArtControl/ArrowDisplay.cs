@@ -6,7 +6,7 @@ public class ArrowDisplay : MonoBehaviour
 {
     public ArrowPrefab[] arrows;
 
-    private ArrowDisplayType thisArrow;
+    private KeyDirectionType thisArrow;
 
     private void Awake()
     {
@@ -24,7 +24,7 @@ public class ArrowDisplay : MonoBehaviour
         }
     }
 
-    public void InitiateArrow(ArrowDisplayType type)
+    public void InitiateArrow(KeyDirectionType type)
     {
         thisArrow = type;
 
@@ -43,22 +43,7 @@ public class ArrowDisplay : MonoBehaviour
 [System.Serializable]
 public class ArrowPrefab
 {
-    public ArrowDisplayType type;
+    public KeyDirectionType type;
     public GameObject arrow;
 
-}
-
-
-public enum ArrowDisplayType
-{
-    Up,
-    UpLeft,
-    Left,
-    DownLeft,
-    Down,
-    DownRight,
-    Right,
-    UpRight,
-    Space,
-    Null,
 }
