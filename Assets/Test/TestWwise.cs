@@ -7,6 +7,14 @@ public class TestWwise : MonoBehaviour
     public AkEvent StartMusic;
     public AkEvent SwitchToMain;
     public AkEvent SwitchToTutorial;
+    public AkEvent PlayMainMuic;
+
+    public static TestWwise Instance;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Update()
     {
@@ -19,5 +27,10 @@ public class TestWwise : MonoBehaviour
         {
             SwitchToMain.HandleEvent(gameObject);
         }
+    }
+
+    public void PlayMainMusic()
+    {
+        PlayMainMuic.HandleEvent(gameObject);
     }
 }

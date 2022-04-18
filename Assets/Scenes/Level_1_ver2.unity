@@ -1087,7 +1087,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759224, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -56
+      value: -60
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759224, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1645,7 +1645,7 @@ GameObject:
   - component: {fileID: 838762058}
   - component: {fileID: 838762057}
   m_Layer: 0
-  m_Name: sound1
+  m_Name: PlayLevel_1_MainMusic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1677,7 +1677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc96ba72d95fcc0408b0779ae0fcf38f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: f7e1664c
+  triggerList: 
   useOtherObject: 0
   actionOnEventType: 0
   curveInterpolation: 4
@@ -1685,7 +1685,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: ed9be5cc43b6ebd469f514b51c86898d, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: ea7dec3ffa8e27f498ed76710b8e9d28, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -2047,12 +2047,12 @@ GameObject:
   - component: {fileID: 1227409642}
   - component: {fileID: 1227409641}
   m_Layer: 0
-  m_Name: audio
+  m_Name: Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1227409641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2070,7 +2070,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: ee3901999b925204881ab4622e660d4d, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 1d5586a20cf8aab4d9979c9b783aa26f, type: 2}
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
@@ -2902,6 +2902,53 @@ MonoBehaviour:
   - {fileID: 1044596140}
   colliderRange: 60
   colliderIntense: 5
+--- !u!1 &1844216865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1844216867}
+  - component: {fileID: 1844216866}
+  m_Layer: 0
+  m_Name: Test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1844216866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844216865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a6a6838bf1a9345affa3400131fca1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartMusic: {fileID: 0}
+  SwitchToMain: {fileID: 0}
+  SwitchToTutorial: {fileID: 0}
+  PlayMainMuic: {fileID: 838762057}
+--- !u!4 &1844216867
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844216865}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1862268585
 GameObject:
   m_ObjectHideFlags: 0
@@ -3316,7 +3363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPoint: {fileID: 1152722334224814349}
-  endPoint: {fileID: 319231920}
+  endPoint: {fileID: 0}
   trackFile: Level_1.1_KoreographyTrack
 --- !u!114 &1960545387
 MonoBehaviour:
@@ -3921,7 +3968,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1152722334560507863, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759201, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_Name

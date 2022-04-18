@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>F:\subarashii\subarashii_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>F:\subarashii\subarashii_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>F:\subarashii\subarashii_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>F:\Subarashi\untiy project\subarashii\subarashii_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>F:\Subarashi\untiy project\subarashii\subarashii_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>F:\Subarashi\untiy project\subarashii\subarashii_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>F:\subarashii\subarashii_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>F:\Subarashi\untiy project\subarashii\subarashii_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1661994096" Language="SFX" Hash="3612789150">
+		<SoundBank Id="1661994096" Language="SFX" Hash="905014535">
 			<ObjectPath>\SoundBanks\Subarashii\SoundBank</ObjectPath>
 			<ShortName>SoundBank</ShortName>
 			<Path>SoundBank.bnk</Path>
@@ -58,6 +58,21 @@
 						<ActionSetStateEntry Id="3762955427" Name="Tutorial" ObjectPath="\States\Subarashii\Level_1_Music_State\Tutorial"/>
 					</ActionSetState>
 				</Event>
+				<Event Id="1675477522" Name="TestPlayLevel_1_MainMusic" ObjectPath="\Events\Subarashii\Music\TestPlayLevel_1_MainMusic" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="862353582" Language="SFX">
+							<ShortName>Music_level1(tutorial)_BPM100_32bit48khz.wav</ShortName>
+							<Path>SFX\Music_level1(tutorial)_BPM100_32bit48khz_D79FB2B7.wem</Path>
+						</File>
+						<File Id="871437218" Language="SFX">
+							<ShortName>Music_level1_BPM100_32bit48khz.wav</ShortName>
+							<Path>SFX\Music_level1_BPM100_32bit48khz_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<ActionSetState>
+						<ActionSetStateEntry Id="3479155863" Name="MainMusic" ObjectPath="\States\Subarashii\Level_1_Music_State\MainMusic"/>
+					</ActionSetState>
+				</Event>
 			</IncludedEvents>
 			<StateGroups>
 				<StateGroup Id="647082951" Name="Level_1_Music_State" ObjectPath="\States\Subarashii\Level_1_Music_State" GUID="{47768808-F60B-45E2-A9BF-EA21BC24A48A}">
@@ -75,12 +90,12 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1946707388" Language="SFX" Hash="3458179530">
+		<SoundBank Id="1946707388" Language="SFX" Hash="1125738489">
 			<ObjectPath>\SoundBanks\Default Work Unit\SoundBankTest</ObjectPath>
 			<ShortName>SoundBankTest</ShortName>
 			<Path>SoundBankTest.bnk</Path>
 			<IncludedEvents>
-				<Event Id="192345322" Name="Play_Music_level1_BPM100_32bit48khz" ObjectPath="\Events\Default Work Unit\Play_Music_level1_BPM100_32bit48khz" DurationType="OneShot" DurationMin="103.199997" DurationMax="103.199997">
+				<Event Id="192345322" Name="Play_Music_level1_BPM100_32bit48khz" ObjectPath="\Events\Default Work Unit\Play_Music_level1_BPM100_32bit48khz" DurationType="OneShot" DurationMin="100.800003" DurationMax="100.800003">
 					<IncludedMemoryFiles>
 						<File Id="422418215" Language="SFX">
 							<ShortName>Music_level1_BPM100_32bit48khz.wav</ShortName>

@@ -18,6 +18,7 @@ namespace AK
         static const AkUniqueID PLAY_MUSIC_LEVEL1_TUTORIAL__BPM100_32BIT48KHZ = 2975100082U;
         static const AkUniqueID SWITCH_LEVEL_1_MAINMUSIC = 207411531U;
         static const AkUniqueID SWITCH_LEVEL_1_TUTORIAL = 1183555207U;
+        static const AkUniqueID TESTPLAYLEVEL_1_MAINMUSIC = 1675477522U;
     } // namespace EVENTS
 
     namespace STATES

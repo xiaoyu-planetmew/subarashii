@@ -49,9 +49,10 @@ public class LevelController : MonoBehaviour
         if (startMovePoint != null)
         {
             PlayerMoveController.Instance.MoveToPoint(startMovePoint);
-            WwiseManager.Instance.Init();
-            WwiseManager.Instance.LoadBank("SoundBank");
-            WwiseManager.Instance.Play("Play_Music_level1_BPM100_32bit48khz");
+            //WwiseManager.Instance.Init();
+            //WwiseManager.Instance.LoadBank("SoundBank");
+            //WwiseManager.Instance.Play("Play_Music_level1_BPM100_32bit48khz");
+            TestWwise.Instance.PlayMainMusic();
         }
         else
             Debug.LogError("Miss Start MovePoint in LevelController!");
