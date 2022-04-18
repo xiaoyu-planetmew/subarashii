@@ -27,6 +27,11 @@ public class TestWwise : MonoBehaviour
         {
             SwitchToMain.HandleEvent(gameObject);
         }
+
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            SwitchToTutorial.HandleEvent(gameObject);
+        }
     }
 
     public void PlayMainMusic()
