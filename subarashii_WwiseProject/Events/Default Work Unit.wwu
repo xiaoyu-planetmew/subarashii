@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1004886E-CE42-47A0-91B2-DE4CDADE51E0}" SchemaVersion="103">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{1004886E-CE42-47A0-91B2-DE4CDADE51E0}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1004886E-CE42-47A0-91B2-DE4CDADE51E0}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Music_level1_tutorial__BPM100_32bit48khz" ID="{0D14580A-092E-4D46-BD26-5975606F021B}">
+					<ChildrenList>
+						<Action Name="" ID="{FFF1F079-1D53-45BD-85F7-021D81AD8675}" ShortID="635245306">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_level1(tutorial)_BPM100_32bit48khz" ID="{07271715-F6F7-4293-B436-E2F4D9DB6B14}" WorkUnitID="{C6ED9171-C5FA-40BC-BF7E-0DAB82A5A95A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Music_level1_BPM100_32bit48khz" ID="{381464E7-E93B-4CB9-859C-0362EEDE1A52}">
+					<ChildrenList>
+						<Action Name="" ID="{5F4E8C87-7BE4-4B05-9ADC-6E4D307DF82C}" ShortID="860054642">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_level1_BPM100_32bit48khz" ID="{7072CCD0-2100-41CB-8F05-68A94E11C7D6}" WorkUnitID="{C6ED9171-C5FA-40BC-BF7E-0DAB82A5A95A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

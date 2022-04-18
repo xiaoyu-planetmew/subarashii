@@ -11,13 +11,17 @@ using UnityEngine;
 public class WwiseManager : MonoBehaviour
 
 {
-
+    public static WwiseManager Instance;
     const float minRTPCValue = 0f;
     const float maxRTPCValue = 100f;
     GameObject globalGameObject;
+    private void Awake()
+    {
+        Instance = this;
+    }
     public void Init()
     {
-        globalGameObject = new GameObject("Global Audio");
+        globalGameObject = new GameObject("GlobalAudio");
         GameObject.DontDestroyOnLoad(globalGameObject);
         AkSoundEngine.RegisterGameObj(globalGameObject, globalGameObject.name);
     }
@@ -38,6 +42,15 @@ public class WwiseManager : MonoBehaviour
             return;
         }
         AkBankManager.UnloadBank(name);
+    }
+    public void Play(string name)
+    {
+        if(String.IsNullOrEmpty(name))
+        {
+            Debug.LogError("AudioServiceImpl Play name is Null");
+            return;
+        }
+        Play(name, globalGameObject);
     }
     public void Play(string name, GameObject go)
     {

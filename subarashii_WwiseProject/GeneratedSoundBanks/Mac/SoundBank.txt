@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	192345322	Play_Music_level1_BPM100_32bit48khz			\Default Work Unit\Play_Music_level1_BPM100_32bit48khz	
+	2975100082	Play_Music_level1_tutorial__BPM100_32bit48khz			\Default Work Unit\Play_Music_level1_tutorial__BPM100_32bit48khz	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	333219353	Music_level1(tutorial)_BPM100_32bit48khz	D:\meijun\subarashii\subarashii_WwiseProject\.cache\Mac\SFX\Music_level1(tutorial)_BPM100_32bit48khz_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music_level1(tutorial)_BPM100_32bit48khz		1843264
+	422418215	Music_level1_BPM100_32bit48khz	D:\meijun\subarashii\subarashii_WwiseProject\.cache\Mac\SFX\Music_level1_BPM100_32bit48khz_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music_level1_BPM100_32bit48khz		19814464
+
