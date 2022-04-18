@@ -5,16 +5,16 @@ using UnityEngine.Events;
 
 public class LevelController : MonoBehaviour
 {
-    [Header("��ǰ�ؿ�")]
+    [Header("当前关卡")]
     public Level level = Level.Level_1;
 
-    [Header("��ѧ������ʼMovePoint")]
+    [Header("教学部分起始MovePoint")]
     public MovePoint startMovePoint;
 
-    [Header("�ؿ������¼�")]
+    [Header("关卡进入事件")]
     public UnityEvent sceneChangeEvents;
 
-    [Header("�ؿ������¼�")]
+    [Header("关卡结束事件")]
     public UnityEvent scenLeaveEvents;
 
     public static LevelController Instance;
@@ -41,7 +41,7 @@ public class LevelController : MonoBehaviour
     }
 
     /// <summary>
-    /// ��ʼ���ؿ���Ϸ
+    /// 开始本关卡游戏
     /// </summary>
     public void StartLevel()
     {
@@ -60,14 +60,14 @@ public class LevelController : MonoBehaviour
 
     public void ResetLevel()
     {
-        // ��������MovePoint
+        // 重置所有MovePoint
         MovePoint[] mps = FindObjectsOfType<MovePoint>();
         foreach(MovePoint mp in mps)
         {
             mp.ResetMovePoint();
         }
 
-        // ���ý�ɫ��λ�á�������Ѫ����
+        // 重置角色（位置、动画、血量）
         PlayerController.Instance.ResetPlayer();
         PlayerEffectController.Instance.ResetPlayerEffect();
         PlayerMoveController.Instance.ResetMoveController();
@@ -75,16 +75,16 @@ public class LevelController : MonoBehaviour
 
     public void GameOver()
     {
-        // ֹͣ����
+        // 停止交互
         PlayerController.Instance.startPlaying = false;
 
-        // ��ɫ������Ч�Ͷ���
+        // 角色死亡特效和动画
 
-        // �л���Ч��
+        // 切换特效开
 
-        // ������������
+        // 重置整个场景
 
-        // �л���Ч��
+        // 切换特效关
     }
 
 }
