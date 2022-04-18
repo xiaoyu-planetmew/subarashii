@@ -185,7 +185,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 1.4
 --- !u!50 &1152722335200759229
 Rigidbody2D:
   serializedVersion: 4
@@ -219,11 +219,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc6769cd120bed94bb526f068adb8b89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToNextMovePoint: 2
   nextPoint: {fileID: 0}
   branchPoint: {fileID: 0}
   besizerControlPoints:
   - {fileID: 1152722334560507863}
+  timeToNextMovePoint: 2
   basePoints: []
   toBranch: 0
 --- !u!114 &1152722335200759203
@@ -238,12 +238,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6848037eabe1ef849b1f544bebd98bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goodCheckDistance: 0.5
-  keyInputs:
-  - keyInput: 6
-    timeForOneInput: 1
+  keyInput:
+    timeForOneInput: 0.5
+    keyInput: 6
     nowInputStatus: 0
-  waitingForInputs: 0
+  powerfulEffect: 0
 --- !u!114 &1152722335200759202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,4 +255,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae58cc0e03b101846b284ba173e355e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  display: 6
