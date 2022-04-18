@@ -63,7 +63,7 @@ public class TrackManager : MonoBehaviour
                     _mp.timeToNextMovePoint = trackTimeList[i];
 
                     //  ‰»Î
-                    _mp.GetComponent<MovePointInputController>().keyInput.keyInput = LoadTrackManager.GetInstance().trackDirDic[track.trackFile][i];
+                    _mp.GetComponent<MovePointInputController>().keyInput.keyInput = LoadTrackManager.GetInstance().trackDirDic[track.trackFile][i-1];
 
                     //œ‘ æ
                     _mp.GetComponent<MovePointDisplay>().InitiateDisplay();
