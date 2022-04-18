@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TeachingTrackController : MonoBehaviour
+public class TutorialTrackController : MonoBehaviour
 {
     [Header("教学部分BGM")]
-    public AudioClip teachingBGM;
+    public AudioClip TutorialBGM;
 
     [Header("一个循环小节时间")]
     public float timeOfOneBar = 1f;
@@ -25,7 +25,7 @@ public class TeachingTrackController : MonoBehaviour
     /// <summary>
     /// 结束教学环节并开始游戏
     /// </summary>
-    public void FinishTeaching()
+    public void FinishTutorial()
     {
         float time = GetLastOneBarPlayingTime();
 
