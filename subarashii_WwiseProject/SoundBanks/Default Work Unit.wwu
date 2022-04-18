@@ -3,7 +3,7 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{58FDF2D5-4A0A-4FE3-9909-285E0919AE8F}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="SoundBank" ID="{E83B79C0-093B-414F-9F12-D55481D60C77}">
+				<SoundBank Name="SoundBankTest" ID="{E83B79C0-093B-414F-9F12-D55481D60C77}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Music_level1_BPM100_32bit48khz" ID="{381464E7-E93B-4CB9-859C-0362EEDE1A52}" WorkUnitID="{1004886E-CE42-47A0-91B2-DE4CDADE51E0}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Music_level1_tutorial__BPM100_32bit48khz" ID="{0D14580A-092E-4D46-BD26-5975606F021B}" WorkUnitID="{1004886E-CE42-47A0-91B2-DE4CDADE51E0}" Origin="Manual" Filter="7"/>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{00923E98-4495-4E10-9FCD-D717555D8041}" SchemaVersion="103">
+	<SoundcasterSessions>
+		<WorkUnit Name="Subarashii" ID="{00923E98-4495-4E10-9FCD-D717555D8041}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Music_Level_1" ID="{37F4881B-F912-4A40-B79E-6172A78C46BA}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Level_1_Music" ID="{58E6EFD8-E27F-4958-8DAE-F442C58BE0BA}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Switch_Level_1_MainMusic" ID="{F4499809-4D03-4433-9EB2-DB898253D143}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Switch_Level_1_Tutorial" ID="{48DAA4A4-DE39-42A4-A9BC-F79881F44B13}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Tutorial" ID="{897F8961-AD16-48C2-B051-A2C8D145475F}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

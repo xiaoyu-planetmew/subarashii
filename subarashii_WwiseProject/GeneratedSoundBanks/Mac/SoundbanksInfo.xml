@@ -1,25 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>D:\meijun\subarashii\subarashii_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\meijun\subarashii\subarashii_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>D:\meijun\subarashii\subarashii_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>F:\subarashii\subarashii_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>F:\subarashii\subarashii_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>F:\subarashii\subarashii_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\meijun\subarashii\subarashii_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>F:\subarashii\subarashii_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2754342975">
+		<SoundBank Id="1355168291" Language="SFX" Hash="497500374">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1661994096" Language="SFX" Hash="3403238728">
-			<ObjectPath>\SoundBanks\Default Work Unit\SoundBank</ObjectPath>
+		<SoundBank Id="1661994096" Language="SFX" Hash="3612789150">
+			<ObjectPath>\SoundBanks\Subarashii\SoundBank</ObjectPath>
 			<ShortName>SoundBank</ShortName>
 			<Path>SoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="814842324" Name="Play_Level_1_Music" ObjectPath="\Events\Subarashii\Music\Play_Level_1_Music" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="862353582" Language="SFX">
+							<ShortName>Music_level1(tutorial)_BPM100_32bit48khz.wav</ShortName>
+							<Path>SFX\Music_level1(tutorial)_BPM100_32bit48khz_D79FB2B7.wem</Path>
+						</File>
+						<File Id="871437218" Language="SFX">
+							<ShortName>Music_level1_BPM100_32bit48khz.wav</ShortName>
+							<Path>SFX\Music_level1_BPM100_32bit48khz_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{897F8961-AD16-48C2-B051-A2C8D145475F}">
+							<Media>
+								<File Id="862353582"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{62FE2A25-AA67-4EA0-A10C-8384CB444D33}">
+							<Media>
+								<File Id="871437218"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetState>
+						<ActionSetStateEntry Id="3762955427" Name="Tutorial" ObjectPath="\States\Subarashii\Level_1_Music_State\Tutorial"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="207411531" Name="Switch_Level_1_MainMusic" ObjectPath="\Events\Subarashii\Music\Switch_Level_1_MainMusic" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3479155863" Name="MainMusic" ObjectPath="\States\Subarashii\Level_1_Music_State\MainMusic"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1183555207" Name="Switch_Level_1_Tutorial" ObjectPath="\Events\Subarashii\Music\Switch_Level_1_Tutorial" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3762955427" Name="Tutorial" ObjectPath="\States\Subarashii\Level_1_Music_State\Tutorial"/>
+					</ActionSetState>
+				</Event>
+			</IncludedEvents>
+			<StateGroups>
+				<StateGroup Id="647082951" Name="Level_1_Music_State" ObjectPath="\States\Subarashii\Level_1_Music_State" GUID="{47768808-F60B-45E2-A9BF-EA21BC24A48A}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Subarashii\Level_1_Music_State\None" GUID="{616ED40C-EB9C-435F-8992-6161C522CF00}"/>
+						<State Id="3762955427" Name="Tutorial" ObjectPath="\States\Subarashii\Level_1_Music_State\Tutorial" GUID="{897F8961-AD16-48C2-B051-A2C8D145475F}"/>
+						<State Id="3479155863" Name="MainMusic" ObjectPath="\States\Subarashii\Level_1_Music_State\MainMusic" GUID="{62FE2A25-AA67-4EA0-A10C-8384CB444D33}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3479155863" Name="MainMusic" ObjectPath="\States\Subarashii\Level_1_Music_State\MainMusic" GUID="{62FE2A25-AA67-4EA0-A10C-8384CB444D33}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3762955427" Name="Tutorial" ObjectPath="\States\Subarashii\Level_1_Music_State\Tutorial" GUID="{897F8961-AD16-48C2-B051-A2C8D145475F}">
+					<States/>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+		<SoundBank Id="1946707388" Language="SFX" Hash="3458179530">
+			<ObjectPath>\SoundBanks\Default Work Unit\SoundBankTest</ObjectPath>
+			<ShortName>SoundBankTest</ShortName>
+			<Path>SoundBankTest.bnk</Path>
 			<IncludedEvents>
 				<Event Id="192345322" Name="Play_Music_level1_BPM100_32bit48khz" ObjectPath="\Events\Default Work Unit\Play_Music_level1_BPM100_32bit48khz" DurationType="OneShot" DurationMin="103.199997" DurationMax="103.199997">
 					<IncludedMemoryFiles>

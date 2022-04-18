@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Subarashii" ID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Music" ID="{D20B3B4E-C758-4756-B6F6-4A8EAA93E424}" ShortID="210935116">
+					<ChildrenList>
+						<Event Name="Play_Level_1_Music" ID="{58E6EFD8-E27F-4958-8DAE-F442C58BE0BA}">
+							<ChildrenList>
+								<Action Name="" ID="{F9C0F859-13F2-47C1-B95D-9370A3926A33}" ShortID="479942316">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Level_1_Music" ID="{A4B3666C-3FF5-4F05-9151-7E2EA3C861ED}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E3ECAD57-31C7-4596-893B-DDF0A7061F36}" ShortID="433891629">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Tutorial" ID="{897F8961-AD16-48C2-B051-A2C8D145475F}" WorkUnitID="{51979F11-B607-42CE-8724-A59901F24ADC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Switch_Level_1_MainMusic" ID="{F4499809-4D03-4433-9EB2-DB898253D143}">
+							<ChildrenList>
+								<Action Name="" ID="{4F038F63-7272-4ACC-B7A0-F3BD657941AC}" ShortID="24188065">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MainMusic" ID="{62FE2A25-AA67-4EA0-A10C-8384CB444D33}" WorkUnitID="{51979F11-B607-42CE-8724-A59901F24ADC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Switch_Level_1_Tutorial" ID="{48DAA4A4-DE39-42A4-A9BC-F79881F44B13}">
+							<ChildrenList>
+								<Action Name="" ID="{1EB2F415-6BBA-499B-85FD-B427ECA20560}" ShortID="24778648">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Tutorial" ID="{897F8961-AD16-48C2-B051-A2C8D145475F}" WorkUnitID="{51979F11-B607-42CE-8724-A59901F24ADC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
