@@ -45,9 +45,7 @@ public class TutorialTrackController : MonoBehaviour
     private float GetLastOneBarPlayingTime()
     {
         //获取剩余小节时间
-        float leftTime = timer % timeOfOneBar;
-
-        Debug.Log("剩余小节时间 "+ leftTime);
+        float leftTime = timeOfOneBar - (timer - Mathf.Floor(timer / timeOfOneBar) * timeOfOneBar);
 
         return leftTime;
     }

@@ -1220,7 +1220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lineSegmentNum: 150
   acceratedSpeed: 3
-  accerated: 0
+  accelerated: 0
 --- !u!50 &531148566
 Rigidbody2D:
   serializedVersion: 4
@@ -5767,7 +5767,7 @@ MonoBehaviour:
   StartMusic: {fileID: 838762057}
   SwitchToMain: {fileID: 216053734}
   SwitchToTutorial: {fileID: 1534367115}
-  timeOfOneBar: 1.2
+  timeOfOneBar: 2.4
 --- !u!1001 &2008761814
 PrefabInstance:
   m_ObjectHideFlags: 0
