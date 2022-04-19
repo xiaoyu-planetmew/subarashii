@@ -8,13 +8,26 @@ public class PlayerMoveController : MonoBehaviour
     [Header("点之间的离散数量")]
     public int lineSegmentNum = 150;
 
+    [Header("成功时冲刺速度")]
+    public float acceratedSpeed = 3f;
+
     public static PlayerMoveController Instance;
 
     private List<Vector3> movePoints; //离散化的待移动点
     private float moveDeltaTime; //离散点之间的移动时间
+    private float originMoveDeltaTime;
     private bool startMove;
     private float timer;
+    private float aTimer;
     private MovePoint nowMovePoint; //当前正在走的
+    private float mpSegTotalTime;
+    private float aSpeed;
+    private int nowPoint;
+    private float aveDeltaTime;
+
+    [SerializeField] private bool accelerated; //是否加速冲刺
+    private bool finishedAccelerate;
+    private float saveAcceleratedTime;
 
     private void Awake()
     {
@@ -25,6 +38,10 @@ public class PlayerMoveController : MonoBehaviour
     {
         movePoints = new List<Vector3>();
         ResetMoveController();
+        accelerated = false;
+        timer = 0;
+        aTimer = 0;
+        aveDeltaTime = Time.deltaTime;
     }
 
     private void Update()
@@ -34,26 +51,94 @@ public class PlayerMoveController : MonoBehaviour
         {
             MoveByPoints();
         }
+
+        aveDeltaTime = (Time.deltaTime + aveDeltaTime) / 2;
     }
 
     private void MoveByPoints()
     {
         timer += Time.deltaTime;
-        int nowPoint = Mathf.Min(Mathf.FloorToInt(timer/moveDeltaTime), movePoints.Count - 2);
+        aTimer += (Time.deltaTime * (accelerated ? aSpeed : 1));
+
+        float progress = aTimer / moveDeltaTime ;
+         
+        nowPoint = Mathf.Min(Mathf.FloorToInt(progress), movePoints.Count - 2);
         transform.position = movePoints[nowPoint];
-        
+
+
+        //动态计算速度
+        if(accelerated)
+        {
+            aSpeed = aSpeed - 0.2f;
+
+            float leftTime = mpSegTotalTime - timer + saveAcceleratedTime;
+            float leftATime = aSpeed * Time.deltaTime * (movePoints.Count - nowPoint);
+
+            //Debug.Log("now left time " + leftTime);
+            //Debug.Log("now left A time " + leftATime);
+
+            if (leftATime <= leftTime)
+            {
+                accelerated = false;
+                if(movePoints.Count - nowPoint > 0)
+                {
+                    aSpeed = (mpSegTotalTime - timer + saveAcceleratedTime) / aveDeltaTime / (movePoints.Count - nowPoint);
+                    Debug.Log("匀速 " + aSpeed + "剩余时间" + (mpSegTotalTime - timer + saveAcceleratedTime));
+                }
+                finishedAccelerate = true;
+                Debug.Log("恢复匀速");
+            }
+        }
+
         if(nowPoint >= movePoints.Count - 2)
         {
             //到最后一个点
-            timer = 0;
-            startMove = false;
-
-            if(nowMovePoint.nextPoint != null)
-            {
-                //计算下一段路线
-                MoveToPoint(nowMovePoint.GetNextOrBranchPoint());
-            }
+            ArrivedLastPoint();
         }
+    }
+
+    /// <summary>
+    /// 到最后一个点
+    /// </summary>
+    private void ArrivedLastPoint()
+    {
+        timer = 0;
+        aTimer = 0;
+        startMove = false;
+        nowPoint = 0;
+
+        if (finishedAccelerate)
+        {
+            finishedAccelerate = false;
+            aSpeed = 1;
+            saveAcceleratedTime = 0;
+        }
+
+        if (nowMovePoint.nextPoint != null)
+        {
+            //计算下一段路线
+            MoveToPoint(nowMovePoint.GetNextOrBranchPoint());
+        }
+    }
+
+    //冲刺
+    public void AccerateMove()
+    {
+        accelerated = true;
+        aSpeed = acceratedSpeed;
+        finishedAccelerate = false;
+        saveAcceleratedTime = 0;
+
+        //在前一个结尾处加速时
+        if (nowPoint> movePoints.Count * 0.8)
+        {
+            //保存时间
+            saveAcceleratedTime = mpSegTotalTime - timer;
+
+            //跳过阶段
+            ArrivedLastPoint();
+        }
+
     }
 
     /// <summary>
@@ -69,7 +154,9 @@ public class PlayerMoveController : MonoBehaviour
         CalculateAllNextPoints(thisMovePoint.basePoints);
 
         // 计算每步时间
-        moveDeltaTime = thisMovePoint.timeToNextMovePoint / movePoints.Count;
+        mpSegTotalTime = thisMovePoint.timeToNextMovePoint;
+        originMoveDeltaTime = thisMovePoint.timeToNextMovePoint / movePoints.Count;
+        moveDeltaTime = originMoveDeltaTime;
 
         // 开始
         startMove = true;

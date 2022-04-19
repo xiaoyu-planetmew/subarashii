@@ -64,6 +64,7 @@ public class MovePointInputController : MonoBehaviour
     {
         inputTimer += Time.deltaTime;
 
+        if (keyInput.keyInput == KeyDirectionType.Null) return;
 
         if(keyInput.nowInputStatus == MovePointInput.NowStatus.WaitingForInput)
         {
@@ -83,7 +84,7 @@ public class MovePointInputController : MonoBehaviour
             {
                 //此次输入失败
                 PointInputFail();
-                Debug.Log("输入失败 " + gameObject.name);
+                Debug.Log("输入失败 " + gameObject.name + " 应输入 " + keyInput.keyInput);
             }
             else
             {
@@ -114,6 +115,9 @@ public class MovePointInputController : MonoBehaviour
         // 完全成功特效
         // 按最后一个方向出拖拽特效
         PlayerEffectController.Instance.DragCircleEffect(keyInput.keyInput, powerfulEffect);
+
+        //加速
+        PlayerMoveController.Instance.AccerateMove();
 
     }
 
