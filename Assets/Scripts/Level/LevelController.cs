@@ -73,6 +73,9 @@ public class LevelController : MonoBehaviour
         PlayerController.Instance.ResetPlayer();
         PlayerEffectController.Instance.ResetPlayerEffect();
         PlayerMoveController.Instance.ResetMoveController();
+
+        //重置相机
+        CameraController.Instance.ResetCam();
     }
 
     public void GameOver()
