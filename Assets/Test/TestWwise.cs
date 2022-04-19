@@ -44,7 +44,12 @@ public class TestWwise : MonoBehaviour
         {
             TutorialTrackController.Instance.FinishTutorial();
         }
-        
+
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            SwitchToTutorial.HandleEvent(gameObject);
+            LevelController.Instance.ResetLevel();
+        }
     }
 
     public void PlayMainMusic()

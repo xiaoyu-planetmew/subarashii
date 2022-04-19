@@ -17,7 +17,7 @@ public class ArrowDisplay : MonoBehaviour
     {
         foreach(ArrowPrefab prefab in arrows)
         {
-            prefab.arrow.SetActive(false);
+            //prefab.arrow.SetActive(false);
             
             // 恢复成初始的显示
 

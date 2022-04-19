@@ -234,5 +234,13 @@ public class PlayerMoveController : MonoBehaviour
         movePoints.Clear();
         startMove = false;
         timer = 0;
+        aTimer = 0;
+        startMove = false;
+        nowPoint = 0;
+        accelerated = false;
+        finishedAccelerate = false;
+        aSpeed = 1;
+        saveAcceleratedTime = 0;
+        mpSegTotalTime = 0;
     }
 }
