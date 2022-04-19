@@ -5374,9 +5374,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 414ae2bb0c7cc8b40b4cf1c7fa007e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TutorialMovePoint: {fileID: 0}
-  TutorialBGM: {fileID: 0}
-  timeOfOneBar: 1
+  StartMusic: {fileID: 838762057}
+  SwitchToMain: {fileID: 216053734}
+  SwitchToTutorial: {fileID: 1534367115}
+  timeOfOneBar: 1.2
 --- !u!1001 &2008761814
 PrefabInstance:
   m_ObjectHideFlags: 0

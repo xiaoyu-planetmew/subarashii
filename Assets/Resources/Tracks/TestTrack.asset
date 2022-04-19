@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mEventID: TestTrack
   mEventList:
-  - mStartSample: 44100
-    mEndSample: 44100
+  - mStartSample: 57600
+    mEndSample: 57600
   - mStartSample: 88200
     mEndSample: 88200
   - mStartSample: 154350

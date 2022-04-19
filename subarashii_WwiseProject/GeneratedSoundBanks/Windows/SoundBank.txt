@@ -13,6 +13,6 @@ State	ID	Name	State Group			Notes
 	3762955427	Tutorial	Level_1_Music_State			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	862353582	Music_level1(tutorial)_BPM100_32bit48khz	F:\Subarashi\untiy project\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\Music_level1(tutorial)_BPM100_32bit48khz_D79FB2B7.wem		\Interactive Music Hierarchy\Subarashii\Level_1_Music\Music_level1(tutorial)_BPM100_32bit48khz\Music_level1(tutorial)_BPM100_32bit48khz		1843264
-	871437218	Music_level1_BPM100_32bit48khz	F:\Subarashi\untiy project\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\Music_level1_BPM100_32bit48khz_D79FB2B7.wem		\Interactive Music Hierarchy\Subarashii\Level_1_Music\Music_level1_BPM100_32bit48khz\Music_level1_BPM100_32bit48khz		19353744
+	862353582	Music_level1(tutorial)_BPM100_32bit48khz	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\Music_level1(tutorial)_BPM100_32bit48khz_D79FB2B7.wem		\Interactive Music Hierarchy\Subarashii\Level_1_Music\Tutorial\Music_level1(tutorial)_BPM100_32bit48khz\Music_level1(tutorial)_BPM100_32bit48khz		1843264
+	871437218	Music_level1_BPM100_32bit48khz	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\Music_level1_BPM100_32bit48khz_D79FB2B7.wem		\Interactive Music Hierarchy\Subarashii\Level_1_Music\MainMusic\Music_level1_BPM100_32bit48khz\Music_level1_BPM100_32bit48khz		19353744
 

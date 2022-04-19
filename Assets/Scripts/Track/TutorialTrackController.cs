@@ -4,15 +4,39 @@ using UnityEngine;
 
 public class TutorialTrackController : MonoBehaviour
 {
-    [Header("教学环节MovePoint")]
-    public MovePoint TutorialMovePoint;
-
-    [Header("教学部分BGM")]
-    public AudioClip TutorialBGM;
-
-    [Header("一个循环小节时间")]
+    public AkEvent StartMusic;
+    public AkEvent SwitchToMain;
+    public AkEvent SwitchToTutorial;
     public float timeOfOneBar = 1f;
 
+
+    public static TutorialTrackController Instance;
+    private bool startPlayingTutorial;
+    private float timer;
+
+    private void Awake()
+    {
+        startPlayingTutorial = false;
+        Instance = this;
+
+    }
+
+
+    private void Update()
+    {
+        if(startPlayingTutorial)
+            timer += Time.deltaTime;
+    }
+
+    public void StartPlayingMusicFromTutorial()
+    {
+        if(startPlayingTutorial == false)
+        {
+            startPlayingTutorial = true;
+            StartMusic.HandleEvent(gameObject);
+        }
+        
+    }
 
     /// <summary>
     /// 获取教学部分BGM一个小节的剩余播放时间
@@ -20,9 +44,12 @@ public class TutorialTrackController : MonoBehaviour
     /// <returns></returns>
     private float GetLastOneBarPlayingTime()
     {
-        //获取
+        //获取剩余小节时间
+        float leftTime = timer % timeOfOneBar;
 
-        return 0;
+        Debug.Log("剩余小节时间 "+ leftTime);
+
+        return leftTime;
     }
 
     /// <summary>
@@ -30,20 +57,24 @@ public class TutorialTrackController : MonoBehaviour
     /// </summary>
     public void FinishTutorial()
     {
-        float time = GetLastOneBarPlayingTime();
+        //切换音乐
+        SwitchToMain.HandleEvent(gameObject);
 
-        TutorialMovePoint.timeToNextMovePoint = time + timeOfOneBar;
-
-        LevelController.Instance.StartLevel(); //从教学起始点开始
-
-        StartCoroutine(LateChangeBGM(time));
+        // 同步游戏开始
+        StartCoroutine(SynGameStart(GetLastOneBarPlayingTime()));
     }
 
-    private IEnumerator LateChangeBGM(float time)
+    /// <summary>
+    /// 同步开始
+    /// </summary>
+    /// <param name="time"></param>
+    /// <returns></returns>
+    private IEnumerator SynGameStart(float time)
     {
         yield return new WaitForSeconds(time);
 
-        // 切换主音乐
+        LevelController.Instance.StartLevel(); //从教学起始点开始
+
 
     }
 

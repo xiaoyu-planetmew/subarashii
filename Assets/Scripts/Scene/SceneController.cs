@@ -20,12 +20,6 @@ public class SceneController : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        //test
-        TrackManager.Instance.InitiateLevelTrack();
-    }
-
     /// <summary>
     /// ÇÐ»»¹Ø¿¨
     /// </summary>

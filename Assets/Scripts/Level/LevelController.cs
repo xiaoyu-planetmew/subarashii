@@ -8,7 +8,7 @@ public class LevelController : MonoBehaviour
     [Header("当前关卡")]
     public Level level = Level.Level_1;
 
-    [Header("起始MovePoint(复活点)")]
+    [Header("起始MovePoint(谱面时间0点)")]
     public MovePoint startMovePoint;
 
     [Header("关卡进入事件")]
@@ -27,12 +27,14 @@ public class LevelController : MonoBehaviour
         InitiateLevel();
     }
 
+    private void Start()
+    {
+        TrackManager.Instance.InitiateLevelTrack();
+    }
+
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.G))
-        {
-            StartLevel();
-        }
+        
     }
 
     private void InitiateLevel()
@@ -52,7 +54,6 @@ public class LevelController : MonoBehaviour
             //WwiseManager.Instance.Init();
             //WwiseManager.Instance.LoadBank("SoundBank");
             //WwiseManager.Instance.Play("Play_Music_level1_BPM100_32bit48khz");
-            TestWwise.Instance.PlayMainMusic();
         }
         else
             Debug.LogError("Miss Start MovePoint in LevelController!");
