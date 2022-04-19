@@ -67,6 +67,8 @@ public class TrackManager : MonoBehaviour
 
                     //œ‘ æ
                     _mp.GetComponent<MovePointDisplay>().InitiateDisplay();
+
+                    //Debug.Log("Track Initiated No." + i);
                 }
 
             }

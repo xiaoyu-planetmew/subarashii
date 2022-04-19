@@ -13,6 +13,10 @@ public class CameraController : MonoBehaviour
     public CinemachineVirtualCamera VCcam_LookRight;
     public CinemachineVirtualCamera VCcam_Nearby;
     public CinemachineVirtualCamera VCcam_Farfrom;
+    public CinemachineVirtualCamera VCcam_LookUpLeft;
+    public CinemachineVirtualCamera VCcam_LookUpRight;
+    public CinemachineVirtualCamera VCcam_LookDownLeft;
+    public CinemachineVirtualCamera VCcam_LookDownRight;
 
     public static CameraController Instance;
     private CinemachineVirtualCamera nowCam;
@@ -36,6 +40,10 @@ public class CameraController : MonoBehaviour
         VCcam_LookRight.gameObject.SetActive(false);
         VCcam_Nearby.gameObject.SetActive(false);
         VCcam_Farfrom.gameObject.SetActive(false);
+        VCcam_LookUpLeft.gameObject.SetActive(false);
+        VCcam_LookUpRight.gameObject.SetActive(false);
+        VCcam_LookDownLeft.gameObject.SetActive(false);
+        VCcam_LookDownRight.gameObject.SetActive(false);
 
         nowCam = MainCamera;
     }
@@ -107,6 +115,42 @@ public class CameraController : MonoBehaviour
                     nowCam.gameObject.SetActive(true);
                 }
                 break;
+            case CameraStatus.LookUpLeft:
+                if (nowCam == VCcam_LookUpLeft) return;
+                else
+                {
+                    nowCam.gameObject.SetActive(false);
+                    nowCam = VCcam_LookUpLeft;
+                    nowCam.gameObject.SetActive(true);
+                }
+                break;
+            case CameraStatus.LookUpRight:
+                if (nowCam == VCcam_LookUpRight) return;
+                else
+                {
+                    nowCam.gameObject.SetActive(false);
+                    nowCam = VCcam_LookUpRight;
+                    nowCam.gameObject.SetActive(true);
+                }
+                break;
+            case CameraStatus.LookDownLeft:
+                if (nowCam == VCcam_LookDownLeft) return;
+                else
+                {
+                    nowCam.gameObject.SetActive(false);
+                    nowCam = VCcam_LookDownLeft;
+                    nowCam.gameObject.SetActive(true);
+                }
+                break;
+            case CameraStatus.LookDownRight:
+                if (nowCam == VCcam_LookDownRight) return;
+                else
+                {
+                    nowCam.gameObject.SetActive(false);
+                    nowCam = VCcam_LookDownRight;
+                    nowCam.gameObject.SetActive(true);
+                }
+                break;
         }
 
     }
@@ -120,6 +164,10 @@ public enum CameraStatus
     LookDown,
     LookLeft,
     LookRight,
+    LookUpLeft,
+    LookUpRight,
+    LookDownLeft,
+    LookDownRight,
     Nearby,
     Farfrom,
 }
