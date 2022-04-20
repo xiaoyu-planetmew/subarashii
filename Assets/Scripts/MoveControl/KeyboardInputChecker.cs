@@ -37,7 +37,7 @@ public class KeyboardInputChecker : MonoBehaviour
         hasInit = true;
 
         if(dir == KeyDirectionType.Up || dir == KeyDirectionType.Left ||
-            dir == KeyDirectionType.Down || dir == KeyDirectionType.Right)
+            dir == KeyDirectionType.Down || dir == KeyDirectionType.Right || dir == KeyDirectionType.Space)
         {
             inputSuccess = new bool[] { false };
         }
@@ -108,6 +108,12 @@ public class KeyboardInputChecker : MonoBehaviour
                         inputSuccess[0] = true;
                     if (Input.GetKey(KeyCode.RightArrow))
                         inputSuccess[1] = true;
+                    break;
+                }
+            case KeyDirectionType.Space:
+                {
+                    if (Input.GetKey(KeyCode.Space))
+                        inputSuccess[0] = true;
                     break;
                 }
         }

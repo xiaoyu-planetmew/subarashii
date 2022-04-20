@@ -32,7 +32,7 @@
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="Interactive Music\x64_{1407F904-8EA7-4B54-AB66-7D3621AAEF7D} - SegmentEditorZoomInfo" Type="string" Value="uezVXkCeC0AAAAAAAADwP8gb8oa8oSNAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{668DEC13-4402-4B29-A279-D540127FA46E} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP1ZVVVVVYVpAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
-				<Property Name="Interactive Music\x64_{E5DC40D0-CADC-4F06-9231-3FAC272C9E9A} - SegmentEditorZoomInfo" Type="string" Value="rOfdWFBY/D8AAAAAAADwP6uqqqqqRlpAAAAAAAAA8D8AAAAAAECIQAAAAAAAAAAA"/>
+				<Property Name="Interactive Music\x64_{E5DC40D0-CADC-4F06-9231-3FAC272C9E9A} - SegmentEditorZoomInfo" Type="string" Value="rOfdWFBY/D8AAAAAAADwP6uqqqqqRlpAAAAAAAAA8D8AAAAAADiIQAAAAAAAAAAA"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>
