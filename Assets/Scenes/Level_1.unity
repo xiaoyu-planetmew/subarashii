@@ -6692,45 +6692,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8130162069050751396, guid: db989c36ec7618741a18302fdaa85443, type: 3}
-      propertyPath: m_Follow
-      value: 
-      objectReference: {fileID: 531148568}
-    - target: {fileID: 8130162069050751396, guid: db989c36ec7618741a18302fdaa85443, type: 3}
-      propertyPath: m_LookAt
-      value: 
-      objectReference: {fileID: 531148568}
-    - target: {fileID: 8130162069650316842, guid: db989c36ec7618741a18302fdaa85443, type: 3}
-      propertyPath: m_Follow
-      value: 
-      objectReference: {fileID: 531148568}
-    - target: {fileID: 8130162069650316842, guid: db989c36ec7618741a18302fdaa85443, type: 3}
-      propertyPath: m_LookAt
-      value: 
-      objectReference: {fileID: 531148568}
-    - target: {fileID: 8130162069912934836, guid: db989c36ec7618741a18302fdaa85443, type: 3}
-      propertyPath: m_Follow
-      value: 
-      objectReference: {fileID: 531148568}
-    - target: {fileID: 8130162069912934836, guid: db989c36ec7618741a18302fdaa85443, type: 3}
-      propertyPath: m_LookAt
-      value: 
-      objectReference: {fileID: 531148568}
-    - target: {fileID: 8130162070282202518, guid: db989c36ec7618741a18302fdaa85443, type: 3}
-      propertyPath: m_Follow
-      value: 
-      objectReference: {fileID: 531148568}
-    - target: {fileID: 8130162070282202518, guid: db989c36ec7618741a18302fdaa85443, type: 3}
-      propertyPath: m_LookAt
-      value: 
-      objectReference: {fileID: 531148568}
-    - target: {fileID: 8130162070783212704, guid: db989c36ec7618741a18302fdaa85443, type: 3}
-      propertyPath: m_Follow
-      value: 
-      objectReference: {fileID: 531148568}
-    - target: {fileID: 8130162070783212704, guid: db989c36ec7618741a18302fdaa85443, type: 3}
-      propertyPath: m_LookAt
-      value: 
-      objectReference: {fileID: 531148568}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db989c36ec7618741a18302fdaa85443, type: 3}
