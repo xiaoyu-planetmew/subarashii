@@ -17,6 +17,7 @@ public class GradientLineControl : MonoBehaviour
             child.GetComponent<SpriteRenderer>().enabled = false;
         }
 
+
         line.positionCount = dots.Count;
 
         for (int i = 0; i < dots.Count; i++)
