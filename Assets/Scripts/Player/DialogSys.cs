@@ -7,20 +7,20 @@ public class DialogSys : MonoBehaviour
 {
     [Header("eventNum")]
     public int eventNum;
-    public GameObject player;
-    public GameObject npc;
-    public GameObject cam;
+    //public GameObject player;
+    //public GameObject npc;
+    //public GameObject cam;
     public GameObject textLabelleft;
     public GameObject textLabelright;
     public GameObject textBackgroundLeft;
     public GameObject textBackgroundRight;
-    public GameObject startButton;
+    //public GameObject startButton;
     public GameObject nextPageButton;
-    public GameObject sceneTransButton;
+    //public GameObject sceneTransButton;
     public List<TextAsset> textfiles = new List<TextAsset>();
-    public List<TextAsset> textfilesE = new List<TextAsset>();
-    public List<TextAsset> textfilesJ = new List<TextAsset>();
-    public bool firstMeet;
+    //public List<TextAsset> textfilesE = new List<TextAsset>();
+    //public List<TextAsset> textfilesJ = new List<TextAsset>();
+    //public bool firstMeet;
     public bool isTalking;
     //private bool holdTarget;
     public int index;
@@ -35,7 +35,7 @@ public class DialogSys : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        firstMeet = true;        
+        //firstMeet = true;        
     }
     // Update is called once per frame
     void Update()
@@ -50,6 +50,10 @@ public class DialogSys : MonoBehaviour
             startButton.SetActive(false);
         }
         */
+    }
+    public void dialogStart(int eventNum)
+    {
+        GetTextFromFile(textfiles[eventNum]);
     }
     void GetTextFromFile(TextAsset file)
     {
@@ -144,7 +148,7 @@ public class DialogSys : MonoBehaviour
         //textLabelcn.GetComponent<TMP_Text>().text = textList[index];
         //textLabelen.GetComponent<TMP_Text>().text = textList[index + 1];
         
-        startButton.SetActive(false);
+        //startButton.SetActive(false);
     }    
     void leftAudioRandom()
     {
