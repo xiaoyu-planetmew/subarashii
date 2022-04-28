@@ -43,10 +43,15 @@ public class WavyRectPointsController : MonoBehaviour
 
         lineRenderer = GetComponent<WavyRectLineRenderer>();
         spriteRenderer = GetComponent<WavyRectSpriteRenderer>();
+
+
+
     }
 
     private void Update()
     {
+        if (Vector3.Distance(GameObject.FindGameObjectWithTag("Player").transform.position, transform.position) > 30) return;
+
         SimulateWave();
 
         if (renderType==WaveRenderType.Stroke && lineRenderer!=null)
