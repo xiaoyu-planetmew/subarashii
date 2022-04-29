@@ -8566,8 +8566,9 @@ MonoBehaviour:
   - {fileID: 2800000, guid: fa16bcc7604ffe74cadf3e25ee07b4dc, type: 3}
   num: 6
   lettersSize: 1
-  wordSpace: 53.76
+  wordSpace: 55
   showNumber: 0
+  localScaleX: 0.6
 --- !u!222 &2124568186
 CanvasRenderer:
   m_ObjectHideFlags: 0
