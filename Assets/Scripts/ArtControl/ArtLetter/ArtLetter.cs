@@ -14,7 +14,7 @@ public class ArtLetter : MonoBehaviour
     private int storedNumber;
     
     private RawImage[] images;
-    [SerializeField]private float localScaleX = 0.47f;
+    private float localScaleX = 0.47f;
     private Animator[] anims;
     private bool startAddEffect = false;
 
