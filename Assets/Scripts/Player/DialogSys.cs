@@ -10,10 +10,8 @@ public class DialogSys : MonoBehaviour
     //public GameObject player;
     //public GameObject npc;
     //public GameObject cam;
-    public GameObject textLabelleft;
-    public GameObject textLabelright;
-    public GameObject textBackgroundLeft;
-    public GameObject textBackgroundRight;
+    public GameObject textLabel;
+    public GameObject textBackground;
     //public GameObject startButton;
     public GameObject nextPageButton;
     //public GameObject sceneTransButton;
@@ -54,6 +52,24 @@ public class DialogSys : MonoBehaviour
     public void dialogStart(int eventNum)
     {
         GetTextFromFile(textfiles[eventNum]);
+    }
+    public void dialogBox()
+    {
+        if(index == textList.Count)
+        {
+                index = 0;
+                textBackground.gameObject.SetActive(false);
+                //nextPageButton.gameObject.SetActive(false);
+            
+                //textLabelcn.gameObject.SetActive(false);
+                //textLabelen.gameObject.SetActive(false);
+                isTalking = false;
+        }
+        if(index < textList.Count && isTalking)
+        {
+                StartCoroutine(SetText());
+                textBackground.gameObject.SetActive(true);
+        }
     }
     void GetTextFromFile(TextAsset file)
     {
@@ -126,21 +142,10 @@ public class DialogSys : MonoBehaviour
         //textLabelcn.gameObject.SetActive(true);
         //textLabelen.gameObject.SetActive(true);
         index = 0;
-        if(textTalker[0] == "left")
-        {
-            textBackgroundLeft.gameObject.SetActive(true);
-            //textLabelleft.GetComponent<Text>().text = textList[index];
-            StartCoroutine(SetTextLeft());
-            leftAudioRandom();
-        }
-        if(textTalker[0] == "right")
-        {
-            textBackgroundRight.gameObject.SetActive(true);
-            //textLabelright.GetComponent<Text>().text = textList[index];
-            
-            StartCoroutine(SetTextRight());
-            rightAudioRandom();
-        }
+        textBackground.gameObject.SetActive(true);
+        //textLabelleft.GetComponent<Text>().text = textList[index];
+        StartCoroutine(SetText());
+        //leftAudioRandom();
         isTalking = true;
         //Time.timeScale = 0.0f;
         //GameManager.instance.isPaused = true;
@@ -183,34 +188,20 @@ public class DialogSys : MonoBehaviour
         }
     }
     
-    IEnumerator SetTextLeft()
+    IEnumerator SetText()
     {
-        //Debug.Log(textList[index].Length);
         textFinished = false;
-        textLabelleft.GetComponent<Text>().text = "";
+        textLabel.GetComponent<Text>().text = "";
         for(int i = 0; i < textList[index].Length; i++)
         {
             //Debug.Log(i);
-            textLabelleft.GetComponent<Text>().text += textList[index][i];
+            textLabel.GetComponent<Text>().text += textList[index][i];
             yield return new WaitForSeconds(textSpeed);
         }
         index = index + 1;
         textFinished = true;
     }
-    IEnumerator SetTextRight()
-    {
-        textFinished = false;
-        textLabelright.GetComponent<Text>().text = "";
-        //Debug.Log(textList[index].Length);
-        for(int i = 0; i < textList[index].Length; i++)
-        {
-            //Debug.Log(i);
-            textLabelright.GetComponent<Text>().text += textList[index][i];
-            yield return new WaitForSeconds(textSpeed);
-        }
-        index = index + 1;
-        textFinished = true;
-    }
+    
     IEnumerator audioStop()
     {
         yield return new WaitForSeconds(((textList[index].Length) * textSpeed));
