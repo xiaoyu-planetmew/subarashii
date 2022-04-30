@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 2ac004a949d9074b991a29f817866ae5
     GuidInternal: 
-    m_lastTime: -8585517599172362624
+    m_lastTime: -8585513480418644638
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: e6224f82002cc843803a5c90543ccd5c
     GuidInternal: 
-    m_lastTime: -8585517599174282600
+    m_lastTime: -8585513480430266919
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d5f2fd580a4ae34f9909285e0919ae8f
     GuidInternal: 
-    m_lastTime: -8585512426337144106
+    m_lastTime: -8585513335912811290
     List:
     - name: SoundBankTest
       guid: c0793be83b094f419f12d55481d60c77
@@ -93,7 +93,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Subarashii
     guid: bb59c71a64251748bd2e36fd1cabb9aa
     GuidInternal: 
-    m_lastTime: -8585512426337144106
+    m_lastTime: -8585502697211770055
     List:
     - name: SoundBank
       guid: 1b861bf19af8cf4982b897ca2f1c8174
@@ -121,7 +121,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6e88041042cea04791b2de4cdade51e0
     GuidInternal: 
-    m_lastTime: -8585514013923027768
+    m_lastTime: -8585513477742183117
     List:
     - name: Play_Music_level1_BPM100_32bit48khz
       guid: e76414383be9b94c859c0362eede1a52
@@ -168,7 +168,7 @@ MonoBehaviour:
     ParentPath: Events\Subarashii
     guid: 63796efd22d4f34992e8dbfe894f0a8d
     GuidInternal: 
-    m_lastTime: -8585512426346833311
+    m_lastTime: -8585502698296390477
     List:
     - name: Music
       guid: 4e3b0bd258c75647b6f64a8eaa93e424
@@ -204,6 +204,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: d8efe6587fe258498daef442c58be0ba
       Path: Events\Subarashii\Music\Play_Level_1_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Level_2_Music
+      guid: 67f0d204da43424dbc0be2509d3cd219
+      id: 2048014091
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: Music
+        ObjectType: 4
+        guid: 4e3b0bd258c75647b6f64a8eaa93e424
+      - ElementName: Play_Level_2_Music
+        ObjectType: 3
+        guid: 67f0d204da43424dbc0be2509d3cd219
+      Path: Events\Subarashii\Music\Play_Level_2_Music
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -247,6 +267,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Switch_Level_2_MainMusic
+      guid: 658fc586d4a5d748bd400b4bcb51d221
+      id: 2429794592
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: Music
+        ObjectType: 4
+        guid: 4e3b0bd258c75647b6f64a8eaa93e424
+      - ElementName: Switch_Level_2_MainMusic
+        ObjectType: 3
+        guid: 658fc586d4a5d748bd400b4bcb51d221
+      Path: Events\Subarashii\Music\Switch_Level_2_MainMusic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Switch_Level_2_Tutorial
+      guid: 7752438dfd7f8d438785cbb330425b2a
+      id: 1919083106
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: Music
+        ObjectType: 4
+        guid: 4e3b0bd258c75647b6f64a8eaa93e424
+      - ElementName: Switch_Level_2_Tutorial
+        ObjectType: 3
+        guid: 7752438dfd7f8d438785cbb330425b2a
+      Path: Events\Subarashii\Music\Switch_Level_2_Tutorial
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: TestPlayLevel_1_MainMusic
       guid: 9c01696cdb835d4daac469b2e76c4ea0
       id: 1675477522
@@ -279,7 +339,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 55cd09d2cbb25a459366fa0a94db3528
     GuidInternal: 
-    m_lastTime: -8585517599173913430
+    m_lastTime: -8585513480446411926
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -293,7 +353,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: f7fe67bbec39ae43be5794fa01ca0119
     GuidInternal: 
-    m_lastTime: -8585517599172592573
+    m_lastTime: -8585513480418684532
     List: []
   - PhysicalPath: States\Subarashii.wwu
     PathAndIcons:
@@ -306,7 +366,7 @@ MonoBehaviour:
     ParentPath: States\Subarashii
     guid: 119f975107b6ce428724a59901f24adc
     GuidInternal: 
-    m_lastTime: -8585512426337129353
+    m_lastTime: -8585513287913631051
     List:
     - name: Level_1_Music_State
       guid: 088876470bf6e245a9bfea21bc24a48a
@@ -386,7 +446,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 0a7d20405e55f149b7a739dd8a462128
     GuidInternal: 
-    m_lastTime: -8585517599172682337
+    m_lastTime: -8585513480418674563
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -400,7 +460,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: eae9b8cc6ab16942b5b2a2edeb5389d0
     GuidInternal: 
-    m_lastTime: -8585517599173400382
+    m_lastTime: -8585513480418664590
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 

@@ -75,6 +75,55 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Level_2_Music" ID="{04D2F067-43DA-4D42-BC0B-E2509D3CD219}">
+							<ChildrenList>
+								<Action Name="" ID="{1D8A14A7-95FE-4D98-B110-B36497F1E422}" ShortID="564480530">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Level_2_Music" ID="{2A584FF6-8A49-43DD-A58C-89189EF85A4C}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{68A6B69A-7353-4682-ACD6-EF301BE8931E}" ShortID="429702633">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Tutorial" ID="{897F8961-AD16-48C2-B051-A2C8D145475F}" WorkUnitID="{51979F11-B607-42CE-8724-A59901F24ADC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Switch_Level_2_Tutorial" ID="{8D435277-7FFD-438D-8785-CBB330425B2A}">
+							<ChildrenList>
+								<Action Name="" ID="{D48AC254-71DE-4C5D-8F55-992B9ECC607D}" ShortID="1066480983">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Tutorial" ID="{897F8961-AD16-48C2-B051-A2C8D145475F}" WorkUnitID="{51979F11-B607-42CE-8724-A59901F24ADC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Switch_Level_2_MainMusic" ID="{86C58F65-A5D4-48D7-BD40-0B4BCB51D221}">
+							<ChildrenList>
+								<Action Name="" ID="{59803076-BE18-46A1-B2E0-1DB1E54599DD}" ShortID="546382133">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MainMusic" ID="{62FE2A25-AA67-4EA0-A10C-8384CB444D33}" WorkUnitID="{51979F11-B607-42CE-8724-A59901F24ADC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

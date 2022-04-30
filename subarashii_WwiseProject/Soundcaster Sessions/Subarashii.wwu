@@ -24,6 +24,27 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
+				<SoundcasterSession Name="Music_Level_2" ID="{A44D0D23-8126-4598-8F6D-4865E51A32D2}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Level_2_Music" ID="{04D2F067-43DA-4D42-BC0B-E2509D3CD219}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Switch_Level_2_MainMusic" ID="{86C58F65-A5D4-48D7-BD40-0B4BCB51D221}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Switch_Level_2_Tutorial" ID="{8D435277-7FFD-438D-8785-CBB330425B2A}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Tutorial" ID="{897F8961-AD16-48C2-B051-A2C8D145475F}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundcasterSessions>

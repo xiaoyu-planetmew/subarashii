@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a4ea3ee170b3d64788c25e4365b8408, type: 3}
+  m_Name: 86C58F65-A5D4-48D7-BD40-0B4BCB51D221
+  m_EditorClassIdentifier: 
+  objectName: Switch_Level_2_MainMusic
+  id: 2429794592
+  guid: 86C58F65-A5D4-48D7-BD40-0B4BCB51D221

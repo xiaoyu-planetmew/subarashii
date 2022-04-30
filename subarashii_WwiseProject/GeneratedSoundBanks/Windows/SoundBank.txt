@@ -3,6 +3,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	814842324	Play_Level_1_Music			\Subarashii\Music\Play_Level_1_Music	
 	1183555207	Switch_Level_1_Tutorial			\Subarashii\Music\Switch_Level_1_Tutorial	
 	1675477522	TestPlayLevel_1_MainMusic			\Subarashii\Music\TestPlayLevel_1_MainMusic	
+	1919083106	Switch_Level_2_Tutorial			\Subarashii\Music\Switch_Level_2_Tutorial	
+	2048014091	Play_Level_2_Music			\Subarashii\Music\Play_Level_2_Music	
+	2429794592	Switch_Level_2_MainMusic			\Subarashii\Music\Switch_Level_2_MainMusic	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	647082951	Level_1_Music_State			\Subarashii\Level_1_Music_State	
@@ -13,6 +16,8 @@ State	ID	Name	State Group			Notes
 	3762955427	Tutorial	Level_1_Music_State			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	831129391	song2_tutorial	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\song2_tutorial_D79FB2B7.wem		\Interactive Music Hierarchy\Subarashii\Level_2_Music\Tutorial\song2_tutorial\song2_tutorial		1417912
 	862353582	Music_level1(tutorial)_BPM100_32bit48khz	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\Music_level1(tutorial)_BPM100_32bit48khz_D79FB2B7.wem		\Interactive Music Hierarchy\Subarashii\Level_1_Music\Tutorial\Music_level1(tutorial)_BPM100_32bit48khz\Music_level1(tutorial)_BPM100_32bit48khz		1843264
 	871437218	Music_level1_BPM100_32bit48khz	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\Music_level1_BPM100_32bit48khz_D79FB2B7.wem		\Interactive Music Hierarchy\Subarashii\Level_1_Music\MainMusic\Music_level1_BPM100_32bit48khz\Music_level1_BPM100_32bit48khz		19353744
+	918644783	song2	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\song2_D79FB2B7.wem		\Interactive Music Hierarchy\Subarashii\Level_2_Music\MainMusic\song2\song2		21976680
 
