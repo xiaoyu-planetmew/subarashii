@@ -94,5 +94,8 @@ public class AnimationEventArrays
 public enum AnimationEventType
 {
     Idle,
-    Talking,
+    Good,
+    Miss,
+    Absorb_Left,
+    Absorb_Right,
 }
