@@ -53,7 +53,7 @@ public class DialogSys : MonoBehaviour
     {
         GetTextFromFile(textfiles[eventNum]);
     }
-    public void dialogBox()
+    public void dialogNext()
     {
         if(index == textList.Count)
         {
@@ -84,6 +84,7 @@ public class DialogSys : MonoBehaviour
         //Debug.Log(textList.Count);
         textList.RemoveAt(textList.Count - 1);
         //textList.RemoveAt(textList.Count);
+        /*
         for(int j = 0; j < textList.Count; j++)
         {
             if(textList[j][0] == '1')
@@ -97,6 +98,7 @@ public class DialogSys : MonoBehaviour
                 textTalker.Add("right");
             }
         }
+        */
     }
     /*
     public void languageChange()
