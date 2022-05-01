@@ -52,6 +52,7 @@ public class DialogSys : MonoBehaviour
     public void dialogStart(int eventNum)
     {
         GetTextFromFile(textfiles[eventNum]);
+        fileChoose();
     }
     public void dialogNext()
     {
