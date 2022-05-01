@@ -12,6 +12,9 @@ public class MovePointInputController : MonoBehaviour
     [Header("大力拖拽")]
     public bool powerfulEffect = false;
 
+    [Header("交互角色")]
+    public InteractiveAnimation interactiveAnimation;
+
     private bool waitingForInputs;
     private float inputTimer;
 
@@ -115,9 +118,20 @@ public class MovePointInputController : MonoBehaviour
         // 完全成功特效
         // 按最后一个方向出拖拽特效
         PlayerEffectController.Instance.DragCircleEffect(keyInput.keyInput, powerfulEffect);
+        // 主角动画
+        if(keyInput.keyInput == KeyDirectionType.Space)
+        {
+            if (interactiveAnimation != null)
+                interactiveAnimation.success = true;
+        }
+        else if(keyInput.keyInput != KeyDirectionType.Null)
+        {
+            CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Good);
+        }
 
         //加速
         PlayerMoveController.Instance.AccerateMove();
+
 
     }
 
