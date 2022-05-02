@@ -540,6 +540,20 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Test" ID="{193A8C55-448D-4495-BFAC-F1D80075293E}">
+					<ChildrenList>
+						<Action Name="" ID="{437F1DE8-62EB-48A9-8F6E-E731E84445B6}" ShortID="951707485">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MasterVolume" ID="{CAE78949-8F54-4751-9D1B-4D3A45192C5F}" WorkUnitID="{CDF084CA-686B-4DBF-BABD-953A76F57A8C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

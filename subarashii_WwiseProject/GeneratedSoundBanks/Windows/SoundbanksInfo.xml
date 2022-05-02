@@ -11,16 +11,166 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="4226656052">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2112422584">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<GameParameters>
+				<GameParameter Id="988953028" Name="SFXVolume" ObjectPath="\Game Parameters\Subarashii\Volume\SFXVolume"/>
+				<GameParameter Id="2346531308" Name="MusicVolume" ObjectPath="\Game Parameters\Subarashii\Volume\MusicVolume"/>
+				<GameParameter Id="2918011349" Name="MasterVolume" ObjectPath="\Game Parameters\Subarashii\Volume\MasterVolume"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1661994096" Language="SFX" Hash="2370773507">
+		<SoundBank Id="1661994096" Language="SFX" Hash="2113082858">
 			<ObjectPath>\SoundBanks\Subarashii\SoundBank</ObjectPath>
 			<ShortName>SoundBank</ShortName>
 			<Path>SoundBank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2883369105" Name="Boss_Attack" ObjectPath="\Events\Subarashii\SFX\Level_4\Boss_Attack" DurationType="OneShot" DurationMin="1." DurationMax="1.">
+					<IncludedMemoryFiles>
+						<File Id="382105806" Language="SFX">
+							<ShortName>SFX\SFX_chili_spit.wav</ShortName>
+							<Path>SFX\SFX\SFX_chili_spit_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="548787921" Name="Boss_Destroy" ObjectPath="\Events\Subarashii\SFX\Level_4\Boss_Destroy" DurationType="OneShot" DurationMin="7.5" DurationMax="7.5">
+					<IncludedMemoryFiles>
+						<File Id="834218407" Language="SFX">
+							<ShortName>SFX\SFX_chili_destory.wav</ShortName>
+							<Path>SFX\SFX\SFX_chili_destory_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="446164349" Name="Boss_Siren_Play" ObjectPath="\Events\Subarashii\SFX\Level_4\Boss_Siren_Play" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="669544663" Language="SFX">
+							<ShortName>SFX\SFX_chili_siren.wav</ShortName>
+							<Path>SFX\SFX\SFX_chili_siren_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2631903211" Name="Boss_Siren_Stop" ObjectPath="\Events\Subarashii\SFX\Level_4\Boss_Siren_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2409176675" Name="Button_On" ObjectPath="\Events\Subarashii\SFX\Button_On" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<IncludedMemoryFiles>
+						<File Id="469559729" Language="SFX">
+							<ShortName>SFX\SFX_button_on.wav</ShortName>
+							<Path>SFX\SFX\SFX_button_on_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1412610934" Name="Button_Pause" ObjectPath="\Events\Subarashii\SFX\Button_Pause" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<IncludedMemoryFiles>
+						<File Id="837857789" Language="SFX">
+							<ShortName>SFX\SFX_button_pause.wav</ShortName>
+							<Path>SFX\SFX\SFX_button_pause_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3146435922" Name="Door_Impacting" ObjectPath="\Events\Subarashii\SFX\Level_1\Door_Impacting" DurationType="OneShot" DurationMin="1." DurationMax="1.">
+					<IncludedMemoryFiles>
+						<File Id="309706795" Language="SFX">
+							<ShortName>SFX\SFX_Impacting.wav</ShortName>
+							<Path>SFX\SFX\SFX_Impacting_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="535830432" Name="Door_Open" ObjectPath="\Events\Subarashii\SFX\Level_1\Door_Open" DurationType="OneShot" DurationMin="2." DurationMax="2.">
+					<IncludedMemoryFiles>
+						<File Id="1014367769" Language="SFX">
+							<ShortName>SFX\SFX_DOOROPEN.wav</ShortName>
+							<Path>SFX\SFX\SFX_DOOROPEN_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3822964584" Name="Final_Shit" ObjectPath="\Events\Subarashii\SFX\Level_5\Final_Shit" DurationType="OneShot" DurationMin="11." DurationMax="11.">
+					<IncludedMemoryFiles>
+						<File Id="100296075" Language="SFX">
+							<ShortName>SFX\SFX_shit.wav</ShortName>
+							<Path>SFX\SFX\SFX_shit_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="617877575" Name="Food_Absorb" ObjectPath="\Events\Subarashii\SFX\Level_1\Food_Absorb" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<IncludedMemoryFiles>
+						<File Id="235605711" Language="SFX">
+							<ShortName>SFX\SFX_food_absorb.wav</ShortName>
+							<Path>SFX\SFX\SFX_food_absorb_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1720845381" Name="Food_Barriage" ObjectPath="\Events\Subarashii\SFX\Level_2\Food_Barriage" DurationType="OneShot" DurationMin="2.5" DurationMax="2.5">
+					<IncludedMemoryFiles>
+						<File Id="365881016" Language="SFX">
+							<ShortName>SFX\SFX_trigger_spcae_barriage.wav</ShortName>
+							<Path>SFX\SFX\SFX_trigger_spcae_barriage_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="151292290" Name="Food_Happy" ObjectPath="\Events\Subarashii\SFX\Level_1\Food_Happy" DurationType="OneShot" DurationMin="1.5" DurationMax="1.5">
+					<IncludedMemoryFiles>
+						<File Id="583624217" Language="SFX">
+							<ShortName>SFX\SFX_food_happy.wav</ShortName>
+							<Path>SFX\SFX\SFX_food_happy_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="822197044" Name="Input_Arrow__Success" ObjectPath="\Events\Subarashii\SFX\Input_Arrow__Success" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<IncludedMemoryFiles>
+						<File Id="343457234" Language="SFX">
+							<ShortName>SFX\SFX_trigger_arrow_perfect.wav</ShortName>
+							<Path>SFX\SFX\SFX_trigger_arrow_perfect_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3952070454" Name="Input_Arrow_Combo" ObjectPath="\Events\Subarashii\SFX\Input_Arrow_Combo" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<IncludedMemoryFiles>
+						<File Id="804901321" Language="SFX">
+							<ShortName>SFX\SFX_trigger_arrow_critical.wav</ShortName>
+							<Path>SFX\SFX\SFX_trigger_arrow_critical_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2196209329" Name="Input_Arrow_Menu" ObjectPath="\Events\Subarashii\SFX\Input_Arrow_Menu" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<IncludedMemoryFiles>
+						<File Id="533572186" Language="SFX">
+							<ShortName>SFX\SFX_trigger_arrow_down.wav</ShortName>
+							<Path>SFX\SFX\SFX_trigger_arrow_down_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2683451828" Name="Input_Arrow_Miss" ObjectPath="\Events\Subarashii\SFX\Input_Arrow_Miss" DurationType="OneShot" DurationMin="1." DurationMax="1.">
+					<IncludedMemoryFiles>
+						<File Id="1015430339" Language="SFX">
+							<ShortName>SFX\SFX_trigger_arrow_miss.wav</ShortName>
+							<Path>SFX\SFX\SFX_trigger_arrow_miss_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4120751531" Name="Input_Space_Miss" ObjectPath="\Events\Subarashii\SFX\Input_Space_Miss" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<IncludedMemoryFiles>
+						<File Id="640276241" Language="SFX">
+							<ShortName>SFX\SFX_trigger_spcae_miss.wav</ShortName>
+							<Path>SFX\SFX\SFX_trigger_spcae_miss_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1130099208" Name="Input_Space_Success" ObjectPath="\Events\Subarashii\SFX\Input_Space_Success" DurationType="OneShot" DurationMin="0.5" DurationMax="0.640401">
+					<IncludedMemoryFiles>
+						<File Id="184691859" Language="SFX">
+							<ShortName>SFX\SFX_trigger_spcae_1.wav</ShortName>
+							<Path>SFX\SFX\SFX_trigger_spcae_1_10C4C929.wem</Path>
+						</File>
+						<File Id="287068677" Language="SFX">
+							<ShortName>SFX\SFX_trigger_spcae_2.wav</ShortName>
+							<Path>SFX\SFX\SFX_trigger_spcae_2_A1D7F150.wem</Path>
+						</File>
+						<File Id="851934408" Language="SFX">
+							<ShortName>SFX\SFX_trigger_spcae_3.wav</ShortName>
+							<Path>SFX\SFX\SFX_trigger_spcae_3_78D5FC8B.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="814842324" Name="Play_Level_1_Music" ObjectPath="\Events\Subarashii\Music\Play_Level_1_Music" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="862353582" Language="SFX">
@@ -46,7 +196,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 					<ActionSetState>
-						<ActionSetStateEntry Id="3762955427" Name="Tutorial" ObjectPath="\States\Subarashii\Level_1_Music_State\Tutorial"/>
+						<ActionSetStateEntry Id="3762955427" Name="Tutorial" ObjectPath="\States\Subarashii\Level_Music_State\Tutorial"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="2048014091" Name="Play_Level_2_Music" ObjectPath="\Events\Subarashii\Music\Play_Level_2_Music" DurationType="Infinite">
@@ -74,28 +224,177 @@
 						</SwitchContainer>
 					</SwitchContainers>
 					<ActionSetState>
-						<ActionSetStateEntry Id="3762955427" Name="Tutorial" ObjectPath="\States\Subarashii\Level_1_Music_State\Tutorial"/>
+						<ActionSetStateEntry Id="3762955427" Name="Tutorial" ObjectPath="\States\Subarashii\Level_Music_State\Tutorial"/>
 					</ActionSetState>
+				</Event>
+				<Event Id="2793021362" Name="Play_Level_3_Music" ObjectPath="\Events\Subarashii\Music\Play_Level_3_Music" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="181561526" Language="SFX">
+							<ShortName>level3 .wav</ShortName>
+							<Path>SFX\level3 _D79FB2B7.wem</Path>
+						</File>
+						<File Id="471319580" Language="SFX">
+							<ShortName>level3_tutorial.wav</ShortName>
+							<Path>SFX\level3_tutorial_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{62FE2A25-AA67-4EA0-A10C-8384CB444D33}">
+							<Media>
+								<File Id="181561526"/>
+								<File Id="471319580"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{897F8961-AD16-48C2-B051-A2C8D145475F}">
+							<Media>
+								<File Id="471319580"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetState>
+						<ActionSetStateEntry Id="3762955427" Name="Tutorial" ObjectPath="\States\Subarashii\Level_Music_State\Tutorial"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3783587681" Name="Play_Level_4_Music" ObjectPath="\Events\Subarashii\Music\Play_Level_4_Music" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="610492680" Language="SFX">
+							<ShortName>song4.wav</ShortName>
+							<Path>SFX\song4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="942345587" Language="SFX">
+							<ShortName>song4_tutorial.wav</ShortName>
+							<Path>SFX\song4_tutorial_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{62FE2A25-AA67-4EA0-A10C-8384CB444D33}">
+							<Media>
+								<File Id="610492680"/>
+								<File Id="942345587"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{897F8961-AD16-48C2-B051-A2C8D145475F}">
+							<Media>
+								<File Id="942345587"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetState>
+						<ActionSetStateEntry Id="3762955427" Name="Tutorial" ObjectPath="\States\Subarashii\Level_Music_State\Tutorial"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2662890845" Name="Shit_Combine" ObjectPath="\Events\Subarashii\SFX\Level_5\Shit_Combine" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<IncludedMemoryFiles>
+						<File Id="233903279" Language="SFX">
+							<ShortName>SFX\SFX_shit_combine2.wav</ShortName>
+							<Path>SFX\SFX\SFX_shit_combine2_10C4C929.wem</Path>
+						</File>
+						<File Id="601146170" Language="SFX">
+							<ShortName>SFX\SFX_shit_combine1.wav</ShortName>
+							<Path>SFX\SFX\SFX_shit_combine1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3652999024" Name="Space_Food" ObjectPath="\Events\Subarashii\SFX\Level_1\Space_Food" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<IncludedMemoryFiles>
+						<File Id="665715079" Language="SFX">
+							<ShortName>SFX\SFX_trigger_spcae_food.wav</ShortName>
+							<Path>SFX\SFX\SFX_trigger_spcae_food_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4232218210" Name="Space_Hinder" ObjectPath="\Events\Subarashii\SFX\Level_3\Space_Hinder" DurationType="OneShot" DurationMin="2.5" DurationMax="2.5">
+					<IncludedMemoryFiles>
+						<File Id="365881016" Language="SFX">
+							<ShortName>SFX\SFX_trigger_spcae_barriage.wav</ShortName>
+							<Path>SFX\SFX\SFX_trigger_spcae_barriage_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="207411531" Name="Switch_Level_1_MainMusic" ObjectPath="\Events\Subarashii\Music\Switch_Level_1_MainMusic" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
 					<ActionSetState>
-						<ActionSetStateEntry Id="3479155863" Name="MainMusic" ObjectPath="\States\Subarashii\Level_1_Music_State\MainMusic"/>
+						<ActionSetStateEntry Id="3479155863" Name="MainMusic" ObjectPath="\States\Subarashii\Level_Music_State\MainMusic"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="1183555207" Name="Switch_Level_1_Tutorial" ObjectPath="\Events\Subarashii\Music\Switch_Level_1_Tutorial" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
 					<ActionSetState>
-						<ActionSetStateEntry Id="3762955427" Name="Tutorial" ObjectPath="\States\Subarashii\Level_1_Music_State\Tutorial"/>
+						<ActionSetStateEntry Id="3762955427" Name="Tutorial" ObjectPath="\States\Subarashii\Level_Music_State\Tutorial"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="2429794592" Name="Switch_Level_2_MainMusic" ObjectPath="\Events\Subarashii\Music\Switch_Level_2_MainMusic" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
 					<ActionSetState>
-						<ActionSetStateEntry Id="3479155863" Name="MainMusic" ObjectPath="\States\Subarashii\Level_1_Music_State\MainMusic"/>
+						<ActionSetStateEntry Id="3479155863" Name="MainMusic" ObjectPath="\States\Subarashii\Level_Music_State\MainMusic"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="1919083106" Name="Switch_Level_2_Tutorial" ObjectPath="\Events\Subarashii\Music\Switch_Level_2_Tutorial" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
 					<ActionSetState>
-						<ActionSetStateEntry Id="3762955427" Name="Tutorial" ObjectPath="\States\Subarashii\Level_1_Music_State\Tutorial"/>
+						<ActionSetStateEntry Id="3762955427" Name="Tutorial" ObjectPath="\States\Subarashii\Level_Music_State\Tutorial"/>
 					</ActionSetState>
+				</Event>
+				<Event Id="1555771993" Name="Switch_Level_3_MainMusic" ObjectPath="\Events\Subarashii\Music\Switch_Level_3_MainMusic" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3479155863" Name="MainMusic" ObjectPath="\States\Subarashii\Level_Music_State\MainMusic"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3205827125" Name="Switch_Level_3_Tutorial" ObjectPath="\Events\Subarashii\Music\Switch_Level_3_Tutorial" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3762955427" Name="Tutorial" ObjectPath="\States\Subarashii\Level_Music_State\Tutorial"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3682747983" Name="Switch_Level_4_Music" ObjectPath="\Events\Subarashii\Music\Switch_Level_4_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3479155863" Name="MainMusic" ObjectPath="\States\Subarashii\Level_Music_State\MainMusic"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3115092416" Name="Switch_Level_4_Tutorial" ObjectPath="\Events\Subarashii\Music\Switch_Level_4_Tutorial" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3762955427" Name="Tutorial" ObjectPath="\States\Subarashii\Level_Music_State\Tutorial"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3674397817" Name="Talk_Buzz" ObjectPath="\Events\Subarashii\SFX\Talk_Buzz" DurationType="OneShot" DurationMin="2." DurationMax="2.">
+					<IncludedMemoryFiles>
+						<File Id="139457339" Language="SFX">
+							<ShortName>SFX\SFX_buzz_talk2.wav</ShortName>
+							<Path>SFX\SFX\SFX_buzz_talk2_10C4C929.wem</Path>
+						</File>
+						<File Id="329270403" Language="SFX">
+							<ShortName>SFX\SFX_buzz_talk1.wav</ShortName>
+							<Path>SFX\SFX\SFX_buzz_talk1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3402608328" Name="Talk_Radio_Play" ObjectPath="\Events\Subarashii\SFX\Talk_Radio_Play" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="622139167" Language="SFX">
+							<ShortName>SFX\SFX_buzz_radio.wav</ShortName>
+							<Path>SFX\SFX\SFX_buzz_radio_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1485311290" Name="Talk_Radio_Stop" ObjectPath="\Events\Subarashii\SFX\Talk_Radio_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3500213621" Name="Talking_1" ObjectPath="\Events\Subarashii\SFX\Talking_1" DurationType="OneShot" DurationMin="0.368195" DurationMax="0.73639">
+					<IncludedMemoryFiles>
+						<File Id="621715671" Language="SFX">
+							<ShortName>SFX\SFX_talk1.wav</ShortName>
+							<Path>SFX\SFX\SFX_talk1_171B86B8.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3500213622" Name="Talking_2" ObjectPath="\Events\Subarashii\SFX\Talking_2" DurationType="OneShot" DurationMin="0.422636" DurationMax="0.773639">
+					<IncludedMemoryFiles>
+						<File Id="351129862" Language="SFX">
+							<ShortName>SFX\SFX_talk2.wav</ShortName>
+							<Path>SFX\SFX\SFX_talk2_E4FE0A82.wem</Path>
+						</File>
+						<File Id="428548908" Language="SFX">
+							<ShortName>SFX\SFX_talk2.wav</ShortName>
+							<Path>SFX\SFX\SFX_talk2_A4E01292.wem</Path>
+						</File>
+						<File Id="900534526" Language="SFX">
+							<ShortName>SFX\SFX_talk2.wav</ShortName>
+							<Path>SFX\SFX\SFX_talk2_F970B1DB.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="1675477522" Name="TestPlayLevel_1_MainMusic" ObjectPath="\Events\Subarashii\Music\TestPlayLevel_1_MainMusic" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -109,22 +408,22 @@
 						</File>
 					</IncludedMemoryFiles>
 					<ActionSetState>
-						<ActionSetStateEntry Id="3479155863" Name="MainMusic" ObjectPath="\States\Subarashii\Level_1_Music_State\MainMusic"/>
+						<ActionSetStateEntry Id="3479155863" Name="MainMusic" ObjectPath="\States\Subarashii\Level_Music_State\MainMusic"/>
 					</ActionSetState>
 				</Event>
 			</IncludedEvents>
 			<StateGroups>
-				<StateGroup Id="647082951" Name="Level_1_Music_State" ObjectPath="\States\Subarashii\Level_1_Music_State" GUID="{47768808-F60B-45E2-A9BF-EA21BC24A48A}">
-					<States>
-						<State Id="748895195" Name="None" ObjectPath="\States\Subarashii\Level_1_Music_State\None" GUID="{616ED40C-EB9C-435F-8992-6161C522CF00}"/>
-						<State Id="3762955427" Name="Tutorial" ObjectPath="\States\Subarashii\Level_1_Music_State\Tutorial" GUID="{897F8961-AD16-48C2-B051-A2C8D145475F}"/>
-						<State Id="3479155863" Name="MainMusic" ObjectPath="\States\Subarashii\Level_1_Music_State\MainMusic" GUID="{62FE2A25-AA67-4EA0-A10C-8384CB444D33}"/>
-					</States>
-				</StateGroup>
-				<StateGroup Id="3479155863" Name="MainMusic" ObjectPath="\States\Subarashii\Level_1_Music_State\MainMusic" GUID="{62FE2A25-AA67-4EA0-A10C-8384CB444D33}">
+				<StateGroup Id="3479155863" Name="MainMusic" ObjectPath="\States\Subarashii\Level_Music_State\MainMusic" GUID="{62FE2A25-AA67-4EA0-A10C-8384CB444D33}">
 					<States/>
 				</StateGroup>
-				<StateGroup Id="3762955427" Name="Tutorial" ObjectPath="\States\Subarashii\Level_1_Music_State\Tutorial" GUID="{897F8961-AD16-48C2-B051-A2C8D145475F}">
+				<StateGroup Id="3570339667" Name="Level_Music_State" ObjectPath="\States\Subarashii\Level_Music_State" GUID="{47768808-F60B-45E2-A9BF-EA21BC24A48A}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Subarashii\Level_Music_State\None" GUID="{616ED40C-EB9C-435F-8992-6161C522CF00}"/>
+						<State Id="3762955427" Name="Tutorial" ObjectPath="\States\Subarashii\Level_Music_State\Tutorial" GUID="{897F8961-AD16-48C2-B051-A2C8D145475F}"/>
+						<State Id="3479155863" Name="MainMusic" ObjectPath="\States\Subarashii\Level_Music_State\MainMusic" GUID="{62FE2A25-AA67-4EA0-A10C-8384CB444D33}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3762955427" Name="Tutorial" ObjectPath="\States\Subarashii\Level_Music_State\Tutorial" GUID="{897F8961-AD16-48C2-B051-A2C8D145475F}">
 					<States/>
 				</StateGroup>
 			</StateGroups>

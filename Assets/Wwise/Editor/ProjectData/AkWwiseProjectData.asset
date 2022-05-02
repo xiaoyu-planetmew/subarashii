@@ -54,6 +54,67 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+  - PhysicalPath: Master-Mixer Hierarchy\Subarashii.wwu
+    PathAndIcons:
+    - ElementName: Master-Mixer Hierarchy
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Subarashii
+      ObjectType: 12
+      guid: fc999c091955554c892bcafb2b0bb30d
+    ParentPath: Master-Mixer Hierarchy\Subarashii
+    guid: fc999c091955554c892bcafb2b0bb30d
+    GuidInternal: 
+    m_lastTime: -8585501009715855522
+    List:
+    - name: Master Bus
+      guid: 011b8f8379f49e4a8beb96dc6cda5434
+      id: 1399649189
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: fc999c091955554c892bcafb2b0bb30d
+      - ElementName: Master Bus
+        ObjectType: 2
+        guid: 011b8f8379f49e4a8beb96dc6cda5434
+      Path: Master-Mixer Hierarchy\Subarashii\Master Bus
+    - name: Music
+      guid: 3faafe3bbc3fdf45af9b50f65981597a
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: fc999c091955554c892bcafb2b0bb30d
+      - ElementName: Master Bus
+        ObjectType: 2
+        guid: 011b8f8379f49e4a8beb96dc6cda5434
+      - ElementName: Music
+        ObjectType: 2
+        guid: 3faafe3bbc3fdf45af9b50f65981597a
+      Path: Master-Mixer Hierarchy\Subarashii\Master Bus\Music
+    - name: SFX
+      guid: 704705e62991784cb243f5e530ec4a77
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: fc999c091955554c892bcafb2b0bb30d
+      - ElementName: Master Bus
+        ObjectType: 2
+        guid: 011b8f8379f49e4a8beb96dc6cda5434
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 704705e62991784cb243f5e530ec4a77
+      Path: Master-Mixer Hierarchy\Subarashii\Master Bus\SFX
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -168,7 +229,7 @@ MonoBehaviour:
     ParentPath: Events\Subarashii
     guid: 63796efd22d4f34992e8dbfe894f0a8d
     GuidInternal: 
-    m_lastTime: -8585501140068160273
+    m_lastTime: -8585501001247310680
     List:
     - name: Boss_Attack
       guid: d082697ccabd084e8069dbfc3c565917
@@ -191,8 +252,8 @@ MonoBehaviour:
         guid: d082697ccabd084e8069dbfc3c565917
       Path: Events\Subarashii\SFX\Level_4\Boss_Attack
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1
+      minDuration: 1
     - name: Boss_Destroy
       guid: 18ccf2529c111940b0323ede76ebdc0f
       id: 548787921
@@ -214,8 +275,8 @@ MonoBehaviour:
         guid: 18ccf2529c111940b0323ede76ebdc0f
       Path: Events\Subarashii\SFX\Level_4\Boss_Destroy
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 7.5
+      minDuration: 7.5
     - name: Boss_Siren_Play
       guid: 637fb6dd0e8f4d43b14555ad21e9f71b
       id: 446164349
@@ -260,8 +321,8 @@ MonoBehaviour:
         guid: 37abdc22c9e5bf4daea00c37619b2eaf
       Path: Events\Subarashii\SFX\Level_4\Boss_Siren_Stop
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Button_On
       guid: 5dd18b5b44ade8439b32f46bc6a83219
       id: 2409176675
@@ -280,8 +341,8 @@ MonoBehaviour:
         guid: 5dd18b5b44ade8439b32f46bc6a83219
       Path: Events\Subarashii\SFX\Button_On
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.5
+      minDuration: 0.5
     - name: Button_Pause
       guid: 16a36c6a86f6a74db4d95d8a390833af
       id: 1412610934
@@ -300,8 +361,8 @@ MonoBehaviour:
         guid: 16a36c6a86f6a74db4d95d8a390833af
       Path: Events\Subarashii\SFX\Button_Pause
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.5
+      minDuration: 0.5
     - name: Door_Impacting
       guid: 60d8cdc0060f254c83312642c8d32bd7
       id: 3146435922
@@ -323,8 +384,8 @@ MonoBehaviour:
         guid: 60d8cdc0060f254c83312642c8d32bd7
       Path: Events\Subarashii\SFX\Level_1\Door_Impacting
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1
+      minDuration: 1
     - name: Door_Open
       guid: 9e1d6e204d8c6049bd638fde3255f213
       id: 535830432
@@ -346,8 +407,8 @@ MonoBehaviour:
         guid: 9e1d6e204d8c6049bd638fde3255f213
       Path: Events\Subarashii\SFX\Level_1\Door_Open
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2
+      minDuration: 2
     - name: Final_Shit
       guid: 3888f14935af5e4ebc459d717475e5c1
       id: 3822964584
@@ -369,8 +430,8 @@ MonoBehaviour:
         guid: 3888f14935af5e4ebc459d717475e5c1
       Path: Events\Subarashii\SFX\Level_5\Final_Shit
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 11
+      minDuration: 11
     - name: Food_Absorb
       guid: 1f671e3839d2c449a924af25b228ae60
       id: 617877575
@@ -392,8 +453,8 @@ MonoBehaviour:
         guid: 1f671e3839d2c449a924af25b228ae60
       Path: Events\Subarashii\SFX\Level_1\Food_Absorb
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.5
+      minDuration: 0.5
     - name: Food_Barriage
       guid: 9c2e4d2c167aca4ca8ef3e71aac81d46
       id: 1720845381
@@ -415,8 +476,8 @@ MonoBehaviour:
         guid: 9c2e4d2c167aca4ca8ef3e71aac81d46
       Path: Events\Subarashii\SFX\Level_2\Food_Barriage
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2.5
+      minDuration: 2.5
     - name: Food_Happy
       guid: 75e187ebbe52384b9544cc1eef5b47b9
       id: 151292290
@@ -438,8 +499,8 @@ MonoBehaviour:
         guid: 75e187ebbe52384b9544cc1eef5b47b9
       Path: Events\Subarashii\SFX\Level_1\Food_Happy
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.5
+      minDuration: 1.5
     - name: Input_Arrow__Success
       guid: 304e7cfa6fbb7540af0f9c2a89af3c2f
       id: 822197044
@@ -458,8 +519,8 @@ MonoBehaviour:
         guid: 304e7cfa6fbb7540af0f9c2a89af3c2f
       Path: Events\Subarashii\SFX\Input_Arrow__Success
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.5
+      minDuration: 0.5
     - name: Input_Arrow_Combo
       guid: 144d4566642bcd4b94476b8211e0df99
       id: 3952070454
@@ -478,8 +539,8 @@ MonoBehaviour:
         guid: 144d4566642bcd4b94476b8211e0df99
       Path: Events\Subarashii\SFX\Input_Arrow_Combo
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.5
+      minDuration: 0.5
     - name: Input_Arrow_Menu
       guid: 9c82233060f6e94e9c4e409301e0a9e9
       id: 2196209329
@@ -498,8 +559,8 @@ MonoBehaviour:
         guid: 9c82233060f6e94e9c4e409301e0a9e9
       Path: Events\Subarashii\SFX\Input_Arrow_Menu
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.5
+      minDuration: 0.5
     - name: Input_Arrow_Miss
       guid: 3bd51d97089a684fb17c0b30cb231bf3
       id: 2683451828
@@ -518,8 +579,8 @@ MonoBehaviour:
         guid: 3bd51d97089a684fb17c0b30cb231bf3
       Path: Events\Subarashii\SFX\Input_Arrow_Miss
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1
+      minDuration: 1
     - name: Input_Space_Miss
       guid: b1f6572235e8d54abfa846c4e8aec2c1
       id: 4120751531
@@ -538,8 +599,8 @@ MonoBehaviour:
         guid: b1f6572235e8d54abfa846c4e8aec2c1
       Path: Events\Subarashii\SFX\Input_Space_Miss
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.5
+      minDuration: 0.5
     - name: Input_Space_Success
       guid: bb47777719eb1b4fb61fccc3d3577698
       id: 1130099208
@@ -558,8 +619,8 @@ MonoBehaviour:
         guid: bb47777719eb1b4fb61fccc3d3577698
       Path: Events\Subarashii\SFX\Input_Space_Success
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.640401
+      minDuration: 0.5
     - name: Level_1
       guid: 34b18267e5d6d44289cc8f4026b2cb6b
       id: 1290008369
@@ -795,8 +856,8 @@ MonoBehaviour:
         guid: f7581d89eccb0a44b9fc3e7e7fcbede1
       Path: Events\Subarashii\SFX\Level_5\Shit_Combine
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.5
+      minDuration: 0.5
     - name: Space_Food
       guid: d882544ba6a85b439b743fbfc0da0acb
       id: 3652999024
@@ -818,8 +879,8 @@ MonoBehaviour:
         guid: d882544ba6a85b439b743fbfc0da0acb
       Path: Events\Subarashii\SFX\Level_1\Space_Food
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.5
+      minDuration: 0.5
     - name: Space_Hinder
       guid: d42587b03dddc2418a7bb3c122879a30
       id: 4232218210
@@ -841,8 +902,8 @@ MonoBehaviour:
         guid: d42587b03dddc2418a7bb3c122879a30
       Path: Events\Subarashii\SFX\Level_3\Space_Hinder
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2.5
+      minDuration: 2.5
     - name: Switch_Level_1_MainMusic
       guid: 099849f4034d33449eb2db898253d143
       id: 207411531
@@ -941,8 +1002,8 @@ MonoBehaviour:
         guid: 0847f483c3dcc84c9e60240a841c7b54
       Path: Events\Subarashii\Music\Switch_Level_3_MainMusic
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Switch_Level_3_Tutorial
       guid: 4410daca9d599543a66ad6afd79cdc18
       id: 3205827125
@@ -961,8 +1022,8 @@ MonoBehaviour:
         guid: 4410daca9d599543a66ad6afd79cdc18
       Path: Events\Subarashii\Music\Switch_Level_3_Tutorial
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Switch_Level_4_Music
       guid: 583a57b6cf8aa044af74bfefc750be92
       id: 3682747983
@@ -981,8 +1042,8 @@ MonoBehaviour:
         guid: 583a57b6cf8aa044af74bfefc750be92
       Path: Events\Subarashii\Music\Switch_Level_4_Music
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Switch_Level_4_Tutorial
       guid: 9684ce0a03c9074cb8b75c8f9798cddd
       id: 3115092416
@@ -1001,8 +1062,8 @@ MonoBehaviour:
         guid: 9684ce0a03c9074cb8b75c8f9798cddd
       Path: Events\Subarashii\Music\Switch_Level_4_Tutorial
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Talk_Buzz
       guid: 9e383ddd1298344ab89cbb92ccc2f78c
       id: 3674397817
@@ -1021,8 +1082,8 @@ MonoBehaviour:
         guid: 9e383ddd1298344ab89cbb92ccc2f78c
       Path: Events\Subarashii\SFX\Talk_Buzz
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2
+      minDuration: 2
     - name: Talk_Radio_Play
       guid: 648d1ada9db1b44ab49b68c147ed18b6
       id: 3402608328
@@ -1061,8 +1122,8 @@ MonoBehaviour:
         guid: 7a58883877a31f418b748a2cbbd3bd4d
       Path: Events\Subarashii\SFX\Talk_Radio_Stop
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Talking_1
       guid: cb71db9e59ce5e4cb7d85c35f531cd17
       id: 3500213621
@@ -1081,8 +1142,8 @@ MonoBehaviour:
         guid: cb71db9e59ce5e4cb7d85c35f531cd17
       Path: Events\Subarashii\SFX\Talking_1
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.73639
+      minDuration: 0.368195
     - name: Talking_2
       guid: fb2cb88d773f57438e63675e5d5e653c
       id: 3500213622
@@ -1100,6 +1161,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: fb2cb88d773f57438e63675e5d5e653c
       Path: Events\Subarashii\SFX\Talking_2
+      maxAttenuation: 0
+      maxDuration: 0.773639
+      minDuration: 0.422636
+    - name: Test
+      guid: 558c3a198d449544bfacf1d80075293e
+      id: 3157003241
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: Test
+        ObjectType: 3
+        guid: 558c3a198d449544bfacf1d80075293e
+      Path: Events\Subarashii\Test
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1137,6 +1215,84 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585513480446411926
     List: []
+  - PhysicalPath: Game Parameters\Subarashii.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Subarashii
+      ObjectType: 12
+      guid: ca84f0cd6b68bf4dbabd953a76f57a8c
+    ParentPath: Game Parameters\Subarashii
+    guid: ca84f0cd6b68bf4dbabd953a76f57a8c
+    GuidInternal: 
+    m_lastTime: -8585501013381556833
+    List:
+    - name: MasterVolume
+      guid: 4989e7ca548f51479d1b4d3a45192c5f
+      id: 2918011349
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: ca84f0cd6b68bf4dbabd953a76f57a8c
+      - ElementName: Volume
+        ObjectType: 4
+        guid: 8786ed470cad0d4fb1d056a6914cdc54
+      - ElementName: MasterVolume
+        ObjectType: 13
+        guid: 4989e7ca548f51479d1b4d3a45192c5f
+      Path: Game Parameters\Subarashii\Volume\MasterVolume
+    - name: MusicVolume
+      guid: 10f8a8619a77454f8decf08ef79296f4
+      id: 2346531308
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: ca84f0cd6b68bf4dbabd953a76f57a8c
+      - ElementName: Volume
+        ObjectType: 4
+        guid: 8786ed470cad0d4fb1d056a6914cdc54
+      - ElementName: MusicVolume
+        ObjectType: 13
+        guid: 10f8a8619a77454f8decf08ef79296f4
+      Path: Game Parameters\Subarashii\Volume\MusicVolume
+    - name: SFXVolume
+      guid: 0ac94842a956504e86b6e85a72287d23
+      id: 988953028
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: ca84f0cd6b68bf4dbabd953a76f57a8c
+      - ElementName: Volume
+        ObjectType: 4
+        guid: 8786ed470cad0d4fb1d056a6914cdc54
+      - ElementName: SFXVolume
+        ObjectType: 13
+        guid: 0ac94842a956504e86b6e85a72287d23
+      Path: Game Parameters\Subarashii\Volume\SFXVolume
+    - name: Volume
+      guid: 8786ed470cad0d4fb1d056a6914cdc54
+      id: 2415836739
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: ca84f0cd6b68bf4dbabd953a76f57a8c
+      - ElementName: Volume
+        ObjectType: 4
+        guid: 8786ed470cad0d4fb1d056a6914cdc54
+      Path: Game Parameters\Subarashii\Volume
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -1309,7 +1465,7 @@ MonoBehaviour:
     m_lastTime: -8585513480418664590
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000090000000a0000007600000079000000
+  ExpandedWaapiItemIds: 010000000500000007000000090000000a0000000b0000000c0000001400000015000000170000007600000079000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

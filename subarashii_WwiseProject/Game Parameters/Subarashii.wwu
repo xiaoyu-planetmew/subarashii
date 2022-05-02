@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CDF084CA-686B-4DBF-BABD-953A76F57A8C}" SchemaVersion="103">
+	<GameParameters>
+		<WorkUnit Name="Subarashii" ID="{CDF084CA-686B-4DBF-BABD-953A76F57A8C}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Volume" ID="{47ED8687-AD0C-4F0D-B1D0-56A6914CDC54}" ShortID="297811275">
+					<ChildrenList>
+						<GameParameter Name="MasterVolume" ID="{CAE78949-8F54-4751-9D1B-4D3A45192C5F}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="MusicVolume" ID="{61A8F810-779A-4F45-8DEC-F08EF79296F4}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="SFXVolume" ID="{4248C90A-56A9-4E50-86B6-E85A72287D23}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>
