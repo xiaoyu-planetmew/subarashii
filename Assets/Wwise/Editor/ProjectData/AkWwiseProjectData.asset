@@ -93,7 +93,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Subarashii
     guid: bb59c71a64251748bd2e36fd1cabb9aa
     GuidInternal: 
-    m_lastTime: -8585501353385902834
+    m_lastTime: -8585501140069446829
     List:
     - name: SoundBank
       guid: 1b861bf19af8cf4982b897ca2f1c8174
@@ -168,8 +168,498 @@ MonoBehaviour:
     ParentPath: Events\Subarashii
     guid: 63796efd22d4f34992e8dbfe894f0a8d
     GuidInternal: 
-    m_lastTime: -8585501353480450499
+    m_lastTime: -8585501140068160273
     List:
+    - name: Boss_Attack
+      guid: d082697ccabd084e8069dbfc3c565917
+      id: 2883369105
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Level_4
+        ObjectType: 4
+        guid: 32f2ed3aa07763429f4be1bfd17866e3
+      - ElementName: Boss_Attack
+        ObjectType: 3
+        guid: d082697ccabd084e8069dbfc3c565917
+      Path: Events\Subarashii\SFX\Level_4\Boss_Attack
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Boss_Destroy
+      guid: 18ccf2529c111940b0323ede76ebdc0f
+      id: 548787921
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Level_4
+        ObjectType: 4
+        guid: 32f2ed3aa07763429f4be1bfd17866e3
+      - ElementName: Boss_Destroy
+        ObjectType: 3
+        guid: 18ccf2529c111940b0323ede76ebdc0f
+      Path: Events\Subarashii\SFX\Level_4\Boss_Destroy
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Boss_Siren_Play
+      guid: 637fb6dd0e8f4d43b14555ad21e9f71b
+      id: 446164349
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Level_4
+        ObjectType: 4
+        guid: 32f2ed3aa07763429f4be1bfd17866e3
+      - ElementName: Boss_Siren_Play
+        ObjectType: 3
+        guid: 637fb6dd0e8f4d43b14555ad21e9f71b
+      Path: Events\Subarashii\SFX\Level_4\Boss_Siren_Play
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Boss_Siren_Stop
+      guid: 37abdc22c9e5bf4daea00c37619b2eaf
+      id: 2631903211
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Level_4
+        ObjectType: 4
+        guid: 32f2ed3aa07763429f4be1bfd17866e3
+      - ElementName: Boss_Siren_Stop
+        ObjectType: 3
+        guid: 37abdc22c9e5bf4daea00c37619b2eaf
+      Path: Events\Subarashii\SFX\Level_4\Boss_Siren_Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Button_On
+      guid: 5dd18b5b44ade8439b32f46bc6a83219
+      id: 2409176675
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Button_On
+        ObjectType: 3
+        guid: 5dd18b5b44ade8439b32f46bc6a83219
+      Path: Events\Subarashii\SFX\Button_On
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Button_Pause
+      guid: 16a36c6a86f6a74db4d95d8a390833af
+      id: 1412610934
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Button_Pause
+        ObjectType: 3
+        guid: 16a36c6a86f6a74db4d95d8a390833af
+      Path: Events\Subarashii\SFX\Button_Pause
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Door_Impacting
+      guid: 60d8cdc0060f254c83312642c8d32bd7
+      id: 3146435922
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Level_1
+        ObjectType: 4
+        guid: 34b18267e5d6d44289cc8f4026b2cb6b
+      - ElementName: Door_Impacting
+        ObjectType: 3
+        guid: 60d8cdc0060f254c83312642c8d32bd7
+      Path: Events\Subarashii\SFX\Level_1\Door_Impacting
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Door_Open
+      guid: 9e1d6e204d8c6049bd638fde3255f213
+      id: 535830432
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Level_1
+        ObjectType: 4
+        guid: 34b18267e5d6d44289cc8f4026b2cb6b
+      - ElementName: Door_Open
+        ObjectType: 3
+        guid: 9e1d6e204d8c6049bd638fde3255f213
+      Path: Events\Subarashii\SFX\Level_1\Door_Open
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Final_Shit
+      guid: 3888f14935af5e4ebc459d717475e5c1
+      id: 3822964584
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Level_5
+        ObjectType: 4
+        guid: 83fcfe123cae214ca24a0d8fa6a6498b
+      - ElementName: Final_Shit
+        ObjectType: 3
+        guid: 3888f14935af5e4ebc459d717475e5c1
+      Path: Events\Subarashii\SFX\Level_5\Final_Shit
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Food_Absorb
+      guid: 1f671e3839d2c449a924af25b228ae60
+      id: 617877575
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Level_1
+        ObjectType: 4
+        guid: 34b18267e5d6d44289cc8f4026b2cb6b
+      - ElementName: Food_Absorb
+        ObjectType: 3
+        guid: 1f671e3839d2c449a924af25b228ae60
+      Path: Events\Subarashii\SFX\Level_1\Food_Absorb
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Food_Barriage
+      guid: 9c2e4d2c167aca4ca8ef3e71aac81d46
+      id: 1720845381
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Level_2
+        ObjectType: 4
+        guid: 4eb34dc8ba51f44aa1fb5b13def7701f
+      - ElementName: Food_Barriage
+        ObjectType: 3
+        guid: 9c2e4d2c167aca4ca8ef3e71aac81d46
+      Path: Events\Subarashii\SFX\Level_2\Food_Barriage
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Food_Happy
+      guid: 75e187ebbe52384b9544cc1eef5b47b9
+      id: 151292290
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Level_1
+        ObjectType: 4
+        guid: 34b18267e5d6d44289cc8f4026b2cb6b
+      - ElementName: Food_Happy
+        ObjectType: 3
+        guid: 75e187ebbe52384b9544cc1eef5b47b9
+      Path: Events\Subarashii\SFX\Level_1\Food_Happy
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Input_Arrow__Success
+      guid: 304e7cfa6fbb7540af0f9c2a89af3c2f
+      id: 822197044
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Input_Arrow__Success
+        ObjectType: 3
+        guid: 304e7cfa6fbb7540af0f9c2a89af3c2f
+      Path: Events\Subarashii\SFX\Input_Arrow__Success
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Input_Arrow_Combo
+      guid: 144d4566642bcd4b94476b8211e0df99
+      id: 3952070454
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Input_Arrow_Combo
+        ObjectType: 3
+        guid: 144d4566642bcd4b94476b8211e0df99
+      Path: Events\Subarashii\SFX\Input_Arrow_Combo
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Input_Arrow_Menu
+      guid: 9c82233060f6e94e9c4e409301e0a9e9
+      id: 2196209329
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Input_Arrow_Menu
+        ObjectType: 3
+        guid: 9c82233060f6e94e9c4e409301e0a9e9
+      Path: Events\Subarashii\SFX\Input_Arrow_Menu
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Input_Arrow_Miss
+      guid: 3bd51d97089a684fb17c0b30cb231bf3
+      id: 2683451828
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Input_Arrow_Miss
+        ObjectType: 3
+        guid: 3bd51d97089a684fb17c0b30cb231bf3
+      Path: Events\Subarashii\SFX\Input_Arrow_Miss
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Input_Space_Miss
+      guid: b1f6572235e8d54abfa846c4e8aec2c1
+      id: 4120751531
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Input_Space_Miss
+        ObjectType: 3
+        guid: b1f6572235e8d54abfa846c4e8aec2c1
+      Path: Events\Subarashii\SFX\Input_Space_Miss
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Input_Space_Success
+      guid: bb47777719eb1b4fb61fccc3d3577698
+      id: 1130099208
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Input_Space_Success
+        ObjectType: 3
+        guid: bb47777719eb1b4fb61fccc3d3577698
+      Path: Events\Subarashii\SFX\Input_Space_Success
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Level_1
+      guid: 34b18267e5d6d44289cc8f4026b2cb6b
+      id: 1290008369
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Level_1
+        ObjectType: 4
+        guid: 34b18267e5d6d44289cc8f4026b2cb6b
+      Path: Events\Subarashii\SFX\Level_1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Level_2
+      guid: 4eb34dc8ba51f44aa1fb5b13def7701f
+      id: 1290008370
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Level_2
+        ObjectType: 4
+        guid: 4eb34dc8ba51f44aa1fb5b13def7701f
+      Path: Events\Subarashii\SFX\Level_2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Level_3
+      guid: 6a9121cb1a62684e809effec1f206ca6
+      id: 1290008371
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Level_3
+        ObjectType: 4
+        guid: 6a9121cb1a62684e809effec1f206ca6
+      Path: Events\Subarashii\SFX\Level_3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Level_4
+      guid: 32f2ed3aa07763429f4be1bfd17866e3
+      id: 1290008372
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Level_4
+        ObjectType: 4
+        guid: 32f2ed3aa07763429f4be1bfd17866e3
+      Path: Events\Subarashii\SFX\Level_4
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Level_5
+      guid: 83fcfe123cae214ca24a0d8fa6a6498b
+      id: 1290008373
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Level_5
+        ObjectType: 4
+        guid: 83fcfe123cae214ca24a0d8fa6a6498b
+      Path: Events\Subarashii\SFX\Level_5
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Music
       guid: 4e3b0bd258c75647b6f64a8eaa93e424
       id: 3991942870
@@ -264,6 +754,92 @@ MonoBehaviour:
         ObjectType: 3
         guid: 6b1e9299ee4e654e89029d4c7d7916cf
       Path: Events\Subarashii\Music\Play_Level_4_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX
+      guid: bea5fbbe4df49b4db266f99867907f2d
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      Path: Events\Subarashii\SFX
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Shit_Combine
+      guid: f7581d89eccb0a44b9fc3e7e7fcbede1
+      id: 2662890845
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Level_5
+        ObjectType: 4
+        guid: 83fcfe123cae214ca24a0d8fa6a6498b
+      - ElementName: Shit_Combine
+        ObjectType: 3
+        guid: f7581d89eccb0a44b9fc3e7e7fcbede1
+      Path: Events\Subarashii\SFX\Level_5\Shit_Combine
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Space_Food
+      guid: d882544ba6a85b439b743fbfc0da0acb
+      id: 3652999024
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Level_1
+        ObjectType: 4
+        guid: 34b18267e5d6d44289cc8f4026b2cb6b
+      - ElementName: Space_Food
+        ObjectType: 3
+        guid: d882544ba6a85b439b743fbfc0da0acb
+      Path: Events\Subarashii\SFX\Level_1\Space_Food
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Space_Hinder
+      guid: d42587b03dddc2418a7bb3c122879a30
+      id: 4232218210
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Level_3
+        ObjectType: 4
+        guid: 6a9121cb1a62684e809effec1f206ca6
+      - ElementName: Space_Hinder
+        ObjectType: 3
+        guid: d42587b03dddc2418a7bb3c122879a30
+      Path: Events\Subarashii\SFX\Level_3\Space_Hinder
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -427,6 +1003,106 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Talk_Buzz
+      guid: 9e383ddd1298344ab89cbb92ccc2f78c
+      id: 3674397817
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Talk_Buzz
+        ObjectType: 3
+        guid: 9e383ddd1298344ab89cbb92ccc2f78c
+      Path: Events\Subarashii\SFX\Talk_Buzz
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Talk_Radio_Play
+      guid: 648d1ada9db1b44ab49b68c147ed18b6
+      id: 3402608328
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Talk_Radio_Play
+        ObjectType: 3
+        guid: 648d1ada9db1b44ab49b68c147ed18b6
+      Path: Events\Subarashii\SFX\Talk_Radio_Play
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Talk_Radio_Stop
+      guid: 7a58883877a31f418b748a2cbbd3bd4d
+      id: 1485311290
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Talk_Radio_Stop
+        ObjectType: 3
+        guid: 7a58883877a31f418b748a2cbbd3bd4d
+      Path: Events\Subarashii\SFX\Talk_Radio_Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Talking_1
+      guid: cb71db9e59ce5e4cb7d85c35f531cd17
+      id: 3500213621
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Talking_1
+        ObjectType: 3
+        guid: cb71db9e59ce5e4cb7d85c35f531cd17
+      Path: Events\Subarashii\SFX\Talking_1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Talking_2
+      guid: fb2cb88d773f57438e63675e5d5e653c
+      id: 3500213622
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Talking_2
+        ObjectType: 3
+        guid: fb2cb88d773f57438e63675e5d5e653c
+      Path: Events\Subarashii\SFX\Talking_2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: TestPlayLevel_1_MainMusic
       guid: 9c01696cdb835d4daac469b2e76c4ea0
       id: 1675477522
@@ -486,11 +1162,11 @@ MonoBehaviour:
     ParentPath: States\Subarashii
     guid: 119f975107b6ce428724a59901f24adc
     GuidInternal: 
-    m_lastTime: -8585513287913631051
+    m_lastTime: -8585501144241122412
     List:
-    - name: Level_1_Music_State
+    - name: Level_Music_State
       guid: 088876470bf6e245a9bfea21bc24a48a
-      id: 647082951
+      id: 3570339667
       PathAndIcons:
       - ElementName: States
         ObjectType: 5
@@ -498,10 +1174,10 @@ MonoBehaviour:
       - ElementName: Subarashii
         ObjectType: 12
         guid: 119f975107b6ce428724a59901f24adc
-      - ElementName: Level_1_Music_State
+      - ElementName: Level_Music_State
         ObjectType: 9
         guid: 088876470bf6e245a9bfea21bc24a48a
-      Path: States\Subarashii\Level_1_Music_State
+      Path: States\Subarashii\Level_Music_State
       values:
       - name: MainMusic
         guid: 252afe6267aaa04ea10c8384cb444d33
@@ -513,7 +1189,7 @@ MonoBehaviour:
         - ElementName: Subarashii
           ObjectType: 12
           guid: 119f975107b6ce428724a59901f24adc
-        - ElementName: Level_1_Music_State
+        - ElementName: Level_Music_State
           ObjectType: 9
           guid: 088876470bf6e245a9bfea21bc24a48a
         - ElementName: MainMusic
@@ -529,7 +1205,7 @@ MonoBehaviour:
         - ElementName: Subarashii
           ObjectType: 12
           guid: 119f975107b6ce428724a59901f24adc
-        - ElementName: Level_1_Music_State
+        - ElementName: Level_Music_State
           ObjectType: 9
           guid: 088876470bf6e245a9bfea21bc24a48a
         - ElementName: None
@@ -545,12 +1221,62 @@ MonoBehaviour:
         - ElementName: Subarashii
           ObjectType: 12
           guid: 119f975107b6ce428724a59901f24adc
-        - ElementName: Level_1_Music_State
+        - ElementName: Level_Music_State
           ObjectType: 9
           guid: 088876470bf6e245a9bfea21bc24a48a
         - ElementName: Tutorial
           ObjectType: 8
           guid: 61897f8916adc248b051a2c8d145475f
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Play_Status
+      guid: 989bc0a0adb5e040b8846c93cacf6741
+      id: 758613320
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 119f975107b6ce428724a59901f24adc
+      - ElementName: Play_Status
+        ObjectType: 9
+        guid: 989bc0a0adb5e040b8846c93cacf6741
+      Path: States\Subarashii\Play_Status
+      values:
+      - name: None
+        guid: ff83f7b9ec01c64f9f03bc28577cc261
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Subarashii
+          ObjectType: 12
+          guid: 119f975107b6ce428724a59901f24adc
+        - ElementName: Play_Status
+          ObjectType: 9
+          guid: 989bc0a0adb5e040b8846c93cacf6741
+        - ElementName: None
+          ObjectType: 8
+          guid: ff83f7b9ec01c64f9f03bc28577cc261
+      - name: Play
+        guid: 32466fe7e5676145b69c356dbf0db932
+        id: 1256202815
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Subarashii
+          ObjectType: 12
+          guid: 119f975107b6ce428724a59901f24adc
+        - ElementName: Play_Status
+          ObjectType: 9
+          guid: 989bc0a0adb5e040b8846c93cacf6741
+        - ElementName: Play
+          ObjectType: 8
+          guid: 32466fe7e5676145b69c356dbf0db932
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -583,7 +1309,7 @@ MonoBehaviour:
     m_lastTime: -8585513480418664590
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 05000000090000000a0000007600000079000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

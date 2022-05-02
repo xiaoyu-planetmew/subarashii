@@ -7314,7 +7314,7 @@ MonoBehaviour:
   StartMusic: {fileID: 1050616433}
   SwitchToMain: {fileID: 423758214}
   SwitchToTutorial: {fileID: 793643220}
-  timeOfOneBar: 0.011428571
+  timeOfOneBar: 0.9230769
 --- !u!1 &2031791998
 GameObject:
   m_ObjectHideFlags: 0

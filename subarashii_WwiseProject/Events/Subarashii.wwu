@@ -237,6 +237,307 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Folder Name="Level_1" ID="{6782B134-D6E5-42D4-89CC-8F4026B2CB6B}" ShortID="90694047">
+							<ChildrenList>
+								<Event Name="Door_Impacting" ID="{C0CDD860-0F06-4C25-8331-2642C8D32BD7}">
+									<ChildrenList>
+										<Action Name="" ID="{72DEC6B3-B915-4D42-8FDB-2DBE39764786}" ShortID="611781289">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Door_Impacting" ID="{F290FD63-DB46-4F04-A87C-23EF7C9E0A56}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Door_Open" ID="{206E1D9E-8C4D-4960-BD63-8FDE3255F213}">
+									<ChildrenList>
+										<Action Name="" ID="{A9352CF7-6CDD-453F-9A52-DB349EE9A05E}" ShortID="966061293">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Door_Open" ID="{14D850F5-CDBB-4076-A397-49EB3B3E2836}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Food_Absorb" ID="{381E671F-D239-49C4-A924-AF25B228AE60}">
+									<ChildrenList>
+										<Action Name="" ID="{E42E6E13-F77D-4C4C-A10A-97E92C405947}" ShortID="534853132">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Food_Absorb" ID="{281B0564-BB53-4A22-AE10-D76AD24DFCE0}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Food_Happy" ID="{EB87E175-52BE-4B38-9544-CC1EEF5B47B9}">
+									<ChildrenList>
+										<Action Name="" ID="{69309DC4-AF01-4CDF-B073-4C500D620F73}" ShortID="434914910">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Food_Happy" ID="{37EE39FF-5A35-46DF-B554-882D212B4505}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Space_Food" ID="{4B5482D8-A8A6-435B-9B74-3FBFC0DA0ACB}">
+									<ChildrenList>
+										<Action Name="" ID="{01E43B47-BE5D-40FD-9C07-C391AB302709}" ShortID="442193183">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Space_Food" ID="{70DC1C3E-6AA9-4535-8983-39274D0903C2}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Level_2" ID="{C84DB34E-51BA-4AF4-A1FB-5B13DEF7701F}" ShortID="222897547">
+							<ChildrenList>
+								<Event Name="Food_Barriage" ID="{2C4D2E9C-7A16-4CCA-A8EF-3E71AAC81D46}">
+									<ChildrenList>
+										<Action Name="" ID="{79D8C84A-2279-4EB1-9C5E-55E9FA2BAAC0}" ShortID="964830047">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Space_Barriage" ID="{7B9E04E2-43CE-40E4-BD5F-7DF1E2D6256D}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Level_3" ID="{CB21916A-621A-4E68-809E-FFEC1F206CA6}" ShortID="844454002">
+							<ChildrenList>
+								<Event Name="Space_Hinder" ID="{B08725D4-DD3D-41C2-8A7B-B3C122879A30}">
+									<ChildrenList>
+										<Action Name="" ID="{FA6D63AB-8491-437D-9F2D-2A745CBCD88C}" ShortID="223901704">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Space_Barriage" ID="{7B9E04E2-43CE-40E4-BD5F-7DF1E2D6256D}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Level_4" ID="{3AEDF232-77A0-4263-9F4B-E1BFD17866E3}" ShortID="293038249">
+							<ChildrenList>
+								<Event Name="Boss_Attack" ID="{7C6982D0-BDCA-4E08-8069-DBFC3C565917}">
+									<ChildrenList>
+										<Action Name="" ID="{88D0501F-3775-4CD3-A19F-6BEF87DCE943}" ShortID="497513842">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Boss_Attack" ID="{E4911FB5-1D1A-42A9-ACCE-95CBCBDA6DA5}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Boss_Destroy" ID="{52F2CC18-119C-4019-B032-3EDE76EBDC0F}">
+									<ChildrenList>
+										<Action Name="" ID="{EB27CA49-AFFF-4287-A92E-3F1AB98881DC}" ShortID="820967014">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Boss_Destroy" ID="{3BC426BD-C741-4A32-A8E3-04DFBD308E58}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Boss_Siren_Play" ID="{DDB67F63-8F0E-434D-B145-55AD21E9F71B}">
+									<ChildrenList>
+										<Action Name="" ID="{D7F31118-DDB9-455E-A076-0C6D93E68BA8}" ShortID="827260272">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Boss_Siren" ID="{D4273C35-49E3-4F41-8785-1B21955F8C20}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Boss_Siren_Stop" ID="{22DCAB37-E5C9-4DBF-AEA0-0C37619B2EAF}">
+									<ChildrenList>
+										<Action Name="" ID="{77BD658D-88BC-46D8-88FC-B4FD5600C8AF}" ShortID="226585552">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Boss_Siren" ID="{D4273C35-49E3-4F41-8785-1B21955F8C20}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Level_5" ID="{12FEFC83-AE3C-4C21-A24A-0D8FA6A6498B}" ShortID="322311401">
+							<ChildrenList>
+								<Event Name="Final_Shit" ID="{49F18838-AF35-4E5E-BC45-9D717475E5C1}">
+									<ChildrenList>
+										<Action Name="" ID="{CCC00578-1665-4170-B3B4-E9BCBAA6AABD}" ShortID="870400585">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Final_Shit" ID="{BD47C888-C2C0-413C-9421-9788B5809FB1}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Shit_Combine" ID="{891D58F7-CBEC-440A-B9FC-3E7E7FCBEDE1}">
+									<ChildrenList>
+										<Action Name="" ID="{9C813037-9F4E-4752-8D8F-E05A250677CA}" ShortID="1032903214">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Shit_Combine" ID="{71A42CE8-2B86-40C7-97BF-77EEE4FC8351}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Event Name="Button_On" ID="{5B8BD15D-AD44-43E8-9B32-F46BC6A83219}">
+							<ChildrenList>
+								<Action Name="" ID="{00598E44-3E45-4A77-9F3F-05EA64D3216E}" ShortID="601708047">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Button_On" ID="{5E8DC69A-400F-4BDC-99A5-9FF00E27D466}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Input_Arrow_Combo" ID="{66454D14-2B64-4BCD-9447-6B8211E0DF99}">
+							<ChildrenList>
+								<Action Name="" ID="{870A0D39-1655-42A9-AEAB-ADD4E2E7DB45}" ShortID="645511160">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Input_Arrow_Combo" ID="{DC4397EB-37AE-452D-A2AA-6A649CE22C27}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Button_Pause" ID="{6A6CA316-F686-4DA7-B4D9-5D8A390833AF}">
+							<ChildrenList>
+								<Action Name="" ID="{080EC593-FF9A-4352-B9CF-63488E5B5A97}" ShortID="197319194">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Button_Pause" ID="{9558843D-7629-4210-B198-EB985526733D}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Input_Arrow_Menu" ID="{3023829C-F660-4EE9-9C4E-409301E0A9E9}">
+							<ChildrenList>
+								<Action Name="" ID="{BFBEDC89-791F-4674-A047-A8C2704746C1}" ShortID="787226807">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Input_Arrow_Menu" ID="{147DCA18-8435-4ADF-935F-5B2E63B47E94}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Input_Arrow_Miss" ID="{971DD53B-9A08-4F68-B17C-0B30CB231BF3}">
+							<ChildrenList>
+								<Action Name="" ID="{41E67327-BAAA-4524-BAD5-56B2B0498A58}" ShortID="709695982">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Input_Arrow_Miss" ID="{E4060E24-D1C3-4E58-8D8F-4B1E6654DB20}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Input_Arrow__Success" ID="{FA7C4E30-BB6F-4075-AF0F-9C2A89AF3C2F}">
+							<ChildrenList>
+								<Action Name="" ID="{1BE3C2B3-95D3-42B8-A56C-2E6C28B3A956}" ShortID="213782502">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Input_Arrow_Success" ID="{FA56FFB1-37A3-4E50-8C84-4611AEED4BA8}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Input_Space_Miss" ID="{2257F6B1-E835-4AD5-BFA8-46C4E8AEC2C1}">
+							<ChildrenList>
+								<Action Name="" ID="{79689FBB-1029-49CD-8647-0A453985FCAE}" ShortID="233226541">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Input_Space_Miss" ID="{B46D165B-AEA4-49C6-98DD-922D0D9F1FF9}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Input_Space_Success" ID="{777747BB-EB19-4F1B-B61F-CCC3D3577698}">
+							<ChildrenList>
+								<Action Name="" ID="{E2045D8B-4B71-4B28-9292-4350008CA7F0}" ShortID="335561459">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Input_Space_Success" ID="{F1D0D2A5-4076-445C-ABE1-CECC13563B2B}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Talk_Radio_Play" ID="{DA1A8D64-B19D-4AB4-B49B-68C147ED18B6}">
+							<ChildrenList>
+								<Action Name="" ID="{DBF24020-6805-4842-83F1-6FE8786ADF44}" ShortID="487842626">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Talk_Radio" ID="{0E27D23C-EF7C-4805-8296-ADC22E0872A3}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Talk_Radio_Stop" ID="{3888587A-A377-411F-8B74-8A2CBBD3BD4D}">
+							<ChildrenList>
+								<Action Name="" ID="{DF64C7A8-5AFD-4DAA-AA5D-27032F6F8136}" ShortID="690152907">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Talk_Radio" ID="{0E27D23C-EF7C-4805-8296-ADC22E0872A3}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Talking_1" ID="{9EDB71CB-CE59-4C5E-B7D8-5C35F531CD17}">
+							<ChildrenList>
+								<Action Name="" ID="{81A4AD71-4F93-4855-BE7F-507A5DFD0A32}" ShortID="744570896">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Talking_1" ID="{891BB1BB-352B-4D68-A64C-4B78ADB536A5}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Talking_2" ID="{8DB82CFB-3F77-4357-8E63-675E5D5E653C}">
+							<ChildrenList>
+								<Action Name="" ID="{716D2311-DD44-4949-BE19-FBD4EBE9ABA8}" ShortID="761352165">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Talking_2" ID="{03535701-D0FB-4DC7-BB8E-BCAA77CE9131}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

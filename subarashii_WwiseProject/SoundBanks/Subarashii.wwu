@@ -17,6 +17,7 @@
 						<ObjectRef Name="Switch_Level_3_MainMusic" ID="{83F44708-DCC3-4CC8-9E60-240A841C7B54}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Level_2_Music" ID="{04D2F067-43DA-4D42-BC0B-E2509D3CD219}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TestPlayLevel_1_MainMusic" ID="{6C69019C-83DB-4D5D-AAC4-69B2E76C4EA0}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SFX" ID="{BEFBA5BE-F44D-4D9B-B266-F99867907F2D}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Level_4_Music" ID="{99921E6B-4EEE-4E65-8902-9D4C7D7916CF}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

@@ -3,11 +3,17 @@
 	<States>
 		<WorkUnit Name="Subarashii" ID="{51979F11-B607-42CE-8724-A59901F24ADC}" PersistMode="Standalone">
 			<ChildrenList>
-				<StateGroup Name="Level_1_Music_State" ID="{47768808-F60B-45E2-A9BF-EA21BC24A48A}">
+				<StateGroup Name="Level_Music_State" ID="{47768808-F60B-45E2-A9BF-EA21BC24A48A}">
 					<ChildrenList>
 						<State Name="None" ID="{616ED40C-EB9C-435F-8992-6161C522CF00}"/>
 						<State Name="Tutorial" ID="{897F8961-AD16-48C2-B051-A2C8D145475F}"/>
 						<State Name="MainMusic" ID="{62FE2A25-AA67-4EA0-A10C-8384CB444D33}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Play_Status" ID="{A0C09B98-B5AD-40E0-B884-6C93CACF6741}">
+					<ChildrenList>
+						<State Name="None" ID="{B9F783FF-01EC-4FC6-9F03-BC28577CC261}"/>
+						<State Name="Play" ID="{E76F4632-67E5-4561-B69C-356DBF0DB932}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>
