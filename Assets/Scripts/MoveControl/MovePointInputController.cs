@@ -102,10 +102,24 @@ public class MovePointInputController : MonoBehaviour
         KeyboardInputChecker.Instance.ResetChecker();
         ResetMovePointInput();
 
+        //Combo
+        PlayerController.Instance.comboNum = 0;
+
         // 失败扣分
         PlayerController.Instance.AddBlood();
 
         // 失败特效
+
+        // 声音
+        if (keyInput.keyInput == KeyDirectionType.Space)
+        {
+            SoundController.Instance.Input_Space_Miss.HandleEvent(gameObject);
+
+        }
+        else if (keyInput.keyInput != KeyDirectionType.Null)
+        {
+            SoundController.Instance.Input_Arrow_Miss.HandleEvent(gameObject);
+        }
 
     }
 
@@ -114,6 +128,8 @@ public class MovePointInputController : MonoBehaviour
         KeyboardInputChecker.Instance.ResetChecker();
         ResetMovePointInput();
 
+        //Combo
+        PlayerController.Instance.comboNum++;
 
         // 完全成功特效
         // 按最后一个方向出拖拽特效
@@ -132,7 +148,21 @@ public class MovePointInputController : MonoBehaviour
         //加速
         PlayerMoveController.Instance.AccerateMove();
 
+        //声音
+        if (keyInput.keyInput == KeyDirectionType.Space)
+        {
+            SoundController.Instance.Input_Space_Success.HandleEvent(gameObject);
 
+        }
+        else if (keyInput.keyInput != KeyDirectionType.Null)
+        {
+            if(PlayerController.Instance.comboNum>=3)
+                SoundController.Instance.Input_Arrow_Combo.HandleEvent(gameObject);
+            else
+                SoundController.Instance.Input_Arrow_Success.HandleEvent(gameObject);
+        }
+
+        
     }
 
     public void ResetMovePointInput()

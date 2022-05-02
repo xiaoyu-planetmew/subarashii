@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a4ea3ee170b3d64788c25e4365b8408, type: 3}
+  m_Name: 3023829C-F660-4EE9-9C4E-409301E0A9E9
+  m_EditorClassIdentifier: 
+  objectName: Input_Arrow_Menu
+  id: 2196209329
+  guid: 3023829C-F660-4EE9-9C4E-409301E0A9E9
