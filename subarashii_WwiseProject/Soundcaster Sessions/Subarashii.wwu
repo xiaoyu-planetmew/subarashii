@@ -45,6 +45,48 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
+				<SoundcasterSession Name="Music_Level_3" ID="{1BB44618-345E-476A-86FF-D5B0D3D830C3}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Level_3_Music" ID="{CD556BCE-4C87-4304-A1BF-144FCAA963CD}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Switch_Level_3_MainMusic" ID="{83F44708-DCC3-4CC8-9E60-240A841C7B54}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Switch_Level_3_Tutorial" ID="{CADA1044-599D-4395-A66A-D6AFD79CDC18}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Tutorial" ID="{897F8961-AD16-48C2-B051-A2C8D145475F}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Music_Level_4" ID="{286C2EFC-3F80-410D-AA8C-06D9831A755D}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Level_4_Music" ID="{99921E6B-4EEE-4E65-8902-9D4C7D7916CF}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Switch_Level_4_Music" ID="{B6573A58-8ACF-44A0-AF74-BFEFC750BE92}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Switch_Level_4_Tutorial" ID="{0ACE8496-C903-4C07-B8B7-5C8F9798CDDD}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Tutorial" ID="{897F8961-AD16-48C2-B051-A2C8D145475F}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundcasterSessions>

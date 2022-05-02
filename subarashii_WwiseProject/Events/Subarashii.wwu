@@ -124,6 +124,104 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Level_3_Music" ID="{CD556BCE-4C87-4304-A1BF-144FCAA963CD}">
+							<ChildrenList>
+								<Action Name="" ID="{AB6FB88C-EBB2-46E2-9B7E-9E6248385CA4}" ShortID="1063116449">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Level_3_Music" ID="{904EA806-DBA9-4199-A546-6880E754B4E2}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F331C0D5-449B-4884-AED2-E883D05BB85D}" ShortID="790754124">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Tutorial" ID="{897F8961-AD16-48C2-B051-A2C8D145475F}" WorkUnitID="{51979F11-B607-42CE-8724-A59901F24ADC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Switch_Level_3_Tutorial" ID="{CADA1044-599D-4395-A66A-D6AFD79CDC18}">
+							<ChildrenList>
+								<Action Name="" ID="{3C45E51A-891F-4000-A80B-D1F6682A4A07}" ShortID="167334806">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Tutorial" ID="{897F8961-AD16-48C2-B051-A2C8D145475F}" WorkUnitID="{51979F11-B607-42CE-8724-A59901F24ADC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Switch_Level_3_MainMusic" ID="{83F44708-DCC3-4CC8-9E60-240A841C7B54}">
+							<ChildrenList>
+								<Action Name="" ID="{06610A16-F277-44E1-BC89-47DE862CBA52}" ShortID="750037839">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MainMusic" ID="{62FE2A25-AA67-4EA0-A10C-8384CB444D33}" WorkUnitID="{51979F11-B607-42CE-8724-A59901F24ADC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Level_4_Music" ID="{99921E6B-4EEE-4E65-8902-9D4C7D7916CF}">
+							<ChildrenList>
+								<Action Name="" ID="{8C5E03C1-C4CE-493D-955C-53B221159BFB}" ShortID="400317692">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Level_4_Music" ID="{0B32DC9B-BAF8-4720-80C3-FD8E0DF9950E}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{5C3149A7-DA9E-4EC7-A48D-88C35E72873D}" ShortID="622786820">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Tutorial" ID="{897F8961-AD16-48C2-B051-A2C8D145475F}" WorkUnitID="{51979F11-B607-42CE-8724-A59901F24ADC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Switch_Level_4_Music" ID="{B6573A58-8ACF-44A0-AF74-BFEFC750BE92}">
+							<ChildrenList>
+								<Action Name="" ID="{AA7E397A-1DCA-4AD2-9545-826524974E8A}" ShortID="907542683">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MainMusic" ID="{62FE2A25-AA67-4EA0-A10C-8384CB444D33}" WorkUnitID="{51979F11-B607-42CE-8724-A59901F24ADC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Switch_Level_4_Tutorial" ID="{0ACE8496-C903-4C07-B8B7-5C8F9798CDDD}">
+							<ChildrenList>
+								<Action Name="" ID="{0A1AB53F-2BE4-46F4-BF8E-6B74D7CE9FF5}" ShortID="551027831">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Tutorial" ID="{897F8961-AD16-48C2-B051-A2C8D145475F}" WorkUnitID="{51979F11-B607-42CE-8724-A59901F24ADC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

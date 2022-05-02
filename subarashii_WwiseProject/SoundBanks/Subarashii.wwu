@@ -6,12 +6,18 @@
 				<SoundBank Name="SoundBank" ID="{F11B861B-F89A-49CF-82B8-97CA2F1C8174}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Switch_Level_1_Tutorial" ID="{48DAA4A4-DE39-42A4-A9BC-F79881F44B13}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Level_3_Music" ID="{CD556BCE-4C87-4304-A1BF-144FCAA963CD}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Switch_Level_2_Tutorial" ID="{8D435277-7FFD-438D-8785-CBB330425B2A}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Switch_Level_3_Tutorial" ID="{CADA1044-599D-4395-A66A-D6AFD79CDC18}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Switch_Level_1_MainMusic" ID="{F4499809-4D03-4433-9EB2-DB898253D143}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Switch_Level_4_Music" ID="{B6573A58-8ACF-44A0-AF74-BFEFC750BE92}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Switch_Level_2_MainMusic" ID="{86C58F65-A5D4-48D7-BD40-0B4BCB51D221}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Level_1_Music" ID="{58E6EFD8-E27F-4958-8DAE-F442C58BE0BA}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Switch_Level_4_Tutorial" ID="{0ACE8496-C903-4C07-B8B7-5C8F9798CDDD}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Switch_Level_3_MainMusic" ID="{83F44708-DCC3-4CC8-9E60-240A841C7B54}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Level_2_Music" ID="{04D2F067-43DA-4D42-BC0B-E2509D3CD219}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TestPlayLevel_1_MainMusic" ID="{6C69019C-83DB-4D5D-AAC4-69B2E76C4EA0}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Level_4_Music" ID="{99921E6B-4EEE-4E65-8902-9D4C7D7916CF}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

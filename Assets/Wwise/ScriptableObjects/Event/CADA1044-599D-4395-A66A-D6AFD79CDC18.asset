@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a4ea3ee170b3d64788c25e4365b8408, type: 3}
+  m_Name: CADA1044-599D-4395-A66A-D6AFD79CDC18
+  m_EditorClassIdentifier: 
+  objectName: Switch_Level_3_Tutorial
+  id: 3205827125
+  guid: CADA1044-599D-4395-A66A-D6AFD79CDC18
