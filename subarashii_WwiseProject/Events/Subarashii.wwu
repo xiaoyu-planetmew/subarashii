@@ -224,6 +224,21 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="SFX" ID="{BEFBA5BE-F44D-4D9B-B266-F99867907F2D}" ShortID="173516586">
+					<ChildrenList>
+						<Event Name="Talk_Buzz" ID="{DD3D389E-9812-4A34-B89C-BB92CCC2F78C}">
+							<ChildrenList>
+								<Action Name="" ID="{87E3973E-D5FA-41FE-BCB3-8C961B19D065}" ShortID="1001243145">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Talk_Buzz" ID="{2822DD21-368D-40B4-BD19-8F2DE349D0D4}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
