@@ -20,6 +20,7 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Play" ID="{E76F4632-67E5-4561-B69C-356DBF0DB932}"/>
 						<CurrentStateRef Name="Tutorial" ID="{897F8961-AD16-48C2-B051-A2C8D145475F}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>

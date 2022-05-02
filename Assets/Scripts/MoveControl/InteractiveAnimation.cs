@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class InteractiveAnimation : MonoBehaviour
 {
+    [Header("是否自动播放")]
+    public bool autoPlay = false;
+
+    [Header("按键触发")]
     public string successAnimation;
     public string failureAnimation;
 
@@ -33,7 +37,16 @@ public class InteractiveAnimation : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Player")
-            startPlayAnimation = true;
+        {
+            if(autoPlay)
+            {
+                anim.SetTrigger(successAnimation);
+            }
+            else
+            {
+                startPlayAnimation = true;
+            }
+        }
     }
 
  

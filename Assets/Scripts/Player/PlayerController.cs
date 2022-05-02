@@ -12,7 +12,8 @@ public class PlayerController : MonoBehaviour
 
 
     public static PlayerController Instance;
-    [HideInInspector] public bool startPlaying;
+    [HideInInspector] public bool startPlaying = false;
+    [HideInInspector] public int comboNum = 0; //Combo Êý
     private float originBlood;
     private Vector3 originPos;
 
@@ -65,5 +66,6 @@ public class PlayerController : MonoBehaviour
         blood = originBlood;
         transform.position = originPos;
         startPlaying = false;
+        comboNum = 0;
     }
 }

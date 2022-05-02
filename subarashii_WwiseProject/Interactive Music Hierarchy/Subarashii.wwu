@@ -468,7 +468,7 @@
 					</TransitionList>
 					<ObjectLists/>
 					<ArgumentList>
-						<ArgumentRef Name="Level_1_Music_State" ID="{47768808-F60B-45E2-A9BF-EA21BC24A48A}"/>
+						<ArgumentRef Name="Level_Music_State" ID="{47768808-F60B-45E2-A9BF-EA21BC24A48A}"/>
 					</ArgumentList>
 					<EntryList>
 						<Entry>
@@ -895,7 +895,7 @@
 					</TransitionList>
 					<ObjectLists/>
 					<ArgumentList>
-						<ArgumentRef Name="Level_1_Music_State" ID="{47768808-F60B-45E2-A9BF-EA21BC24A48A}"/>
+						<ArgumentRef Name="Level_Music_State" ID="{47768808-F60B-45E2-A9BF-EA21BC24A48A}"/>
 					</ArgumentList>
 					<EntryList>
 						<Entry>
@@ -1327,7 +1327,7 @@
 					</TransitionList>
 					<ObjectLists/>
 					<ArgumentList>
-						<ArgumentRef Name="Level_1_Music_State" ID="{47768808-F60B-45E2-A9BF-EA21BC24A48A}"/>
+						<ArgumentRef Name="Level_Music_State" ID="{47768808-F60B-45E2-A9BF-EA21BC24A48A}"/>
 					</ArgumentList>
 					<EntryList>
 						<Entry>
@@ -1759,7 +1759,7 @@
 					</TransitionList>
 					<ObjectLists/>
 					<ArgumentList>
-						<ArgumentRef Name="Level_1_Music_State" ID="{47768808-F60B-45E2-A9BF-EA21BC24A48A}"/>
+						<ArgumentRef Name="Level_Music_State" ID="{47768808-F60B-45E2-A9BF-EA21BC24A48A}"/>
 					</ArgumentList>
 					<EntryList>
 						<Entry>
@@ -1776,6 +1776,191 @@
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Tutorial" ID="{7D67EE84-5653-4BF8-BAAD-D334E2F8600B}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+					</EntryList>
+				</MusicSwitchContainer>
+				<MusicSwitchContainer Name="Boss_Siren" ID="{507AD728-9441-4C81-A3F1-5EEB859DA333}" ShortID="556474958">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{943BFE36-370F-4ACE-BBAC-C0274EC82E4A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{824F22E6-2C00-43C8-803A-5C90543CCD5C}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicPlaylistContainer Name="Siren" ID="{09337491-8536-4F81-845A-BB44606EF985}" ShortID="422802811">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{943BFE36-370F-4ACE-BBAC-C0274EC82E4A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{824F22E6-2C00-43C8-803A-5C90543CCD5C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="SFX_chili_siren" ID="{3B558464-D8C7-4913-893E-D99EDC0BE208}" ShortID="714158442">
+									<PropertyList>
+										<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{943BFE36-370F-4ACE-BBAC-C0274EC82E4A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{824F22E6-2C00-43C8-803A-5C90543CCD5C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="SFX_chili_siren" ID="{14F840C7-3FFE-4199-A861-9BA103F51F09}" ShortID="638778931">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{824F22E6-2C00-43C8-803A-5C90543CCD5C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_chili_siren" ID="{D6923348-08CB-42CF-A737-8AEE2243FA6A}">
+													<Language>SFX</Language>
+													<AudioFile>SFX\SFX_chili_siren.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="564636519"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{0018DB6E-1500-49F3-BADB-9AFBC48015D2}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{89691BC3-1458-4E63-9678-6D966518CAC8}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="SFX_chili_siren" ID="{7302ACFD-46E3-48EE-8CDD-1367BF75244A}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="2000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="SFX_chili_siren" ID="{D6923348-08CB-42CF-A737-8AEE2243FA6A}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{430D6F5C-4AC8-4C91-8128-6D2CE24315ED}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{199DF62A-E634-488B-956E-FE7693F9B4A3}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="2000"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{0DDC0254-F097-438D-8810-446EFAB8B87C}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{8838E3AC-70C6-413D-87DB-583871FA6CA7}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists/>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{867172A8-37F1-443D-A161-FCBC1FFEB8C0}" ShortID="293297524">
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{2FE10B0B-27F0-4AF6-95FC-38DB40512A3C}" ShortID="948948177">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="SFX_chili_siren" ID="{3B558464-D8C7-4913-893E-D99EDC0BE208}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{F8586189-1FA7-49BD-A6F5-FC31DFF5B1A9}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{F4D325F7-B81F-4BA0-8367-C173BBEF34EA}">
+									<TransitionInfo/>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{D369130B-0607-413F-B900-9ABFBA86D241}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="SourceContextType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="SFX_chili_siren" ID="{3B558464-D8C7-4913-893E-D99EDC0BE208}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{FEB2C63C-98F9-4BBE-B601-C58B855CFA94}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="1.5"/>
+													<Property Name="FadeTime" Type="Real64" Value="3"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+									</TransitionInfo>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<ObjectLists/>
+					<ArgumentList>
+						<ArgumentRef Name="Play_Status" ID="{A0C09B98-B5AD-40E0-B884-6C93CACF6741}"/>
+					</ArgumentList>
+					<EntryList>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Play" ID="{E76F4632-67E5-4561-B69C-356DBF0DB932}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Siren" ID="{09337491-8536-4F81-845A-BB44606EF985}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 					</EntryList>
