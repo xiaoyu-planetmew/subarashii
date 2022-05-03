@@ -25,6 +25,7 @@ public class WavyRectPointsController : MonoBehaviour
 
     private WavyRectLineRenderer lineRenderer;
     private WavyRectSpriteRenderer spriteRenderer;
+    private WavyRectFillingRenderer fillingRenderer;
 
     private float startAngle = 0f;
     private float startRandomWaveAngle = 0f;
@@ -43,6 +44,7 @@ public class WavyRectPointsController : MonoBehaviour
 
         lineRenderer = GetComponent<WavyRectLineRenderer>();
         spriteRenderer = GetComponent<WavyRectSpriteRenderer>();
+        fillingRenderer = GetComponent<WavyRectFillingRenderer>();
 
 
 
@@ -61,6 +63,10 @@ public class WavyRectPointsController : MonoBehaviour
         if(renderType==WaveRenderType.Filling && spriteRenderer!=null)
         {
             spriteRenderer.RenderShape(afterWave);
+        }
+        if(renderType==WaveRenderType.Filling_New && fillingRenderer !=null)
+        {
+            fillingRenderer.FillingPoints(afterWave);
         }
     }
 

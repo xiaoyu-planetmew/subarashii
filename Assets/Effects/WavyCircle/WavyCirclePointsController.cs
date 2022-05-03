@@ -546,5 +546,6 @@ public enum WaveRenderType
 {
     Stroke,
     Filling,
+    Filling_New,
 }
 
