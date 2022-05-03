@@ -4898,6 +4898,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 227479129179208883, guid: 3a8147dad7658c245b535cfad88f54ac, type: 3}
+      propertyPath: cornerRounded
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 227479129179208883, guid: 3a8147dad7658c245b535cfad88f54ac, type: 3}
       propertyPath: randomWaveAmp
       value: 0.8
       objectReference: {fileID: 0}
@@ -4911,7 +4915,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 227479129179208884, guid: 3a8147dad7658c245b535cfad88f54ac, type: 3}
       propertyPath: m_DynamicOccludee
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a8147dad7658c245b535cfad88f54ac, type: 3}
@@ -4930,6 +4934,10 @@ PrefabInstance:
     - target: {fileID: 1588398672065911488, guid: 0ba49bcdcf5d1984ba4674e0554fd453, type: 3}
       propertyPath: m_Name
       value: Rect_Balck
+      objectReference: {fileID: 0}
+    - target: {fileID: 1588398672065911498, guid: 0ba49bcdcf5d1984ba4674e0554fd453, type: 3}
+      propertyPath: cornerRounded
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 1588398672065911498, guid: 0ba49bcdcf5d1984ba4674e0554fd453, type: 3}
       propertyPath: randomWaveAmp
@@ -4993,7 +5001,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1588398672065911503, guid: 0ba49bcdcf5d1984ba4674e0554fd453, type: 3}
       propertyPath: m_DynamicOccludee
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ba49bcdcf5d1984ba4674e0554fd453, type: 3}
@@ -5063,7 +5071,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1795691679794391101, guid: 8f76f945f74be504e921b3507351336e, type: 3}
       propertyPath: m_DynamicOccludee
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795691679794391102, guid: 8f76f945f74be504e921b3507351336e, type: 3}
+      propertyPath: cornerRounded
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 1795691679794391102, guid: 8f76f945f74be504e921b3507351336e, type: 3}
       propertyPath: randomWaveAmp
