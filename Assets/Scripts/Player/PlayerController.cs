@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
         GameObject.Find("Score_Letter").GetComponent<ArtLetter>().SetShowNumber(successPoints);
         if(totalPoints != 0)
         {
-            GameObject.Find("Level_Letters").GetComponent<ArtLetter_Percent>().SetShowNumber(successPoints/totalPoints);
+            GameObject.Find("Level_Letters").GetComponent<ArtLetter_Percent>().SetShowNumber((float)successPoints/totalPoints);
         }
     }
     public void success()
