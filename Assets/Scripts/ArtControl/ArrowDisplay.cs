@@ -36,13 +36,22 @@ public class ArrowDisplay : MonoBehaviour
             timeToArriveMP = linkMP.timeInTrack - LevelController.Instance.mainMusicPlayingTimer;
             if(timeToArriveMP > hintTime)
             {
-                //Debug.Log("播放缩圈 hintTime" + hintTime + " timeToArriveMP " + timeToArriveMP);
+                Debug.Log("播放缩圈 hintTime" + hintTime + " timeToArriveMP " + timeToArriveMP);
                 StartCoroutine(ShowInputHint(timeToArriveMP - hintTime));
             }
             else
             {
-                //Debug.Log("加速播放缩圈 " + hintTime / timeToArriveMP);
-                StartCoroutine(ShowInputHint(0, hintTime/timeToArriveMP));
+                if(timeToArriveMP > 0 )
+                {
+                    Debug.Log("加速播放缩圈 " + hintTime / timeToArriveMP);
+                    StartCoroutine(ShowInputHint(0, hintTime / timeToArriveMP));
+                }
+                else
+                {
+                    Debug.Log("小于0");
+                    StartCoroutine(ShowInputHint(0, 3));
+                }
+                
             }
 
             hasEnter = true;

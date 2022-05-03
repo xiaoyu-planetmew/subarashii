@@ -1392,6 +1392,7 @@ MonoBehaviour:
   blood: 3
   restartPos: {fileID: 0}
   startPlaying: 0
+  comboNum: 0
 --- !u!1001 &541363821
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5745,6 +5746,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   trackController: []
+  mainMusicPlayingTimer: 0
 --- !u!4 &1960545388
 Transform:
   m_ObjectHideFlags: 0
@@ -5774,7 +5776,7 @@ MonoBehaviour:
   StartMusic: {fileID: 838762057}
   SwitchToMain: {fileID: 216053734}
   SwitchToTutorial: {fileID: 1534367115}
-  timeOfOneBar: 1.2
+  timeOfOneBar: 2.4
 --- !u!1001 &2008761814
 PrefabInstance:
   m_ObjectHideFlags: 0
