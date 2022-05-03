@@ -36,11 +36,15 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-        GameObject.Find("Score_Letter").GetComponent<ArtLetter>().SetShowNumber(successPoints);
-        if(totalPoints != 0)
+        try
         {
-            GameObject.Find("Level_Letters").GetComponent<ArtLetter_Percent>().SetShowNumber((float)successPoints/totalPoints);
+            GameObject.Find("Score_Letter").GetComponent<ArtLetter>().SetShowNumber(successPoints);
+            if (totalPoints != 0)
+            {
+                GameObject.Find("Level_Letters").GetComponent<ArtLetter_Percent>().SetShowNumber((float)successPoints / totalPoints);
+            }
         }
+        catch { }
     }
     public void success()
     {

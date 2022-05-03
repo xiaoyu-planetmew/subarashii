@@ -28,7 +28,11 @@ public class TrackManager : MonoBehaviour
     public void InitiateLevelTrack()
     {
         TrackInLevel[] trackcontrollers = LevelController.Instance.trackController;
-        if (trackcontrollers.Length == 0) return;
+        if (trackcontrollers.Length == 0)
+        {
+            Debug.LogError("没有Track Controller！");
+            return; 
+        }
 
         foreach(TrackInLevel track in trackcontrollers)
         {
@@ -54,7 +58,7 @@ public class TrackManager : MonoBehaviour
                 {
                     if (_mp.nextPoint == null)
                     {
-                        Debug.LogError("Track点数多于场景中的点数！");
+                        Debug.LogError("Track点数多于场景中的点数！" + i);
                         return;
                     }
 
@@ -75,7 +79,7 @@ public class TrackManager : MonoBehaviour
 
             }
 
-            if(_mp!=track.endPoint) Debug.LogError("Track点数少于场景中的点数！");
+            if(_mp!=track.endPoint) Debug.LogError("Track点数少于场景中的点数！Track点数为 " + trackTimeList.Count);
         }
 
         
