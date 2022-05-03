@@ -47,6 +47,10 @@ public class TutorialTrackController : MonoBehaviour
         //获取剩余小节时间
         float leftTime = timeOfOneBar - (timer - Mathf.Floor(timer / timeOfOneBar) * timeOfOneBar);
 
+
+        Debug.Log("推迟时间" + leftTime + " 已播小节 "+ Mathf.Floor(timer / timeOfOneBar) + " 时间" + (timer - Mathf.Floor(timer / timeOfOneBar) * timeOfOneBar));
+
+
         return leftTime;
     }
 
@@ -69,6 +73,7 @@ public class TutorialTrackController : MonoBehaviour
     /// <returns></returns>
     private IEnumerator SynGameStart(float time)
     {
+
         yield return new WaitForSeconds(time);
 
         LevelController.Instance.StartLevel(); //从教学起始点开始

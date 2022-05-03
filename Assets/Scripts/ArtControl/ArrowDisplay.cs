@@ -13,10 +13,12 @@ public class ArrowDisplay : MonoBehaviour
     private float timeToArriveMP;
     private MovePoint linkMP;
     private MovePointDisplay linkMPDisplay;
+    [HideInInspector] public bool isNull = false;
+    private bool hasEnter;
 
     private void Awake()
     {
-        ResetArrow();
+        //ResetArrow();
     }
 
     private void Start()
@@ -27,19 +29,23 @@ public class ArrowDisplay : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player")
+        if(collision.tag == "Player" && !isNull && !hasEnter)
         {
             ChangeStartToArrow();
 
             timeToArriveMP = linkMP.timeInTrack - LevelController.Instance.mainMusicPlayingTimer;
             if(timeToArriveMP > hintTime)
             {
+                //Debug.Log("播放缩圈 hintTime" + hintTime + " timeToArriveMP " + timeToArriveMP);
                 StartCoroutine(ShowInputHint(timeToArriveMP - hintTime));
             }
             else
             {
+                //Debug.Log("加速播放缩圈 " + hintTime / timeToArriveMP);
                 StartCoroutine(ShowInputHint(0, hintTime/timeToArriveMP));
             }
+
+            hasEnter = true;
         }
     }
 
@@ -50,7 +56,7 @@ public class ArrowDisplay : MonoBehaviour
 
     public void SuccessAnimation()
     {
-        showingArrow.arrow.SetTrigger("Success");
+        showingArrow.showArrow.SetTrigger("Success");
         showingArrow.hint_Special.SetActive(false);
         showingArrow.hint_Normal.SetActive(false);
         showingArrow.hint_Special.GetComponent<Animator>().speed = 1;
@@ -59,7 +65,7 @@ public class ArrowDisplay : MonoBehaviour
 
     public void FailureAnimation()
     {
-        showingArrow.arrow.SetTrigger("Fail");
+        showingArrow.showArrow.SetTrigger("Fail");
         showingArrow.hint_Special.SetActive(false);
         showingArrow.hint_Normal.SetActive(false);
         showingArrow.hint_Special.GetComponent<Animator>().speed = 1;
@@ -87,15 +93,14 @@ public class ArrowDisplay : MonoBehaviour
 
     public void ResetArrow()
     {
-        foreach(ArrowPrefab prefab in arrows)
-        {
-            // 恢复成初始的显示
-            showingArrow.hint_Special.GetComponent<Animator>().speed = 1;
-            showingArrow.hint_Normal.GetComponent<Animator>().speed = 1;
+        // 恢复成初始的显示
+        showingArrow.hint_Special.GetComponent<Animator>().speed = 1;
+        showingArrow.hint_Normal.GetComponent<Animator>().speed = 1;
 
-            showingArrow.star.gameObject.SetActive(true);
-            showingArrow.arrow.gameObject.SetActive(false);
-        }
+        showingArrow.star.gameObject.SetActive(true);
+        showingArrow.showArrow.gameObject.SetActive(false);
+
+        hasEnter = false;
     }
 
     public void InitiateArrow(KeyDirectionType type)
@@ -107,13 +112,15 @@ public class ArrowDisplay : MonoBehaviour
             if(type == prefab.type)
             {
                 // 初始化对应箭头显示
-                prefab.arrow.gameObject.SetActive(true);
                 showingArrow = prefab;
+                showingArrow.baseArrow.SetActive(true);
                 //ResetArrow()；
             }
         }
 
         hint.SetActive(false);
+
+        if (type == KeyDirectionType.Null) isNull = true;
     }
 }
 
@@ -121,7 +128,8 @@ public class ArrowDisplay : MonoBehaviour
 public class ArrowPrefab
 {
     public KeyDirectionType type;
-    public Animator arrow;
+    public GameObject baseArrow;
+    public Animator showArrow;
     public Animator star;
     public GameObject hint_Normal;
     public GameObject hint_Special;

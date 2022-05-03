@@ -1259,6 +1259,8 @@ MonoBehaviour:
   restartPos: {fileID: 0}
   startPlaying: 0
   comboNum: 0
+  totalPoints: 0
+  successPoints: 0
 --- !u!50 &879762873
 Rigidbody2D:
   serializedVersion: 4

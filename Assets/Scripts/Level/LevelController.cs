@@ -19,7 +19,7 @@ public class LevelController : MonoBehaviour
 
     public static LevelController Instance;
     [HideInInspector] public TrackInLevel[] trackController;
-    [HideInInspector] public float mainMusicPlayingTimer;
+     public float mainMusicPlayingTimer;
     private bool startPlayingMainMusic;
 
     private void Awake()

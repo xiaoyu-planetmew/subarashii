@@ -16,7 +16,7 @@ public class MovePoint : MonoBehaviour
     public Transform[] besizerControlPoints;
 
     [HideInInspector] public float timeToNextMovePoint = 1;
-    [HideInInspector] public float timeInTrack = 1;
+    public float timeInTrack = 1;
     [HideInInspector] public Vector3[] basePoints;
     [HideInInspector] public bool toBranch;
     private MovePointDisplay displayController;
