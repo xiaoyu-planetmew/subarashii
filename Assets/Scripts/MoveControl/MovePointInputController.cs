@@ -5,14 +5,14 @@ using UnityEngine;
 [RequireComponent(typeof(MovePoint))]
 public class MovePointInputController : MonoBehaviour
 {
-    [Header("ÊäÈëÃüÁî")]
-    [Tooltip("´Ë½ÚµãÊäÈëÃüÁî")]
+    [Header("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½")]
+    [Tooltip("ï¿½Ë½Úµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½")]
     public MovePointInput keyInput;
 
-    [Header("´óÁ¦ÍÏ×§")]
+    [Header("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×§")]
     public bool powerfulEffect = false;
 
-    [Header("½»»¥½ÇÉ«")]
+    [Header("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«")]
     public InteractiveAnimation interactiveAnimation;
     public  PlayerSpecialAnimationType  PlayerSpecialAnimation = PlayerSpecialAnimationType.Null;
 
@@ -28,7 +28,7 @@ public class MovePointInputController : MonoBehaviour
 
     private void Update()
     {
-        //µÈ´ýÍæ¼ÒÊäÈë
+        //ï¿½È´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         if (waitingForInputs)
         {
             CheckingInput();
@@ -39,17 +39,17 @@ public class MovePointInputController : MonoBehaviour
     {
         if (PlayerController.Instance.startPlaying)
         {
-            //¿ªÊ¼µÈ´ýÍæ¼ÒÊäÈë
+            //ï¿½ï¿½Ê¼ï¿½È´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             waitingForInputs = true;
             inputTimer = 0;
             keyInput.nowInputStatus = MovePointInput.NowStatus.WaitingForInput;
 
-            //½ÚµãÊäÈë¿ªÆôÌØÐ§
+            //ï¿½Úµï¿½ï¿½ï¿½ï¿½ë¿ªï¿½ï¿½ï¿½ï¿½Ð§
 
         }
         else
         {
-            // ½ÇÉ«ËÀÍöºóµÄ½ÚµãÌØÐ§
+            // ï¿½ï¿½É«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä½Úµï¿½ï¿½ï¿½Ð§
         }
     }
 
@@ -59,12 +59,12 @@ public class MovePointInputController : MonoBehaviour
         {
 
             StartCheckingInput();
-            Debug.Log("µÈ´ýÊäÈë£º" + gameObject.name);
+            Debug.Log("ï¿½È´ï¿½ï¿½ï¿½ï¿½ë£º" + gameObject.name);
         }
     }
 
     /// <summary>
-    /// ¼ì²éÍæ¼ÒµÄ¼üÅÌÊäÈë
+    /// ï¿½ï¿½ï¿½ï¿½ï¿½ÒµÄ¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     /// </summary>
     private void CheckingInput()
     {
@@ -77,20 +77,20 @@ public class MovePointInputController : MonoBehaviour
 
             if (keyInput.CheckInput(inputTimer) == MovePointInput.NowStatus.InputSuccess)
             {
-                //ÊäÈë³É¹¦,¿ªÆôÏÂÒ»¸ö¼ì²é
+                //ï¿½ï¿½ï¿½ï¿½É¹ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½
                 inputTimer = 0;
 
-                // ÍêÈ«³É¹¦
+                // ï¿½ï¿½È«ï¿½É¹ï¿½
                 PointInputSuccess();
 
-                Debug.Log("ÊäÈë³É¹¦ " + gameObject.name);
+                Debug.Log("ï¿½ï¿½ï¿½ï¿½É¹ï¿½ " + gameObject.name);
                 
             }
             else if (keyInput.CheckInput(inputTimer) == MovePointInput.NowStatus.Fail)
             {
-                //´Ë´ÎÊäÈëÊ§°Ü
+                //ï¿½Ë´ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½
                 PointInputFail();
-                Debug.Log("ÊäÈëÊ§°Ü " + gameObject.name + " Ó¦ÊäÈë " + keyInput.keyInput);
+                Debug.Log("ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½ " + gameObject.name + " Ó¦ï¿½ï¿½ï¿½ï¿½ " + keyInput.keyInput);
             }
             else
             {
@@ -101,7 +101,7 @@ public class MovePointInputController : MonoBehaviour
     }
 
     /// <summary>
-    /// Ê§°Ü
+    /// Ê§ï¿½ï¿½
     /// </summary>
     public void PointInputFail()
     {
@@ -111,15 +111,15 @@ public class MovePointInputController : MonoBehaviour
         //Combo
         PlayerController.Instance.comboNum = 0;
 
-        // Ê§°Ü¿Û·Ö
+        // Ê§ï¿½Ü¿Û·ï¿½
         PlayerController.Instance.AddBlood();
 
-        // Ê§°ÜÌØÐ§
+        // Ê§ï¿½ï¿½ï¿½ï¿½Ð§
 
-        // Ö÷½Ç¶¯»­
+        // ï¿½ï¿½ï¿½Ç¶ï¿½ï¿½ï¿½
         CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Miss);
 
-        // ÉùÒô
+        // ï¿½ï¿½ï¿½ï¿½
         if (keyInput.keyInput == KeyDirectionType.Space)
         {
             SoundController.Instance.Input_Space_Miss.HandleEvent(gameObject);
@@ -129,11 +129,11 @@ public class MovePointInputController : MonoBehaviour
         {
             SoundController.Instance.Input_Arrow_Miss.HandleEvent(gameObject);
         }
-
+        PlayerController.Instance.totalPoints++;
     }
 
     /// <summary>
-    /// ³É¹¦
+    /// ï¿½É¹ï¿½
     /// </summary>
     public void PointInputSuccess()
     {
@@ -143,24 +143,24 @@ public class MovePointInputController : MonoBehaviour
         //Combo
         PlayerController.Instance.comboNum++;
 
-        // ÍêÈ«³É¹¦ÌØÐ§
-        // °´×îºóÒ»¸ö·½Ïò³öÍÏ×§ÌØÐ§
+        // ï¿½ï¿½È«ï¿½É¹ï¿½ï¿½ï¿½Ð§
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×§ï¿½ï¿½Ð§
         PlayerEffectController.Instance.DragCircleEffect(keyInput.keyInput, powerfulEffect);
 
-        // Ö÷½Ç¶¯»­
+        // ï¿½ï¿½ï¿½Ç¶ï¿½ï¿½ï¿½
         CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Good);
 
-        // ÆäËü½»»¥½ÇÉ«¶¯»­
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«ï¿½ï¿½ï¿½ï¿½
         if (keyInput.keyInput == KeyDirectionType.Space)
         {
             if (interactiveAnimation != null)
                 interactiveAnimation.success = true;
         }
 
-        //¼ÓËÙ
+        //ï¿½ï¿½ï¿½ï¿½
         PlayerMoveController.Instance.AccerateMove();
 
-        //ÉùÒô
+        //ï¿½ï¿½ï¿½ï¿½
         if (keyInput.keyInput == KeyDirectionType.Space)
         {
             SoundController.Instance.Input_Space_Success.HandleEvent(gameObject);
@@ -173,7 +173,8 @@ public class MovePointInputController : MonoBehaviour
             else
                 SoundController.Instance.Input_Arrow_Success.HandleEvent(gameObject);
         }
-
+        PlayerController.Instance.totalPoints++;
+        PlayerController.Instance.successPoints++;
         
     }
 
@@ -185,11 +186,11 @@ public class MovePointInputController : MonoBehaviour
 
 }
 
-#region ½ÚµãÊäÈëÀà
+#region ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 [System.Serializable]
 public class MovePointInput
 {
-    public float timeForOneInput; // µ¥¸öÊäÈëÊ±³¤
+    public float timeForOneInput; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
     public KeyDirectionType keyInput ;
     public NowStatus nowInputStatus = NowStatus.Freeze; 
 

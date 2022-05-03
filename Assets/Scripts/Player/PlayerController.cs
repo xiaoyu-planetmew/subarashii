@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [Header("ÑªÁ¿")]
+    [Header("Ñªï¿½ï¿½")]
     public float blood = 3;
 
-    [Header("ÖØÐÂ¿ªÊ¼Î»ÖÃ")]
+    [Header("ï¿½ï¿½ï¿½Â¿ï¿½Ê¼Î»ï¿½ï¿½")]
     public Transform restartPos;
 
 
     public static PlayerController Instance;
     [HideInInspector] public bool startPlaying = false;
-    [HideInInspector] public int comboNum = 0; //Combo Êý
+    [HideInInspector] public int comboNum = 0; //Combo ï¿½ï¿½
     private float originBlood;
     private Vector3 originPos;
+    public int totalPoints;
+    public int successPoints;
 
     private void Awake()
     {
@@ -34,27 +36,27 @@ public class PlayerController : MonoBehaviour
     }
 
     /// <summary>
-    /// ¼ÓÑª
+    /// ï¿½ï¿½Ñª
     /// </summary>
     /// <param name="addBlood"></param>
     public void AddBlood(float addBlood = 1)
     {
         blood = Mathf.Min(blood+addBlood, originBlood);
 
-        // ¼ÓÑªÌØÐ§
+        // ï¿½ï¿½Ñªï¿½ï¿½Ð§
 
     }
 
     /// <summary>
-    /// ¿ÛÑª
+    /// ï¿½ï¿½Ñª
     /// </summary>
     public void MinusBlood(float minusBlood = 1)
     {
         blood = Mathf.Max(blood - minusBlood, 0);
 
-        // ¿ÛÑªÌØÐ§
+        // ï¿½ï¿½Ñªï¿½ï¿½Ð§
 
-        // ËÀÍö
+        // ï¿½ï¿½ï¿½ï¿½
         if(blood<=0)
         {
             LevelController.Instance.GameOver();
