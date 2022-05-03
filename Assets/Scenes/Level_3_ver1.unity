@@ -15276,6 +15276,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   trackController: []
+  mainMusicPlayingTimer: 0
 --- !u!4 &1960545388
 Transform:
   m_ObjectHideFlags: 0
@@ -15305,7 +15306,7 @@ MonoBehaviour:
   StartMusic: {fileID: 1050616433}
   SwitchToMain: {fileID: 423758214}
   SwitchToTutorial: {fileID: 793643220}
-  timeOfOneBar: 0.014814815
+  timeOfOneBar: 1.7777778
 --- !u!1001 &1965507016
 PrefabInstance:
   m_ObjectHideFlags: 0
