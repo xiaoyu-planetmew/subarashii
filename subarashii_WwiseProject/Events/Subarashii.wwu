@@ -222,6 +222,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Theme" ID="{6A751824-9892-4F4D-8AEA-09324B6612C0}">
+							<ChildrenList>
+								<Action Name="" ID="{72DEC484-6B7D-46A9-931B-B66B112B4CED}" ShortID="414017729">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Theme" ID="{4E7FC192-79E6-4545-95D4-FEE6767E867C}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="SFX" ID="{BEFBA5BE-F44D-4D9B-B266-F99867907F2D}" ShortID="173516586">
@@ -533,6 +544,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Talking_2" ID="{03535701-D0FB-4DC7-BB8E-BCAA77CE9131}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Button_Off" ID="{5FA4B39D-8C71-4E29-BDE6-85797EBDFC3C}">
+							<ChildrenList>
+								<Action Name="" ID="{3AC70AE2-B909-4F05-AB0D-12F3F040FBF4}" ShortID="578640928">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Button_Off" ID="{84DF2A68-829B-4627-A53F-47868728BB5D}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

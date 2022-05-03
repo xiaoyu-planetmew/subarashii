@@ -18,6 +18,7 @@ public class SoundController : MonoBehaviour
     public AkEvent Final_Shit;
     public AkEvent Shit_Combine;
     public AkEvent Button_On;
+    public AkEvent Button_Off;
     public AkEvent Button_Pause;
     public AkEvent Input_Arrow_Menu;
     public AkEvent Input_Arrow_Success;

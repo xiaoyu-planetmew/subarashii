@@ -1318,29 +1318,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="SFX_trigger_spcae_1" ID="{BB9EF445-5376-4047-88BE-C2A9AC72B842}" ShortID="979979807">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{943BFE36-370F-4ACE-BBAC-C0274EC82E4A}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{824F22E6-2C00-43C8-803A-5C90543CCD5C}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="SFX_trigger_spcae_1" ID="{702FBAB7-07AA-4675-BB66-1D7111934EC1}">
-									<Language>SFX</Language>
-									<AudioFile>SFX\SFX_trigger_spcae_1.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="184691859"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="SFX_trigger_spcae_1" ID="{702FBAB7-07AA-4675-BB66-1D7111934EC1}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="SFX_trigger_spcae_2" ID="{60A3177D-8B55-416F-8D0A-7DA24D0B01E1}" ShortID="452550872">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1396,8 +1373,73 @@
 								<ActiveSource Name="SFX_trigger_spcae_3" ID="{8D61FB26-74E6-4AB5-8D35-D1612D1F5FA3}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="SFX_trigger_space1" ID="{C9792FC8-0056-4A32-AB17-62D4A0A68CCF}" ShortID="963718471">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{943BFE36-370F-4ACE-BBAC-C0274EC82E4A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{824F22E6-2C00-43C8-803A-5C90543CCD5C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_trigger_space1" ID="{7ACEB93F-2DEC-496E-9A3F-4AFF4831991A}">
+									<Language>SFX</Language>
+									<AudioFile>SFX\SFX_trigger_space1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="554321510"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_trigger_space1" ID="{7ACEB93F-2DEC-496E-9A3F-4AFF4831991A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<ObjectLists/>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Button_Off" ID="{84DF2A68-829B-4627-A53F-47868728BB5D}" ShortID="289965342">
+					<PropertyList>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{943BFE36-370F-4ACE-BBAC-C0274EC82E4A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{824F22E6-2C00-43C8-803A-5C90543CCD5C}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SFX_button_off" ID="{C124B0F2-69A5-4827-8EB9-A67BC490C2EB}" ShortID="9152134">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{943BFE36-370F-4ACE-BBAC-C0274EC82E4A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{824F22E6-2C00-43C8-803A-5C90543CCD5C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_button_off" ID="{F199DDD7-D479-4B35-961E-EB7175F07A3F}">
+									<Language>SFX</Language>
+									<AudioFile>SFX\SFX_button_off.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="29973254"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_button_off" ID="{F199DDD7-D479-4B35-961E-EB7175F07A3F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+					<Playlist>
+						<ItemRef Name="SFX_button_off" ID="{C124B0F2-69A5-4827-8EB9-A67BC490C2EB}"/>
+					</Playlist>
 				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
