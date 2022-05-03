@@ -132,11 +132,8 @@ public class MovePointInputController : MonoBehaviour
         {
             SoundController.Instance.Input_Arrow_Miss.HandleEvent(gameObject);
         }
-<<<<<<< Updated upstream
 
-=======
         PlayerController.Instance.miss();
->>>>>>> Stashed changes
     }
 
     /// <summary>
@@ -184,11 +181,8 @@ public class MovePointInputController : MonoBehaviour
             else
                 SoundController.Instance.Input_Arrow_Success.HandleEvent(gameObject);
         }
-<<<<<<< Updated upstream
 
-=======
         PlayerController.Instance.success();
->>>>>>> Stashed changes
         
     }
 

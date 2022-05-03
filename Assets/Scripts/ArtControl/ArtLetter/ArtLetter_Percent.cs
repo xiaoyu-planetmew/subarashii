@@ -8,6 +8,7 @@ public class ArtLetter_Percent : MonoBehaviour
 {
     public GameObject letter;
     public GameObject letter1;
+    public GameObject p100;
     public void UpdateShowLetters()
     {
         letter.GetComponent<ArtLetter>().UpdateShowLetters();
@@ -22,8 +23,17 @@ public class ArtLetter_Percent : MonoBehaviour
 
     public void SetShowNumber(float num)
     {
-        letter.GetComponent<ArtLetter>().SetShowNumber(Mathf.FloorToInt(((num * 10000) / Mathf.Pow(10, 3))) % 10 * 10 + Mathf.FloorToInt(((num * 10000) / Mathf.Pow(10, 2))) % 10);
-        letter1.GetComponent<ArtLetter>().SetShowNumber(Mathf.FloorToInt(((num * 10000) / Mathf.Pow(10, 1))) % 10 * 10 + Mathf.FloorToInt(((num * 10000) / Mathf.Pow(10, 0))) % 10);
+        if(num == 1)
+        {
+            p100.SetActive(true);
+            letter.SetActive(false);
+            letter1.SetActive(false);
+        }else{
+
+            p100.SetActive(false);
+            letter.GetComponent<ArtLetter>().SetShowNumber(Mathf.FloorToInt(((num * 10000) / Mathf.Pow(10, 3))) % 10 * 10 + Mathf.FloorToInt(((num * 10000) / Mathf.Pow(10, 2))) % 10);
+            letter1.GetComponent<ArtLetter>().SetShowNumber(Mathf.FloorToInt(((num * 10000) / Mathf.Pow(10, 1))) % 10 * 10 + Mathf.FloorToInt(((num * 10000) / Mathf.Pow(10, 0))) % 10);
+        }
     }
 
     /// <summary>
