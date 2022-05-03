@@ -39,6 +39,7 @@ public class TrackManager : MonoBehaviour
                 return;
             }
             List<float> trackTimeList = LoadTrackManager.GetInstance().trackTimeDic[track.trackFile];
+            List<float> trackTimeTotal = LoadTrackManager.GetInstance().trackTotalTimeDic[track.trackFile];
             for(int i = 0; i<trackTimeList.Count;i++)
             {
                 if (i == 0)
@@ -61,6 +62,7 @@ public class TrackManager : MonoBehaviour
 
                     // Ê±¼ä
                     _mp.timeToNextMovePoint = trackTimeList[i];
+                    _mp.timeInTrack = trackTimeTotal[i];
 
                     // ÊäÈë
                     _mp.GetComponent<MovePointInputController>().keyInput.keyInput = LoadTrackManager.GetInstance().trackDirDic[track.trackFile][i-1];
