@@ -37,8 +37,13 @@ public class LevelController : MonoBehaviour
 
     private void Update()
     {
+        
+    }
+
+    private void FixedUpdate()
+    {
         if (startPlayingMainMusic)
-            mainMusicPlayingTimer += Time.deltaTime;
+            mainMusicPlayingTimer += Time.fixedDeltaTime;
     }
 
     private void InitiateLevel()

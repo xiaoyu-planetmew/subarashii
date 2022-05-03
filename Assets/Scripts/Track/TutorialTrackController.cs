@@ -24,8 +24,13 @@ public class TutorialTrackController : MonoBehaviour
 
     private void Update()
     {
-        if(startPlayingTutorial)
-            timer += Time.deltaTime;
+        
+    }
+
+    private void FixedUpdate()
+    {
+        if (startPlayingTutorial)
+            timer += Time.fixedDeltaTime;
     }
 
     public void StartPlayingMusicFromTutorial()

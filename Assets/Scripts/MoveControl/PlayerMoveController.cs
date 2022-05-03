@@ -44,7 +44,7 @@ public class PlayerMoveController : MonoBehaviour
         aveDeltaTime = Time.deltaTime;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         //根据点和时间移动
         if(startMove)
@@ -52,13 +52,13 @@ public class PlayerMoveController : MonoBehaviour
             MoveByPoints();
         }
 
-        aveDeltaTime = (Time.deltaTime + aveDeltaTime) / 2;
+        aveDeltaTime = (Time.fixedDeltaTime + aveDeltaTime) / 2;
     }
 
     private void MoveByPoints()
     {
-        timer += Time.deltaTime;
-        aTimer += (Time.deltaTime * (accelerated ? aSpeed : 1));
+        timer += Time.fixedDeltaTime;
+        aTimer += (Time.fixedDeltaTime * (accelerated ? aSpeed : 1));
 
         float progress = aTimer / moveDeltaTime ;
          
@@ -72,7 +72,7 @@ public class PlayerMoveController : MonoBehaviour
             aSpeed = aSpeed - 0.2f;
 
             float leftTime = mpSegTotalTime - timer + saveAcceleratedTime;
-            float leftATime = aSpeed * Time.deltaTime * (movePoints.Count - nowPoint);
+            float leftATime = aSpeed * Time.fixedDeltaTime * (movePoints.Count - nowPoint);
 
             //Debug.Log("now left time " + leftTime);
             //Debug.Log("now left A time " + leftATime);
