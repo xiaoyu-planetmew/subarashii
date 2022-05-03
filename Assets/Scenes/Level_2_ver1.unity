@@ -5192,6 +5192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6373131738a7a4c418aff2c79c2422dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 607056258}
   wavyCircles:
   - {fileID: 2031792004}
   - {fileID: 1822577597}
@@ -5311,6 +5312,8 @@ MonoBehaviour:
   restartPos: {fileID: 0}
   startPlaying: 0
   comboNum: 0
+  totalPoints: 0
+  successPoints: 0
 --- !u!114 &531148572
 MonoBehaviour:
   m_ObjectHideFlags: 0

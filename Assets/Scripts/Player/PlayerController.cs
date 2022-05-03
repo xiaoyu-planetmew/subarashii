@@ -90,5 +90,7 @@ public class PlayerController : MonoBehaviour
         startPlaying = false;
         comboNum = 0;
         CharacterAnimationController.Instance.GetComponent<Animator>().SetBool("game over", false);
+        totalPoints = 0;
+        successPoints = 0;
     }
 }

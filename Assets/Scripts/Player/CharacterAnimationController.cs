@@ -99,4 +99,5 @@ public enum AnimationEventType
     Absorb_Left,
     Absorb_Right,
     GameOver,
+    Talk,
 }

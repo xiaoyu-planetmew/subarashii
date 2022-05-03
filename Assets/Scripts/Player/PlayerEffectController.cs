@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerEffectController : MonoBehaviour
 {
+    public Animator animator;
     public WavyCirclePointsController[] wavyCircles;
 
     public static PlayerEffectController Instance;
