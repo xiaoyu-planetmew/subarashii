@@ -37,7 +37,7 @@ MonoBehaviour:
   _SpectrumPayloads: []
   _SpectrumPayloadIdxs: 
   _TextPayloads:
-  - mTextVal: Up
+  - mTextVal: Right
   - mTextVal: Right
   - mTextVal: Up
   _TextPayloadIdxs: 000000000100000002000000

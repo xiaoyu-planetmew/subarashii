@@ -6,7 +6,9 @@ using UnityEngine.UI;
 [RequireComponent(typeof(MovePoint))]
 public class MovePointDisplay : MonoBehaviour
 {
-    private GameObject arrowPrefab;
+    public bool specialHint = false;
+
+    private ArrowDisplay arrowPrefab;
     private MovePoint mp;
 
     private void Start()
@@ -18,8 +20,6 @@ public class MovePointDisplay : MonoBehaviour
 
     public void InitiateDisplay()
     {
-        // 关闭MovePoint位置提示
-        GetComponent<SpriteRenderer>().enabled = false;
 
         // 关闭贝塞尔控制点位置提示
         foreach(Transform besizer in mp.besizerControlPoints)
@@ -29,16 +29,16 @@ public class MovePointDisplay : MonoBehaviour
 
         if (GetComponent<MovePointInputController>() == null) return;
 
-        arrowPrefab = Instantiate(Resources.Load<GameObject>("Prefabs/Arrow"), transform);
+        arrowPrefab = GetComponentInChildren<ArrowDisplay>();
 
         arrowPrefab.transform.localPosition = Vector3.zero;
 
-        arrowPrefab.GetComponent<ArrowDisplay>().InitiateArrow(GetComponent<MovePointInputController>().keyInput.keyInput);
+        arrowPrefab.InitiateArrow(GetComponent<MovePointInputController>().keyInput.keyInput);
     }
 
     public void ResetMovePointDisplay()
     {
-        arrowPrefab.GetComponent<ArrowDisplay>().ResetArrow();
+        arrowPrefab.ResetArrow();
     }
 }
 

@@ -13,6 +13,7 @@
 						<ObjectRef Name="Switch_Level_4_Music" ID="{B6573A58-8ACF-44A0-AF74-BFEFC750BE92}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Switch_Level_2_MainMusic" ID="{86C58F65-A5D4-48D7-BD40-0B4BCB51D221}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Level_1_Music" ID="{58E6EFD8-E27F-4958-8DAE-F442C58BE0BA}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Level_5_Music" ID="{7BE675F3-0C0A-4A48-80FF-088BBD346848}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Switch_Level_4_Tutorial" ID="{0ACE8496-C903-4C07-B8B7-5C8F9798CDDD}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Switch_Level_3_MainMusic" ID="{83F44708-DCC3-4CC8-9E60-240A841C7B54}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Level_2_Music" ID="{04D2F067-43DA-4D42-BC0B-E2509D3CD219}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>

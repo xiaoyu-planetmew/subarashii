@@ -19,6 +19,8 @@ public class LevelController : MonoBehaviour
 
     public static LevelController Instance;
     [HideInInspector] public TrackInLevel[] trackController;
+    [HideInInspector] public float mainMusicPlayingTimer;
+    private bool startPlayingMainMusic;
 
     private void Awake()
     {
@@ -30,11 +32,13 @@ public class LevelController : MonoBehaviour
     private void Start()
     {
         TrackManager.Instance.InitiateLevelTrack();
+        startPlayingMainMusic = false;
     }
 
     private void Update()
     {
-        
+        if (startPlayingMainMusic)
+            mainMusicPlayingTimer += Time.deltaTime;
     }
 
     private void InitiateLevel()
@@ -54,6 +58,8 @@ public class LevelController : MonoBehaviour
             //WwiseManager.Instance.Init();
             //WwiseManager.Instance.LoadBank("SoundBank");
             //WwiseManager.Instance.Play("Play_Music_level1_BPM100_32bit48khz");
+
+            startPlayingMainMusic = true;
         }
         else
             Debug.LogError("Miss Start MovePoint in LevelController!");
@@ -62,6 +68,10 @@ public class LevelController : MonoBehaviour
 
     public void ResetLevel()
     {
+        // 重置主音乐时间
+        mainMusicPlayingTimer = 0;
+        startPlayingMainMusic = false;
+
         // 重置所有MovePoint/ reset all MovePoints
         MovePoint[] mps = FindObjectsOfType<MovePoint>();
         foreach(MovePoint mp in mps)
