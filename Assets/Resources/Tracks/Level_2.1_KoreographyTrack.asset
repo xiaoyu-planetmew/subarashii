@@ -104,14 +104,14 @@ MonoBehaviour:
     mEndSample: 3278769
   - mStartSample: 3300923
     mEndSample: 3300923
-  - mStartSample: 3345230
-    mEndSample: 3345230
+  - mStartSample: 3345231
+    mEndSample: 3345231
   - mStartSample: 3456000
     mEndSample: 3456000
   - mStartSample: 3478154
     mEndSample: 3478154
-  - mStartSample: 3522461
-    mEndSample: 3522461
+  - mStartSample: 3522462
+    mEndSample: 3522462
   - mStartSample: 3633230
     mEndSample: 3633230
   - mStartSample: 3655384
@@ -200,6 +200,8 @@ MonoBehaviour:
     mEndSample: 5161846
   - mStartSample: 5206153
     mEndSample: 5206153
+  - mStartSample: 5316923
+    mEndSample: 5316923
   _SerializedPayloadTypes:
   - SonicBloom.Koreo.TextPayload
   _AssetPayloads: []
@@ -219,39 +221,10 @@ MonoBehaviour:
   _TextPayloads:
   - mTextVal: Down
   - mTextVal: Down
-  - mTextVal: Space
-  - mTextVal: Left
-  - mTextVal: Left
-  - mTextVal: Down
-  - mTextVal: Down
-  - mTextVal: Right
-  - mTextVal: Right
-  - mTextVal: Right
-  - mTextVal: Right
-  - mTextVal: Right
-  - mTextVal: Right
-  - mTextVal: Right
-  - mTextVal: Right
-  - mTextVal: Right
-  - mTextVal: Down
-  - mTextVal: Right
-  - mTextVal: Left
-  - mTextVal: Space
-  - mTextVal: Space
-  - mTextVal: Space
-  - mTextVal: Space
-  - mTextVal: Space
-  - mTextVal: Space
-  - mTextVal: Space
-  - mTextVal: Space
-  - mTextVal: Space
-  - mTextVal: Space
-  - mTextVal: Space
-  - mTextVal: Space
-  - mTextVal: Right
   - mTextVal: Down
   - mTextVal: Left
   - mTextVal: Left
+  - mTextVal: Down
   - mTextVal: Down
   - mTextVal: Right
   - mTextVal: Right
@@ -260,12 +233,41 @@ MonoBehaviour:
   - mTextVal: Right
   - mTextVal: Right
   - mTextVal: Right
+  - mTextVal: Right
+  - mTextVal: Right
+  - mTextVal: Right
+  - mTextVal: Right
+  - mTextVal: Right
+  - mTextVal: Space
+  - mTextVal: Space
   - mTextVal: Left
   - mTextVal: Left
   - mTextVal: Left
   - mTextVal: Left
   - mTextVal: Left
   - mTextVal: Left
+  - mTextVal: Left
+  - mTextVal: Left
+  - mTextVal: Left
+  - mTextVal: Left
+  - mTextVal: Left
+  - mTextVal: Space
+  - mTextVal: Space
+  - mTextVal: Right
+  - mTextVal: Right
+  - mTextVal: Right
+  - mTextVal: Right
+  - mTextVal: Right
+  - mTextVal: Right
+  - mTextVal: Right
+  - mTextVal: Right
+  - mTextVal: Right
+  - mTextVal: Space
+  - mTextVal: Space
+  - mTextVal: Space
+  - mTextVal: Space
+  - mTextVal: Space
+  - mTextVal: Space
   - mTextVal: Space
   - mTextVal: Space
   - mTextVal: Space
@@ -310,4 +312,5 @@ MonoBehaviour:
   - mTextVal: Space
   - mTextVal: Space
   - mTextVal: Space
-  _TextPayloadIdxs: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c000000
+  - mTextVal: Null
+  _TextPayloadIdxs: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c0000005d000000
