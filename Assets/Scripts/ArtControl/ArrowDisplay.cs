@@ -6,6 +6,7 @@ public class ArrowDisplay : MonoBehaviour
 {
     public float hintTime = 1.5f;
     public ArrowPrefab[] arrows;
+    public GameObject hint;
 
     private KeyDirectionType thisArrow;
     private ArrowPrefab showingArrow;
@@ -42,9 +43,27 @@ public class ArrowDisplay : MonoBehaviour
         }
     }
 
-    private void ChangeStartToArrow()
+    public void ChangeStartToArrow()
     {
         showingArrow.star.SetTrigger("StarChange");
+    }
+
+    public void SuccessAnimation()
+    {
+        showingArrow.arrow.SetTrigger("Success");
+        showingArrow.hint_Special.SetActive(false);
+        showingArrow.hint_Normal.SetActive(false);
+        showingArrow.hint_Special.GetComponent<Animator>().speed = 1;
+        showingArrow.hint_Normal.GetComponent<Animator>().speed = 1;
+    }
+
+    public void FailureAnimation()
+    {
+        showingArrow.arrow.SetTrigger("Fail");
+        showingArrow.hint_Special.SetActive(false);
+        showingArrow.hint_Normal.SetActive(false);
+        showingArrow.hint_Special.GetComponent<Animator>().speed = 1;
+        showingArrow.hint_Normal.GetComponent<Animator>().speed = 1;
     }
 
     private IEnumerator ShowInputHint(float waitTime, float speed = 1f)
@@ -70,11 +89,12 @@ public class ArrowDisplay : MonoBehaviour
     {
         foreach(ArrowPrefab prefab in arrows)
         {
-            //prefab.arrow.SetActive(false);
-
             // 恢复成初始的显示
             showingArrow.hint_Special.GetComponent<Animator>().speed = 1;
             showingArrow.hint_Normal.GetComponent<Animator>().speed = 1;
+
+            showingArrow.star.gameObject.SetActive(true);
+            showingArrow.arrow.gameObject.SetActive(false);
         }
     }
 
@@ -87,11 +107,13 @@ public class ArrowDisplay : MonoBehaviour
             if(type == prefab.type)
             {
                 // 初始化对应箭头显示
-                prefab.arrow.SetActive(true);
+                prefab.arrow.gameObject.SetActive(true);
                 showingArrow = prefab;
                 //ResetArrow()；
             }
         }
+
+        hint.SetActive(false);
     }
 }
 
@@ -99,7 +121,7 @@ public class ArrowDisplay : MonoBehaviour
 public class ArrowPrefab
 {
     public KeyDirectionType type;
-    public GameObject arrow;
+    public Animator arrow;
     public Animator star;
     public GameObject hint_Normal;
     public GameObject hint_Special;

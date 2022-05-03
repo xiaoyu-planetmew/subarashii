@@ -8,7 +8,7 @@ public class MovePointDisplay : MonoBehaviour
 {
     public bool specialHint = false;
 
-    private ArrowDisplay arrowPrefab;
+    [HideInInspector] public ArrowDisplay arrowPrefab;
     private MovePoint mp;
 
     private void Start()

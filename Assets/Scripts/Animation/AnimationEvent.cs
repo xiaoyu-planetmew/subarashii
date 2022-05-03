@@ -11,4 +11,9 @@ public class AnimationEvent : MonoBehaviour
         gameObject.SetActive(false);
         showGameObject.SetActive(true);
     }
+
+    public void SetDisable()
+    {
+        gameObject.SetActive(false);
+    }
 }
