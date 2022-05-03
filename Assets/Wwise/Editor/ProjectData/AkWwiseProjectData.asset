@@ -24,7 +24,11 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 2ac004a949d9074b991a29f817866ae5
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585513480418644638
+=======
+    m_lastTime: -8585517599172362624
+>>>>>>> Stashed changes
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +42,11 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: e6224f82002cc843803a5c90543ccd5c
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585513480430266919
+=======
+    m_lastTime: -8585517599174282600
+>>>>>>> Stashed changes
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -65,7 +73,11 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Subarashii
     guid: fc999c091955554c892bcafb2b0bb30d
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585501009715855522
+=======
+    m_lastTime: -8585500954604131283
+>>>>>>> Stashed changes
     List:
     - name: Master Bus
       guid: 011b8f8379f49e4a8beb96dc6cda5434
@@ -127,7 +139,11 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d5f2fd580a4ae34f9909285e0919ae8f
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585513335912811290
+=======
+    m_lastTime: -8585512426337144106
+>>>>>>> Stashed changes
     List:
     - name: SoundBankTest
       guid: c0793be83b094f419f12d55481d60c77
@@ -154,7 +170,11 @@ MonoBehaviour:
     ParentPath: SoundBanks\Subarashii
     guid: bb59c71a64251748bd2e36fd1cabb9aa
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585500254734360632
+=======
+    m_lastTime: -8585500235665004336
+>>>>>>> Stashed changes
     List:
     - name: SoundBank
       guid: 1b861bf19af8cf4982b897ca2f1c8174
@@ -182,7 +202,11 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6e88041042cea04791b2de4cdade51e0
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585513477742183117
+=======
+    m_lastTime: -8585514013923027768
+>>>>>>> Stashed changes
     List:
     - name: Play_Music_level1_BPM100_32bit48khz
       guid: e76414383be9b94c859c0362eede1a52
@@ -229,7 +253,11 @@ MonoBehaviour:
     ParentPath: Events\Subarashii
     guid: 63796efd22d4f34992e8dbfe894f0a8d
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585500256298023744
+=======
+    m_lastTime: -8585500235679487117
+>>>>>>> Stashed changes
     List:
     - name: Boss_Attack
       guid: d082697ccabd084e8069dbfc3c565917
@@ -1273,7 +1301,11 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 55cd09d2cbb25a459366fa0a94db3528
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585513480446411926
+=======
+    m_lastTime: -8585517599173913430
+>>>>>>> Stashed changes
     List: []
   - PhysicalPath: Game Parameters\Subarashii.wwu
     PathAndIcons:
@@ -1286,7 +1318,11 @@ MonoBehaviour:
     ParentPath: Game Parameters\Subarashii
     guid: ca84f0cd6b68bf4dbabd953a76f57a8c
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585501013381556833
+=======
+    m_lastTime: -8585500954629696266
+>>>>>>> Stashed changes
     List:
     - name: MasterVolume
       guid: 4989e7ca548f51479d1b4d3a45192c5f
@@ -1365,7 +1401,11 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: f7fe67bbec39ae43be5794fa01ca0119
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585513480418684532
+=======
+    m_lastTime: -8585517599172592573
+>>>>>>> Stashed changes
     List: []
   - PhysicalPath: States\Subarashii.wwu
     PathAndIcons:
@@ -1378,7 +1418,11 @@ MonoBehaviour:
     ParentPath: States\Subarashii
     guid: 119f975107b6ce428724a59901f24adc
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585501144241122412
+=======
+    m_lastTime: -8585501019040618153
+>>>>>>> Stashed changes
     List:
     - name: Level_Music_State
       guid: 088876470bf6e245a9bfea21bc24a48a
@@ -1508,7 +1552,11 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 0a7d20405e55f149b7a739dd8a462128
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585513480418674563
+=======
+    m_lastTime: -8585517599172682337
+>>>>>>> Stashed changes
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -1522,7 +1570,11 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: eae9b8cc6ab16942b5b2a2edeb5389d0
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585513480418664590
+=======
+    m_lastTime: -8585517599173400382
+>>>>>>> Stashed changes
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 

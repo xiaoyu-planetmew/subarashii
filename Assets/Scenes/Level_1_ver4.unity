@@ -6613,6 +6613,8 @@ MonoBehaviour:
   restartPos: {fileID: 0}
   startPlaying: 0
   comboNum: 0
+  totalPoints: 0
+  successPoints: 0
 --- !u!114 &531148572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10271,7 +10273,7 @@ Canvas:
   m_GameObject: {fileID: 871983717}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 1636235428}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -23284,6 +23286,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   trackController: []
+  mainMusicPlayingTimer: 0
 --- !u!4 &1960545388
 Transform:
   m_ObjectHideFlags: 0

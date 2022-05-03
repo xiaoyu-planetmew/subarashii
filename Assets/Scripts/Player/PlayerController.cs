@@ -34,7 +34,23 @@ public class PlayerController : MonoBehaviour
         else
             originPos = transform.position;
     }
-
+    void Update()
+    {
+        GameObject.Find("Score_Letter").GetComponent<ArtLetter>().SetShowNumber(successPoints);
+        if(totalPoints != 0)
+        {
+            GameObject.Find("Level_Letters").GetComponent<ArtLetter_Percent>().SetShowNumber(successPoints/totalPoints);
+        }
+    }
+    public void success()
+    {
+        totalPoints++;
+        successPoints++;
+    }
+    public void miss()
+    {
+        totalPoints++;
+    }
     /// <summary>
     /// ��Ѫ
     /// </summary>
