@@ -11,6 +11,7 @@ public class LoadTrackManager : BaseManager<LoadTrackManager>
     /// 各个关卡的音乐时间文件
     /// </summary>
     public Dictionary<string, List<float>> trackTimeDic = new Dictionary<string, List<float>>();
+    public Dictionary<string, List<float>> trackTotalTimeDic = new Dictionary<string, List<float>>();
 
     /// <summary>
     /// 各个关卡的各个打点的名字
@@ -27,18 +28,25 @@ public class LoadTrackManager : BaseManager<LoadTrackManager>
 
             List<KoreographyEvent> eventList = aTrackManagers[i].GetAllEvents();
             List<float> eventTimeTrack = new List<float>();
+            List<float> eventTotalTimeTrack = new List<float>();
             List<KeyDirectionType> eventDir = new List<KeyDirectionType>();
             for (int j = 0; j < eventList.Count; j++)
             {
-                if(j==0) 
+                if(j==0)
+                {
                     eventTimeTrack.Add((float)eventList[j].StartSample / TrackManager.Instance.sampleRate);
+                }
                 else
-                    eventTimeTrack.Add((float)eventList[j].StartSample/TrackManager.Instance.sampleRate - (float)eventList[j-1].StartSample / TrackManager.Instance.sampleRate);
+                {
+                    eventTimeTrack.Add((float)eventList[j].StartSample / TrackManager.Instance.sampleRate - (float)eventList[j - 1].StartSample / TrackManager.Instance.sampleRate);
+                }
 
+                eventTotalTimeTrack.Add((float)eventList[j].StartSample / TrackManager.Instance.sampleRate);
                 eventDir.Add(GetKeyDir(eventList[j].GetTextValue(), i, j));
             }
 
             trackTimeDic.Add(aTrackManagers[i].name, eventTimeTrack);
+            trackTotalTimeDic.Add(aTrackManagers[i].name, eventTotalTimeTrack);
             trackDirDic.Add(aTrackManagers[i].name, eventDir);
         }
     }

@@ -233,6 +233,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Level_5_Music" ID="{7BE675F3-0C0A-4A48-80FF-088BBD346848}">
+							<ChildrenList>
+								<Action Name="" ID="{2DDEF278-CBBB-435E-9061-8C31FA8A7421}" ShortID="322321302">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Level_5_Music" ID="{7D35107B-141A-4D1C-BB31-CF8A37CB8811}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="SFX" ID="{BEFBA5BE-F44D-4D9B-B266-F99867907F2D}" ShortID="173516586">
