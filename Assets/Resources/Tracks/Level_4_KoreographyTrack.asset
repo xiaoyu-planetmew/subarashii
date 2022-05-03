@@ -44,8 +44,8 @@ MonoBehaviour:
     mEndSample: 658285
   - mStartSample: 674742
     mEndSample: 674742
-  - mStartSample: 691200
-    mEndSample: 691200
+  - mStartSample: 691199
+    mEndSample: 691199
   - mStartSample: 724114
     mEndSample: 724114
   - mStartSample: 740571
@@ -253,25 +253,25 @@ MonoBehaviour:
   _SpectrumPayloads: []
   _SpectrumPayloadIdxs: 
   _TextPayloads:
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
+  - mTextVal: Right
+  - mTextVal: Right
+  - mTextVal: Up
+  - mTextVal: Up
+  - mTextVal: Left
+  - mTextVal: Left
+  - mTextVal: Up
+  - mTextVal: Up
+  - mTextVal: Up
+  - mTextVal: Up
+  - mTextVal: Up
+  - mTextVal: Up
+  - mTextVal: Up
+  - mTextVal: Right
+  - mTextVal: Right
+  - mTextVal: Right
+  - mTextVal: Right
+  - mTextVal: Right
+  - mTextVal: Right
   - mTextVal: 
   - mTextVal: 
   - mTextVal: 
