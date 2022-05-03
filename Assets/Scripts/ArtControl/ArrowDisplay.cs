@@ -37,7 +37,8 @@ public class ArrowDisplay : MonoBehaviour
             if(timeToArriveMP > hintTime)
             {
                 Debug.Log("≤•∑≈Àı»¶ hintTime" + hintTime + " timeToArriveMP " + timeToArriveMP);
-                StartCoroutine(ShowInputHint(timeToArriveMP - hintTime));
+                //StartCoroutine(ShowInputHint(timeToArriveMP - hintTime));
+                StartCoroutine(ShowInputHint(0, hintTime / timeToArriveMP * 1.5f));
             }
             else
             {

@@ -24,6 +24,7 @@ public class PlayerMoveController : MonoBehaviour
     private float aSpeed;
     private int nowPoint;
     private float aveDeltaTime;
+    private bool waitForOneFrame;
 
     [SerializeField] private bool accelerated; //是否加速冲刺
     private bool finishedAccelerate;
@@ -57,6 +58,12 @@ public class PlayerMoveController : MonoBehaviour
 
     private void MoveByPoints()
     {
+        if(waitForOneFrame)
+        {
+            waitForOneFrame = false;
+            return;
+        }
+
         timer += Time.fixedDeltaTime;
         aTimer += (Time.fixedDeltaTime * (accelerated ? aSpeed : 1));
 
@@ -71,7 +78,7 @@ public class PlayerMoveController : MonoBehaviour
         {
             aSpeed = aSpeed - 0.2f;
 
-            float leftTime = mpSegTotalTime - timer + saveAcceleratedTime;
+            float leftTime = nowMovePoint.nextPoint.timeInTrack - LevelController.Instance.mainMusicPlayingTimer;
             float leftATime = aSpeed * Time.fixedDeltaTime * (movePoints.Count - nowPoint);
 
             //Debug.Log("now left time " + leftTime);
@@ -137,6 +144,8 @@ public class PlayerMoveController : MonoBehaviour
 
             //跳过阶段
             ArrivedLastPoint();
+
+            waitForOneFrame = true;
         }
 
     }

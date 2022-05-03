@@ -35,13 +35,15 @@ public class LoadTrackManager : BaseManager<LoadTrackManager>
                 if(j==0)
                 {
                     eventTimeTrack.Add((float)eventList[j].StartSample / TrackManager.Instance.sampleRate);
+                    eventTotalTimeTrack.Add((float)eventList[j].StartSample / TrackManager.Instance.sampleRate);
+
                 }
                 else
                 {
                     eventTimeTrack.Add((float)eventList[j].StartSample / TrackManager.Instance.sampleRate - (float)eventList[j - 1].StartSample / TrackManager.Instance.sampleRate);
+                    eventTotalTimeTrack.Add((float)eventList[j].StartSample / TrackManager.Instance.sampleRate);
                 }
 
-                eventTotalTimeTrack.Add((float)eventList[j].StartSample / TrackManager.Instance.sampleRate);
                 eventDir.Add(GetKeyDir(eventList[j].GetTextValue(), i, j));
             }
 

@@ -15,6 +15,10 @@ public class MovePointInputController : MonoBehaviour
     [Header("交互角色")]
     public InteractiveAnimation interactiveAnimation;
     public  PlayerSpecialAnimationType  PlayerSpecialAnimation = PlayerSpecialAnimationType.Null;
+    private MovePoint _mp;
+
+    [Header("禁止加速")]
+    public bool dontAccerate = false;
 
     private bool waitingForInputs;
     private float inputTimer;
@@ -24,9 +28,10 @@ public class MovePointInputController : MonoBehaviour
         ResetMovePointInput();
         if (interactiveAnimation != null)
             interactiveAnimation.linkMovePoint = this;
+        _mp = GetComponent<MovePoint>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         //等待玩家输入
         if (waitingForInputs)
@@ -68,7 +73,7 @@ public class MovePointInputController : MonoBehaviour
     /// </summary>
     private void CheckingInput()
     {
-        inputTimer += Time.deltaTime;
+        inputTimer += Time.fixedDeltaTime;
 
         if (keyInput.keyInput == KeyDirectionType.Null) return;
 
@@ -166,7 +171,8 @@ public class MovePointInputController : MonoBehaviour
 
 
         //加速
-        PlayerMoveController.Instance.AccerateMove();
+        if(!dontAccerate)
+            PlayerMoveController.Instance.AccerateMove();
 
         //声音
         if (keyInput.keyInput == KeyDirectionType.Space)
