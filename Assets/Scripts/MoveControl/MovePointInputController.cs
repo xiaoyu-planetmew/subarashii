@@ -14,6 +14,7 @@ public class MovePointInputController : MonoBehaviour
 
     [Header("交互角色")]
     public InteractiveAnimation interactiveAnimation;
+    public bool animationTowardRight = false;
 
     private bool waitingForInputs;
     private float inputTimer;
@@ -97,6 +98,9 @@ public class MovePointInputController : MonoBehaviour
         
     }
 
+    /// <summary>
+    /// 失败
+    /// </summary>
     public void PointInputFail()
     {
         KeyboardInputChecker.Instance.ResetChecker();
@@ -123,6 +127,9 @@ public class MovePointInputController : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// 成功
+    /// </summary>
     public void PointInputSuccess()
     {
         KeyboardInputChecker.Instance.ResetChecker();
@@ -134,9 +141,13 @@ public class MovePointInputController : MonoBehaviour
         // 完全成功特效
         // 按最后一个方向出拖拽特效
         PlayerEffectController.Instance.DragCircleEffect(keyInput.keyInput, powerfulEffect);
-        // 主角动画
+
+        // 动画
         if(keyInput.keyInput == KeyDirectionType.Space)
         {
+            CharacterAnimationController.Instance.ChangeAnimationEvent(animationTowardRight ? AnimationEventType.Absorb_Right : AnimationEventType.Absorb_Left);
+
+            // 其它交互角色动画
             if (interactiveAnimation != null)
                 interactiveAnimation.success = true;
         }

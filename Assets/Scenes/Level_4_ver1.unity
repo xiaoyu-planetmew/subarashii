@@ -2152,13 +2152,37 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 531148563}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8295054819b83a046ba0c4d7aec6e4cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   loop: 0
-  animations: []
+  animations:
+  - animsType: 0
+    randomTime: {x: 0, y: 0}
+    animationEvents:
+    - idle
+  - animsType: 1
+    randomTime: {x: 0, y: 0}
+    animationEvents:
+    - good
+  - animsType: 2
+    randomTime: {x: 0, y: 0}
+    animationEvents:
+    - miss
+  - animsType: 3
+    randomTime: {x: 0, y: 0}
+    animationEvents:
+    - absorb_left
+  - animsType: 4
+    randomTime: {x: 0, y: 0}
+    animationEvents:
+    - absorb_right
+  - animsType: 5
+    randomTime: {x: 0, y: 0}
+    animationEvents:
+    - game over
   nowEventIndex: 0
 --- !u!114 &531148571
 MonoBehaviour:

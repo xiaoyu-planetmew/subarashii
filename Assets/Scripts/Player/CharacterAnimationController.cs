@@ -98,4 +98,5 @@ public enum AnimationEventType
     Miss,
     Absorb_Left,
     Absorb_Right,
+    GameOver,
 }

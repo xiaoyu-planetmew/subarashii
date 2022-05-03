@@ -35,7 +35,7 @@ public class LoadTrackManager : BaseManager<LoadTrackManager>
                 else
                     eventTimeTrack.Add((float)eventList[j].StartSample/TrackManager.Instance.sampleRate - (float)eventList[j-1].StartSample / TrackManager.Instance.sampleRate);
 
-                eventDir.Add(GetKeyDir(eventList[j].GetTextValue()));
+                eventDir.Add(GetKeyDir(eventList[j].GetTextValue(), i, j));
             }
 
             trackTimeDic.Add(aTrackManagers[i].name, eventTimeTrack);
@@ -43,7 +43,7 @@ public class LoadTrackManager : BaseManager<LoadTrackManager>
         }
     }
 
-    private KeyDirectionType GetKeyDir(string keyDirName)
+    private KeyDirectionType GetKeyDir(string keyDirName, int fileIndex, int index)
     {
         foreach (KeyDirectionType key in Enum.GetValues(typeof(KeyDirectionType)))
         {
@@ -51,7 +51,7 @@ public class LoadTrackManager : BaseManager<LoadTrackManager>
                 return key;
         }
 
-        Debug.LogError("Track谱面Text文字错误！");
+        Debug.LogError("Track谱面Text文字错误！第" + fileIndex +"个文件  第" + index +"处");
         return KeyDirectionType.Null;
     }
 }

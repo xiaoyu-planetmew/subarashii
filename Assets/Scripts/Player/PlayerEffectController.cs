@@ -27,3 +27,8 @@ public class PlayerEffectController : MonoBehaviour
     }
 
 }
+
+public enum SpaceAnimation
+{
+
+}
