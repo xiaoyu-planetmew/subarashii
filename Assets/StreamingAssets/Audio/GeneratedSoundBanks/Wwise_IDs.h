@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID BOSS_DESTROY = 548787921U;
         static const AkUniqueID BOSS_SIREN_PLAY = 446164349U;
         static const AkUniqueID BOSS_SIREN_STOP = 2631903211U;
+        static const AkUniqueID BUTTON_OFF = 2030756375U;
         static const AkUniqueID BUTTON_ON = 2409176675U;
         static const AkUniqueID BUTTON_PAUSE = 1412610934U;
         static const AkUniqueID DOOR_IMPACTING = 3146435922U;
@@ -35,8 +36,10 @@ namespace AK
         static const AkUniqueID PLAY_LEVEL_2_MUSIC = 2048014091U;
         static const AkUniqueID PLAY_LEVEL_3_MUSIC = 2793021362U;
         static const AkUniqueID PLAY_LEVEL_4_MUSIC = 3783587681U;
+        static const AkUniqueID PLAY_LEVEL_5_MUSIC = 1971216464U;
         static const AkUniqueID PLAY_MUSIC_LEVEL1_BPM100_32BIT48KHZ = 192345322U;
         static const AkUniqueID PLAY_MUSIC_LEVEL1_TUTORIAL__BPM100_32BIT48KHZ = 2975100082U;
+        static const AkUniqueID PLAY_THEME = 2479442773U;
         static const AkUniqueID SHIT_COMBINE = 2662890845U;
         static const AkUniqueID SPACE_FOOD = 3652999024U;
         static const AkUniqueID SPACE_HINDER = 4232218210U;
