@@ -15,10 +15,13 @@ Event	ID	Name			Wwise Object Path	Notes
 	1675477522	TestPlayLevel_1_MainMusic			\Subarashii\Music\TestPlayLevel_1_MainMusic	
 	1720845381	Food_Barriage			\Subarashii\SFX\Level_2\Food_Barriage	
 	1919083106	Switch_Level_2_Tutorial			\Subarashii\Music\Switch_Level_2_Tutorial	
+	1971216464	Play_Level_5_Music			\Subarashii\Music\Play_Level_5_Music	
+	2030756375	Button_Off			\Subarashii\SFX\Button_Off	
 	2048014091	Play_Level_2_Music			\Subarashii\Music\Play_Level_2_Music	
 	2196209329	Input_Arrow_Menu			\Subarashii\SFX\Input_Arrow_Menu	
 	2409176675	Button_On			\Subarashii\SFX\Button_On	
 	2429794592	Switch_Level_2_MainMusic			\Subarashii\Music\Switch_Level_2_MainMusic	
+	2479442773	Play_Theme			\Subarashii\Music\Play_Theme	
 	2631903211	Boss_Siren_Stop			\Subarashii\SFX\Level_4\Boss_Siren_Stop	
 	2662890845	Shit_Combine			\Subarashii\SFX\Level_5\Shit_Combine	
 	2683451828	Input_Arrow_Miss			\Subarashii\SFX\Input_Arrow_Miss	
@@ -48,10 +51,10 @@ State	ID	Name	State Group			Notes
 	3762955427	Tutorial	Level_Music_State			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	29973254	SFX_button_off	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_button_off_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Button_Off\SFX_button_off		192064
 	100296075	SFX_shit	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_shit_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Level_5\Final_Shit\SFX_shit		2112064
 	139457339	SFX_buzz_talk2	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_buzz_talk2_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Talk_Buzz\SFX_buzz_talk2		384064
-	181561526	level3 	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\level3 _D79FB2B7.wem		\Interactive Music Hierarchy\Subarashii\Level_3_Music\MainMusic\level3\level3 		14336064
-	184691859	SFX_trigger_spcae_1	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_trigger_spcae_1_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Input_Space_Success\SFX_trigger_spcae_1		96064
+	181561526	level3	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\level3 _D79FB2B7.wem		\Interactive Music Hierarchy\Subarashii\Level_3_Music\MainMusic\level3\level3		14336064
 	233903279	SFX_shit_combine2	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_shit_combine2_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Level_5\Shit_Combine\SFX_shit_combine2		96064
 	235605711	SFX_food_absorb	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_food_absorb_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Level_1\Food_Absorb\SFX_food_absorb		96064
 	287068677	SFX_trigger_spcae_2	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_trigger_spcae_2_A1D7F150.wem		\Actor-Mixer Hierarchy\Subarashii\Input_Space_Success\SFX_trigger_spcae_2		120272
@@ -59,12 +62,14 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	329270403	SFX_buzz_talk1	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_buzz_talk1_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Talk_Buzz\SFX_buzz_talk1		384064
 	343457234	SFX_trigger_arrow_perfect	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_trigger_arrow_perfect_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Input_Arrow_Success\SFX_trigger_arrow_perfect		96064
 	351129862	SFX_talk2	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_talk2_E4FE0A82.wem		\Actor-Mixer Hierarchy\Subarashii\Talking_2\Talking_2_03\SFX_talk2		37200
+	363698901	ending	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\ending_D79FB2B7.wem		\Interactive Music Hierarchy\Subarashii\Level_5_Music\ending		19200144
 	365881016	SFX_trigger_spcae_barriage	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_trigger_spcae_barriage_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Level_2\Space_Barriage\SFX_trigger_spcae_barriage		480064
 	382105806	SFX_chili_spit	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_chili_spit_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Level_4\Boss_Attack\SFX_chili_spit		192064
 	428548908	SFX_talk2	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_talk2_A4E01292.wem		\Actor-Mixer Hierarchy\Subarashii\Talking_2\Talking_2_02\SFX_talk2		47240
 	469559729	SFX_button_on	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_button_on_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Button_On\SFX_button_on		96064
 	471319580	level3_tutorial	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\level3_tutorial_D79FB2B7.wem		\Interactive Music Hierarchy\Subarashii\Level_3_Music\MainMusic\level3_tutorial\level3_tutorial		1365400
 	533572186	SFX_trigger_arrow_down	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_trigger_arrow_down_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Input_Arrow_Menu\SFX_trigger_arrow_down		96064
+	554321510	SFX_trigger_space1	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_trigger_space1_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Input_Space_Success\SFX_trigger_space1		96064
 	583624217	SFX_food_happy	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_food_happy_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Level_1\Food_Happy\SFX_food_happy		288064
 	601146170	SFX_shit_combine1	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_shit_combine1_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Level_5\Shit_Combine\SFX_shit_combine1		96064
 	610492680	song4	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\song4_D79FB2B7.wem		\Interactive Music Hierarchy\Subarashii\Level_4_Music\MainMusic\song4\song4		15008980
@@ -73,6 +78,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	640276241	SFX_trigger_spcae_miss	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_trigger_spcae_miss_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Input_Space_Miss\SFX_trigger_spcae_miss		96064
 	665715079	SFX_trigger_spcae_food	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_trigger_spcae_food_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Level_1\Space_Food\SFX_trigger_spcae_food		96064
 	669544663	SFX_chili_siren	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_chili_siren_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Level_4\Boss_Siren\SFX_chili_siren		384064
+	747830013	Theme	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\Theme_D79FB2B7.wem		\Interactive Music Hierarchy\Subarashii\Theme\Theme		17066744
 	804901321	SFX_trigger_arrow_critical	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_trigger_arrow_critical_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Input_Arrow_Combo\SFX_trigger_arrow_critical		96064
 	831129391	song2_tutorial	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\song2_tutorial_D79FB2B7.wem		\Interactive Music Hierarchy\Subarashii\Level_2_Music\Tutorial\song2_tutorial\song2_tutorial		1417912
 	834218407	SFX_chili_destory	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_chili_destory_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Level_4\Boss_Destroy\SFX_chili_destory		1440064

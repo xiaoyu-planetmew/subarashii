@@ -140,6 +140,32 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
+				<SoundcasterSession Name="Music_Level_5" ID="{251C1E5E-EB60-42D2-9659-FC39C52D9E8A}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Level_5_Music" ID="{7BE675F3-0C0A-4A48-80FF-088BBD346848}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="MasterVolume" ID="{CAE78949-8F54-4751-9D1B-4D3A45192C5F}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SFXVolume" ID="{4248C90A-56A9-4E50-86B6-E85A72287D23}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="MusicVolume" ID="{61A8F810-779A-4F45-8DEC-F08EF79296F4}"/>
+							<Value>100</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Tutorial" ID="{897F8961-AD16-48C2-B051-A2C8D145475F}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundcasterSessions>

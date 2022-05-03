@@ -21,7 +21,7 @@
 				<GameParameter Id="2918011349" Name="MasterVolume" ObjectPath="\Game Parameters\Subarashii\Volume\MasterVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1661994096" Language="SFX" Hash="2113082858">
+		<SoundBank Id="1661994096" Language="SFX" Hash="2286205019">
 			<ObjectPath>\SoundBanks\Subarashii\SoundBank</ObjectPath>
 			<ShortName>SoundBank</ShortName>
 			<Path>SoundBank.bnk</Path>
@@ -51,6 +51,14 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="2631903211" Name="Boss_Siren_Stop" ObjectPath="\Events\Subarashii\SFX\Level_4\Boss_Siren_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2030756375" Name="Button_Off" ObjectPath="\Events\Subarashii\SFX\Button_Off" DurationType="OneShot" DurationMin="1." DurationMax="1.">
+					<IncludedMemoryFiles>
+						<File Id="29973254" Language="SFX">
+							<ShortName>SFX\SFX_button_off.wav</ShortName>
+							<Path>SFX\SFX\SFX_button_off_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2409176675" Name="Button_On" ObjectPath="\Events\Subarashii\SFX\Button_On" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
 					<IncludedMemoryFiles>
 						<File Id="469559729" Language="SFX">
@@ -157,13 +165,13 @@
 				</Event>
 				<Event Id="1130099208" Name="Input_Space_Success" ObjectPath="\Events\Subarashii\SFX\Input_Space_Success" DurationType="OneShot" DurationMin="0.5" DurationMax="0.640401">
 					<IncludedMemoryFiles>
-						<File Id="184691859" Language="SFX">
-							<ShortName>SFX\SFX_trigger_spcae_1.wav</ShortName>
-							<Path>SFX\SFX\SFX_trigger_spcae_1_10C4C929.wem</Path>
-						</File>
 						<File Id="287068677" Language="SFX">
 							<ShortName>SFX\SFX_trigger_spcae_2.wav</ShortName>
 							<Path>SFX\SFX\SFX_trigger_spcae_2_A1D7F150.wem</Path>
+						</File>
+						<File Id="554321510" Language="SFX">
+							<ShortName>SFX\SFX_trigger_space1.wav</ShortName>
+							<Path>SFX\SFX\SFX_trigger_space1_10C4C929.wem</Path>
 						</File>
 						<File Id="851934408" Language="SFX">
 							<ShortName>SFX\SFX_trigger_spcae_3.wav</ShortName>
@@ -282,6 +290,22 @@
 					<ActionSetState>
 						<ActionSetStateEntry Id="3762955427" Name="Tutorial" ObjectPath="\States\Subarashii\Level_Music_State\Tutorial"/>
 					</ActionSetState>
+				</Event>
+				<Event Id="1971216464" Name="Play_Level_5_Music" ObjectPath="\Events\Subarashii\Music\Play_Level_5_Music" DurationType="OneShot" DurationMin="100." DurationMax="100.">
+					<IncludedMemoryFiles>
+						<File Id="363698901" Language="SFX">
+							<ShortName>ending.wav</ShortName>
+							<Path>SFX\ending_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2479442773" Name="Play_Theme" ObjectPath="\Events\Subarashii\Music\Play_Theme" DurationType="OneShot" DurationMin="88.888962" DurationMax="88.888962">
+					<IncludedMemoryFiles>
+						<File Id="747830013" Language="SFX">
+							<ShortName>Theme.wav</ShortName>
+							<Path>SFX\Theme_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="2662890845" Name="Shit_Combine" ObjectPath="\Events\Subarashii\SFX\Level_5\Shit_Combine" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
 					<IncludedMemoryFiles>
