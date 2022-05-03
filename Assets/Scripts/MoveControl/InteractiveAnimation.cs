@@ -12,6 +12,7 @@ public class InteractiveAnimation : MonoBehaviour
     public string failureAnimation;
 
     [HideInInspector] public bool success;
+    [HideInInspector] public MovePointInputController linkMovePoint;
     private bool startPlayAnimation;
     private Animator anim;
 
@@ -29,6 +30,7 @@ public class InteractiveAnimation : MonoBehaviour
         if(startPlayAnimation)
         {
             anim.SetTrigger(success ? successAnimation : failureAnimation);
+            PlayerAnimation();
 
             startPlayAnimation = false;
         }
@@ -41,6 +43,7 @@ public class InteractiveAnimation : MonoBehaviour
             if(autoPlay)
             {
                 anim.SetTrigger(successAnimation);
+                PlayerAnimation();
             }
             else
             {
@@ -50,4 +53,18 @@ public class InteractiveAnimation : MonoBehaviour
     }
 
  
+    private void PlayerAnimation()
+    {
+        if (linkMovePoint == null) return;
+
+        switch (linkMovePoint.PlayerSpecialAnimation)
+        {
+            case PlayerSpecialAnimationType.FoodAbsorb_Left:
+                CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Absorb_Left);
+                break;
+            case PlayerSpecialAnimationType.FoodAbsorb_Right:
+                CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Absorb_Right);
+                break;
+        }
+    }
 }

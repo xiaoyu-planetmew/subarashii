@@ -67,5 +67,6 @@ public class PlayerController : MonoBehaviour
         transform.position = originPos;
         startPlaying = false;
         comboNum = 0;
+        CharacterAnimationController.Instance.GetComponent<Animator>().SetBool("game over", false);
     }
 }

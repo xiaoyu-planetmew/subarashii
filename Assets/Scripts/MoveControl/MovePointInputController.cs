@@ -14,7 +14,7 @@ public class MovePointInputController : MonoBehaviour
 
     [Header("交互角色")]
     public InteractiveAnimation interactiveAnimation;
-    public bool animationTowardRight = false;
+    public  PlayerSpecialAnimationType  PlayerSpecialAnimation = PlayerSpecialAnimationType.Null;
 
     private bool waitingForInputs;
     private float inputTimer;
@@ -22,6 +22,8 @@ public class MovePointInputController : MonoBehaviour
     private void Start()
     {
         ResetMovePointInput();
+        if (interactiveAnimation != null)
+            interactiveAnimation.linkMovePoint = this;
     }
 
     private void Update()
@@ -114,6 +116,9 @@ public class MovePointInputController : MonoBehaviour
 
         // 失败特效
 
+        // 主角动画
+        CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Miss);
+
         // 声音
         if (keyInput.keyInput == KeyDirectionType.Space)
         {
@@ -142,18 +147,14 @@ public class MovePointInputController : MonoBehaviour
         // 按最后一个方向出拖拽特效
         PlayerEffectController.Instance.DragCircleEffect(keyInput.keyInput, powerfulEffect);
 
-        // 动画
-        if(keyInput.keyInput == KeyDirectionType.Space)
-        {
-            CharacterAnimationController.Instance.ChangeAnimationEvent(animationTowardRight ? AnimationEventType.Absorb_Right : AnimationEventType.Absorb_Left);
+        // 主角动画
+        CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Good);
 
-            // 其它交互角色动画
+        // 其它交互角色动画
+        if (keyInput.keyInput == KeyDirectionType.Space)
+        {
             if (interactiveAnimation != null)
                 interactiveAnimation.success = true;
-        }
-        else if(keyInput.keyInput != KeyDirectionType.Null)
-        {
-            CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Good);
         }
 
         //加速
@@ -242,4 +243,11 @@ public enum KeyDirectionType
     Space,
     Stop,
     Null,
+}
+
+public enum PlayerSpecialAnimationType
+{ 
+    Null,
+    FoodAbsorb_Left,
+    FoodAbsorb_Right,
 }

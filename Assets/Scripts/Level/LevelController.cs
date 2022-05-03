@@ -84,6 +84,8 @@ public class LevelController : MonoBehaviour
         PlayerController.Instance.startPlaying = false;
 
         // 角色死亡特效和动画 / death effect and animation
+        // 主角动画
+        CharacterAnimationController.Instance.GetComponent<Animator>().SetBool("game over", true);
 
         // 主音乐切换 / main BGM change to tutorial BGM
 
