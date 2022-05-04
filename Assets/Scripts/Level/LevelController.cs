@@ -21,6 +21,7 @@ public class LevelController : MonoBehaviour
     [HideInInspector] public TrackInLevel[] trackController;
      public float mainMusicPlayingTimer;
     private bool startPlayingMainMusic;
+    public GameObject pauseMenu;
 
     private void Awake()
     {
@@ -46,7 +47,11 @@ public class LevelController : MonoBehaviour
 
     private void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Pause();
+            pauseMenu.SetActive(true);
+        }
     }
 
     private void FixedUpdate()
