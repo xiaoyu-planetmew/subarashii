@@ -14,66 +14,66 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mEventID: Level_5_KoreographyTrack
   mEventList:
-  - mStartSample: 960000
-    mEndSample: 960000
-  - mStartSample: 1056000
-    mEndSample: 1056000
-  - mStartSample: 1152000
-    mEndSample: 1152000
-  - mStartSample: 1248000
-    mEndSample: 1248000
-  - mStartSample: 1344000
-    mEndSample: 1344000
-  - mStartSample: 1440000
-    mEndSample: 1440000
-  - mStartSample: 1536000
-    mEndSample: 1536000
-  - mStartSample: 1632000
-    mEndSample: 1632000
-  - mStartSample: 1728000
-    mEndSample: 1728000
-  - mStartSample: 1824000
-    mEndSample: 1824000
-  - mStartSample: 1920000
-    mEndSample: 1920000
-  - mStartSample: 2016000
-    mEndSample: 2016000
-  - mStartSample: 2112000
-    mEndSample: 2112000
-  - mStartSample: 2208000
-    mEndSample: 2208000
-  - mStartSample: 2304000
-    mEndSample: 2304000
-  - mStartSample: 2400000
-    mEndSample: 2400000
-  - mStartSample: 2496000
-    mEndSample: 2496000
-  - mStartSample: 2592000
-    mEndSample: 2592000
-  - mStartSample: 2688000
-    mEndSample: 2688000
-  - mStartSample: 2784000
-    mEndSample: 2784000
-  - mStartSample: 2880000
-    mEndSample: 2880000
-  - mStartSample: 2976000
-    mEndSample: 2976000
-  - mStartSample: 3072000
-    mEndSample: 3072000
-  - mStartSample: 3168000
-    mEndSample: 3168000
-  - mStartSample: 3264000
-    mEndSample: 3264000
-  - mStartSample: 3360000
-    mEndSample: 3360000
-  - mStartSample: 3456000
-    mEndSample: 3456000
-  - mStartSample: 3552000
-    mEndSample: 3552000
-  - mStartSample: 3648000
-    mEndSample: 3648000
-  - mStartSample: 3744000
-    mEndSample: 3744000
+  - mStartSample: 1097142
+    mEndSample: 1097142
+  - mStartSample: 1188571
+    mEndSample: 1188571
+  - mStartSample: 1279999
+    mEndSample: 1279999
+  - mStartSample: 1371428
+    mEndSample: 1371428
+  - mStartSample: 1462857
+    mEndSample: 1462857
+  - mStartSample: 1554285
+    mEndSample: 1554285
+  - mStartSample: 1645714
+    mEndSample: 1645714
+  - mStartSample: 1737142
+    mEndSample: 1737142
+  - mStartSample: 1828571
+    mEndSample: 1828571
+  - mStartSample: 1919999
+    mEndSample: 1919999
+  - mStartSample: 2011428
+    mEndSample: 2011428
+  - mStartSample: 2102856
+    mEndSample: 2102856
+  - mStartSample: 2194285
+    mEndSample: 2194285
+  - mStartSample: 2285714
+    mEndSample: 2285714
+  - mStartSample: 2377142
+    mEndSample: 2377142
+  - mStartSample: 2468571
+    mEndSample: 2468571
+  - mStartSample: 2559999
+    mEndSample: 2559999
+  - mStartSample: 2651428
+    mEndSample: 2651428
+  - mStartSample: 2742857
+    mEndSample: 2742857
+  - mStartSample: 2834285
+    mEndSample: 2834285
+  - mStartSample: 2925714
+    mEndSample: 2925714
+  - mStartSample: 3017142
+    mEndSample: 3017142
+  - mStartSample: 3108571
+    mEndSample: 3108571
+  - mStartSample: 3199999
+    mEndSample: 3199999
+  - mStartSample: 3291428
+    mEndSample: 3291428
+  - mStartSample: 3382856
+    mEndSample: 3382856
+  - mStartSample: 3474285
+    mEndSample: 3474285
+  - mStartSample: 3565714
+    mEndSample: 3565714
+  - mStartSample: 3657142
+    mEndSample: 3657142
+  - mStartSample: 3748571
+    mEndSample: 3748571
   _SerializedPayloadTypes:
   - SonicBloom.Koreo.TextPayload
   _AssetPayloads: []
