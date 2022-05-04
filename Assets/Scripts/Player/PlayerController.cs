@@ -77,12 +77,12 @@ public class PlayerController : MonoBehaviour
         }
         catch { }
     }
-    public void success()
+    public void Success()
     {
         totalPoints++;
         successPoints++;
     }
-    public void miss()
+    public void Miss()
     {
         totalPoints++;
         MinusBlood();

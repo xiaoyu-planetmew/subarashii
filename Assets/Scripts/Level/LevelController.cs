@@ -182,13 +182,13 @@ public class LevelController : MonoBehaviour
         // 重开操作
         PlayerController.Instance.startPlaying = true;
     }
-    public void pause()
+    public void Pause()
     {
         startPlayingMainMusic = false;
         PlayerController.Instance.startPlaying = false;
         Time.timeScale = 0;
     }
-    public void resume()
+    public void Resume()
     {
         startPlayingMainMusic = true;
         PlayerController.Instance.startPlaying = true;

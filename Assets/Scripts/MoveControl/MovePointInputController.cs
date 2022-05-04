@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 [RequireComponent(typeof(MovePoint))]
 public class MovePointInputController : MonoBehaviour
 {
@@ -138,7 +138,7 @@ public class MovePointInputController : MonoBehaviour
             SoundController.Instance.Input_Arrow_Miss.HandleEvent(gameObject);
         }
         
-        PlayerController.Instance.miss();
+        PlayerController.Instance.Miss();
     }
 
     /// <summary>
@@ -183,12 +183,18 @@ public class MovePointInputController : MonoBehaviour
         else if (keyInput.keyInput != KeyDirectionType.Null)
         {
             if(PlayerController.Instance.comboNum>=3)
+            {
                 SoundController.Instance.Input_Arrow_Combo.HandleEvent(gameObject);
+                GameObject.Find("comboTime").GetComponent<Image>().enabled = true;
+            }
             else
+            {
                 SoundController.Instance.Input_Arrow_Success.HandleEvent(gameObject);
+                GameObject.Find("comboTime").GetComponent<Image>().enabled = false;
+            }
         }
 
-        PlayerController.Instance.success();
+        PlayerController.Instance.Success();
         
     }
 

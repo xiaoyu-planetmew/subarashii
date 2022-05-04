@@ -39,7 +39,7 @@ public class FinishManager : MonoBehaviour
     public void FinishPlaying(int levelNum, int hearts, int score, int total)
     {
         //GameObject.Find("Player").GetComponent<PlayerController>().startPlaying = false;
-        LevelController.Instance.pause();
+        LevelController.Instance.Pause();
         FinishCanvas.SetActive(true);
         level.sprite = levels[levelNum];
         if(hearts != 0)
