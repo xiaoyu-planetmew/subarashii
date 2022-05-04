@@ -75,6 +75,11 @@
 				<RandomSequenceContainer Name="Button_On" ID="{5E8DC69A-400F-4BDC-99A5-9FF00E27D466}" ShortID="797080131">
 					<PropertyList>
 						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>11</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -117,6 +122,11 @@
 				<RandomSequenceContainer Name="Button_Pause" ID="{9558843D-7629-4210-B198-EB985526733D}" ShortID="112613547">
 					<PropertyList>
 						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>6</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -1434,6 +1444,11 @@
 				<RandomSequenceContainer Name="Button_Off" ID="{84DF2A68-829B-4627-A53F-47868728BB5D}" ShortID="289965342">
 					<PropertyList>
 						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>7</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">

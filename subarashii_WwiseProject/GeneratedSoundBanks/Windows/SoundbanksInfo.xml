@@ -21,7 +21,7 @@
 				<GameParameter Id="2918011349" Name="MasterVolume" ObjectPath="\Game Parameters\Subarashii\Volume\MasterVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1661994096" Language="SFX" Hash="3420921947">
+		<SoundBank Id="1661994096" Language="SFX" Hash="123807009">
 			<ObjectPath>\SoundBanks\Subarashii\SoundBank</ObjectPath>
 			<ShortName>SoundBank</ShortName>
 			<Path>SoundBank.bnk</Path>
