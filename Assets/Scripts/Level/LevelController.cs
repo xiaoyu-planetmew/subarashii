@@ -122,14 +122,48 @@ public class LevelController : MonoBehaviour
         // 主角动画
         CharacterAnimationController.Instance.GetComponent<Animator>().SetBool("game over", true);
 
-        // 主音乐切换 / main BGM change to tutorial BGM
+        // 声音
+        SoundController.Instance.GameOver.HandleEvent(WwiseManager.Instance.gameObject);
+
+        //等待特效和动画播完 wait for playing animation and effect
+        StartCoroutine(WaitAnimation());
+        
+    }
+
+    private IEnumerator WaitAnimation()
+    {
+        yield return new WaitForSeconds(2f);
 
         // 切换特效开 / scene changing effect ON
+        SceneTransition.Instance.EffectStart();
 
         // 等待特效全开，重置整个场景 / reset all level after effect been completed
+        StartCoroutine(WaitEffect());
+    }
+
+    
+    private IEnumerator WaitEffect()
+    {
+        yield return new WaitForSeconds(2f);
+
+        // 主音乐切换 / main BGM change to tutorial BGM
+        TutorialTrackController.Instance.SwitchToTutorial.HandleEvent(WwiseManager.Instance.gameObject);
+
+        // 重置 reset level
+        ResetLevel();
+
+        StartCoroutine(WaitReset());
+    }
+
+    private IEnumerator WaitReset()
+    {
+        yield return new WaitForSeconds(0.1f);
 
         // 切换特效关  / turn scene changing effect OFF
+        SceneTransition.Instance.EffectClose();
 
+        // 重开操作
+        PlayerController.Instance.startPlaying = true;
     }
 
 }

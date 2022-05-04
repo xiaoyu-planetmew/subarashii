@@ -21,7 +21,7 @@
 				<GameParameter Id="2918011349" Name="MasterVolume" ObjectPath="\Game Parameters\Subarashii\Volume\MasterVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1661994096" Language="SFX" Hash="3420921947">
+		<SoundBank Id="1661994096" Language="SFX" Hash="2699811562">
 			<ObjectPath>\SoundBanks\Subarashii\SoundBank</ObjectPath>
 			<ShortName>SoundBank</ShortName>
 			<Path>SoundBank.bnk</Path>
@@ -120,6 +120,14 @@
 						<File Id="583624217" Language="SFX">
 							<ShortName>SFX\SFX_food_happy.wav</ShortName>
 							<Path>SFX\SFX\SFX_food_happy_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4158285989" Name="GameOver" ObjectPath="\Events\Subarashii\SFX\GameOver" DurationType="OneShot" DurationMin="2.440479" DurationMax="2.440479">
+					<IncludedMemoryFiles>
+						<File Id="311397741" Language="SFX">
+							<ShortName>SFX\SFX_GameOver.wav</ShortName>
+							<Path>SFX\SFX\SFX_GameOver_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

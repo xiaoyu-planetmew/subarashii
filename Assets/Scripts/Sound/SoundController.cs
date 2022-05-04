@@ -34,6 +34,7 @@ public class SoundController : MonoBehaviour
     public AkEvent Tip_Triple;
     public AkEvent Tip_Double;
     public AkEvent Tip_TripleChange;
+    public AkEvent GameOver;
 
     public static SoundController Instance;
     private void Awake()

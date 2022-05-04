@@ -38,7 +38,7 @@ public class TutorialTrackController : MonoBehaviour
         if(startPlayingTutorial == false)
         {
             startPlayingTutorial = true;
-            StartMusic.HandleEvent(gameObject);
+            StartMusic.HandleEvent(WwiseManager.Instance.gameObject);
         }
         
     }
@@ -65,7 +65,7 @@ public class TutorialTrackController : MonoBehaviour
     public void FinishTutorial()
     {
         //切换音乐
-        SwitchToMain.HandleEvent(gameObject);
+        SwitchToMain.HandleEvent(WwiseManager.Instance.gameObject);
 
         // 同步游戏开始
         StartCoroutine(SynGameStart(GetLastOneBarPlayingTime()));

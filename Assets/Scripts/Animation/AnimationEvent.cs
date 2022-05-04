@@ -6,6 +6,9 @@ public class AnimationEvent : MonoBehaviour
 {
     public GameObject showGameObject;
 
+    public AkEvent[] SFXs;
+
+
     public void SetDisableAndShowNextObject()
     {
         gameObject.SetActive(false);
@@ -15,5 +18,10 @@ public class AnimationEvent : MonoBehaviour
     public void SetDisable()
     {
         gameObject.SetActive(false);
+    }
+
+    public void PlaySound(int index)
+    {
+        SFXs[index].HandleEvent(WwiseManager.Instance.gameObject);
     }
 }
