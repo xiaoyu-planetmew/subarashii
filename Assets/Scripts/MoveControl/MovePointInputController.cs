@@ -197,7 +197,7 @@ public class MovePointInputController : MonoBehaviour
             }
         }
 
-        PlayerController.Instance.Success();
+        PlayerController.Instance.Success(keyInput.keyInput == KeyDirectionType.Space);
         
     }
 
