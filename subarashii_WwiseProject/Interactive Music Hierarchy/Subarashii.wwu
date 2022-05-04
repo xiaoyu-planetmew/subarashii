@@ -990,7 +990,7 @@
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="level3 " ID="{32D47436-659C-4DDF-9AE1-937EBF826020}">
+																				<MusicClip Name="level3" ID="{32D47436-659C-4DDF-9AE1-937EBF826020}">
 																					<PropertyList>
 																						<Property Name="EndTrimOffset" Type="Real64" Value="74666.6666666667"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
@@ -2052,6 +2052,7 @@
 				<MusicSegment Name="Level_5_Music" ID="{7D35107B-141A-4D1C-BB31-CF8A37CB8811}" ShortID="981955355">
 					<PropertyList>
 						<Property Name="EndPosition" Type="Real64" Value="100000"/>
+						<Property Name="Tempo" Type="Real64" Value="126"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -2062,23 +2063,23 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<MusicTrack Name="ending" ID="{BFA33DA1-B007-4CC7-963F-6C8FC0A9EA1C}" ShortID="458499720">
+						<MusicTrack Name="ending_126" ID="{4D998157-8951-4A76-9290-8FA4CBDAB8F6}" ShortID="675690072">
 							<ReferenceList>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{824F22E6-2C00-43C8-803A-5C90543CCD5C}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="ending" ID="{401F3761-A820-4485-9542-254D1B6859B1}">
+								<AudioFileSource Name="ending_126" ID="{ADC567C8-E073-481A-A637-AD4EBFD3AADC}">
 									<Language>SFX</Language>
-									<AudioFile>ending.wav</AudioFile>
+									<AudioFile>ending_126.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="363698901"/>
+										<MediaID ID="577446333"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<TransitionList>
-								<MusicTransition Name="Root" ID="{9DEDD319-23EF-4025-B485-B223EDE23322}">
+								<MusicTransition Name="Root" ID="{F1046537-FF0A-4C72-B752-E63E60E6A70E}">
 									<PropertyList>
 										<Property Name="IsFolder" Type="bool" Value="True"/>
 									</PropertyList>
@@ -2089,18 +2090,18 @@
 								<ObjectList Name="Sequences">
 									<Reference>
 										<Local>
-											<MusicTrackSequence Name="" ID="{381059DE-91D4-44ED-A969-5CAF88E9D63F}">
+											<MusicTrackSequence Name="" ID="{D5E5802A-CA8B-4181-B090-BB9A1734FA28}">
 												<ObjectLists>
 													<ObjectList Name="Clips">
 														<Reference>
 															<Local>
-																<MusicClip Name="ending" ID="{B60B8EB7-4BE6-448D-B905-45107B5ED48D}">
+																<MusicClip Name="ending_126" ID="{03D425C9-6557-43E5-B9A6-37070A8CCE8F}">
 																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="100000"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="95238.1041666667"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																	</PropertyList>
-																	<AudioSourceRef Name="ending" ID="{401F3761-A820-4485-9542-254D1B6859B1}"/>
+																	<AudioSourceRef Name="ending_126" ID="{ADC567C8-E073-481A-A637-AD4EBFD3AADC}"/>
 																</MusicClip>
 															</Local>
 														</Reference>
