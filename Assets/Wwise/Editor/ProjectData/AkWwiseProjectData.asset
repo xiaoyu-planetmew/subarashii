@@ -154,7 +154,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Subarashii
     guid: bb59c71a64251748bd2e36fd1cabb9aa
     GuidInternal: 
-    m_lastTime: -8585500235665004336
+    m_lastTime: -8585499456582894823
     List:
     - name: SoundBank
       guid: 1b861bf19af8cf4982b897ca2f1c8174
@@ -229,7 +229,7 @@ MonoBehaviour:
     ParentPath: Events\Subarashii
     guid: 63796efd22d4f34992e8dbfe894f0a8d
     GuidInternal: 
-    m_lastTime: -8585499583192900057
+    m_lastTime: -8585499456583270797
     List:
     - name: Boss_Attack
       guid: d082697ccabd084e8069dbfc3c565917
@@ -856,8 +856,8 @@ MonoBehaviour:
         guid: f375e67b0a0c484a80ff088bbd346848
       Path: Events\Subarashii\Music\Play_Level_5_Music
       maxAttenuation: 0
-      maxDuration: 100
-      minDuration: 100
+      maxDuration: 95.2381
+      minDuration: 95.2381
     - name: Play_Theme
       guid: 2418756a92984d4f8aea09324b6612c0
       id: 2479442773
@@ -964,6 +964,126 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.5
       minDuration: 2.5
+    - name: Stop_Level_1_Music
+      guid: ada3c1ca8912c14793c8cf5e71e3bc14
+      id: 4087450626
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: Music
+        ObjectType: 4
+        guid: 4e3b0bd258c75647b6f64a8eaa93e424
+      - ElementName: Stop_Level_1_Music
+        ObjectType: 3
+        guid: ada3c1ca8912c14793c8cf5e71e3bc14
+      Path: Events\Subarashii\Music\Stop_Level_1_Music
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Level_2_Music
+      guid: 3aee10a9836eb344ac33f6f832f475ec
+      id: 131941093
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: Music
+        ObjectType: 4
+        guid: 4e3b0bd258c75647b6f64a8eaa93e424
+      - ElementName: Stop_Level_2_Music
+        ObjectType: 3
+        guid: 3aee10a9836eb344ac33f6f832f475ec
+      Path: Events\Subarashii\Music\Stop_Level_2_Music
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Level_3_Music
+      guid: 1d8f58a851cf3b43a06b3503345b0202
+      id: 3135446116
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: Music
+        ObjectType: 4
+        guid: 4e3b0bd258c75647b6f64a8eaa93e424
+      - ElementName: Stop_Level_3_Music
+        ObjectType: 3
+        guid: 1d8f58a851cf3b43a06b3503345b0202
+      Path: Events\Subarashii\Music\Stop_Level_3_Music
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Level_4_Music
+      guid: 2452d24ac55f2d4b83ca9942390dd80e
+      id: 3014620759
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: Music
+        ObjectType: 4
+        guid: 4e3b0bd258c75647b6f64a8eaa93e424
+      - ElementName: Stop_Level_4_Music
+        ObjectType: 3
+        guid: 2452d24ac55f2d4b83ca9942390dd80e
+      Path: Events\Subarashii\Music\Stop_Level_4_Music
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Level_5_Music
+      guid: 2f69b891ae949546b80bb7efa1a1e217
+      id: 1959630190
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: Music
+        ObjectType: 4
+        guid: 4e3b0bd258c75647b6f64a8eaa93e424
+      - ElementName: Stop_Level_5_Music
+        ObjectType: 3
+        guid: 2f69b891ae949546b80bb7efa1a1e217
+      Path: Events\Subarashii\Music\Stop_Level_5_Music
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Theme
+      guid: 050022722ca141408b8d064d720cc201
+      id: 560299279
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: Music
+        ObjectType: 4
+        guid: 4e3b0bd258c75647b6f64a8eaa93e424
+      - ElementName: Stop_Theme
+        ObjectType: 3
+        guid: 050022722ca141408b8d064d720cc201
+      Path: Events\Subarashii\Music\Stop_Theme
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Switch_Level_1_MainMusic
       guid: 099849f4034d33449eb2db898253d143
       id: 207411531
@@ -1279,8 +1399,8 @@ MonoBehaviour:
         guid: 805c55258c372a41a98a192b51e2b509
       Path: Events\Subarashii\SFX\Tip_Double
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Tip_Triple
       guid: 2cb4c241fb96424aaccc849a161330f6
       id: 41246695
@@ -1299,8 +1419,8 @@ MonoBehaviour:
         guid: 2cb4c241fb96424aaccc849a161330f6
       Path: Events\Subarashii\SFX\Tip_Triple
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Tip_TripleChange
       guid: 5ecbe01e3a63f145bccaa90868bef2ff
       id: 1177821199
@@ -1319,8 +1439,8 @@ MonoBehaviour:
         guid: 5ecbe01e3a63f145bccaa90868bef2ff
       Path: Events\Subarashii\SFX\Tip_TripleChange
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
