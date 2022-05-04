@@ -703,6 +703,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="GameOver" ID="{EDDF6A4F-69A9-4B1C-8C83-22B57A3B838A}">
+							<ChildrenList>
+								<Action Name="" ID="{2A507A03-6440-41E8-907E-8A55CD471B38}" ShortID="415292907">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GameOver" ID="{B711C74B-869D-4BAF-B1C5-9B4351ABD18A}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Test" ID="{193A8C55-448D-4495-BFAC-F1D80075293E}">

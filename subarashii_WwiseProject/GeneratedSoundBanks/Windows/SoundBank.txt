@@ -49,6 +49,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3952070454	Input_Arrow_Combo			\Subarashii\SFX\Input_Arrow_Combo	
 	4087450626	Stop_Level_1_Music			\Subarashii\Music\Stop_Level_1_Music	
 	4120751531	Input_Space_Miss			\Subarashii\SFX\Input_Space_Miss	
+	4158285989	GameOver			\Subarashii\SFX\GameOver	
 	4232218210	Space_Hinder			\Subarashii\SFX\Level_3\Space_Hinder	
 
 State Group	ID	Name			Wwise Object Path	Notes
@@ -74,6 +75,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	235605711	SFX_food_absorb	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_food_absorb_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Level_1\Food_Absorb\SFX_food_absorb		96064
 	287068677	SFX_trigger_spcae_2	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_trigger_spcae_2_A1D7F150.wem		\Actor-Mixer Hierarchy\Subarashii\Input_Space_Success\SFX_trigger_spcae_2		120272
 	309706795	SFX_Impacting	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_Impacting_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Level_1\Door_Impacting\SFX_Impacting		192064
+	311397741	SFX_GameOver	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_GameOver_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\GameOver\SFX_GameOver		468716
 	329270403	SFX_buzz_talk1	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_buzz_talk1_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Talk_Buzz\SFX_buzz_talk1		384064
 	343457234	SFX_trigger_arrow_perfect	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_trigger_arrow_perfect_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Input_Arrow_Success\SFX_trigger_arrow_perfect		96064
 	351129862	SFX_talk2	F:\subarashii\subarashii_WwiseProject\.cache\Windows\SFX\SFX\SFX_talk2_E4FE0A82.wem		\Actor-Mixer Hierarchy\Subarashii\Talking_2\Talking_2_03\SFX_talk2		37200

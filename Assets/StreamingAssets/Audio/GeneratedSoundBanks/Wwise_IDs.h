@@ -26,6 +26,7 @@ namespace AK
         static const AkUniqueID FOOD_ABSORB = 617877575U;
         static const AkUniqueID FOOD_BARRIAGE = 1720845381U;
         static const AkUniqueID FOOD_HAPPY = 151292290U;
+        static const AkUniqueID GAMEOVER = 4158285989U;
         static const AkUniqueID INPUT_ARROW__SUCCESS = 822197044U;
         static const AkUniqueID INPUT_ARROW_COMBO = 3952070454U;
         static const AkUniqueID INPUT_ARROW_MENU = 2196209329U;

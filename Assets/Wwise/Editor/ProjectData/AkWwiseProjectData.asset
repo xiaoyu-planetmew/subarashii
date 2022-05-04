@@ -229,7 +229,7 @@ MonoBehaviour:
     ParentPath: Events\Subarashii
     guid: 63796efd22d4f34992e8dbfe894f0a8d
     GuidInternal: 
-    m_lastTime: -8585499476450167407
+    m_lastTime: -8585499444186109405
     List:
     - name: Boss_Attack
       guid: d082697ccabd084e8069dbfc3c565917
@@ -521,6 +521,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.5
       minDuration: 1.5
+    - name: GameOver
+      guid: 4f6adfeda9691c4b8c8322b57a3b838a
+      id: 4158285989
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: GameOver
+        ObjectType: 3
+        guid: 4f6adfeda9691c4b8c8322b57a3b838a
+      Path: Events\Subarashii\SFX\GameOver
+      maxAttenuation: 0
+      maxDuration: 2.440479
+      minDuration: 2.440479
     - name: Input_Arrow__Success
       guid: 304e7cfa6fbb7540af0f9c2a89af3c2f
       id: 822197044
