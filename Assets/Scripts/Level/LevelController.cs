@@ -129,24 +129,7 @@ public class LevelController : MonoBehaviour
 
         // 声音
         SoundController.Instance.GameOver.HandleEvent(WwiseManager.Instance.gameObject);
-        switch(level)
-        {
-            case Level.Level_1_ver4:
-            FinishManager.Instance.FinishPlaying(0, PlayerController.Instance.blood, PlayerController.Instance.successPoints, PlayerController.Instance.totalPoints);
-            break;
-            case Level.Level_2_ver1:
-            FinishManager.Instance.FinishPlaying(1, PlayerController.Instance.blood, PlayerController.Instance.successPoints, PlayerController.Instance.totalPoints);
-            break;
-            case Level.Level_3_ver1:
-            FinishManager.Instance.FinishPlaying(2, PlayerController.Instance.blood, PlayerController.Instance.successPoints, PlayerController.Instance.totalPoints);
-            break;
-            case Level.Level_4_ver1:
-            FinishManager.Instance.FinishPlaying(3, PlayerController.Instance.blood, PlayerController.Instance.successPoints, PlayerController.Instance.totalPoints);
-            break;
-            case Level.Level_5_ver1:
-            FinishManager.Instance.FinishPlaying(4, PlayerController.Instance.blood, PlayerController.Instance.successPoints, PlayerController.Instance.totalPoints);
-            break;
-        }
+        
         //等待特效和动画播完 wait for playing animation and effect
         StartCoroutine(WaitAnimation());
         
@@ -214,12 +197,12 @@ public class LevelController : MonoBehaviour
 
 public enum Level
 {
-    MainMenu,
-    Level_1_ver4,
-    Level_2_ver1,
-    Level_3_ver1,
-    Level_4_ver1,
-    Level_5_ver1,
+    MainMenu = 0,
+    Level_1_ver4 = 1,
+    Level_2_ver1 = 2,
+    Level_3_ver1 = 3,
+    Level_4_ver1 = 4,
+    Level_5_ver1 = 5,
 
 }
 
