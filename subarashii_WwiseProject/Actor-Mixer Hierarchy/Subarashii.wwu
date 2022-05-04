@@ -984,7 +984,17 @@
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Input_Arrow_Success" ID="{FA56FFB1-37A3-4E50-8C84-4611AEED4BA8}" ShortID="221153083">
 					<PropertyList>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
 						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -1080,7 +1090,17 @@
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Input_Arrow_Combo" ID="{DC4397EB-37AE-452D-A2AA-6A649CE22C27}" ShortID="465283821">
 					<PropertyList>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
 						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -1309,6 +1329,18 @@
 					</Playlist>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Input_Space_Success" ID="{F1D0D2A5-4076-445C-ABE1-CECC13563B2B}" ShortID="44137996">
+					<PropertyList>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{943BFE36-370F-4ACE-BBAC-C0274EC82E4A}"/>
