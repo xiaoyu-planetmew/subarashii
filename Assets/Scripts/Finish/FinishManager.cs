@@ -34,7 +34,13 @@ public class FinishManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+#if UNITY_EDITOR
+        if(Input.GetKeyDown(KeyCode.L))
+        {
+            FinishPlaying(1, 1, 1, 1);
+
+        }
+#endif
     }
     public void FinishPlaying(int levelNum, int hearts, int score, int total)
     {

@@ -7,6 +7,8 @@ public class LevelEvents : MonoBehaviour
     public AkEvent PlayThemeMusic;
     public AkEvent StopThemeMusic;
 
+    public AkEvent StopLeve_1_Music;
+
     public void MainMenu_Enter()
     {
         PlayThemeMusic.HandleEvent(WwiseManager.Instance.gameObject);
@@ -28,6 +30,11 @@ public class LevelEvents : MonoBehaviour
         //StartCoroutine(WaitStopThemeMusic());
 
         //Debug.Log("Play Theme Music");
+    }
+
+    public void Level_1_Leave()
+    {
+        StopLeve_1_Music.HandleEvent(WwiseManager.Instance.gameObject);
     }
 
     private IEnumerator WaitStopThemeMusic()

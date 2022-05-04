@@ -17,6 +17,7 @@ public class CameraController : MonoBehaviour
     public CinemachineVirtualCamera VCcam_LookUpRight;
     public CinemachineVirtualCamera VCcam_LookDownLeft;
     public CinemachineVirtualCamera VCcam_LookDownRight;
+    public CinemachineVirtualCamera VCcam_Final;
 
     [HideInInspector] public Dictionary<CameraStatus, CinemachineVirtualCamera> camDic = new Dictionary<CameraStatus, CinemachineVirtualCamera>();
 
@@ -48,8 +49,9 @@ public class CameraController : MonoBehaviour
         camDic.Add(CameraStatus.LookUpRight, VCcam_LookUpRight);
         camDic.Add(CameraStatus.LookDownLeft, VCcam_LookDownLeft);
         camDic.Add(CameraStatus.LookDownRight, VCcam_LookDownRight);
+        camDic.Add(CameraStatus.Final, VCcam_Final);
 
-        foreach(KeyValuePair<CameraStatus, CinemachineVirtualCamera> cam in camDic)
+        foreach (KeyValuePair<CameraStatus, CinemachineVirtualCamera> cam in camDic)
         {
             cam.Value.Follow = GameObject.FindGameObjectWithTag("Player").transform;
         }
@@ -92,4 +94,5 @@ public enum CameraStatus
     LookDownRight,
     Nearby,
     Farfrom,
+    Final,
 }

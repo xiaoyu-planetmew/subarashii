@@ -83,7 +83,7 @@ public class SceneController : MonoBehaviour
         Debug.Log("Change scene to " + toLevel.ToString());
         
         // “Ù¿÷
-        WwiseManager.Instance.FadeInAll(1.5f);
+        WwiseManager.Instance.FadeInAll(3f);
 
         StartCoroutine(WaitAfterLoad());
     }

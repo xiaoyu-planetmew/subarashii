@@ -194,6 +194,15 @@ public class LevelController : MonoBehaviour
         PlayerController.Instance.startPlaying = true;
         Time.timeScale = 1;
     }
+
+    public void PlayAgain()
+    {
+        // 切换特效开 / scene changing effect ON
+        SceneTransition.Instance.EffectStart();
+
+        // 等待特效全开，重置整个场景 / reset all level after effect been completed
+        StartCoroutine(WaitEffect());
+    }
 }
 
 public enum Level

@@ -39,16 +39,7 @@ public class SoundController : MonoBehaviour
     public static SoundController Instance;
     private void Awake()
     {
-        if (Instance != null)
-        {
-            Destroy(this.gameObject);
-            return;
-        }
-        else
-        {
-            Instance = this;
-            DontDestroyOnLoad(this.gameObject);
-        }
+        Instance = this;
     }
 }
 

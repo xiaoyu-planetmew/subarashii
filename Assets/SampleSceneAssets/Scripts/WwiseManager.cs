@@ -195,6 +195,8 @@ public class WwiseManager : MonoBehaviour
 
             yield return new WaitForSeconds(0.05f / (speed>0 ? speed : 1));
         }
+
+        StopAllCoroutines();
         
     }
 
@@ -215,5 +217,6 @@ public class WwiseManager : MonoBehaviour
             yield return new WaitForSeconds(0.05f / (speed > 0 ? speed : 1));
         }
 
+        StopAllCoroutines();
     }
 }
