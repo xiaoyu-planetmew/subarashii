@@ -189,12 +189,11 @@ public class MovePointInputController : MonoBehaviour
             if(PlayerController.Instance.comboNum>=3)
             {
                 SoundController.Instance.Input_Arrow_Combo.HandleEvent(gameObject);
-                GameObject.Find("comboTime").GetComponent<Image>().enabled = true;
+                GameObject.Find("comboTime").GetComponent<Animator>().SetTrigger("Show");
             }
             else
             {
                 SoundController.Instance.Input_Arrow_Success.HandleEvent(gameObject);
-                GameObject.Find("comboTime").GetComponent<Image>().enabled = false;
             }
         }
 
