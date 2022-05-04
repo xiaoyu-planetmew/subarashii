@@ -182,7 +182,18 @@ public class LevelController : MonoBehaviour
         // 重开操作
         PlayerController.Instance.startPlaying = true;
     }
-
+    public void pause()
+    {
+        startPlayingMainMusic = false;
+        PlayerController.Instance.startPlaying = false;
+        Time.timeScale = 0;
+    }
+    public void resume()
+    {
+        startPlayingMainMusic = true;
+        PlayerController.Instance.startPlaying = true;
+        Time.timeScale = 1;
+    }
 }
 
 public enum Level
