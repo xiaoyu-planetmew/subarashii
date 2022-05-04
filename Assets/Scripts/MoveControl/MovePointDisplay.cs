@@ -39,7 +39,8 @@ public class MovePointDisplay : MonoBehaviour
 
     public void ResetMovePointDisplay()
     {
-        arrowPrefab.ResetArrow();
+        if(arrowPrefab!=null)
+            arrowPrefab.ResetArrow();
     }
 }
 
