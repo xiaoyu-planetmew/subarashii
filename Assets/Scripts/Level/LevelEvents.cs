@@ -65,6 +65,13 @@ public class LevelEvents : MonoBehaviour
 
     public void Level_5_Enter()
     {
+        StartCoroutine(WaitEnter());
+    }
+
+    private IEnumerator WaitEnter()
+    {
+        yield return new WaitForSeconds(0.05f);
+
         LevelController.Instance.StartLevel();
     }
 
