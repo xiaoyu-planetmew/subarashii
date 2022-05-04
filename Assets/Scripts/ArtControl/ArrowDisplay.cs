@@ -29,7 +29,7 @@ public class ArrowDisplay : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player" && !isNull && !hasEnter)
+        if(collision.tag == "Player" && !isNull && !hasEnter && linkMP.active)
         {
             ChangeStartToArrow();
 

@@ -21,14 +21,18 @@ public class MovePoint : MonoBehaviour
     [HideInInspector] public bool toBranch;
     [HideInInspector] public MovePointDisplay displayController;
     [HideInInspector] public MovePointInputController inputController;
+    [HideInInspector] public bool active = false;
+
+    private void Awake()
+    {
+        displayController = GetComponent<MovePointDisplay>();
+
+        inputController = GetComponent<MovePointInputController>();
+    }
 
     private void Start()
     {
         toBranch = false;
-
-        displayController = GetComponent<MovePointDisplay>();
-
-        inputController = GetComponent<MovePointInputController>();
 
         //初始化基础点
         InitiateBasePoints();
