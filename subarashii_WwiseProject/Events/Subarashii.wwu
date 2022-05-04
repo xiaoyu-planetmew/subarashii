@@ -244,6 +244,96 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Stop_Theme" ID="{72220005-A12C-4041-8B8D-064D720CC201}">
+							<ChildrenList>
+								<Action Name="" ID="{ACD1E0F1-F05C-412A-B1C8-344AEC400B28}" ShortID="602683708">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Theme" ID="{4E7FC192-79E6-4545-95D4-FEE6767E867C}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Level_1_Music" ID="{CAC1A3AD-1289-47C1-93C8-CF5E71E3BC14}">
+							<ChildrenList>
+								<Action Name="" ID="{7CBDCB80-25A4-4159-935B-09A04592E3D1}" ShortID="1067488175">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Level_1_Music" ID="{A4B3666C-3FF5-4F05-9151-7E2EA3C861ED}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Level_2_Music" ID="{A910EE3A-6E83-44B3-AC33-F6F832F475EC}">
+							<ChildrenList>
+								<Action Name="" ID="{B290BAEC-BDCB-4E67-B5F3-CCEC552F3DF6}" ShortID="526275543">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Level_2_Music" ID="{2A584FF6-8A49-43DD-A58C-89189EF85A4C}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Level_3_Music" ID="{A8588F1D-CF51-433B-A06B-3503345B0202}">
+							<ChildrenList>
+								<Action Name="" ID="{21C6C35A-2DF4-4CAE-9411-762C9DE2879F}" ShortID="851634221">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Level_3_Music" ID="{904EA806-DBA9-4199-A546-6880E754B4E2}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Level_4_Music" ID="{4AD25224-5FC5-4B2D-83CA-9942390DD80E}">
+							<ChildrenList>
+								<Action Name="" ID="{3A54F053-B2C9-436B-A1CD-A56710BCCE15}" ShortID="20212735">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Level_4_Music" ID="{0B32DC9B-BAF8-4720-80C3-FD8E0DF9950E}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Level_5_Music" ID="{91B8692F-94AE-4695-B80B-B7EFA1A1E217}">
+							<ChildrenList>
+								<Action Name="" ID="{BD51253E-47FC-4EF7-8C54-3BC7313CFCFD}" ShortID="314669884">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Level_5_Music" ID="{7D35107B-141A-4D1C-BB31-CF8A37CB8811}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="SFX" ID="{BEFBA5BE-F44D-4D9B-B266-F99867907F2D}" ShortID="173516586">

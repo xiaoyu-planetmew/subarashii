@@ -170,6 +170,37 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
+				<SoundcasterSession Name="Theme" ID="{8E22C3BF-DD5B-4C9B-A9BE-F05BB2E010A0}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Theme" ID="{6A751824-9892-4F4D-8AEA-09324B6612C0}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Theme" ID="{72220005-A12C-4041-8B8D-064D720CC201}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="MasterVolume" ID="{CAE78949-8F54-4751-9D1B-4D3A45192C5F}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SFXVolume" ID="{4248C90A-56A9-4E50-86B6-E85A72287D23}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="MusicVolume" ID="{61A8F810-779A-4F45-8DEC-F08EF79296F4}"/>
+							<Value>100</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Play" ID="{E76F4632-67E5-4561-B69C-356DBF0DB932}"/>
+						<CurrentStateRef Name="MainMusic" ID="{62FE2A25-AA67-4EA0-A10C-8384CB444D33}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundcasterSessions>

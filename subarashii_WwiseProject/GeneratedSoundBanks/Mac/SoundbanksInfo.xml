@@ -21,7 +21,7 @@
 				<GameParameter Id="2918011349" Name="MasterVolume" ObjectPath="\Game Parameters\Subarashii\Volume\MasterVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1661994096" Language="SFX" Hash="2286205019">
+		<SoundBank Id="1661994096" Language="SFX" Hash="3420921947">
 			<ObjectPath>\SoundBanks\Subarashii\SoundBank</ObjectPath>
 			<ShortName>SoundBank</ShortName>
 			<Path>SoundBank.bnk</Path>
@@ -181,6 +181,14 @@
 				</Event>
 				<Event Id="814842324" Name="Play_Level_1_Music" ObjectPath="\Events\Subarashii\Music\Play_Level_1_Music" DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="111535056" Language="SFX">
+							<ShortName>SFX\SFX_tip_triple.wav</ShortName>
+							<Path>SFX\SFX\SFX_tip_triple_D79FB2B7.wem</Path>
+						</File>
+						<File Id="625414730" Language="SFX">
+							<ShortName>SFX\SFX_tip_triple_charge.wav</ShortName>
+							<Path>SFX\SFX\SFX_tip_triple_charge_D79FB2B7.wem</Path>
+						</File>
 						<File Id="862353582" Language="SFX">
 							<ShortName>Music_level1(tutorial)_BPM100_32bit48khz.wav</ShortName>
 							<Path>SFX\Music_level1(tutorial)_BPM100_32bit48khz_D79FB2B7.wem</Path>
@@ -188,6 +196,10 @@
 						<File Id="871437218" Language="SFX">
 							<ShortName>Music_level1_BPM100_32bit48khz.wav</ShortName>
 							<Path>SFX\Music_level1_BPM100_32bit48khz_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1033086679" Language="SFX">
+							<ShortName>SFX\SFX_tip_double.wav</ShortName>
+							<Path>SFX\SFX\SFX_tip_double_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -209,6 +221,14 @@
 				</Event>
 				<Event Id="2048014091" Name="Play_Level_2_Music" ObjectPath="\Events\Subarashii\Music\Play_Level_2_Music" DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="111535056" Language="SFX">
+							<ShortName>SFX\SFX_tip_triple.wav</ShortName>
+							<Path>SFX\SFX\SFX_tip_triple_D79FB2B7.wem</Path>
+						</File>
+						<File Id="625414730" Language="SFX">
+							<ShortName>SFX\SFX_tip_triple_charge.wav</ShortName>
+							<Path>SFX\SFX\SFX_tip_triple_charge_D79FB2B7.wem</Path>
+						</File>
 						<File Id="831129391" Language="SFX">
 							<ShortName>song2_tutorial.wav</ShortName>
 							<Path>SFX\song2_tutorial_D79FB2B7.wem</Path>
@@ -216,6 +236,10 @@
 						<File Id="918644783" Language="SFX">
 							<ShortName>song2.wav</ShortName>
 							<Path>SFX\song2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1033086679" Language="SFX">
+							<ShortName>SFX\SFX_tip_double.wav</ShortName>
+							<Path>SFX\SFX\SFX_tip_double_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -237,6 +261,10 @@
 				</Event>
 				<Event Id="2793021362" Name="Play_Level_3_Music" ObjectPath="\Events\Subarashii\Music\Play_Level_3_Music" DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="111535056" Language="SFX">
+							<ShortName>SFX\SFX_tip_triple.wav</ShortName>
+							<Path>SFX\SFX\SFX_tip_triple_D79FB2B7.wem</Path>
+						</File>
 						<File Id="181561526" Language="SFX">
 							<ShortName>level3 .wav</ShortName>
 							<Path>SFX\level3 _D79FB2B7.wem</Path>
@@ -244,6 +272,14 @@
 						<File Id="471319580" Language="SFX">
 							<ShortName>level3_tutorial.wav</ShortName>
 							<Path>SFX\level3_tutorial_D79FB2B7.wem</Path>
+						</File>
+						<File Id="625414730" Language="SFX">
+							<ShortName>SFX\SFX_tip_triple_charge.wav</ShortName>
+							<Path>SFX\SFX\SFX_tip_triple_charge_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1033086679" Language="SFX">
+							<ShortName>SFX\SFX_tip_double.wav</ShortName>
+							<Path>SFX\SFX\SFX_tip_double_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -265,13 +301,25 @@
 				</Event>
 				<Event Id="3783587681" Name="Play_Level_4_Music" ObjectPath="\Events\Subarashii\Music\Play_Level_4_Music" DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="111535056" Language="SFX">
+							<ShortName>SFX\SFX_tip_triple.wav</ShortName>
+							<Path>SFX\SFX\SFX_tip_triple_D79FB2B7.wem</Path>
+						</File>
 						<File Id="610492680" Language="SFX">
 							<ShortName>song4.wav</ShortName>
 							<Path>SFX\song4_D79FB2B7.wem</Path>
 						</File>
+						<File Id="625414730" Language="SFX">
+							<ShortName>SFX\SFX_tip_triple_charge.wav</ShortName>
+							<Path>SFX\SFX\SFX_tip_triple_charge_D79FB2B7.wem</Path>
+						</File>
 						<File Id="942345587" Language="SFX">
 							<ShortName>song4_tutorial.wav</ShortName>
 							<Path>SFX\song4_tutorial_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1033086679" Language="SFX">
+							<ShortName>SFX\SFX_tip_double.wav</ShortName>
+							<Path>SFX\SFX\SFX_tip_double_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -291,11 +339,23 @@
 						<ActionSetStateEntry Id="3762955427" Name="Tutorial" ObjectPath="\States\Subarashii\Level_Music_State\Tutorial"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="1971216464" Name="Play_Level_5_Music" ObjectPath="\Events\Subarashii\Music\Play_Level_5_Music" DurationType="OneShot" DurationMin="100." DurationMax="100.">
+				<Event Id="1971216464" Name="Play_Level_5_Music" ObjectPath="\Events\Subarashii\Music\Play_Level_5_Music" DurationType="OneShot" DurationMin="95.238098" DurationMax="95.238098">
 					<IncludedMemoryFiles>
-						<File Id="363698901" Language="SFX">
-							<ShortName>ending.wav</ShortName>
-							<Path>SFX\ending_D79FB2B7.wem</Path>
+						<File Id="111535056" Language="SFX">
+							<ShortName>SFX\SFX_tip_triple.wav</ShortName>
+							<Path>SFX\SFX\SFX_tip_triple_D79FB2B7.wem</Path>
+						</File>
+						<File Id="577446333" Language="SFX">
+							<ShortName>ending_126.wav</ShortName>
+							<Path>SFX\ending_126_D79FB2B7.wem</Path>
+						</File>
+						<File Id="625414730" Language="SFX">
+							<ShortName>SFX\SFX_tip_triple_charge.wav</ShortName>
+							<Path>SFX\SFX\SFX_tip_triple_charge_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1033086679" Language="SFX">
+							<ShortName>SFX\SFX_tip_double.wav</ShortName>
+							<Path>SFX\SFX\SFX_tip_double_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -335,6 +395,12 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="4087450626" Name="Stop_Level_1_Music" ObjectPath="\Events\Subarashii\Music\Stop_Level_1_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="131941093" Name="Stop_Level_2_Music" ObjectPath="\Events\Subarashii\Music\Stop_Level_2_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3135446116" Name="Stop_Level_3_Music" ObjectPath="\Events\Subarashii\Music\Stop_Level_3_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3014620759" Name="Stop_Level_4_Music" ObjectPath="\Events\Subarashii\Music\Stop_Level_4_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1959630190" Name="Stop_Level_5_Music" ObjectPath="\Events\Subarashii\Music\Stop_Level_5_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="560299279" Name="Stop_Theme" ObjectPath="\Events\Subarashii\Music\Stop_Theme" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="207411531" Name="Switch_Level_1_MainMusic" ObjectPath="\Events\Subarashii\Music\Switch_Level_1_MainMusic" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
 					<ActionSetState>
 						<ActionSetStateEntry Id="3479155863" Name="MainMusic" ObjectPath="\States\Subarashii\Level_Music_State\MainMusic"/>
@@ -422,6 +488,14 @@
 				</Event>
 				<Event Id="1675477522" Name="TestPlayLevel_1_MainMusic" ObjectPath="\Events\Subarashii\Music\TestPlayLevel_1_MainMusic" DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="111535056" Language="SFX">
+							<ShortName>SFX\SFX_tip_triple.wav</ShortName>
+							<Path>SFX\SFX\SFX_tip_triple_D79FB2B7.wem</Path>
+						</File>
+						<File Id="625414730" Language="SFX">
+							<ShortName>SFX\SFX_tip_triple_charge.wav</ShortName>
+							<Path>SFX\SFX\SFX_tip_triple_charge_D79FB2B7.wem</Path>
+						</File>
 						<File Id="862353582" Language="SFX">
 							<ShortName>Music_level1(tutorial)_BPM100_32bit48khz.wav</ShortName>
 							<Path>SFX\Music_level1(tutorial)_BPM100_32bit48khz_D79FB2B7.wem</Path>
@@ -430,10 +504,29 @@
 							<ShortName>Music_level1_BPM100_32bit48khz.wav</ShortName>
 							<Path>SFX\Music_level1_BPM100_32bit48khz_D79FB2B7.wem</Path>
 						</File>
+						<File Id="1033086679" Language="SFX">
+							<ShortName>SFX\SFX_tip_double.wav</ShortName>
+							<Path>SFX\SFX\SFX_tip_double_D79FB2B7.wem</Path>
+						</File>
 					</IncludedMemoryFiles>
 					<ActionSetState>
 						<ActionSetStateEntry Id="3479155863" Name="MainMusic" ObjectPath="\States\Subarashii\Level_Music_State\MainMusic"/>
 					</ActionSetState>
+				</Event>
+				<Event Id="1531137768" Name="Tip_Double" ObjectPath="\Events\Subarashii\SFX\Tip_Double" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionTrigger>
+						<ActionTriggerEntry Id="1531137768" Name="Tip_Double" ObjectPath="\Triggers\Subarashii\Tip_Double"/>
+					</ActionTrigger>
+				</Event>
+				<Event Id="41246695" Name="Tip_Triple" ObjectPath="\Events\Subarashii\SFX\Tip_Triple" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionTrigger>
+						<ActionTriggerEntry Id="3538211073" Name="Tip_Trigger" ObjectPath="\Triggers\Subarashii\Tip_Trigger"/>
+					</ActionTrigger>
+				</Event>
+				<Event Id="1177821199" Name="Tip_TripleChange" ObjectPath="\Events\Subarashii\SFX\Tip_TripleChange" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionTrigger>
+						<ActionTriggerEntry Id="4147001613" Name="Tip_TripleTip_ChangeTriple" ObjectPath="\Triggers\Subarashii\Tip_TripleTip_ChangeTriple"/>
+					</ActionTrigger>
 				</Event>
 			</IncludedEvents>
 			<StateGroups>
@@ -451,6 +544,11 @@
 					<States/>
 				</StateGroup>
 			</StateGroups>
+			<Triggers>
+				<Trigger Id="1531137768" Name="Tip_Double" ObjectPath="\Triggers\Subarashii\Tip_Double"/>
+				<Trigger Id="3538211073" Name="Tip_Trigger" ObjectPath="\Triggers\Subarashii\Tip_Trigger"/>
+				<Trigger Id="4147001613" Name="Tip_TripleTip_ChangeTriple" ObjectPath="\Triggers\Subarashii\Tip_TripleTip_ChangeTriple"/>
+			</Triggers>
 		</SoundBank>
 		<SoundBank Id="1946707388" Language="SFX" Hash="2292885545">
 			<ObjectPath>\SoundBanks\Default Work Unit\SoundBankTest</ObjectPath>

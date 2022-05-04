@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class LevelController : MonoBehaviour
 {
     [Header("当前关卡")]
-    public Level level = Level.Level_1;
+    public Level level = Level.Level_1_ver4;
 
     [Header("起始MovePoint(谱面时间0点)")]
     public MovePoint startMovePoint;
@@ -26,11 +26,20 @@ public class LevelController : MonoBehaviour
     {
         Instance = this;
 
-        InitiateLevel();
+        if(level!=Level.MainMenu)
+            InitiateLevel();
     }
 
     private void Start()
     {
+        if (level == Level.MainMenu) 
+        {
+            sceneChangeEvents.Invoke();
+
+            Debug.Log("初始化 MainMenu");
+            return; 
+        }
+
         TrackManager.Instance.InitiateLevelTrack();
         startPlayingMainMusic = false;
     }
@@ -49,6 +58,17 @@ public class LevelController : MonoBehaviour
     private void InitiateLevel()
     {
         trackController = GetComponents<TrackInLevel>();
+    }
+
+    public Level GetLevelType(string levelName)
+    {
+        foreach (Level level in Level.GetValues(typeof(Level)))
+        {
+            if (level.ToString() == levelName) return level;
+        }
+
+        return Level.MainMenu;
+
     }
 
     /// <summary>
@@ -116,12 +136,12 @@ public class LevelController : MonoBehaviour
 
 public enum Level
 {
-    Start,
-    Level_1,
-    Level_2,
-    Level_3,
-    Level_4,
-    Level_5,
+    MainMenu,
+    Level_1_ver4,
+    Level_2_ver1,
+    Level_3_ver1,
+    Level_4_ver1,
+    Level_5_ver1,
 
 }
 

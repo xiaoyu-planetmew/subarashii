@@ -43,6 +43,12 @@ namespace AK
         static const AkUniqueID SHIT_COMBINE = 2662890845U;
         static const AkUniqueID SPACE_FOOD = 3652999024U;
         static const AkUniqueID SPACE_HINDER = 4232218210U;
+        static const AkUniqueID STOP_LEVEL_1_MUSIC = 4087450626U;
+        static const AkUniqueID STOP_LEVEL_2_MUSIC = 131941093U;
+        static const AkUniqueID STOP_LEVEL_3_MUSIC = 3135446116U;
+        static const AkUniqueID STOP_LEVEL_4_MUSIC = 3014620759U;
+        static const AkUniqueID STOP_LEVEL_5_MUSIC = 1959630190U;
+        static const AkUniqueID STOP_THEME = 560299279U;
         static const AkUniqueID SWITCH_LEVEL_1_MAINMUSIC = 207411531U;
         static const AkUniqueID SWITCH_LEVEL_1_TUTORIAL = 1183555207U;
         static const AkUniqueID SWITCH_LEVEL_2_MAINMUSIC = 2429794592U;
@@ -57,6 +63,9 @@ namespace AK
         static const AkUniqueID TALKING_1 = 3500213621U;
         static const AkUniqueID TALKING_2 = 3500213622U;
         static const AkUniqueID TESTPLAYLEVEL_1_MAINMUSIC = 1675477522U;
+        static const AkUniqueID TIP_DOUBLE = 1531137768U;
+        static const AkUniqueID TIP_TRIPLE = 41246695U;
+        static const AkUniqueID TIP_TRIPLECHANGE = 1177821199U;
     } // namespace EVENTS
 
     namespace STATES
@@ -92,6 +101,13 @@ namespace AK
         static const AkUniqueID MUSICVOLUME = 2346531308U;
         static const AkUniqueID SFXVOLUME = 988953028U;
     } // namespace GAME_PARAMETERS
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID TIP_DOUBLE = 1531137768U;
+        static const AkUniqueID TIP_TRIGGER = 3538211073U;
+        static const AkUniqueID TIP_TRIPLETIP_CHANGETRIPLE = 4147001613U;
+    } // namespace TRIGGERS
 
     namespace BANKS
     {
