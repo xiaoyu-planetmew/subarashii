@@ -15,10 +15,34 @@ public class WwiseManager : MonoBehaviour
     const float minRTPCValue = 0f;
     const float maxRTPCValue = 100f;
     GameObject globalGameObject;
+
+    public float masterVol;
+    private float originMasterVol;
+
     private void Awake()
     {
-        Instance = this;
+        if (Instance != null)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
     }
+
+    private void Start()
+    {
+        masterVol = 50;
+    }
+
+    private void Update()
+    {
+        
+    }
+
     public void Init()
     {
         globalGameObject = new GameObject("GlobalAudio");
@@ -153,4 +177,43 @@ public class WwiseManager : MonoBehaviour
         AkSoundEngine.SetSwitch(group, value, go);
     }
     
+    public void FadeOutAll(float speed = 1)
+    {
+        originMasterVol = masterVol;
+
+        StartCoroutine(VolumeDown(speed));
+    }
+
+    private IEnumerator VolumeDown(float speed = 1)
+    {
+
+        while(masterVol>0)
+        {
+            masterVol = Mathf.Max(masterVol - 1, 0);
+
+            AkSoundEngine.SetRTPCValue("MasterVolume", masterVol);
+
+            yield return new WaitForSeconds(0.05f / (speed>0 ? speed : 1));
+        }
+        
+    }
+
+    public void FadeInAll(float speed = 1)
+    {
+        StartCoroutine(VolumeUp(speed));
+    }
+
+    private IEnumerator VolumeUp(float speed = 1)
+    {
+
+        while (masterVol <= originMasterVol)
+        {
+            masterVol = Mathf.Max(masterVol + 1, 0);
+
+            AkSoundEngine.SetRTPCValue("MasterVolume", masterVol);
+
+            yield return new WaitForSeconds(0.05f / (speed > 0 ? speed : 1));
+        }
+
+    }
 }

@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class SceneTransition : MonoBehaviour
 {
+    public GameObject Effect;
     public static SceneTransition Instance;
     private Animator anim;
 
@@ -27,10 +28,12 @@ public class SceneTransition : MonoBehaviour
     private void Start()
     {
         anim = GetComponentInChildren<Animator>();
+        Effect.SetActive(false);
     }
 
     public void EffectStart()
     {
+        Effect.SetActive(true);
         anim.SetBool("EffectStart", true);
     }
 

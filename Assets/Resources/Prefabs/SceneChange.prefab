@@ -59,7 +59,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 11
   m_TargetDisplay: 0
 --- !u!114 &8068647527218490316
 MonoBehaviour:
@@ -113,6 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab97c3feaa59a1f47884f86657c9f203, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Effect: {fileID: 8300950202528309142}
 --- !u!1 &8300950202528309142
 GameObject:
   m_ObjectHideFlags: 0
@@ -125,6 +126,7 @@ GameObject:
   - component: {fileID: 777052229999468162}
   - component: {fileID: 6142579405935002548}
   - component: {fileID: 631207695633375386}
+  - component: {fileID: 1072258544131146395}
   m_Layer: 5
   m_Name: Effect
   m_TagString: Untagged
@@ -208,3 +210,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1072258544131146395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8300950202528309142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3f7fb88abe426544995dcae96a3fe62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showGameObject: {fileID: 0}

@@ -18,15 +18,18 @@ public class VolumeControl : MonoBehaviour
     }
     public void MasterVolume(float v)
     {
-        AkSoundEngine.SetRTPCValue("MasterVolume",v);
-        master = v/100;
+        AkSoundEngine.SetRTPCValue("MasterVolume",v * 100);
+
+        Debug.Log("master"+v);
+
+        WwiseManager.Instance.masterVol = v * 100;
     }
     public void MusicVolume(float v)
     {
-        AkSoundEngine.SetRTPCValue("MusicVolume", v*master);
+        AkSoundEngine.SetRTPCValue("MusicVolume", v * 100);
     }
     public void SFXVolume(float v)
     {
-        AkSoundEngine.SetRTPCValue("SFXVolume", v*master);
+        AkSoundEngine.SetRTPCValue("SFXVolume", v * 100);
     }
 }
