@@ -21,6 +21,14 @@
 							<ObjectRef Name="Tip_Triple" ID="{41C2B42C-96FB-4A42-ACCC-849A161330F6}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}"/>
 							<Position X="2" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Pause_Level_1_Music" ID="{7147AD29-C1F0-4E2A-9923-B05CF20E292F}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Resume_Level_1_Music" ID="{740A3BD5-127B-4243-B36F-F9C51EAC1CF0}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}"/>
+							<Position X="3" Y="1"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>

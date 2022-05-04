@@ -6,27 +6,39 @@
 				<SoundBank Name="SoundBank" ID="{F11B861B-F89A-49CF-82B8-97CA2F1C8174}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Stop_Theme" ID="{72220005-A12C-4041-8B8D-064D720CC201}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Resume_Level_1_Music" ID="{740A3BD5-127B-4243-B36F-F9C51EAC1CF0}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Resume_All" ID="{8ABAC748-2410-42A4-9A64-3F0CCAEEE834}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Switch_Level_1_Tutorial" ID="{48DAA4A4-DE39-42A4-A9BC-F79881F44B13}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Level_3_Music" ID="{CD556BCE-4C87-4304-A1BF-144FCAA963CD}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Level_3_Music" ID="{A8588F1D-CF51-433B-A06B-3503345B0202}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Switch_Level_2_Tutorial" ID="{8D435277-7FFD-438D-8785-CBB330425B2A}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Switch_Level_3_Tutorial" ID="{CADA1044-599D-4395-A66A-D6AFD79CDC18}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Pause_Level_5_Music" ID="{3EB0142C-AE4B-43C8-9C91-E1D178B5B4AC}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Switch_Level_1_MainMusic" ID="{F4499809-4D03-4433-9EB2-DB898253D143}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Resume_Level_3_Music" ID="{A4AEFD7B-50CE-4454-A2E4-BD69A0240B86}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Switch_Level_4_Music" ID="{B6573A58-8ACF-44A0-AF74-BFEFC750BE92}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Level_2_Music" ID="{A910EE3A-6E83-44B3-AC33-F6F832F475EC}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Resume_Level_2_Music" ID="{98B00C3B-D324-4555-8E2A-12AAD945129F}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Pause_All" ID="{A797D87C-CA3E-459C-ADCA-58B98D071C94}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Level_5_Music" ID="{91B8692F-94AE-4695-B80B-B7EFA1A1E217}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Level_1_Music" ID="{CAC1A3AD-1289-47C1-93C8-CF5E71E3BC14}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Switch_Level_2_MainMusic" ID="{86C58F65-A5D4-48D7-BD40-0B4BCB51D221}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Pause_Level_2_Music" ID="{B4898583-A648-48F3-A93D-883D29284EB5}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Level_1_Music" ID="{58E6EFD8-E27F-4958-8DAE-F442C58BE0BA}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Level_5_Music" ID="{7BE675F3-0C0A-4A48-80FF-088BBD346848}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Level_4_Music" ID="{4AD25224-5FC5-4B2D-83CA-9942390DD80E}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Pause_Level_3_Music" ID="{FE7D21B9-927C-4BB9-9522-DF9DB7D32E54}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Switch_Level_4_Tutorial" ID="{0ACE8496-C903-4C07-B8B7-5C8F9798CDDD}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Switch_Level_3_MainMusic" ID="{83F44708-DCC3-4CC8-9E60-240A841C7B54}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Resume_Level_5_Music" ID="{31C80A54-B149-4D2F-8B7E-F55A9EB679AF}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Level_2_Music" ID="{04D2F067-43DA-4D42-BC0B-E2509D3CD219}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TestPlayLevel_1_MainMusic" ID="{6C69019C-83DB-4D5D-AAC4-69B2E76C4EA0}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Pause_Level_4_Music" ID="{9518C1F3-CDD4-4D7B-A0E1-F7F84A26F03D}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SFX" ID="{BEFBA5BE-F44D-4D9B-B266-F99867907F2D}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Pause_Level_1_Music" ID="{7147AD29-C1F0-4E2A-9923-B05CF20E292F}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Level_4_Music" ID="{99921E6B-4EEE-4E65-8902-9D4C7D7916CF}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Theme" ID="{6A751824-9892-4F4D-8AEA-09324B6612C0}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Resume_Level_4_Music" ID="{6AF56760-6361-4FA2-B6FF-4F17CDB098E5}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

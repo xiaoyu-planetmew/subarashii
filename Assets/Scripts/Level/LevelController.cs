@@ -186,12 +186,14 @@ public class LevelController : MonoBehaviour
     {
         startPlayingMainMusic = false;
         PlayerController.Instance.startPlaying = false;
+        SoundController.Instance.PauseAll.HandleEvent(WwiseManager.Instance.gameObject);
         Time.timeScale = 0;
     }
     public void Resume()
     {
         startPlayingMainMusic = true;
         PlayerController.Instance.startPlaying = true;
+        SoundController.Instance.ResumeAll.HandleEvent(WwiseManager.Instance.gameObject);
         Time.timeScale = 1;
     }
 

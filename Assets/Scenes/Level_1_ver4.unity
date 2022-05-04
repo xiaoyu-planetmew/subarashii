@@ -11978,7 +11978,7 @@ GameObject:
   - component: {fileID: 986162276}
   - component: {fileID: 986162275}
   m_Layer: 0
-  m_Name: Stop_Last_Music
+  m_Name: StopMusic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24109,10 +24109,13 @@ MonoBehaviour:
   startMovePoint: {fileID: 1152722334224814349}
   sceneChangeEvents:
     m_PersistentCalls:
+      m_Calls: []
+  scenLeaveEvents:
+    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1960545390}
         m_TargetAssemblyTypeName: LevelEvents, Assembly-CSharp
-        m_MethodName: Level_1_Enter
+        m_MethodName: Level_1_Leave
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24122,9 +24125,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  scenLeaveEvents:
-    m_PersistentCalls:
-      m_Calls: []
   trackController: []
   mainMusicPlayingTimer: 0
 --- !u!4 &1960545388
@@ -24171,7 +24171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayThemeMusic: {fileID: 0}
   StopThemeMusic: {fileID: 986162275}
-  StopLeve_1_Music: {fileID: 0}
+  StopLeve_1_Music: {fileID: 986162275}
 --- !u!114 &1960545391
 MonoBehaviour:
   m_ObjectHideFlags: 0

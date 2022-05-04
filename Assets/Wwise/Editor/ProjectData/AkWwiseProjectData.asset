@@ -154,7 +154,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Subarashii
     guid: bb59c71a64251748bd2e36fd1cabb9aa
     GuidInternal: 
-    m_lastTime: -8585499482022269086
+    m_lastTime: -8585499336592158183
     List:
     - name: SoundBank
       guid: 1b861bf19af8cf4982b897ca2f1c8174
@@ -229,7 +229,7 @@ MonoBehaviour:
     ParentPath: Events\Subarashii
     guid: 63796efd22d4f34992e8dbfe894f0a8d
     GuidInternal: 
-    m_lastTime: -8585499444186109405
+    m_lastTime: -8585499336792337680
     List:
     - name: Boss_Attack
       guid: d082697ccabd084e8069dbfc3c565917
@@ -778,6 +778,126 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Pause_All
+      guid: 7cd897a73eca9c45adca58b98d071c94
+      id: 3864097025
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: Music
+        ObjectType: 4
+        guid: 4e3b0bd258c75647b6f64a8eaa93e424
+      - ElementName: Pause_All
+        ObjectType: 3
+        guid: 7cd897a73eca9c45adca58b98d071c94
+      Path: Events\Subarashii\Music\Pause_All
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Pause_Level_1_Music
+      guid: 29ad4771f0c12a4e9923b05cf20e292f
+      id: 2283933274
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: Music
+        ObjectType: 4
+        guid: 4e3b0bd258c75647b6f64a8eaa93e424
+      - ElementName: Pause_Level_1_Music
+        ObjectType: 3
+        guid: 29ad4771f0c12a4e9923b05cf20e292f
+      Path: Events\Subarashii\Music\Pause_Level_1_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Pause_Level_2_Music
+      guid: 838589b448a6f348a93d883d29284eb5
+      id: 3499643389
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: Music
+        ObjectType: 4
+        guid: 4e3b0bd258c75647b6f64a8eaa93e424
+      - ElementName: Pause_Level_2_Music
+        ObjectType: 3
+        guid: 838589b448a6f348a93d883d29284eb5
+      Path: Events\Subarashii\Music\Pause_Level_2_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Pause_Level_3_Music
+      guid: b9217dfe7c92b94b9522df9db7d32e54
+      id: 665890332
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: Music
+        ObjectType: 4
+        guid: 4e3b0bd258c75647b6f64a8eaa93e424
+      - ElementName: Pause_Level_3_Music
+        ObjectType: 3
+        guid: b9217dfe7c92b94b9522df9db7d32e54
+      Path: Events\Subarashii\Music\Pause_Level_3_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Pause_Level_4_Music
+      guid: f3c11895d4cd7b4da0e1f7f84a26f03d
+      id: 1036646735
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: Music
+        ObjectType: 4
+        guid: 4e3b0bd258c75647b6f64a8eaa93e424
+      - ElementName: Pause_Level_4_Music
+        ObjectType: 3
+        guid: f3c11895d4cd7b4da0e1f7f84a26f03d
+      Path: Events\Subarashii\Music\Pause_Level_4_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Pause_Level_5_Music
+      guid: 2c14b03e4baec8439c91e1d178b5b4ac
+      id: 1290417542
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: Music
+        ObjectType: 4
+        guid: 4e3b0bd258c75647b6f64a8eaa93e424
+      - ElementName: Pause_Level_5_Music
+        ObjectType: 3
+        guid: 2c14b03e4baec8439c91e1d178b5b4ac
+      Path: Events\Subarashii\Music\Pause_Level_5_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Level_1_Music
       guid: d8efe6587fe258498daef442c58be0ba
       id: 814842324
@@ -898,6 +1018,126 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 88.88896
       minDuration: 88.88896
+    - name: Resume_All
+      guid: 48c7ba8a1024a4429a643f0ccaeee834
+      id: 3679762312
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: Music
+        ObjectType: 4
+        guid: 4e3b0bd258c75647b6f64a8eaa93e424
+      - ElementName: Resume_All
+        ObjectType: 3
+        guid: 48c7ba8a1024a4429a643f0ccaeee834
+      Path: Events\Subarashii\Music\Resume_All
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Resume_Level_1_Music
+      guid: d53b0a747b124342b36ff9c51eac1cf0
+      id: 3821537291
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: Music
+        ObjectType: 4
+        guid: 4e3b0bd258c75647b6f64a8eaa93e424
+      - ElementName: Resume_Level_1_Music
+        ObjectType: 3
+        guid: d53b0a747b124342b36ff9c51eac1cf0
+      Path: Events\Subarashii\Music\Resume_Level_1_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Resume_Level_2_Music
+      guid: 3b0cb09824d355458e2a12aad945129f
+      id: 2588365524
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: Music
+        ObjectType: 4
+        guid: 4e3b0bd258c75647b6f64a8eaa93e424
+      - ElementName: Resume_Level_2_Music
+        ObjectType: 3
+        guid: 3b0cb09824d355458e2a12aad945129f
+      Path: Events\Subarashii\Music\Resume_Level_2_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Resume_Level_3_Music
+      guid: 7bfdaea4ce505444a2e4bd69a0240b86
+      id: 2161171669
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: Music
+        ObjectType: 4
+        guid: 4e3b0bd258c75647b6f64a8eaa93e424
+      - ElementName: Resume_Level_3_Music
+        ObjectType: 3
+        guid: 7bfdaea4ce505444a2e4bd69a0240b86
+      Path: Events\Subarashii\Music\Resume_Level_3_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Resume_Level_4_Music
+      guid: 6067f56a6163a24fb6ff4f17cdb098e5
+      id: 3704909790
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: Music
+        ObjectType: 4
+        guid: 4e3b0bd258c75647b6f64a8eaa93e424
+      - ElementName: Resume_Level_4_Music
+        ObjectType: 3
+        guid: 6067f56a6163a24fb6ff4f17cdb098e5
+      Path: Events\Subarashii\Music\Resume_Level_4_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Resume_Level_5_Music
+      guid: 540ac83149b12f4d8b7ef55a9eb679af
+      id: 1300648839
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: Music
+        ObjectType: 4
+        guid: 4e3b0bd258c75647b6f64a8eaa93e424
+      - ElementName: Resume_Level_5_Music
+        ObjectType: 3
+        guid: 540ac83149b12f4d8b7ef55a9eb679af
+      Path: Events\Subarashii\Music\Resume_Level_5_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: SFX
       guid: bea5fbbe4df49b4db266f99867907f2d
       id: 393239870
