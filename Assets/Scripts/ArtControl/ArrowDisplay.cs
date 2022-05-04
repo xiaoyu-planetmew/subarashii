@@ -104,11 +104,15 @@ public class ArrowDisplay : MonoBehaviour
     public void ResetArrow()
     {
         // 恢复成初始的显示
-        showingArrow.hint_Special.GetComponent<Animator>().speed = 1;
-        showingArrow.hint_Normal.GetComponent<Animator>().speed = 1;
 
-        showingArrow.star.gameObject.SetActive(true);
-        showingArrow.showArrow.gameObject.SetActive(false);
+        if(showingArrow!=null)
+        {
+            showingArrow.hint_Special.GetComponent<Animator>().speed = 1;
+            showingArrow.hint_Normal.GetComponent<Animator>().speed = 1;
+
+            showingArrow.star.gameObject.SetActive(true);
+            showingArrow.showArrow.gameObject.SetActive(false);
+        }
 
         hasEnter = false;
     }

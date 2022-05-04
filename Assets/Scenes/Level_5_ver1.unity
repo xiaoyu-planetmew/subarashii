@@ -3690,6 +3690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blood: 3
   restartPos: {fileID: 0}
+  HP: {fileID: 0}
   startPlaying: 0
   comboNum: 0
   totalPoints: 0
@@ -5326,7 +5327,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &871983718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11846,6 +11847,8 @@ MonoBehaviour:
       m_Calls: []
   trackController: []
   mainMusicPlayingTimer: 0
+  pauseMenu: {fileID: 0}
+  finishThisLevel: 0
 --- !u!4 &1960545388
 Transform:
   m_ObjectHideFlags: 0
@@ -11890,6 +11893,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayThemeMusic: {fileID: 0}
   StopThemeMusic: {fileID: 0}
+  StopLeve_1_Music: {fileID: 0}
 --- !u!1 &2031791998
 GameObject:
   m_ObjectHideFlags: 0

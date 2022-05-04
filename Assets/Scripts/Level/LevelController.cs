@@ -125,10 +125,11 @@ public class LevelController : MonoBehaviour
     {
         // 停止交互 / halt interacting
         PlayerController.Instance.startPlaying = false;
+        finishThisLevel = true;
 
         // 角色死亡特效和动画 / death effect and animation
         // 主角动画
-        CharacterAnimationController.Instance.GetComponent<Animator>().SetBool("game over", true);
+        CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.GameOver);
 
         // 声音
         SoundController.Instance.GameOver.HandleEvent(WwiseManager.Instance.gameObject);
@@ -140,7 +141,7 @@ public class LevelController : MonoBehaviour
 
     private IEnumerator WaitAnimation()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
 
         // 切换特效开 / scene changing effect ON
         SceneTransition.Instance.EffectStart();
@@ -150,9 +151,9 @@ public class LevelController : MonoBehaviour
     }
 
     
-    private IEnumerator WaitEffect()
+    private IEnumerator WaitEffect(float waitTime = 2f)
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(waitTime);
 
         // 主音乐切换 / main BGM change to tutorial BGM
         TutorialTrackController.Instance.SwitchToTutorial.HandleEvent(WwiseManager.Instance.gameObject);
