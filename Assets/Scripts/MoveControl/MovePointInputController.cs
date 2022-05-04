@@ -154,9 +154,11 @@ public class MovePointInputController : MonoBehaviour
 
         // �ɹ���Ч
         // �����һ���������ק��Ч
+        // Effect
         PlayerEffectController.Instance.DragCircleEffect(keyInput.keyInput, powerfulEffect);
 
         // ���Ƕ���
+        // Character Animation
         CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Good);
 
         // ����������ɫ����
@@ -167,6 +169,7 @@ public class MovePointInputController : MonoBehaviour
         }
 
         // ��ͷ
+        // Arrow
         GetComponent<MovePointDisplay>().arrowPrefab.SuccessAnimation();
 
 

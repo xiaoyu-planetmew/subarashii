@@ -79,11 +79,15 @@ public class PlayerController : MonoBehaviour
     }
     public void Success()
     {
+        if (!startPlaying) return;
+
         totalPoints++;
         successPoints++;
     }
     public void Miss()
     {
+        if (!startPlaying) return;
+
         totalPoints++;
         MinusBlood();
     }

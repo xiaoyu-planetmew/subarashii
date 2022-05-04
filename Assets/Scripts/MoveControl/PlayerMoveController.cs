@@ -64,6 +64,8 @@ public class PlayerMoveController : MonoBehaviour
             return;
         }
 
+        if (LevelController.Instance.finishThisLevel) accelerated = false;
+
         timer += Time.fixedDeltaTime;
         aTimer += (Time.fixedDeltaTime * (accelerated ? aSpeed : 1));
 
@@ -125,6 +127,10 @@ public class PlayerMoveController : MonoBehaviour
         {
             //计算下一段路线
             MoveToPoint(nowMovePoint.GetNextOrBranchPoint());
+        }
+        else
+        {
+            PlayerController.Instance.startPlaying = false;
         }
     }
 

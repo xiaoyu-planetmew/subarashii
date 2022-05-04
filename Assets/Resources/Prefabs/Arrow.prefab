@@ -117,6 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showGameObject: {fileID: 5871449385061021976}
+  SFXs: []
 --- !u!210 &8168454332682629860
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -279,6 +280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showGameObject: {fileID: 1458200253759996425}
+  SFXs: []
 --- !u!210 &8184982533825211583
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -418,6 +420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showGameObject: {fileID: 0}
+  SFXs: []
 --- !u!1 &1458200254124138859
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,6 +694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showGameObject: {fileID: 7167463573867006186}
+  SFXs: []
 --- !u!210 &7617740784874809151
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -819,6 +823,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showGameObject: {fileID: 7240549804682848584}
+  SFXs: []
 --- !u!210 &7056932124138801705
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -1063,6 +1068,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showGameObject: {fileID: 7102868476820267885}
+  SFXs: []
 --- !u!210 &4219975325100547850
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -1089,7 +1095,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4363048628073268740
 Transform:
   m_ObjectHideFlags: 0
@@ -1121,6 +1127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showGameObject: {fileID: 0}
+  SFXs: []
 --- !u!210 &8334830114216571732
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -1145,6 +1152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showGameObject: {fileID: 0}
+  SFXs: []
 --- !u!210 &8767039404973477023
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -1169,6 +1177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showGameObject: {fileID: 0}
+  SFXs: []
 --- !u!114 &6716956031515850568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1182,6 +1191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showGameObject: {fileID: 0}
+  SFXs: []
 --- !u!1 &5871449385061021976
 GameObject:
   m_ObjectHideFlags: 0
@@ -1308,6 +1318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showGameObject: {fileID: 0}
+  SFXs: []
 --- !u!1 &7102868476820267885
 GameObject:
   m_ObjectHideFlags: 0
@@ -1436,6 +1447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showGameObject: {fileID: 0}
+  SFXs: []
 --- !u!1 &7167463573867006186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1564,6 +1576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showGameObject: {fileID: 0}
+  SFXs: []
 --- !u!1 &7240549804682848584
 GameObject:
   m_ObjectHideFlags: 0
@@ -1692,6 +1705,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showGameObject: {fileID: 0}
+  SFXs: []
 --- !u!210 &1261265458359969692
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -1716,6 +1730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showGameObject: {fileID: 0}
+  SFXs: []
 --- !u!1 &7524375911886321138
 GameObject:
   m_ObjectHideFlags: 0
@@ -1774,6 +1789,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showGameObject: {fileID: 0}
+  SFXs: []
 --- !u!210 &6425744484633149925
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -1798,6 +1814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showGameObject: {fileID: 0}
+  SFXs: []
 --- !u!210 &8854913425275452709
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -1822,6 +1839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showGameObject: {fileID: 0}
+  SFXs: []
 --- !u!210 &5414410167989550505
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -1846,6 +1864,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showGameObject: {fileID: 0}
+  SFXs: []
 --- !u!1001 &1231642884543921736
 PrefabInstance:
   m_ObjectHideFlags: 0

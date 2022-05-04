@@ -2017,6 +2017,7 @@ GameObject:
   - component: {fileID: 8161801429953955458}
   - component: {fileID: 8161801429953955456}
   - component: {fileID: 8161801429953955459}
+  - component: {fileID: 468136945236510524}
   m_Layer: 0
   m_Name: Finish
   m_TagString: Untagged
@@ -2098,6 +2099,25 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &468136945236510524
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8161801429953955461}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 81012af9dd92eb245803058fb61738e6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8161801429967748034
 GameObject:
   m_ObjectHideFlags: 0

@@ -100,4 +100,7 @@ public enum AnimationEventType
     Absorb_Right,
     GameOver,
     Talk,
+    Charge,
+    Smash,
+    Guard,
 }

@@ -13,4 +13,13 @@ public class TrackInLevel : MonoBehaviour
 
     [Header("音轨文件名")]
     public string trackFile;
+
+    private void Start()
+    {
+        if (endPoint.nextPoint != null)
+            endPoint.nextPoint.gameObject.AddComponent<FinalCheckPoint>();
+        else
+            Debug.LogError("Teack In Level的倒数第二个点缺最后一个点");
+
+    }
 }

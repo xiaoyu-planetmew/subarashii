@@ -22,6 +22,7 @@ public class LevelController : MonoBehaviour
      public float mainMusicPlayingTimer;
     private bool startPlayingMainMusic;
     public GameObject pauseMenu;
+    public bool finishThisLevel = false;
 
     private void Awake()
     {
@@ -116,6 +117,8 @@ public class LevelController : MonoBehaviour
 
         //重置相机
         CameraController.Instance.ResetCam();
+
+        finishThisLevel = false;
     }
 
     public void GameOver()
@@ -156,6 +159,7 @@ public class LevelController : MonoBehaviour
 
         // 重置 reset level
         ResetLevel();
+        FinishManager.Instance.FinishCanvas.SetActive(false);
 
         StartCoroutine(WaitReset());
     }
