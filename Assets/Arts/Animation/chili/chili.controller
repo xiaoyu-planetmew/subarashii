@@ -271,7 +271,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: chili_idle_0000
+  m_Name: chili
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: chili_attack
