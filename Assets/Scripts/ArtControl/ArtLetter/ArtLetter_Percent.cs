@@ -33,7 +33,7 @@ public class ArtLetter_Percent : MonoBehaviour
             letter.SetActive(false);
             letter1.SetActive(false);
         }else{
-            Debug.Log(num);
+            //Debug.Log(num);
             p100.SetActive(false);
             letter.SetActive(true);
             letter1.SetActive(true);

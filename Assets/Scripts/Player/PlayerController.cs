@@ -5,16 +5,16 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [Header("Ѫ��")]
-    public float blood = 3;
+    public int blood = 3;
 
     [Header("���¿�ʼλ��")]
     public Transform restartPos;
-
+    public Transform HP;
 
     public static PlayerController Instance;
     [HideInInspector] public bool startPlaying = false;
     [HideInInspector] public int comboNum = 0; //Combo ��
-    private float originBlood;
+    private int originBlood;
     private Vector3 originPos;
     public int totalPoints;
     public int successPoints;
@@ -36,6 +36,37 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
+        switch(blood)
+        {
+            case 0:
+            {
+                HP.GetChild(0).gameObject.SetActive(false);
+                HP.GetChild(1).gameObject.SetActive(false);
+                HP.GetChild(2).gameObject.SetActive(false);
+                break;
+            }
+            case 1:
+            {
+                HP.GetChild(0).gameObject.SetActive(true);
+                HP.GetChild(1).gameObject.SetActive(false);
+                HP.GetChild(2).gameObject.SetActive(false);
+                break;
+            }
+            case 2:
+            {
+                HP.GetChild(0).gameObject.SetActive(true);
+                HP.GetChild(1).gameObject.SetActive(true);
+                HP.GetChild(2).gameObject.SetActive(false);
+                break;
+            }
+            case 3:
+            {
+                HP.GetChild(0).gameObject.SetActive(true);
+                HP.GetChild(1).gameObject.SetActive(true);
+                HP.GetChild(2).gameObject.SetActive(true);
+                break;
+            }
+        }
         try
         {
             GameObject.Find("Score_Letter").GetComponent<ArtLetter>().SetShowNumber(successPoints);
@@ -54,12 +85,13 @@ public class PlayerController : MonoBehaviour
     public void miss()
     {
         totalPoints++;
+        MinusBlood();
     }
     /// <summary>
     /// ��Ѫ
     /// </summary>
     /// <param name="addBlood"></param>
-    public void AddBlood(float addBlood = 1)
+    public void AddBlood(int addBlood = 1)
     {
         blood = Mathf.Min(blood+addBlood, originBlood);
 
@@ -70,7 +102,7 @@ public class PlayerController : MonoBehaviour
     /// <summary>
     /// ��Ѫ
     /// </summary>
-    public void MinusBlood(float minusBlood = 1)
+    public void MinusBlood(int minusBlood = 1)
     {
         blood = Mathf.Max(blood - minusBlood, 0);
 

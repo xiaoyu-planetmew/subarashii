@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class FinishManager : MonoBehaviour
 {
+    public static FinishManager Instance;
     public GameObject FinishCanvas;
     public Image level;
     public List<Sprite> levels = new List<Sprite>();
@@ -19,7 +20,10 @@ public class FinishManager : MonoBehaviour
     public Text scoreNum;
     public Text clearNum;
     public Text missNum;
-    
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()

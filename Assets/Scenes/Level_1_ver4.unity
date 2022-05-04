@@ -6826,6 +6826,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blood: 3
   restartPos: {fileID: 0}
+  HP: {fileID: 944675505}
   startPlaying: 0
   comboNum: 0
   totalPoints: 0
