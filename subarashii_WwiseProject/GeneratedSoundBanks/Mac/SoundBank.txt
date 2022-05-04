@@ -8,11 +8,15 @@ Event	ID	Name			Wwise Object Path	Notes
 	548787921	Boss_Destroy			\Subarashii\SFX\Level_4\Boss_Destroy	
 	560299279	Stop_Theme			\Subarashii\Music\Stop_Theme	
 	617877575	Food_Absorb			\Subarashii\SFX\Level_1\Food_Absorb	
+	665890332	Pause_Level_3_Music			\Subarashii\Music\Pause_Level_3_Music	
 	814842324	Play_Level_1_Music			\Subarashii\Music\Play_Level_1_Music	
 	822197044	Input_Arrow__Success			\Subarashii\SFX\Input_Arrow__Success	
+	1036646735	Pause_Level_4_Music			\Subarashii\Music\Pause_Level_4_Music	
 	1130099208	Input_Space_Success			\Subarashii\SFX\Input_Space_Success	
 	1177821199	Tip_TripleChange			\Subarashii\SFX\Tip_TripleChange	
 	1183555207	Switch_Level_1_Tutorial			\Subarashii\Music\Switch_Level_1_Tutorial	
+	1290417542	Pause_Level_5_Music			\Subarashii\Music\Pause_Level_5_Music	
+	1300648839	Resume_Level_5_Music			\Subarashii\Music\Resume_Level_5_Music	
 	1412610934	Button_Pause			\Subarashii\SFX\Button_Pause	
 	1485311290	Talk_Radio_Stop			\Subarashii\SFX\Talk_Radio_Stop	
 	1531137768	Tip_Double			\Subarashii\SFX\Tip_Double	
@@ -24,10 +28,13 @@ Event	ID	Name			Wwise Object Path	Notes
 	1971216464	Play_Level_5_Music			\Subarashii\Music\Play_Level_5_Music	
 	2030756375	Button_Off			\Subarashii\SFX\Button_Off	
 	2048014091	Play_Level_2_Music			\Subarashii\Music\Play_Level_2_Music	
+	2161171669	Resume_Level_3_Music			\Subarashii\Music\Resume_Level_3_Music	
 	2196209329	Input_Arrow_Menu			\Subarashii\SFX\Input_Arrow_Menu	
+	2283933274	Pause_Level_1_Music			\Subarashii\Music\Pause_Level_1_Music	
 	2409176675	Button_On			\Subarashii\SFX\Button_On	
 	2429794592	Switch_Level_2_MainMusic			\Subarashii\Music\Switch_Level_2_MainMusic	
 	2479442773	Play_Theme			\Subarashii\Music\Play_Theme	
+	2588365524	Resume_Level_2_Music			\Subarashii\Music\Resume_Level_2_Music	
 	2631903211	Boss_Siren_Stop			\Subarashii\SFX\Level_4\Boss_Siren_Stop	
 	2662890845	Shit_Combine			\Subarashii\SFX\Level_5\Shit_Combine	
 	2683451828	Input_Arrow_Miss			\Subarashii\SFX\Input_Arrow_Miss	
@@ -39,13 +46,18 @@ Event	ID	Name			Wwise Object Path	Notes
 	3146435922	Door_Impacting			\Subarashii\SFX\Level_1\Door_Impacting	
 	3205827125	Switch_Level_3_Tutorial			\Subarashii\Music\Switch_Level_3_Tutorial	
 	3402608328	Talk_Radio_Play			\Subarashii\SFX\Talk_Radio_Play	
+	3499643389	Pause_Level_2_Music			\Subarashii\Music\Pause_Level_2_Music	
 	3500213621	Talking_1			\Subarashii\SFX\Talking_1	
 	3500213622	Talking_2			\Subarashii\SFX\Talking_2	
 	3652999024	Space_Food			\Subarashii\SFX\Level_1\Space_Food	
 	3674397817	Talk_Buzz			\Subarashii\SFX\Talk_Buzz	
+	3679762312	Resume_All			\Subarashii\Music\Resume_All	
 	3682747983	Switch_Level_4_Music			\Subarashii\Music\Switch_Level_4_Music	
+	3704909790	Resume_Level_4_Music			\Subarashii\Music\Resume_Level_4_Music	
 	3783587681	Play_Level_4_Music			\Subarashii\Music\Play_Level_4_Music	
+	3821537291	Resume_Level_1_Music			\Subarashii\Music\Resume_Level_1_Music	
 	3822964584	Final_Shit			\Subarashii\SFX\Level_5\Final_Shit	
+	3864097025	Pause_All			\Subarashii\Music\Pause_All	
 	3952070454	Input_Arrow_Combo			\Subarashii\SFX\Input_Arrow_Combo	
 	4087450626	Stop_Level_1_Music			\Subarashii\Music\Stop_Level_1_Music	
 	4120751531	Input_Space_Miss			\Subarashii\SFX\Input_Space_Miss	

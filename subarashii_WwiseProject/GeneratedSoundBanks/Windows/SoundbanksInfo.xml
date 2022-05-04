@@ -21,7 +21,7 @@
 				<GameParameter Id="2918011349" Name="MasterVolume" ObjectPath="\Game Parameters\Subarashii\Volume\MasterVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1661994096" Language="SFX" Hash="2699811562">
+		<SoundBank Id="1661994096" Language="SFX" Hash="2066375573">
 			<ObjectPath>\SoundBanks\Subarashii\SoundBank</ObjectPath>
 			<ShortName>SoundBank</ShortName>
 			<Path>SoundBank.bnk</Path>
@@ -187,6 +187,12 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3864097025" Name="Pause_All" ObjectPath="\Events\Subarashii\Music\Pause_All" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2283933274" Name="Pause_Level_1_Music" ObjectPath="\Events\Subarashii\Music\Pause_Level_1_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3499643389" Name="Pause_Level_2_Music" ObjectPath="\Events\Subarashii\Music\Pause_Level_2_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="665890332" Name="Pause_Level_3_Music" ObjectPath="\Events\Subarashii\Music\Pause_Level_3_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1036646735" Name="Pause_Level_4_Music" ObjectPath="\Events\Subarashii\Music\Pause_Level_4_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1290417542" Name="Pause_Level_5_Music" ObjectPath="\Events\Subarashii\Music\Pause_Level_5_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="814842324" Name="Play_Level_1_Music" ObjectPath="\Events\Subarashii\Music\Play_Level_1_Music" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="111535056" Language="SFX">
@@ -375,6 +381,12 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3679762312" Name="Resume_All" ObjectPath="\Events\Subarashii\Music\Resume_All" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3821537291" Name="Resume_Level_1_Music" ObjectPath="\Events\Subarashii\Music\Resume_Level_1_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2588365524" Name="Resume_Level_2_Music" ObjectPath="\Events\Subarashii\Music\Resume_Level_2_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2161171669" Name="Resume_Level_3_Music" ObjectPath="\Events\Subarashii\Music\Resume_Level_3_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3704909790" Name="Resume_Level_4_Music" ObjectPath="\Events\Subarashii\Music\Resume_Level_4_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1300648839" Name="Resume_Level_5_Music" ObjectPath="\Events\Subarashii\Music\Resume_Level_5_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="2662890845" Name="Shit_Combine" ObjectPath="\Events\Subarashii\SFX\Level_5\Shit_Combine" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
 					<IncludedMemoryFiles>
 						<File Id="233903279" Language="SFX">

@@ -33,6 +33,12 @@ namespace AK
         static const AkUniqueID INPUT_ARROW_MISS = 2683451828U;
         static const AkUniqueID INPUT_SPACE_MISS = 4120751531U;
         static const AkUniqueID INPUT_SPACE_SUCCESS = 1130099208U;
+        static const AkUniqueID PAUSE_ALL = 3864097025U;
+        static const AkUniqueID PAUSE_LEVEL_1_MUSIC = 2283933274U;
+        static const AkUniqueID PAUSE_LEVEL_2_MUSIC = 3499643389U;
+        static const AkUniqueID PAUSE_LEVEL_3_MUSIC = 665890332U;
+        static const AkUniqueID PAUSE_LEVEL_4_MUSIC = 1036646735U;
+        static const AkUniqueID PAUSE_LEVEL_5_MUSIC = 1290417542U;
         static const AkUniqueID PLAY_LEVEL_1_MUSIC = 814842324U;
         static const AkUniqueID PLAY_LEVEL_2_MUSIC = 2048014091U;
         static const AkUniqueID PLAY_LEVEL_3_MUSIC = 2793021362U;
@@ -41,6 +47,12 @@ namespace AK
         static const AkUniqueID PLAY_MUSIC_LEVEL1_BPM100_32BIT48KHZ = 192345322U;
         static const AkUniqueID PLAY_MUSIC_LEVEL1_TUTORIAL__BPM100_32BIT48KHZ = 2975100082U;
         static const AkUniqueID PLAY_THEME = 2479442773U;
+        static const AkUniqueID RESUME_ALL = 3679762312U;
+        static const AkUniqueID RESUME_LEVEL_1_MUSIC = 3821537291U;
+        static const AkUniqueID RESUME_LEVEL_2_MUSIC = 2588365524U;
+        static const AkUniqueID RESUME_LEVEL_3_MUSIC = 2161171669U;
+        static const AkUniqueID RESUME_LEVEL_4_MUSIC = 3704909790U;
+        static const AkUniqueID RESUME_LEVEL_5_MUSIC = 1300648839U;
         static const AkUniqueID SHIT_COMBINE = 2662890845U;
         static const AkUniqueID SPACE_FOOD = 3652999024U;
         static const AkUniqueID SPACE_HINDER = 4232218210U;

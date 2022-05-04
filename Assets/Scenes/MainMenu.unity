@@ -13372,7 +13372,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1446352100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13495,6 +13495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blood: 3
   restartPos: {fileID: 0}
+  HP: {fileID: 0}
   startPlaying: 0
   comboNum: 0
   totalPoints: 0
