@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     [Header("Ѫ��")]
@@ -40,30 +40,30 @@ public class PlayerController : MonoBehaviour
         {
             case 0:
             {
-                HP.GetChild(0).gameObject.SetActive(false);
-                HP.GetChild(1).gameObject.SetActive(false);
-                HP.GetChild(2).gameObject.SetActive(false);
+                HP.GetChild(0).gameObject.GetComponent<Image>().enabled = false;
+                HP.GetChild(1).gameObject.GetComponent<Image>().enabled = false;
+                HP.GetChild(2).gameObject.GetComponent<Image>().enabled = false;
                 break;
             }
             case 1:
             {
-                HP.GetChild(0).gameObject.SetActive(true);
-                HP.GetChild(1).gameObject.SetActive(false);
-                HP.GetChild(2).gameObject.SetActive(false);
+                HP.GetChild(0).gameObject.GetComponent<Image>().enabled = true;
+                HP.GetChild(1).gameObject.GetComponent<Image>().enabled = false;
+                HP.GetChild(2).gameObject.GetComponent<Image>().enabled = false;
                 break;
             }
             case 2:
             {
-                HP.GetChild(0).gameObject.SetActive(true);
-                HP.GetChild(1).gameObject.SetActive(true);
-                HP.GetChild(2).gameObject.SetActive(false);
+                HP.GetChild(0).gameObject.GetComponent<Image>().enabled = true;
+                HP.GetChild(1).gameObject.GetComponent<Image>().enabled = true;
+                HP.GetChild(2).gameObject.GetComponent<Image>().enabled = false;
                 break;
             }
             case 3:
             {
-                HP.GetChild(0).gameObject.SetActive(true);
-                HP.GetChild(1).gameObject.SetActive(true);
-                HP.GetChild(2).gameObject.SetActive(true);
+                HP.GetChild(0).gameObject.GetComponent<Image>().enabled = true;
+                HP.GetChild(1).gameObject.GetComponent<Image>().enabled = true;
+                HP.GetChild(2).gameObject.GetComponent<Image>().enabled = true;
                 break;
             }
         }
