@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a4ea3ee170b3d64788c25e4365b8408, type: 3}
+  m_Name: 41C2B42C-96FB-4A42-ACCC-849A161330F6
+  m_EditorClassIdentifier: 
+  objectName: Tip_Triple
+  id: 41246695
+  guid: 41C2B42C-96FB-4A42-ACCC-849A161330F6

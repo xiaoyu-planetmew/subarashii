@@ -571,6 +571,48 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Tip_Triple" ID="{41C2B42C-96FB-4A42-ACCC-849A161330F6}">
+							<ChildrenList>
+								<Action Name="" ID="{86053802-0349-41E2-92B8-4EE91D2AEB64}" ShortID="264261027">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Tip_Trigger" ID="{94DE31A5-1047-4947-9C8F-C8FEDEA67277}" WorkUnitID="{E5E84D9C-52B4-4F91-80A1-C3EDC3542D75}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Tip_Double" ID="{25555C80-378C-412A-A98A-192B51E2B509}">
+							<ChildrenList>
+								<Action Name="" ID="{760685C7-A06B-4B17-8547-7934EF48095E}" ShortID="224285431">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Tip_Double" ID="{F2E10F37-9D01-4588-A8B9-69B08342C9E1}" WorkUnitID="{E5E84D9C-52B4-4F91-80A1-C3EDC3542D75}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Tip_TripleChange" ID="{1EE0CB5E-633A-45F1-BCCA-A90868BEF2FF}">
+							<ChildrenList>
+								<Action Name="" ID="{C753448B-0695-4EB9-BE5B-B3AD1BDF10F9}" ShortID="922608989">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Tip_TripleTip_ChangeTriple" ID="{A37CFAD6-DB0F-4E41-AEF2-96F27E845AFE}" WorkUnitID="{E5E84D9C-52B4-4F91-80A1-C3EDC3542D75}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Test" ID="{193A8C55-448D-4495-BFAC-F1D80075293E}">

@@ -31,6 +31,9 @@ public class SoundController : MonoBehaviour
     public AkEvent Talk_Radio_Stop;
     public AkEvent Talking_1;
     public AkEvent Talking_2;
+    public AkEvent Tip_Triple;
+    public AkEvent Tip_Double;
+    public AkEvent Tip_TripleChange;
 
     public static SoundController Instance;
     private void Awake()

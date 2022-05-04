@@ -466,7 +466,43 @@
 							<TransitionInfo/>
 						</MusicTransition>
 					</TransitionList>
-					<ObjectLists/>
+					<ObjectLists>
+						<ObjectList Name="Stingers">
+							<Reference>
+								<Local>
+									<MusicStinger Name="" ID="{DC1EABA2-4856-41E8-99FB-C4F17E33EF4B}">
+										<PropertyList>
+											<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
+										</PropertyList>
+										<TriggerRef Name="Tip_Trigger" ID="{94DE31A5-1047-4947-9C8F-C8FEDEA67277}" WorkUnitID="{E5E84D9C-52B4-4F91-80A1-C3EDC3542D75}"/>
+										<SegmentRef Name="Tip_Triple" ID="{1183F53B-DF79-4D73-9DE0-9E4977A4DE7F}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}"/>
+									</MusicStinger>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MusicStinger Name="" ID="{A7B77B36-265F-4FE0-BB7C-7484526DFD8F}">
+										<PropertyList>
+											<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
+										</PropertyList>
+										<TriggerRef Name="Tip_Double" ID="{F2E10F37-9D01-4588-A8B9-69B08342C9E1}" WorkUnitID="{E5E84D9C-52B4-4F91-80A1-C3EDC3542D75}"/>
+										<SegmentRef Name="Tip_Double" ID="{B6943B43-930C-42D4-ACD5-C8191CA35024}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}"/>
+									</MusicStinger>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MusicStinger Name="" ID="{77B94C7F-129A-4AB6-8671-A06AEF780D96}">
+										<PropertyList>
+											<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
+										</PropertyList>
+										<TriggerRef Name="Tip_TripleTip_ChangeTriple" ID="{A37CFAD6-DB0F-4E41-AEF2-96F27E845AFE}" WorkUnitID="{E5E84D9C-52B4-4F91-80A1-C3EDC3542D75}"/>
+										<SegmentRef Name="Tip_TripleChange" ID="{613706F7-22D5-4E97-A244-2A0F16511FB7}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}"/>
+									</MusicStinger>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 					<ArgumentList>
 						<ArgumentRef Name="Level_Music_State" ID="{47768808-F60B-45E2-A9BF-EA21BC24A48A}"/>
 					</ArgumentList>
@@ -893,7 +929,43 @@
 							<TransitionInfo/>
 						</MusicTransition>
 					</TransitionList>
-					<ObjectLists/>
+					<ObjectLists>
+						<ObjectList Name="Stingers">
+							<Reference>
+								<Local>
+									<MusicStinger Name="" ID="{B3C60005-C06A-4FCD-BB8C-2FF99BE2FD3A}">
+										<PropertyList>
+											<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
+										</PropertyList>
+										<TriggerRef Name="Tip_Trigger" ID="{94DE31A5-1047-4947-9C8F-C8FEDEA67277}" WorkUnitID="{E5E84D9C-52B4-4F91-80A1-C3EDC3542D75}"/>
+										<SegmentRef Name="Tip_Triple" ID="{1183F53B-DF79-4D73-9DE0-9E4977A4DE7F}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}"/>
+									</MusicStinger>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MusicStinger Name="" ID="{735AD8AC-CE23-4CD6-B163-EB91E41D0B73}">
+										<PropertyList>
+											<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
+										</PropertyList>
+										<TriggerRef Name="Tip_Double" ID="{F2E10F37-9D01-4588-A8B9-69B08342C9E1}" WorkUnitID="{E5E84D9C-52B4-4F91-80A1-C3EDC3542D75}"/>
+										<SegmentRef Name="Tip_Double" ID="{B6943B43-930C-42D4-ACD5-C8191CA35024}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}"/>
+									</MusicStinger>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MusicStinger Name="" ID="{CEB9485D-851C-4C7C-9751-6BB6CB1E4251}">
+										<PropertyList>
+											<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
+										</PropertyList>
+										<TriggerRef Name="Tip_TripleTip_ChangeTriple" ID="{A37CFAD6-DB0F-4E41-AEF2-96F27E845AFE}" WorkUnitID="{E5E84D9C-52B4-4F91-80A1-C3EDC3542D75}"/>
+										<SegmentRef Name="Tip_TripleChange" ID="{613706F7-22D5-4E97-A244-2A0F16511FB7}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}"/>
+									</MusicStinger>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 					<ArgumentList>
 						<ArgumentRef Name="Level_Music_State" ID="{47768808-F60B-45E2-A9BF-EA21BC24A48A}"/>
 					</ArgumentList>
@@ -1325,7 +1397,43 @@
 							<TransitionInfo/>
 						</MusicTransition>
 					</TransitionList>
-					<ObjectLists/>
+					<ObjectLists>
+						<ObjectList Name="Stingers">
+							<Reference>
+								<Local>
+									<MusicStinger Name="" ID="{98EA5D7A-4C6C-48CB-B556-223A33863D55}">
+										<PropertyList>
+											<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
+										</PropertyList>
+										<TriggerRef Name="Tip_Double" ID="{F2E10F37-9D01-4588-A8B9-69B08342C9E1}" WorkUnitID="{E5E84D9C-52B4-4F91-80A1-C3EDC3542D75}"/>
+										<SegmentRef Name="Tip_Double" ID="{B6943B43-930C-42D4-ACD5-C8191CA35024}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}"/>
+									</MusicStinger>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MusicStinger Name="" ID="{42E55ED5-D4CA-4201-87AF-8B7B906591F2}">
+										<PropertyList>
+											<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
+										</PropertyList>
+										<TriggerRef Name="Tip_Trigger" ID="{94DE31A5-1047-4947-9C8F-C8FEDEA67277}" WorkUnitID="{E5E84D9C-52B4-4F91-80A1-C3EDC3542D75}"/>
+										<SegmentRef Name="Tip_Triple" ID="{1183F53B-DF79-4D73-9DE0-9E4977A4DE7F}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}"/>
+									</MusicStinger>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MusicStinger Name="" ID="{B8270AE1-6999-4A7B-B49A-4394A44698F0}">
+										<PropertyList>
+											<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
+										</PropertyList>
+										<TriggerRef Name="Tip_TripleTip_ChangeTriple" ID="{A37CFAD6-DB0F-4E41-AEF2-96F27E845AFE}" WorkUnitID="{E5E84D9C-52B4-4F91-80A1-C3EDC3542D75}"/>
+										<SegmentRef Name="Tip_TripleChange" ID="{613706F7-22D5-4E97-A244-2A0F16511FB7}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}"/>
+									</MusicStinger>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 					<ArgumentList>
 						<ArgumentRef Name="Level_Music_State" ID="{47768808-F60B-45E2-A9BF-EA21BC24A48A}"/>
 					</ArgumentList>
@@ -1757,7 +1865,43 @@
 							<TransitionInfo/>
 						</MusicTransition>
 					</TransitionList>
-					<ObjectLists/>
+					<ObjectLists>
+						<ObjectList Name="Stingers">
+							<Reference>
+								<Local>
+									<MusicStinger Name="" ID="{9B02432C-0DBB-4EF3-945A-83FAD31DCB8C}">
+										<PropertyList>
+											<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
+										</PropertyList>
+										<TriggerRef Name="Tip_Double" ID="{F2E10F37-9D01-4588-A8B9-69B08342C9E1}" WorkUnitID="{E5E84D9C-52B4-4F91-80A1-C3EDC3542D75}"/>
+										<SegmentRef Name="Tip_Double" ID="{B6943B43-930C-42D4-ACD5-C8191CA35024}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}"/>
+									</MusicStinger>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MusicStinger Name="" ID="{E902D8DD-2109-44FC-8C15-2905E4B5B96F}">
+										<PropertyList>
+											<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
+										</PropertyList>
+										<TriggerRef Name="Tip_Trigger" ID="{94DE31A5-1047-4947-9C8F-C8FEDEA67277}" WorkUnitID="{E5E84D9C-52B4-4F91-80A1-C3EDC3542D75}"/>
+										<SegmentRef Name="Tip_Triple" ID="{1183F53B-DF79-4D73-9DE0-9E4977A4DE7F}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}"/>
+									</MusicStinger>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MusicStinger Name="" ID="{07CAC0F0-B7A6-469E-959D-EB978B09BC8C}">
+										<PropertyList>
+											<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
+										</PropertyList>
+										<TriggerRef Name="Tip_TripleTip_ChangeTriple" ID="{A37CFAD6-DB0F-4E41-AEF2-96F27E845AFE}" WorkUnitID="{E5E84D9C-52B4-4F91-80A1-C3EDC3542D75}"/>
+										<SegmentRef Name="Tip_TripleChange" ID="{613706F7-22D5-4E97-A244-2A0F16511FB7}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}"/>
+									</MusicStinger>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 					<ArgumentList>
 						<ArgumentRef Name="Level_Music_State" ID="{47768808-F60B-45E2-A9BF-EA21BC24A48A}"/>
 					</ArgumentList>
@@ -2124,6 +2268,285 @@
 							<Reference>
 								<Local>
 									<MusicCue Name="Exit Cue" ID="{DBA3FAE9-A16F-496A-A64D-E0A927378C49}">
+										<PropertyList>
+											<Property Name="CueType" Type="int16" Value="1"/>
+											<Property Name="TimeMs" Type="Real64" Value="1000"/>
+										</PropertyList>
+									</MusicCue>
+								</Local>
+							</Reference>
+						</ObjectList>
+						<ObjectList Name="Stingers">
+							<Reference>
+								<Local>
+									<MusicStinger Name="" ID="{1DD20D11-6919-4EC6-99BD-2634022BE3E9}">
+										<PropertyList>
+											<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
+										</PropertyList>
+										<TriggerRef Name="Tip_Double" ID="{F2E10F37-9D01-4588-A8B9-69B08342C9E1}" WorkUnitID="{E5E84D9C-52B4-4F91-80A1-C3EDC3542D75}"/>
+										<SegmentRef Name="Tip_Double" ID="{B6943B43-930C-42D4-ACD5-C8191CA35024}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}"/>
+									</MusicStinger>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MusicStinger Name="" ID="{751662FF-2AA4-473E-A0BB-B0475A43EC06}">
+										<PropertyList>
+											<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
+										</PropertyList>
+										<TriggerRef Name="Tip_Trigger" ID="{94DE31A5-1047-4947-9C8F-C8FEDEA67277}" WorkUnitID="{E5E84D9C-52B4-4F91-80A1-C3EDC3542D75}"/>
+										<SegmentRef Name="Tip_Triple" ID="{1183F53B-DF79-4D73-9DE0-9E4977A4DE7F}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}"/>
+									</MusicStinger>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MusicStinger Name="" ID="{87DADF36-8AB2-4848-9039-062BC22A5241}">
+										<PropertyList>
+											<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
+										</PropertyList>
+										<TriggerRef Name="Tip_TripleTip_ChangeTriple" ID="{A37CFAD6-DB0F-4E41-AEF2-96F27E845AFE}" WorkUnitID="{E5E84D9C-52B4-4F91-80A1-C3EDC3542D75}"/>
+										<SegmentRef Name="Tip_TripleChange" ID="{613706F7-22D5-4E97-A244-2A0F16511FB7}" WorkUnitID="{AC797A2F-D28E-41BE-8C38-64384FEDD9BB}"/>
+									</MusicStinger>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</MusicSegment>
+				<MusicSegment Name="Tip_Triple" ID="{1183F53B-DF79-4D73-9DE0-9E4977A4DE7F}" ShortID="605508120">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{943BFE36-370F-4ACE-BBAC-C0274EC82E4A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{824F22E6-2C00-43C8-803A-5C90543CCD5C}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="SFX_tip_triple" ID="{4C07EE8B-A11D-46C8-A431-2973A05B0B93}" ShortID="700219885">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{824F22E6-2C00-43C8-803A-5C90543CCD5C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_tip_triple" ID="{C92D0845-7395-4689-8F7E-4AF40059FEB8}">
+									<Language>SFX</Language>
+									<AudioFile>SFX\SFX_tip_triple.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="111535056"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{A07C523C-0655-4F76-8F0B-619B9D8614CA}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList/>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{79BA9F42-5A62-4233-9B25-B7250E7E6150}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="SFX_tip_triple" ID="{01180042-423B-4118-8852-85F356EF47A7}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="932.541666666667"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="SFX_tip_triple" ID="{C92D0845-7395-4689-8F7E-4AF40059FEB8}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Cues">
+							<Reference>
+								<Local>
+									<MusicCue Name="Entry Cue" ID="{DA2B2440-DEB3-4D69-BEBC-985E0610EDD4}"/>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MusicCue Name="Exit Cue" ID="{97334F60-2CC4-4910-B868-89F7E5382D8A}">
+										<PropertyList>
+											<Property Name="CueType" Type="int16" Value="1"/>
+											<Property Name="TimeMs" Type="Real64" Value="1000"/>
+										</PropertyList>
+									</MusicCue>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</MusicSegment>
+				<MusicSegment Name="Tip_Double" ID="{B6943B43-930C-42D4-ACD5-C8191CA35024}" ShortID="1051293910">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{943BFE36-370F-4ACE-BBAC-C0274EC82E4A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{824F22E6-2C00-43C8-803A-5C90543CCD5C}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="SFX_tip_double" ID="{7D302236-8CE7-4DC3-BDB8-43DB729748B7}" ShortID="31257825">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{824F22E6-2C00-43C8-803A-5C90543CCD5C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_tip_double" ID="{B7790FDE-EB4A-4602-BE3F-467EFEA96A43}">
+									<Language>SFX</Language>
+									<AudioFile>SFX\SFX_tip_double.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1033086679"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{D34A60A4-6E21-46FF-8C57-E1BF472711E9}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{95E795DD-8257-4138-98EB-1267CA64301D}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="SFX_tip_double" ID="{7F2E38CA-F22A-4349-850B-2A904254E89A}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="932.541666666667"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="SFX_tip_double" ID="{B7790FDE-EB4A-4602-BE3F-467EFEA96A43}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Cues">
+							<Reference>
+								<Local>
+									<MusicCue Name="Entry Cue" ID="{40080970-905C-4953-BC12-2380762219D0}"/>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MusicCue Name="Exit Cue" ID="{B181F55A-CF17-46D4-A78B-1888E7C1B627}">
+										<PropertyList>
+											<Property Name="CueType" Type="int16" Value="1"/>
+											<Property Name="TimeMs" Type="Real64" Value="1000"/>
+										</PropertyList>
+									</MusicCue>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</MusicSegment>
+				<MusicSegment Name="Tip_TripleChange" ID="{613706F7-22D5-4E97-A244-2A0F16511FB7}" ShortID="386566118">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{943BFE36-370F-4ACE-BBAC-C0274EC82E4A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{824F22E6-2C00-43C8-803A-5C90543CCD5C}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="SFX_tip_triple_charge" ID="{90C55435-45D9-4D20-8EBD-27B054E76671}" ShortID="329476936">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{824F22E6-2C00-43C8-803A-5C90543CCD5C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_tip_triple_charge" ID="{6C3327A6-1D97-4897-84B3-F8A1F439A274}">
+									<Language>SFX</Language>
+									<AudioFile>SFX\SFX_tip_triple_charge.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="625414730"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{928D4B24-75D0-4653-969E-CAC84FBED36B}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{B9946889-6C2E-43D7-BC0D-54C1ECC1DF38}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="SFX_tip_triple_charge" ID="{F7455DC9-F0AA-46AA-AEDF-BA6768B47F5A}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="942.458333333333"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="SFX_tip_triple_charge" ID="{6C3327A6-1D97-4897-84B3-F8A1F439A274}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Cues">
+							<Reference>
+								<Local>
+									<MusicCue Name="Entry Cue" ID="{D574E687-A35F-40DD-8AF7-194A2BC0112A}"/>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MusicCue Name="Exit Cue" ID="{0BDE93C6-4FEB-4307-A326-352EC430C018}">
 										<PropertyList>
 											<Property Name="CueType" Type="int16" Value="1"/>
 											<Property Name="TimeMs" Type="Real64" Value="1000"/>

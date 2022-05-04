@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E5E84D9C-52B4-4F91-80A1-C3EDC3542D75}" SchemaVersion="103">
+	<Triggers>
+		<WorkUnit Name="Subarashii" ID="{E5E84D9C-52B4-4F91-80A1-C3EDC3542D75}" PersistMode="Standalone">
+			<ChildrenList>
+				<Trigger Name="Tip_Trigger" ID="{94DE31A5-1047-4947-9C8F-C8FEDEA67277}"/>
+				<Trigger Name="Tip_Double" ID="{F2E10F37-9D01-4588-A8B9-69B08342C9E1}"/>
+				<Trigger Name="Tip_TripleTip_ChangeTriple" ID="{A37CFAD6-DB0F-4E41-AEF2-96F27E845AFE}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Triggers>
+</WwiseDocument>

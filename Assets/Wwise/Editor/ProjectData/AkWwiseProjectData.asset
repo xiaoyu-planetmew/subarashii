@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 2ac004a949d9074b991a29f817866ae5
     GuidInternal: 
-    m_lastTime: -8585517599172362624
+    m_lastTime: -8585513480418644638
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: e6224f82002cc843803a5c90543ccd5c
     GuidInternal: 
-    m_lastTime: -8585517599174282600
+    m_lastTime: -8585513480430266919
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -182,7 +182,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6e88041042cea04791b2de4cdade51e0
     GuidInternal: 
-    m_lastTime: -8585514013923027768
+    m_lastTime: -8585513477742183117
     List:
     - name: Play_Music_level1_BPM100_32bit48khz
       guid: e76414383be9b94c859c0362eede1a52
@@ -229,7 +229,7 @@ MonoBehaviour:
     ParentPath: Events\Subarashii
     guid: 63796efd22d4f34992e8dbfe894f0a8d
     GuidInternal: 
-    m_lastTime: -8585500235679487117
+    m_lastTime: -8585499603747034494
     List:
     - name: Boss_Attack
       guid: d082697ccabd084e8069dbfc3c565917
@@ -1261,6 +1261,66 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Tip_Double
+      guid: 805c55258c372a41a98a192b51e2b509
+      id: 1531137768
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Tip_Double
+        ObjectType: 3
+        guid: 805c55258c372a41a98a192b51e2b509
+      Path: Events\Subarashii\SFX\Tip_Double
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Tip_Triple
+      guid: 2cb4c241fb96424aaccc849a161330f6
+      id: 41246695
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Tip_Triple
+        ObjectType: 3
+        guid: 2cb4c241fb96424aaccc849a161330f6
+      Path: Events\Subarashii\SFX\Tip_Triple
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Tip_TripleChange
+      guid: 5ecbe01e3a63f145bccaa90868bef2ff
+      id: 1177821199
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Tip_TripleChange
+        ObjectType: 3
+        guid: 5ecbe01e3a63f145bccaa90868bef2ff
+      Path: Events\Subarashii\SFX\Tip_TripleChange
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -1273,7 +1333,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 55cd09d2cbb25a459366fa0a94db3528
     GuidInternal: 
-    m_lastTime: -8585517599173913430
+    m_lastTime: -8585513480446411926
     List: []
   - PhysicalPath: Game Parameters\Subarashii.wwu
     PathAndIcons:
@@ -1365,7 +1425,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: f7fe67bbec39ae43be5794fa01ca0119
     GuidInternal: 
-    m_lastTime: -8585517599172592573
+    m_lastTime: -8585513480418684532
     List: []
   - PhysicalPath: States\Subarashii.wwu
     PathAndIcons:
@@ -1508,7 +1568,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 0a7d20405e55f149b7a739dd8a462128
     GuidInternal: 
-    m_lastTime: -8585517599172682337
+    m_lastTime: -8585513480418674563
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -1522,8 +1582,63 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: eae9b8cc6ab16942b5b2a2edeb5389d0
     GuidInternal: 
-    m_lastTime: -8585517599173400382
+    m_lastTime: -8585513480418664590
     List: []
+  - PhysicalPath: Triggers\Subarashii.wwu
+    PathAndIcons:
+    - ElementName: Triggers
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Subarashii
+      ObjectType: 12
+      guid: 9c4de8e5b452914f80a1c3edc3542d75
+    ParentPath: Triggers\Subarashii
+    guid: 9c4de8e5b452914f80a1c3edc3542d75
+    GuidInternal: 
+    m_lastTime: -8585499608534638962
+    List:
+    - name: Tip_Double
+      guid: 370fe1f2019d8845a8b969b08342c9e1
+      id: 1531137768
+      PathAndIcons:
+      - ElementName: Triggers
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 9c4de8e5b452914f80a1c3edc3542d75
+      - ElementName: Tip_Double
+        ObjectType: 14
+        guid: 370fe1f2019d8845a8b969b08342c9e1
+      Path: Triggers\Subarashii\Tip_Double
+    - name: Tip_Trigger
+      guid: a531de94471047499c8fc8fedea67277
+      id: 3538211073
+      PathAndIcons:
+      - ElementName: Triggers
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 9c4de8e5b452914f80a1c3edc3542d75
+      - ElementName: Tip_Trigger
+        ObjectType: 14
+        guid: a531de94471047499c8fc8fedea67277
+      Path: Triggers\Subarashii\Tip_Trigger
+    - name: Tip_TripleTip_ChangeTriple
+      guid: d6fa7ca30fdb414eaef296f27e845afe
+      id: 4147001613
+      PathAndIcons:
+      - ElementName: Triggers
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 9c4de8e5b452914f80a1c3edc3542d75
+      - ElementName: Tip_TripleTip_ChangeTriple
+        ObjectType: 14
+        guid: d6fa7ca30fdb414eaef296f27e845afe
+      Path: Triggers\Subarashii\Tip_TripleTip_ChangeTriple
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
