@@ -20,6 +20,8 @@ public class MovePointInputController : MonoBehaviour
     [Header("��ֹ����")]
     public bool dontAccerate = false;
 
+
+    [HideInInspector] public bool active = false;
     private bool waitingForInputs;
     private float inputTimer;
 
@@ -60,9 +62,9 @@ public class MovePointInputController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player")
+        if(collision.tag == "Player" && active)
         {
-
+            _mp.nextPoint.inputController.active = true;
             StartCheckingInput();
             Debug.Log("�ȴ����룺" + gameObject.name);
         }

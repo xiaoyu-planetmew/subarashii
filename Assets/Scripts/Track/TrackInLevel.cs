@@ -21,5 +21,7 @@ public class TrackInLevel : MonoBehaviour
         else
             Debug.LogError("Teack In Level的倒数第二个点缺最后一个点");
 
+        startPoint.inputController.active = true;
+        startPoint.nextPoint.inputController.active = true;
     }
 }

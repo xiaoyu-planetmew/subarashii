@@ -19,8 +19,8 @@ public class MovePoint : MonoBehaviour
     public float timeInTrack = 1;
     [HideInInspector] public Vector3[] basePoints;
     [HideInInspector] public bool toBranch;
-    private MovePointDisplay displayController;
-    private MovePointInputController inputController;
+    [HideInInspector] public MovePointDisplay displayController;
+    [HideInInspector] public MovePointInputController inputController;
 
     private void Start()
     {
