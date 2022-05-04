@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour
         totalPoints++;
         successPoints++;
 
-        if (addBlood) AddBlood;
+        if (addBlood) AddBlood();
     }
     public void Miss()
     {
