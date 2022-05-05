@@ -6827,6 +6827,7 @@ MonoBehaviour:
   comboNum: 0
   totalPoints: 0
   successPoints: 0
+  totalMovePoints: 97
 --- !u!114 &531148572
 MonoBehaviour:
   m_ObjectHideFlags: 0

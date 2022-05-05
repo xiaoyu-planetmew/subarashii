@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 originPos;
     public int totalPoints;
     public int successPoints;
+    public int totalMovePoints;
 
     private void Awake()
     {
@@ -72,7 +73,7 @@ public class PlayerController : MonoBehaviour
             GameObject.Find("Score_Letter").GetComponent<ArtLetter>().SetShowNumber(successPoints);
             if (totalPoints != 0)
             {
-                GameObject.Find("Level_Letters").GetComponent<ArtLetter_Percent>().SetShowNumber((float)successPoints / totalPoints);
+                GameObject.Find("Level_Letters").GetComponent<ArtLetter_Percent>().SetShowNumber((float)totalPoints / totalMovePoints);
             }
         }
         catch { }
