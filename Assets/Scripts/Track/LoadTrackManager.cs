@@ -61,7 +61,7 @@ public class LoadTrackManager : BaseManager<LoadTrackManager>
                 return key;
         }
 
-        Debug.LogError("Track����Text���ִ��󣡵�" + fileIndex +"���ļ�  ��" + index +"��" + "!" + keyDirName + "!");
+        //Debug.LogError("Track����Text���ִ��󣡵�" + fileIndex +"���ļ�  ��" + index +"��" + "!" + keyDirName + "!");
         return KeyDirectionType.Null;
     }
 }

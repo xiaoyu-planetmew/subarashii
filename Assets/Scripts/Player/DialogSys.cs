@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class DialogSys : MonoBehaviour
 {
+    public static DialogSys Instance;
     [Header("eventNum")]
     public int eventNum;
     //public GameObject player;
@@ -31,6 +32,10 @@ public class DialogSys : MonoBehaviour
     public string output;
     int textNum;
     // Start is called before the first frame update
+    private void Awake()
+    {
+        Instance = this;
+    }
     void Start()
     {
         //firstMeet = true;        
@@ -65,6 +70,7 @@ public class DialogSys : MonoBehaviour
                 //textLabelcn.gameObject.SetActive(false);
                 //textLabelen.gameObject.SetActive(false);
                 isTalking = false;
+                TutorialTrackController.Instance.FinishTutorial();
         }
         if(index < textList.Count && isTalking)
         {

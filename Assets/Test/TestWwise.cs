@@ -50,6 +50,10 @@ public class TestWwise : MonoBehaviour
             SwitchToTutorial.HandleEvent(gameObject);
             LevelController.Instance.ResetLevel();
         }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            DialogSys.Instance.dialogNext();
+        }
     }
 
     public void PlayMainMusic()

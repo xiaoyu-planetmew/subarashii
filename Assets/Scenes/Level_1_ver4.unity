@@ -24277,7 +24277,19 @@ MonoBehaviour:
   startMovePoint: {fileID: 1152722334224814349}
   sceneChangeEvents:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1264663443}
+        m_TargetAssemblyTypeName: DialogSys, Assembly-CSharp
+        m_MethodName: dialogStart
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   scenLeaveEvents:
     m_PersistentCalls:
       m_Calls:
