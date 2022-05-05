@@ -10,7 +10,7 @@ public class SceneController : MonoBehaviour
 
     private void Awake()
     {
-        //Application.targetFrameRate = 60;
+        Application.targetFrameRate = 60;
 
         if (Instance != null)
         {
@@ -30,17 +30,17 @@ public class SceneController : MonoBehaviour
     }
 
     /// <summary>
-    /// ÇÐ»»¹Ø¿¨
+    /// ï¿½Ð»ï¿½ï¿½Ø¿ï¿½
     /// </summary>
     /// <param name="toLevel"></param>
     public void ChangeScene(Level toLevel)
     {
         sceneChanging = true;
 
-        // ÇÐ»»¹Ø¿¨ÌØÐ§
+        // ï¿½Ð»ï¿½ï¿½Ø¿ï¿½ï¿½ï¿½Ð§
         SceneTransition.Instance.EffectStart();
 
-        //ÒôÀÖ
+        //ï¿½ï¿½ï¿½ï¿½
         WwiseManager.Instance.FadeOutAll(1.5f);
 
         StartCoroutine(WaitEffectComplete(toLevel));
@@ -50,7 +50,7 @@ public class SceneController : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
 
-        //Ç°³¡¾°Àë¿ªÊÂ¼þ
+        //Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ë¿ªï¿½Â¼ï¿½
         if (LevelController.Instance != null)
             LevelController.Instance.scenLeaveEvents.Invoke();
 
@@ -61,12 +61,12 @@ public class SceneController : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
 
-        //Òì²½¼ÓÔØ£¬µÈ´ý¼ÓÔØÍê±Ï
+        //ï¿½ì²½ï¿½ï¿½ï¿½Ø£ï¿½ï¿½È´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         StartCoroutine(LateLoadNewScene(toLevel));
     }
 
     /// <summary>
-    /// Òì²½¼ÓÔØ
+    /// ï¿½ì²½ï¿½ï¿½ï¿½ï¿½
     /// </summary>
     /// <param name="toLevel"></param>
     /// <returns></returns>
@@ -81,14 +81,14 @@ public class SceneController : MonoBehaviour
     }
 
     /// <summary>
-    /// ¼ÓÔØÍê±Ïºó
+    /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ïºï¿½
     /// </summary>
     /// <param name="toLevel"></param>
     private void AfterLoadScene(Level toLevel)
     {
         Debug.Log("Change scene to " + toLevel.ToString());
         
-        // ÒôÀÖ
+        // ï¿½ï¿½ï¿½ï¿½
         WwiseManager.Instance.FadeInAll(3f);
 
         StartCoroutine(WaitAfterLoad());
@@ -98,15 +98,15 @@ public class SceneController : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
 
-        //³¡¾°½øÈëÊÂ¼þ
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½
         LevelController.Instance.sceneChangeEvents.Invoke();
 
-        //¹Ø±ÕÌØÐ§
+        //ï¿½Ø±ï¿½ï¿½ï¿½Ð§
         SceneTransition.Instance.EffectClose();
 
-        //×Ô¶¯´æµµ
+        //ï¿½Ô¶ï¿½ï¿½æµµ
 
-        //¼ÓÔØTrack
+        //ï¿½ï¿½ï¿½ï¿½Track
         //TrackManager.Instance.InitiateLevelTrack();
 
         sceneChanging = false;
