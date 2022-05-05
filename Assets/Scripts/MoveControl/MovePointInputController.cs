@@ -65,6 +65,10 @@ public class MovePointInputController : MonoBehaviour
         {
             if(_mp.nextPoint!=null)
                 _mp.nextPoint.active = true;
+
+            if (_mp.nextPoint.nextPoint != null)
+                _mp.nextPoint.nextPoint.active = true;
+
             StartCheckingInput();
             Debug.Log("�ȴ����룺" + gameObject.name);
         }
