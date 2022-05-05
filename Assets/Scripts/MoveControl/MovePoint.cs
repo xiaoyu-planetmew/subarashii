@@ -77,6 +77,9 @@ public class MovePoint : MonoBehaviour
     public void ResetMovePoint()
     {
         toBranch = false;
+
+        active = false;
+
         InitiateBasePoints();
 
         //÷ÿ÷√ ‰»Î

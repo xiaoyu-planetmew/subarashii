@@ -109,6 +109,7 @@ public class LevelController : MonoBehaviour
         {
             mp.ResetMovePoint();
         }
+        TrackInLevel.Instance.InitTrackMovePoint();
 
         // 重置角色（位置、动画、血量） / reset Player(posisiton, display, blood)
         PlayerController.Instance.ResetPlayer();
