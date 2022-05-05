@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TrackManager : MonoBehaviour
 {
-    [Header("²ÉÑùÂÊ")]
+    [Header("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½")]
     public long sampleRate = 48000;
 
     public static TrackManager Instance;
@@ -30,7 +30,7 @@ public class TrackManager : MonoBehaviour
         TrackInLevel[] trackcontrollers = LevelController.Instance.trackController;
         if (trackcontrollers.Length == 0)
         {
-            Debug.LogError("Ã»ÓÐTrack Controller£¡");
+            Debug.LogError("Ã»ï¿½ï¿½Track Controllerï¿½ï¿½");
             return; 
         }
 
@@ -48,30 +48,30 @@ public class TrackManager : MonoBehaviour
             {
                 if (i == 0)
                 {
-                    // Ê±¼ä
+                    // Ê±ï¿½ï¿½
                     _mp.timeToNextMovePoint = trackTimeList[0];
 
-                    //ÏÔÊ¾
+                    //ï¿½ï¿½Ê¾
                     _mp.GetComponent<MovePointDisplay>().InitiateDisplay();
                 }
                 else
                 {
                     if (_mp.nextPoint == null)
                     {
-                        Debug.LogError("TrackµãÊý¶àÓÚ³¡¾°ÖÐµÄµãÊý£¡" + i);
+                        Debug.LogError("Trackï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú³ï¿½ï¿½ï¿½ï¿½ÐµÄµï¿½ï¿½ï¿½ï¿½ï¿½" + i);
                         return;
                     }
 
                     _mp = _mp.nextPoint;
 
-                    // Ê±¼ä
+                    // Ê±ï¿½ï¿½
                     _mp.timeToNextMovePoint = trackTimeList[i];
                     _mp.timeInTrack = trackTimeTotal[i-1];
 
-                    // ÊäÈë
+                    // ï¿½ï¿½ï¿½ï¿½
                     _mp.GetComponent<MovePointInputController>().keyInput.keyInput = LoadTrackManager.GetInstance().trackDirDic[track.trackFile][i-1];
 
-                    //ÏÔÊ¾
+                    //ï¿½ï¿½Ê¾
                     _mp.GetComponent<MovePointDisplay>().InitiateDisplay();
 
                     //Debug.Log("Track Initiated No." + i);
@@ -79,7 +79,7 @@ public class TrackManager : MonoBehaviour
 
             }
 
-            if(_mp!=track.endPoint) Debug.LogError("TrackµãÊýÉÙÓÚ³¡¾°ÖÐµÄµãÊý£¡TrackµãÊýÎª " + trackTimeList.Count);
+            if(_mp!=track.endPoint) Debug.LogError("Trackï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú³ï¿½ï¿½ï¿½ï¿½ÐµÄµï¿½ï¿½ï¿½ï¿½ï¿½Trackï¿½ï¿½ï¿½ï¿½Îª " + trackTimeList.Count);
         }
 
         

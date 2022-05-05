@@ -8,13 +8,13 @@ public class LoadTrackManager : BaseManager<LoadTrackManager>
 {
 
     /// <summary>
-    /// ¸÷¸ö¹Ø¿¨µÄÒôÀÖÊ±¼äÎÄ¼þ
+    /// ï¿½ï¿½ï¿½ï¿½ï¿½Ø¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Ä¼ï¿½
     /// </summary>
     public Dictionary<string, List<float>> trackTimeDic = new Dictionary<string, List<float>>();
     public Dictionary<string, List<float>> trackTotalTimeDic = new Dictionary<string, List<float>>();
 
     /// <summary>
-    /// ¸÷¸ö¹Ø¿¨µÄ¸÷¸ö´òµãµÄÃû×Ö
+    /// ï¿½ï¿½ï¿½ï¿½ï¿½Ø¿ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     /// </summary>
     public Dictionary<string, List<KeyDirectionType>> trackDirDic = new Dictionary<string, List<KeyDirectionType>>();
 
@@ -61,7 +61,7 @@ public class LoadTrackManager : BaseManager<LoadTrackManager>
                 return key;
         }
 
-        Debug.LogError("TrackÆ×ÃæTextÎÄ×Ö´íÎó£¡µÚ" + fileIndex +"¸öÎÄ¼þ  µÚ" + index +"´¦");
+        Debug.LogError("Trackï¿½ï¿½ï¿½ï¿½Textï¿½ï¿½ï¿½Ö´ï¿½ï¿½ó£¡µï¿½" + fileIndex +"ï¿½ï¿½ï¿½Ä¼ï¿½  ï¿½ï¿½" + index +"ï¿½ï¿½" + "!" + keyDirName + "!");
         return KeyDirectionType.Null;
     }
 }

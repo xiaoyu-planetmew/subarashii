@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>F:\subarashii\subarashii_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>F:\subarashii\subarashii_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>F:\subarashii\subarashii_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>D:\meijun\subarashii\subarashii_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\meijun\subarashii\subarashii_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\meijun\subarashii\subarashii_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>F:\subarashii\subarashii_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\meijun\subarashii\subarashii_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -21,7 +21,7 @@
 				<GameParameter Id="2918011349" Name="MasterVolume" ObjectPath="\Game Parameters\Subarashii\Volume\MasterVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1661994096" Language="SFX" Hash="2066375573">
+		<SoundBank Id="1661994096" Language="SFX" Hash="3300535218">
 			<ObjectPath>\SoundBanks\Subarashii\SoundBank</ObjectPath>
 			<ShortName>SoundBank</ShortName>
 			<Path>SoundBank.bnk</Path>
@@ -570,7 +570,7 @@
 				<Trigger Id="4147001613" Name="Tip_TripleTip_ChangeTriple" ObjectPath="\Triggers\Subarashii\Tip_TripleTip_ChangeTriple"/>
 			</Triggers>
 		</SoundBank>
-		<SoundBank Id="1946707388" Language="SFX" Hash="2292885545">
+		<SoundBank Id="1946707388" Language="SFX" Hash="263616266">
 			<ObjectPath>\SoundBanks\Default Work Unit\SoundBankTest</ObjectPath>
 			<ShortName>SoundBankTest</ShortName>
 			<Path>SoundBankTest.bnk</Path>
