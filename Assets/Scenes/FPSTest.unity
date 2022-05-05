@@ -24482,6 +24482,7 @@ MonoBehaviour:
   mainMusicPlayingTimer: 0
   pauseMenu: {fileID: 111712435}
   finishThisLevel: 0
+  isPausing: 0
 --- !u!4 &1960545388
 Transform:
   m_ObjectHideFlags: 0

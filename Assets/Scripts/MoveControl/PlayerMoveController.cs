@@ -25,6 +25,7 @@ public class PlayerMoveController : MonoBehaviour
     private int nowPoint;
     private float aveDeltaTime;
     private bool waitForOneFrame;
+    private int accelerateNum;
 
     [SerializeField] private bool accelerated; //是否加速冲刺
     private bool finishedAccelerate;
@@ -45,7 +46,7 @@ public class PlayerMoveController : MonoBehaviour
         aveDeltaTime = Time.deltaTime;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         //根据点和时间移动
         if(startMove && !LevelController.Instance.isPausing)
@@ -53,7 +54,7 @@ public class PlayerMoveController : MonoBehaviour
             MoveByPoints();
         }
 
-        aveDeltaTime = (Time.deltaTime + aveDeltaTime) / 2;
+        aveDeltaTime = (Time.fixedDeltaTime + aveDeltaTime) / 2;
     }
 
     private void MoveByPoints()
@@ -66,8 +67,9 @@ public class PlayerMoveController : MonoBehaviour
 
         if (LevelController.Instance.finishThisLevel) accelerated = false;
 
-        timer += Time.unscaledDeltaTime;
-        aTimer += (Time.unscaledDeltaTime * (accelerated ? aSpeed : 1));
+        timer += Time.fixedDeltaTime;
+        //aTimer += (Time.unscaledDeltaTime * (accelerated ? aSpeed : 1));
+        aTimer += Time.fixedDeltaTime * aSpeed;
 
         float progress = aTimer / moveDeltaTime ;
          
@@ -78,22 +80,26 @@ public class PlayerMoveController : MonoBehaviour
         //动态计算速度
         if(accelerated)
         {
-            aSpeed = aSpeed - 0.2f;
+            accelerateNum++;
+
+            aSpeed = aSpeed - 0.1f / nowMovePoint.timeToNextMovePoint;
+            Debug.Log("动态速度减小到 " + aSpeed);
 
             float leftTime = nowMovePoint.nextPoint.timeInTrack - LevelController.Instance.mainMusicPlayingTimer;
-            float leftATime = aSpeed * Time.unscaledDeltaTime * (movePoints.Count - nowPoint);
+            float leftATime = aSpeed * moveDeltaTime * (movePoints.Count - nowPoint);
 
             //Debug.Log("now left time " + leftTime);
             //Debug.Log("now left A time " + leftATime);
 
-            if (leftATime <= leftTime)
+            if ((accelerateNum >= 30) || aSpeed <= 0)
             {
                 accelerated = false;
                 if(movePoints.Count - nowPoint > 0)
                 {
                     //aSpeed = (mpSegTotalTime - timer + saveAcceleratedTime) / aveDeltaTime / (movePoints.Count - nowPoint);
-                    aSpeed = (nowMovePoint.nextPoint.timeInTrack - LevelController.Instance.mainMusicPlayingTimer) / Time.unscaledDeltaTime / (movePoints.Count - nowPoint);
-                    Debug.Log("匀速 " + aSpeed + "剩余时间" + (mpSegTotalTime - timer + saveAcceleratedTime));
+                    //aSpeed = (nowMovePoint.nextPoint.timeInTrack - LevelController.Instance.mainMusicPlayingTimer) / originMoveDeltaTime / (movePoints.Count - nowPoint);
+                    aSpeed =   (moveDeltaTime * (movePoints.Count - nowPoint)) / (nowMovePoint.nextPoint.timeInTrack - LevelController.Instance.mainMusicPlayingTimer);
+                    Debug.Log("匀速 " + aSpeed + "剩余时间" + (nowMovePoint.nextPoint.timeInTrack - LevelController.Instance.mainMusicPlayingTimer));
                 }
                 finishedAccelerate = true;
                 Debug.Log("恢复匀速");
@@ -134,8 +140,18 @@ public class PlayerMoveController : MonoBehaviour
             PlayerController.Instance.startPlaying = false;
         }
 
-        if(nowMovePoint.nextPoint!=null && (nowMovePoint.nextPoint.timeInTrack - LevelController.Instance.mainMusicPlayingTimer) > 0)
-            aSpeed = (nowMovePoint.nextPoint.timeInTrack - LevelController.Instance.mainMusicPlayingTimer) / Time.unscaledDeltaTime / (movePoints.Count - nowPoint);
+        if(!accelerated)
+        {
+            if (nowMovePoint.nextPoint != null && (nowMovePoint.nextPoint.timeInTrack - LevelController.Instance.mainMusicPlayingTimer) > 0)
+            {
+                aSpeed = nowMovePoint.timeToNextMovePoint / (nowMovePoint.nextPoint.timeInTrack - LevelController.Instance.mainMusicPlayingTimer);
+                Debug.Log("到下一节点时间 " + (nowMovePoint.nextPoint.timeInTrack - LevelController.Instance.mainMusicPlayingTimer)
+                + "固定时间 " + nowMovePoint.timeToNextMovePoint + " 节点动态速度 " + aSpeed);
+            }
+
+            
+        }
+        
     }
 
     //冲刺
@@ -145,17 +161,18 @@ public class PlayerMoveController : MonoBehaviour
         aSpeed = acceratedSpeed;
         finishedAccelerate = false;
         saveAcceleratedTime = 0;
+        accelerateNum = 0;
 
         //在前一个结尾处加速时
         if (nowPoint> movePoints.Count * 0.8)
         {
             //保存时间
-            saveAcceleratedTime = mpSegTotalTime - timer;
+            //saveAcceleratedTime = mpSegTotalTime - timer;
 
             //跳过阶段
-            ArrivedLastPoint();
+            //ArrivedLastPoint();
 
-            waitForOneFrame = true;
+            //waitForOneFrame = true;
         }
 
     }

@@ -509,7 +509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83d1022a6c4a17045a71240b3e595932, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hintTime: 2
+  hintTime: 1.5
   arrows:
   - type: 0
     baseArrow: {fileID: 5073146900076919465}
