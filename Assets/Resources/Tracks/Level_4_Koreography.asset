@@ -19,7 +19,7 @@ MonoBehaviour:
   mTempoSections:
   - sectionName: New Section
     startSample: 0
-    samplesPerBeat: 8228.57142857143
+    samplesPerBeat: 16457.14285714286
     beatsPerMeasure: 4
     bStartNewMeasure: 1
   mTracks:

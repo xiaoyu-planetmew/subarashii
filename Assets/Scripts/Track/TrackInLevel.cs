@@ -35,5 +35,6 @@ public class TrackInLevel : MonoBehaviour
     {
         startPoint.active = true;
         startPoint.nextPoint.active = true;
+        startPoint.nextPoint.nextPoint.active = true;
     }
 }
