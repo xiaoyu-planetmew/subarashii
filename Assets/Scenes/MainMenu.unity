@@ -644,7 +644,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!199 &122095140
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -6344,7 +6344,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2421979800394946410, guid: 14b9e576cf678bb418d40174435569c4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2421979800394946411, guid: 14b9e576cf678bb418d40174435569c4, type: 3}
       propertyPath: m_RootOrder
@@ -6519,6 +6519,10 @@ MonoBehaviour:
   PlayThemeMusic: {fileID: 321927257}
   StopThemeMusic: {fileID: 640251774}
   StopLeve_1_Music: {fileID: 0}
+  StopLeve_2_Music: {fileID: 0}
+  StopLeve_3_Music: {fileID: 0}
+  StopLeve_4_Music: {fileID: 0}
+  StopLeve_5_Music: {fileID: 0}
 --- !u!114 &611557849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6555,6 +6559,7 @@ MonoBehaviour:
   mainMusicPlayingTimer: 0
   pauseMenu: {fileID: 0}
   finishThisLevel: 0
+  isPausing: 0
 --- !u!4 &611557850
 Transform:
   m_ObjectHideFlags: 0
@@ -7013,6 +7018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6db6a8520e80f474394c4129f0577385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneChanging: 0
 --- !u!4 &739339329
 Transform:
   m_ObjectHideFlags: 0
@@ -7788,7 +7794,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!199 &1075272162
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -13557,7 +13563,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2421979800394946410, guid: 14b9e576cf678bb418d40174435569c4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2421979800394946411, guid: 14b9e576cf678bb418d40174435569c4, type: 3}
       propertyPath: m_RootOrder
@@ -14908,7 +14914,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 314.80002, y: -291}
+  m_AnchoredPosition: {x: 297, y: -291}
   m_SizeDelta: {x: 152, y: 108}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1783878203
@@ -15068,7 +15074,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 480.3, y: -291}
+  m_AnchoredPosition: {x: -302.1, y: -291}
   m_SizeDelta: {x: 152, y: 108}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1788030492
@@ -15208,7 +15214,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!199 &1828142555
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -20012,7 +20018,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!199 &1839797067
 ParticleSystemRenderer:
   serializedVersion: 6
