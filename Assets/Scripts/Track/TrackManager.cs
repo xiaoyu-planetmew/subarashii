@@ -58,7 +58,7 @@ public class TrackManager : MonoBehaviour
                 {
                     if (_mp.nextPoint == null)
                     {
-                        Debug.LogError("Track�������ڳ����еĵ�����" + i);
+                        //Debug.LogError("Track�������ڳ����еĵ�����" + i);
                         return;
                     }
 
