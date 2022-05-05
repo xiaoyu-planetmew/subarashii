@@ -6709,7 +6709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineSegmentNum: 50
-  acceratedSpeed: 2.5
+  acceratedSpeed: 3
   accelerated: 0
 --- !u!50 &531148566
 Rigidbody2D:

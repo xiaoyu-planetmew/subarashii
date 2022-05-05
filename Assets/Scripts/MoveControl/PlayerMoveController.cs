@@ -99,6 +99,9 @@ public class PlayerMoveController : MonoBehaviour
                     //aSpeed = (mpSegTotalTime - timer + saveAcceleratedTime) / aveDeltaTime / (movePoints.Count - nowPoint);
                     //aSpeed = (nowMovePoint.nextPoint.timeInTrack - LevelController.Instance.mainMusicPlayingTimer) / originMoveDeltaTime / (movePoints.Count - nowPoint);
                     aSpeed =   (moveDeltaTime * (movePoints.Count - nowPoint)) / (nowMovePoint.nextPoint.timeInTrack - LevelController.Instance.mainMusicPlayingTimer);
+                    
+                    if (aSpeed <= 0) aSpeed = 1;
+
                     Debug.Log("ÔÈËÙ " + aSpeed + "Ê£ÓàÊ±¼ä" + (nowMovePoint.nextPoint.timeInTrack - LevelController.Instance.mainMusicPlayingTimer));
                 }
                 finishedAccelerate = true;
