@@ -12,7 +12,8 @@ public class TutorialTrackController : MonoBehaviour
 
     public static TutorialTrackController Instance;
     private bool startPlayingTutorial;
-    private float timer;
+    public float timer;
+    [SerializeField] private int nowBeat;
 
     private void Awake()
     {
@@ -21,16 +22,19 @@ public class TutorialTrackController : MonoBehaviour
 
     }
 
+    private void Start()
+    {
+        StartCoroutine(LateStartPlayMusic());
+    }
 
     private void Update()
     {
-        
-    }
+        if (startPlayingTutorial && !LevelController.Instance.isPausing)
+            timer += Time.unscaledDeltaTime;
 
-    private void FixedUpdate()
-    {
+        // test
         if (startPlayingTutorial)
-            timer += Time.fixedDeltaTime;
+            nowBeat = (int) Mathf.Floor(timer / timeOfOneBar * 4);
     }
 
     public void StartPlayingMusicFromTutorial()
@@ -39,8 +43,16 @@ public class TutorialTrackController : MonoBehaviour
         {
             startPlayingTutorial = true;
             StartMusic.HandleEvent(WwiseManager.Instance.gameObject);
+            timer = 0;
         }
         
+    }
+
+    private IEnumerator LateStartPlayMusic()
+    {
+        yield return new WaitForSeconds(2f);
+
+        StartPlayingMusicFromTutorial();
     }
 
     /// <summary>

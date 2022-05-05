@@ -20,7 +20,7 @@ public class TestWwise : MonoBehaviour
     private void Start()
     {
         //test
-        TutorialTrackController.Instance.StartPlayingMusicFromTutorial();
+        //TutorialTrackController.Instance.StartPlayingMusicFromTutorial();
     }
 
     private void Update()

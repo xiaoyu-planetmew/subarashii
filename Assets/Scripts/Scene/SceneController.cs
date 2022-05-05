@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SceneController : MonoBehaviour
 {
+
+    [HideInInspector] public bool sceneChanging = false;
     public static SceneController Instance;
 
     private void Awake()
@@ -31,6 +33,8 @@ public class SceneController : MonoBehaviour
     /// <param name="toLevel"></param>
     public void ChangeScene(Level toLevel)
     {
+        sceneChanging = true;
+
         // 切换关卡特效
         SceneTransition.Instance.EffectStart();
 
@@ -102,5 +106,7 @@ public class SceneController : MonoBehaviour
 
         //加载Track
         //TrackManager.Instance.InitiateLevelTrack();
+
+        sceneChanging = false;
     }
 }

@@ -23,6 +23,7 @@ public class LevelController : MonoBehaviour
     private bool startPlayingMainMusic;
     public GameObject pauseMenu;
     public bool finishThisLevel = false;
+    public bool isPausing = false;
 
     private void Awake()
     {
@@ -48,18 +49,17 @@ public class LevelController : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Escape) && !SceneController.Instance.sceneChanging)
         {
             Pause();
             pauseMenu.SetActive(true);
         }
+
+        if (startPlayingMainMusic)
+            mainMusicPlayingTimer += Time.unscaledDeltaTime;
     }
 
-    private void FixedUpdate()
-    {
-        if (startPlayingMainMusic)
-            mainMusicPlayingTimer += Time.fixedDeltaTime;
-    }
+
 
     private void InitiateLevel()
     {
@@ -157,6 +157,7 @@ public class LevelController : MonoBehaviour
 
         // 主音乐切换 / main BGM change to tutorial BGM
         TutorialTrackController.Instance.SwitchToTutorial.HandleEvent(WwiseManager.Instance.gameObject);
+        //TutorialTrackController.Instance.timer = 0;
 
         // 重置 reset level
         ResetLevel();
@@ -177,6 +178,7 @@ public class LevelController : MonoBehaviour
     }
     public void Pause()
     {
+        isPausing = true;
         startPlayingMainMusic = false;
         PlayerController.Instance.startPlaying = false;
         SoundController.Instance.PauseAll.HandleEvent(WwiseManager.Instance.gameObject);
@@ -184,6 +186,7 @@ public class LevelController : MonoBehaviour
     }
     public void Resume()
     {
+        isPausing = false;
         startPlayingMainMusic = true;
         PlayerController.Instance.startPlaying = true;
         SoundController.Instance.ResumeAll.HandleEvent(WwiseManager.Instance.gameObject);

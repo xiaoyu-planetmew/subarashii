@@ -14,6 +14,7 @@ public class ButtonEvents : MonoBehaviour
     {
         LevelController.Instance.PlayAgain();
         Time.timeScale = 1;
+        LevelController.Instance.isPausing = false;
     }
 
     public void Resume()

@@ -37,7 +37,7 @@ public class ArrowDisplay : MonoBehaviour
             if(timeToArriveMP > hintTime)
             {
                 Debug.Log("≤•∑≈Àı»¶ hintTime" + hintTime + " timeToArriveMP " + timeToArriveMP);
-                //StartCoroutine(ShowInputHint(timeToArriveMP - hintTime));
+                //StartCoroutine(ShowInputHint(timeToArriveMP - hintTime, 1.5f));
                 StartCoroutine(ShowInputHint(0, hintTime / timeToArriveMP * 1.5f));
             }
             else
@@ -109,6 +109,8 @@ public class ArrowDisplay : MonoBehaviour
         {
             showingArrow.hint_Special.GetComponent<Animator>().speed = 1;
             showingArrow.hint_Normal.GetComponent<Animator>().speed = 1;
+
+            showingArrow.showArrow.SetTrigger("Idle");
 
             showingArrow.star.gameObject.SetActive(true);
             showingArrow.showArrow.gameObject.SetActive(false);
