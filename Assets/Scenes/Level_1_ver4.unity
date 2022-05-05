@@ -3848,6 +3848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6db6a8520e80f474394c4129f0577385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneChanging: 0
 --- !u!4 &325526665
 Transform:
   m_ObjectHideFlags: 0
@@ -24296,6 +24297,7 @@ MonoBehaviour:
   mainMusicPlayingTimer: 0
   pauseMenu: {fileID: 111712435}
   finishThisLevel: 0
+  isPausing: 0
 --- !u!4 &1960545388
 Transform:
   m_ObjectHideFlags: 0
@@ -24326,6 +24328,8 @@ MonoBehaviour:
   SwitchToMain: {fileID: 423758214}
   SwitchToTutorial: {fileID: 793643220}
   timeOfOneBar: 2.4
+  timer: 0
+  nowBeat: 0
 --- !u!114 &1960545390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24341,6 +24345,10 @@ MonoBehaviour:
   PlayThemeMusic: {fileID: 0}
   StopThemeMusic: {fileID: 986162275}
   StopLeve_1_Music: {fileID: 986162275}
+  StopLeve_2_Music: {fileID: 0}
+  StopLeve_3_Music: {fileID: 0}
+  StopLeve_4_Music: {fileID: 0}
+  StopLeve_5_Music: {fileID: 0}
 --- !u!114 &1960545391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27044,7 +27052,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759224, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 59.29
+      value: 51.2
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759224, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_LocalPosition.y
