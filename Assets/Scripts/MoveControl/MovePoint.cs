@@ -15,7 +15,7 @@ public class MovePoint : MonoBehaviour
     [Tooltip("移动到下一个节点的中间贝塞尔点, 按移动顺序排列")] 
     public Transform[] besizerControlPoints;
 
-    [HideInInspector] public float timeToNextMovePoint = 1;
+    public float timeToNextMovePoint = 1;
     public float timeInTrack = 1;
     [HideInInspector] public Vector3[] basePoints;
     [HideInInspector] public bool toBranch;

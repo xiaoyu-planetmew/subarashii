@@ -63,7 +63,8 @@ public class MovePointInputController : MonoBehaviour
     {
         if(collision.tag == "Player" && _mp.active)
         {
-            _mp.nextPoint.active = true;
+            if(_mp.nextPoint!=null)
+                _mp.nextPoint.active = true;
             StartCheckingInput();
             Debug.Log("�ȴ����룺" + gameObject.name);
         }
@@ -197,7 +198,7 @@ public class MovePointInputController : MonoBehaviour
             }
         }
 
-        PlayerController.Instance.Success();
+        PlayerController.Instance.Success(keyInput.keyInput == KeyDirectionType.Space);
         
     }
 

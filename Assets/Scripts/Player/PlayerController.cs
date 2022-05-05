@@ -77,12 +77,14 @@ public class PlayerController : MonoBehaviour
         }
         catch { }
     }
-    public void Success()
+    public void Success(bool addBlood = false)
     {
         if (!startPlaying) return;
 
         totalPoints++;
         successPoints++;
+
+        if (addBlood) AddBlood();
     }
     public void Miss()
     {

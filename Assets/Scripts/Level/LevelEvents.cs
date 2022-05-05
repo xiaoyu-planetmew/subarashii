@@ -8,7 +8,10 @@ public class LevelEvents : MonoBehaviour
     public AkEvent StopThemeMusic;
 
     public AkEvent StopLeve_1_Music;
-
+    public AkEvent StopLeve_2_Music;
+    public AkEvent StopLeve_3_Music;
+    public AkEvent StopLeve_4_Music;
+    public AkEvent StopLeve_5_Music;
     public void MainMenu_Enter()
     {
         PlayThemeMusic.HandleEvent(WwiseManager.Instance.gameObject);
@@ -45,8 +48,35 @@ public class LevelEvents : MonoBehaviour
 
     }
 
+    public void Level_2_Leave()
+    {
+        StopLeve_2_Music.HandleEvent(WwiseManager.Instance.gameObject);
+    }
+
+    public void Level_3_Leave()
+    {
+        StopLeve_3_Music.HandleEvent(WwiseManager.Instance.gameObject);
+    }
+
+    public void Level_4_Leave()
+    {
+        StopLeve_4_Music.HandleEvent(WwiseManager.Instance.gameObject);
+    }
+
     public void Level_5_Enter()
     {
+        StartCoroutine(WaitEnter());
+    }
+
+    private IEnumerator WaitEnter()
+    {
+        yield return new WaitForSeconds(0.05f);
+
         LevelController.Instance.StartLevel();
+    }
+
+    public void Level_5_Leave()
+    {
+        StopLeve_5_Music.HandleEvent(WwiseManager.Instance.gameObject);
     }
 }
