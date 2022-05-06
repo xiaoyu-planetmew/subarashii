@@ -61,6 +61,8 @@ public class DialogSys : MonoBehaviour
     }
     public void dialogNext()
     {
+        if(textFinished)
+        {
         if(index == textList.Count)
         {
                 index = 0;
@@ -76,6 +78,7 @@ public class DialogSys : MonoBehaviour
         {
                 StartCoroutine(SetText());
                 textBackground.gameObject.SetActive(true);
+        }
         }
     }
     void GetTextFromFile(TextAsset file)
@@ -153,6 +156,7 @@ public class DialogSys : MonoBehaviour
         index = 0;
         textBackground.gameObject.SetActive(true);
         //textLabelleft.GetComponent<Text>().text = textList[index];
+        //nextPageButton.SetActive(false);
         StartCoroutine(SetText());
         //leftAudioRandom();
         isTalking = true;

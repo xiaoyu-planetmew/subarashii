@@ -54,6 +54,10 @@ public class TestWwise : MonoBehaviour
         {
             DialogSys.Instance.dialogNext();
         }
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            FinishManager.Instance.ShowStuff();
+        }
     }
 
     public void PlayMainMusic()

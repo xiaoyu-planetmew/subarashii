@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class FinishManager : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class FinishManager : MonoBehaviour
     public Text scoreNum;
     public Text clearNum;
     public Text missNum;
+    public GameObject Stuff;
     private void Awake()
     {
         Instance = this;
@@ -88,5 +90,17 @@ public class FinishManager : MonoBehaviour
         scoreNum.text = score.ToString();
         clearNum.text = score.ToString();
         missNum.text = (total-score).ToString();
+    }
+    public void ShowStuff()
+    {
+        PlayerController.Instance.startPlaying = false;
+        Stuff.SetActive(true);
+        Stuff.GetComponent<Image>().DOFade(1, 3);
+        StartCoroutine(StuffButton());
+    }
+    IEnumerator StuffButton()
+    {
+        yield return new WaitForSeconds(3f);
+        Stuff.transform.GetChild(0).gameObject.SetActive(true);
     }
 }
