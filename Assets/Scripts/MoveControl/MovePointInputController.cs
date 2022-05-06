@@ -20,6 +20,9 @@ public class MovePointInputController : MonoBehaviour
     [Header("��ֹ����")]
     public bool dontAccerate = false;
 
+    [Header("特殊激活")]
+    public bool specialActiveNextMovePoints = false;
+    public int specialActiveNum = 0;
 
     private bool waitingForInputs;
     private float inputTimer;
@@ -66,8 +69,24 @@ public class MovePointInputController : MonoBehaviour
             if(_mp.nextPoint!=null)
                 _mp.nextPoint.active = true;
 
-            if (_mp.nextPoint.nextPoint != null)
-                _mp.nextPoint.nextPoint.active = true;
+            // 特殊激活
+            if(specialActiveNextMovePoints)
+            {
+                MovePoint nextMP = _mp.nextPoint;
+
+                for(int i= 0;i<specialActiveNum;i++)
+                {
+                    if(nextMP.nextPoint != null)
+                    {
+                        nextMP.nextPoint.active = true;
+
+                        nextMP = nextMP.nextPoint;
+                    }
+                }
+
+            }
+
+
 
             StartCheckingInput();
             Debug.Log("�ȴ����룺" + gameObject.name);
