@@ -95,12 +95,13 @@ public class FinishManager : MonoBehaviour
     {
         PlayerController.Instance.startPlaying = false;
         Stuff.SetActive(true);
-        Stuff.GetComponent<Image>().DOFade(1, 3);
+        SoundController.Instance.Final_Shit.HandleEvent(WwiseManager.Instance.gameObject);
+        Stuff.GetComponent<Image>().DOFade(1, 5);
         StartCoroutine(StuffButton());
     }
     IEnumerator StuffButton()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(5f);
         Stuff.transform.GetChild(0).gameObject.SetActive(true);
     }
 }
