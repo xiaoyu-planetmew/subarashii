@@ -3491,6 +3491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6db6a8520e80f474394c4129f0577385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneChanging: 0
 --- !u!4 &325526665
 Transform:
   m_ObjectHideFlags: 0
@@ -5423,6 +5424,7 @@ MonoBehaviour:
   comboNum: 0
   totalPoints: 0
   successPoints: 0
+  totalMovePoints: 0
 --- !u!114 &531148572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20741,6 +20743,7 @@ MonoBehaviour:
   mainMusicPlayingTimer: 0
   pauseMenu: {fileID: 1059278827}
   finishThisLevel: 0
+  isPausing: 0
 --- !u!4 &1960545388
 Transform:
   m_ObjectHideFlags: 0
@@ -20771,6 +20774,8 @@ MonoBehaviour:
   SwitchToMain: {fileID: 423758214}
   SwitchToTutorial: {fileID: 793643220}
   timeOfOneBar: 1.7777778
+  timer: 0
+  nowBeat: 0
 --- !u!114 &1960545390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20808,6 +20813,7 @@ MonoBehaviour:
   scoreNum: {fileID: 1336993802}
   clearNum: {fileID: 1336993801}
   missNum: {fileID: 1336993799}
+  Stuff: {fileID: 0}
 --- !u!114 &1960545391
 MonoBehaviour:
   m_ObjectHideFlags: 0
