@@ -341,6 +341,10 @@ PrefabInstance:
       value: MovePoint (80)
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: ComboTiming
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: specialHint
       value: 1
       objectReference: {fileID: 0}
@@ -4317,6 +4321,10 @@ PrefabInstance:
       value: MovePoint (50)
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: ComboTiming
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: specialHint
       value: 1
       objectReference: {fileID: 0}
@@ -5986,6 +5994,10 @@ PrefabInstance:
     - target: {fileID: 1152722335200759201, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_Name
       value: MovePoint (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: ComboTiming
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: specialHint
@@ -9439,6 +9451,10 @@ PrefabInstance:
     - target: {fileID: 1152722335200759201, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_Name
       value: MovePoint (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: ComboTiming
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: specialHint
@@ -14035,6 +14051,10 @@ PrefabInstance:
       value: MovePoint (30)
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: ComboTiming
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: specialHint
       value: 1
       objectReference: {fileID: 0}
@@ -16946,6 +16966,10 @@ PrefabInstance:
       value: MovePoint (90)
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: ComboTiming
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: specialHint
       value: 1
       objectReference: {fileID: 0}
@@ -17200,11 +17224,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759224, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 48.94
+      value: 49.11
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759224, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -380.9
+      value: -389.07
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759224, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17723,6 +17747,10 @@ PrefabInstance:
       value: MovePoint (25)
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: ComboTiming
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: specialHint
       value: 1
       objectReference: {fileID: 0}
@@ -17826,6 +17854,10 @@ PrefabInstance:
     - target: {fileID: 1152722335200759201, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_Name
       value: MovePoint (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: ComboTiming
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: specialHint
@@ -18426,6 +18458,10 @@ PrefabInstance:
     - target: {fileID: 1152722335200759201, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_Name
       value: MovePoint (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: ComboTiming
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: specialHint
@@ -21344,7 +21380,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 878163857581015020, guid: b64f104e5bc14724d874bbeac22430e9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -378.63
+      value: -381.96
       objectReference: {fileID: 0}
     - target: {fileID: 878163857581015020, guid: b64f104e5bc14724d874bbeac22430e9, type: 3}
       propertyPath: m_LocalRotation.x
@@ -23478,6 +23514,10 @@ PrefabInstance:
       value: MovePoint (85)
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: ComboTiming
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: specialHint
       value: 1
       objectReference: {fileID: 0}
@@ -25322,7 +25362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPoint: {fileID: 1152722334224814349}
-  endPoint: {fileID: 1682175319}
+  endPoint: {fileID: 1190198374}
   trackFile: Level_1.2_KoreographyTrack
 --- !u!114 &1960545387
 MonoBehaviour:
@@ -26935,6 +26975,10 @@ PrefabInstance:
     - target: {fileID: 1152722335200759201, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_Name
       value: MovePoint (75)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: ComboTiming
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: specialHint
