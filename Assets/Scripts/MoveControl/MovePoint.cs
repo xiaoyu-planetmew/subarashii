@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class MovePoint : MonoBehaviour
 {
-    [Header("ÒÆ¶¯½Úµã²ÎÊý")]
+    [Header("ï¿½Æ¶ï¿½ï¿½Úµï¿½ï¿½ï¿½ï¿½")]
 
-    [Tooltip("Á´½Óµ½ÏÂÒ»¸ö½Úµã")] 
+    [Tooltip("ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Úµï¿½")] 
     public MovePoint nextPoint;
 
-    [Tooltip("Ö§Ïß½Úµã")]
+    [Tooltip("Ö§ï¿½ß½Úµï¿½")]
     public MovePoint branchPoint;
 
-    [Tooltip("ÒÆ¶¯µ½ÏÂÒ»¸ö½ÚµãµÄÖÐ¼ä±´Èû¶ûµã, °´ÒÆ¶¯Ë³ÐòÅÅÁÐ")] 
+    [Tooltip("ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½Ð¼ä±´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½Æ¶ï¿½Ë³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½")] 
     public Transform[] besizerControlPoints;
 
     public float timeToNextMovePoint = 1;
     public float timeInTrack = 1;
+    
+
     [HideInInspector] public Vector3[] basePoints;
     [HideInInspector] public bool toBranch;
     [HideInInspector] public MovePointDisplay displayController;
@@ -34,10 +36,10 @@ public class MovePoint : MonoBehaviour
     {
         toBranch = false;
 
-        //³õÊ¼»¯»ù´¡µã
+        //ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         InitiateBasePoints();
 
-        //¿ØÖÆ½ÚµãÏÔÊ¾Í¼°¸
+        //ï¿½ï¿½ï¿½Æ½Úµï¿½ï¿½ï¿½Ê¾Í¼ï¿½ï¿½
 
     }
 
@@ -82,13 +84,13 @@ public class MovePoint : MonoBehaviour
 
         InitiateBasePoints();
 
-        //ÖØÖÃÊäÈë
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         if(inputController != null)
         {
             inputController.ResetMovePointInput();
         }
 
-        // ÖØÖÃMovePointÏÔÊ¾ºÍÌØÐ§
+        // ï¿½ï¿½ï¿½ï¿½MovePointï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Ð§
         if(displayController != null)
         {
             displayController.ResetMovePointDisplay();

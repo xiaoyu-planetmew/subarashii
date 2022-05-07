@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class MovePointDisplay : MonoBehaviour
 {
     public bool specialHint = false;
+    public bool ComboTiming = false;
 
     [HideInInspector] public ArrowDisplay arrowPrefab;
     [HideInInspector] public bool active;
@@ -22,7 +23,7 @@ public class MovePointDisplay : MonoBehaviour
     public void InitiateDisplay()
     {
 
-        // ¹Ø±Õ±´Èû¶û¿ØÖÆµãÎ»ÖÃÌáÊ¾
+        // ï¿½Ø±Õ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½Î»ï¿½ï¿½ï¿½ï¿½Ê¾
         foreach(Transform besizer in mp.besizerControlPoints)
         {
             besizer.GetComponent<SpriteRenderer>().enabled = false;

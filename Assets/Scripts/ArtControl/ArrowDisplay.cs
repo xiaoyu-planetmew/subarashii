@@ -36,7 +36,7 @@ public class ArrowDisplay : MonoBehaviour
             timeToArriveMP = linkMP.timeInTrack - LevelController.Instance.mainMusicPlayingTimer;
             if(timeToArriveMP > hintTime)
             {
-                Debug.Log("²¥·ÅËõÈ¦ hintTime" + hintTime + " timeToArriveMP " + timeToArriveMP);
+                Debug.Log("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¦ hintTime" + hintTime + " timeToArriveMP " + timeToArriveMP);
                 //StartCoroutine(ShowInputHint(timeToArriveMP - hintTime, 1.5f));
                 StartCoroutine(ShowInputHint(0, hintTime / timeToArriveMP * 1.5f));
             }
@@ -44,12 +44,12 @@ public class ArrowDisplay : MonoBehaviour
             {
                 if(timeToArriveMP > 0 )
                 {
-                    Debug.Log("¼ÓËÙ²¥·ÅËõÈ¦ " + hintTime / timeToArriveMP);
+                    Debug.Log("ï¿½ï¿½ï¿½Ù²ï¿½ï¿½ï¿½ï¿½ï¿½È¦ " + hintTime / timeToArriveMP);
                     StartCoroutine(ShowInputHint(0, hintTime / timeToArriveMP));
                 }
                 else
                 {
-                    Debug.Log("Ð¡ÓÚ0");
+                    Debug.Log("Ð¡ï¿½ï¿½0");
                     StartCoroutine(ShowInputHint(0, 3));
                 }
                 
@@ -103,7 +103,7 @@ public class ArrowDisplay : MonoBehaviour
 
     public void ResetArrow()
     {
-        // »Ö¸´³É³õÊ¼µÄÏÔÊ¾
+        // ï¿½Ö¸ï¿½ï¿½É³ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½Ê¾
 
         if(showingArrow!=null)
         {
@@ -127,10 +127,10 @@ public class ArrowDisplay : MonoBehaviour
         {
             if(type == prefab.type)
             {
-                // ³õÊ¼»¯¶ÔÓ¦¼ýÍ·ÏÔÊ¾
+                // ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½Í·ï¿½ï¿½Ê¾
                 showingArrow = prefab;
                 showingArrow.baseArrow.SetActive(true);
-                //ResetArrow()£»
+                //ResetArrow()ï¿½ï¿½
             }
         }
 
