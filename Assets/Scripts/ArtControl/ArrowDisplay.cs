@@ -96,7 +96,11 @@ public class ArrowDisplay : MonoBehaviour
             showingArrow.hint_Normal.SetActive(true);
             showingArrow.hint_Normal.GetComponent<Animator>().speed = speed;
         }
-
+        if(linkMPDisplay.ComboTiming)
+        {
+            
+            GameObject.Find("comboTime").GetComponent<Animator>().SetTrigger("Show");
+        }
 
     }
 
