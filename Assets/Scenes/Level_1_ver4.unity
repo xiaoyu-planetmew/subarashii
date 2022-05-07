@@ -345,6 +345,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: dontAccerate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: powerfulEffect
       value: 0
       objectReference: {fileID: 0}
@@ -2031,6 +2035,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: dontAccerate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: powerfulEffect
       value: 0
       objectReference: {fileID: 0}
@@ -2104,7 +2112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9131344476728961440, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_Radius
-      value: 6.24
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a31772f3a009b384a9837b3026273804, type: 3}
@@ -2565,7 +2573,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: powerfulEffect
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.keyInput
@@ -2673,6 +2681,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: specialHint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: dontAccerate
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
@@ -3021,12 +3033,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNum
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.keyInput
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.timeForOneInput
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNextMovePoints
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759224, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_RootOrder
@@ -3306,6 +3326,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: dontAccerate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: powerfulEffect
       value: 0
       objectReference: {fileID: 0}
@@ -3379,7 +3403,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9131344476728961440, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_Radius
-      value: 5.5
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a31772f3a009b384a9837b3026273804, type: 3}
@@ -4288,6 +4312,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MovePoint (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialHint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: dontAccerate
       value: 1
@@ -4564,13 +4592,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: MovePoint (52)
       objectReference: {fileID: 0}
-    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
-      propertyPath: dontAccerate
+    - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialHint
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
-      propertyPath: powerfulEffect
+      propertyPath: dontAccerate
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: powerfulEffect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNum
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.keyInput
@@ -4579,6 +4615,10 @@ PrefabInstance:
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.timeForOneInput
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNextMovePoints
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759224, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_RootOrder
@@ -4682,6 +4722,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: specialHint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: dontAccerate
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
@@ -5940,6 +5984,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: dontAccerate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: powerfulEffect
       value: 0
       objectReference: {fileID: 0}
@@ -6342,7 +6390,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9131344476728961440, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_Radius
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a31772f3a009b384a9837b3026273804, type: 3}
@@ -6731,12 +6779,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNum
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.keyInput
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.timeForOneInput
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNextMovePoints
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759224, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_RootOrder
@@ -7262,6 +7318,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: specialHint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: dontAccerate
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
@@ -9248,6 +9308,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MovePoint (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialHint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: dontAccerate
       value: 1
@@ -9366,6 +9430,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: specialHint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: dontAccerate
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
@@ -9740,6 +9808,10 @@ PrefabInstance:
     - target: {fileID: 1152722335200759201, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_Name
       value: MovePoint (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialHint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: dontAccerate
@@ -10716,7 +10788,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9131344476728961440, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_Radius
-      value: 7.27
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a31772f3a009b384a9837b3026273804, type: 3}
@@ -12686,11 +12758,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: dontAccerate
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: powerfulEffect
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNum
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.keyInput
@@ -12699,6 +12775,10 @@ PrefabInstance:
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.timeForOneInput
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNextMovePoints
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759224, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_RootOrder
@@ -13822,12 +13902,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNum
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.keyInput
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.timeForOneInput
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNextMovePoints
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759224, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_RootOrder
@@ -13936,6 +14024,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: specialHint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: dontAccerate
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
@@ -14116,6 +14208,10 @@ PrefabInstance:
     - target: {fileID: 1152722335200759201, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_Name
       value: MovePoint (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialHint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: dontAccerate
@@ -14746,6 +14842,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: dontAccerate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: powerfulEffect
       value: 0
       objectReference: {fileID: 0}
@@ -14974,7 +15074,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: powerfulEffect
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.keyInput
@@ -15777,6 +15877,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: dontAccerate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: powerfulEffect
       value: 0
       objectReference: {fileID: 0}
@@ -15884,6 +15988,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: MovePoint (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNum
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNextMovePoints
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759224, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_RootOrder
       value: 70
@@ -15954,6 +16066,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: specialHint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: dontAccerate
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
@@ -16030,7 +16146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9131344476728961440, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_Radius
-      value: 5.83
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a31772f3a009b384a9837b3026273804, type: 3}
@@ -16463,12 +16579,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNum
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.keyInput
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.timeForOneInput
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNextMovePoints
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759224, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_RootOrder
@@ -16807,6 +16931,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: specialHint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: dontAccerate
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
@@ -17584,7 +17712,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: powerfulEffect
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.keyInput
@@ -17653,6 +17781,10 @@ PrefabInstance:
     - target: {fileID: 1152722335200759230, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_Radius
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131344476728961440, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: m_Radius
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a31772f3a009b384a9837b3026273804, type: 3}
@@ -17913,7 +18045,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: powerfulEffect
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.keyInput
@@ -18105,7 +18237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9131344476728961440, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_Radius
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a31772f3a009b384a9837b3026273804, type: 3}
@@ -18281,6 +18413,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: specialHint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: dontAccerate
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
@@ -20437,13 +20573,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: MovePoint (55)
       objectReference: {fileID: 0}
-    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
-      propertyPath: dontAccerate
+    - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialHint
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
-      propertyPath: powerfulEffect
+      propertyPath: dontAccerate
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: powerfulEffect
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.keyInput
@@ -21118,6 +21258,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: MovePoint (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNum
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNextMovePoints
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759224, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_RootOrder
       value: 78
@@ -21592,6 +21740,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: dontAccerate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: powerfulEffect
       value: 0
       objectReference: {fileID: 0}
@@ -22014,6 +22166,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: specialHint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: dontAccerate
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
@@ -22456,7 +22612,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: powerfulEffect
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNum
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.keyInput
@@ -22465,6 +22625,10 @@ PrefabInstance:
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.timeForOneInput
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNextMovePoints
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759224, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_RootOrder
@@ -22532,7 +22696,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9131344476728961440, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_Radius
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a31772f3a009b384a9837b3026273804, type: 3}
@@ -23302,6 +23466,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: dontAccerate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: powerfulEffect
       value: 0
       objectReference: {fileID: 0}
@@ -23961,6 +24129,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: dontAccerate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: powerfulEffect
       value: 0
       objectReference: {fileID: 0}
@@ -24034,7 +24206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9131344476728961440, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_Radius
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a31772f3a009b384a9837b3026273804, type: 3}
@@ -24423,6 +24595,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759202, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: specialHint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: dontAccerate
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
@@ -25381,7 +25557,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: powerfulEffect
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNum
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.keyInput
@@ -25390,6 +25570,10 @@ PrefabInstance:
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.timeForOneInput
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNextMovePoints
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759224, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_RootOrder
@@ -25594,11 +25778,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: dontAccerate
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: powerfulEffect
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.keyInput
@@ -25723,11 +25907,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: dontAccerate
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: powerfulEffect
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.keyInput
@@ -26620,12 +26804,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNum
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.keyInput
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.timeForOneInput
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNextMovePoints
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759224, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_RootOrder
@@ -26891,7 +27083,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: powerfulEffect
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNum
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.keyInput
@@ -26900,6 +27096,10 @@ PrefabInstance:
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.timeForOneInput
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNextMovePoints
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759224, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_RootOrder
@@ -27019,12 +27219,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNum
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.keyInput
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.timeForOneInput
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNextMovePoints
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759224, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_RootOrder
@@ -27690,12 +27898,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNum
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.keyInput
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.timeForOneInput
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNextMovePoints
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759224, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_RootOrder
@@ -28096,12 +28312,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNum
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.keyInput
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.timeForOneInput
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: specialActiveNextMovePoints
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759224, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_RootOrder
