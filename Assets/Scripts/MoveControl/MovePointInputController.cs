@@ -184,7 +184,8 @@ public class MovePointInputController : MonoBehaviour
 
         // ���Ƕ���
         // Character Animation
-        CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Good);
+        if(!interactiveAnimation)
+            CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Good);
 
         // ����������ɫ����
         if (keyInput.keyInput == KeyDirectionType.Space)
@@ -198,6 +199,7 @@ public class MovePointInputController : MonoBehaviour
                 PlayerSpecialAnimation();
             }
         }
+        
 
         // ��ͷ
         // Arrow
