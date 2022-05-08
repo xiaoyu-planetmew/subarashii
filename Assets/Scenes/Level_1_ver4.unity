@@ -211,6 +211,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1937512335}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -420,6 +424,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 366912410}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
@@ -764,6 +772,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 399509694}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
@@ -1300,6 +1312,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 2045457496}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 2
@@ -1994,6 +2010,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1306130151}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -2114,6 +2134,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 479783156}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
@@ -2656,6 +2680,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1953888689}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -2775,6 +2803,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 1242363991}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
@@ -3121,6 +3153,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 729684611}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -3236,6 +3272,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 839578129}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
@@ -3413,6 +3453,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 1761689762}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
@@ -3764,6 +3808,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 1248376687}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
@@ -4413,6 +4461,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1124722997}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -4701,6 +4753,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 724561732}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -4829,6 +4885,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1402370544}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -4940,6 +5000,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 1319372595}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 2
@@ -5318,6 +5382,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 686126523}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 2
@@ -5910,6 +5978,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2069688241}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -6104,6 +6176,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 172964880}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -6113,7 +6189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759230, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_Radius
-      value: 1
+      value: 0.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a31772f3a009b384a9837b3026273804, type: 3}
@@ -6428,6 +6504,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 1353573665}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 3
@@ -6899,6 +6979,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1322384975}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -7209,6 +7293,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 893530284}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -7328,6 +7416,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 2009099072}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
@@ -7452,6 +7544,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 1985343827}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
@@ -7993,6 +8089,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 976084921}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -8117,6 +8217,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 987970120}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
@@ -8849,6 +8953,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 824485736}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -9449,6 +9557,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 759138250}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -9568,6 +9680,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 292132823}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
@@ -9953,6 +10069,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 1619089073}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
@@ -10648,6 +10768,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1132291156}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -10850,6 +10974,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 1706706038}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 3
@@ -11068,6 +11196,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 259783747}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 2
@@ -11313,6 +11445,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 1245187571}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
@@ -11743,6 +11879,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1454281611}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -11883,6 +12023,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 95463859}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 2
@@ -12326,6 +12470,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1598095498}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -12483,6 +12631,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 546505282}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
@@ -12670,6 +12822,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 1101970815}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 2
@@ -12909,6 +13065,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 961467861}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -13090,6 +13250,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 849848831}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 2
@@ -14046,6 +14210,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1434570476}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -14174,6 +14342,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 1866381248}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
@@ -14362,6 +14534,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 361792257}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -14473,6 +14649,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 1918147897}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 2
@@ -14668,6 +14848,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 541363822}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
@@ -15002,6 +15186,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 204296277}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -15236,6 +15424,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 1332160065}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
@@ -15834,6 +16026,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1560759577}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -16049,6 +16245,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2051249512}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -16128,6 +16328,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 347779914}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759230, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_Radius
       value: 1
@@ -16236,6 +16440,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 837899793}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
@@ -16348,6 +16556,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 45071118}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
@@ -16747,6 +16959,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 31736079}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -16871,6 +17087,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 897993485}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 2
@@ -17122,6 +17342,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 549516019}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -17229,6 +17453,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 1235004206}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 3
@@ -17742,6 +17970,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2123369811}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -17899,6 +18131,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1246359474}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -18012,6 +18248,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 638191349}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -18123,6 +18363,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 1640473865}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
@@ -18244,6 +18488,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1933285623}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -18359,6 +18607,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 1958503882}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 3
@@ -18573,7 +18825,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: keyInput.timeForOneInput
-      value: 0.5
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759224, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_RootOrder
@@ -18623,6 +18875,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 1712723462}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
@@ -18963,6 +19219,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 628123811}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 2
@@ -20107,6 +20367,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 891029401}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -20666,6 +20930,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2004357119}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -20789,6 +21057,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 1401733657}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 3
@@ -21438,6 +21710,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 1386214928}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759230, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_Radius
       value: 1
@@ -21956,6 +22232,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1190198374}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -22265,6 +22545,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2068338879}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -22384,6 +22668,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 260094411}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
@@ -22831,6 +23119,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 219835871}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -23213,6 +23505,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2095970112}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -23309,6 +23605,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 1325681182}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 2
@@ -23693,6 +23993,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 1180244557}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
@@ -24357,6 +24661,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1408145876}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -24834,6 +25142,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1682175319}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -25039,6 +25351,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2041650678}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -25115,6 +25431,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 877182123}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759230, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_Radius
       value: 1
@@ -25298,6 +25618,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 510863416}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -25414,6 +25738,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 1012413432}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 2
@@ -25804,6 +26132,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1914430438}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -25911,6 +26243,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 285344926}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 2
@@ -26020,6 +26356,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 9299295}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 3
@@ -26153,6 +26493,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 308768446}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 3
@@ -27048,6 +27392,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1826139011}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -27176,6 +27524,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 425207421}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
@@ -27346,6 +27698,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 944397183}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -27475,6 +27831,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 639555289}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -27599,6 +27959,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 160955559}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 1
@@ -28162,6 +28526,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 443850866}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -28575,6 +28943,10 @@ PrefabInstance:
       propertyPath: nextPoint
       value: 
       objectReference: {fileID: 603738405}
+    - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: timeToNextMovePoint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759228, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: besizerControlPoints.Array.size
       value: 2
