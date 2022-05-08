@@ -53,18 +53,10 @@ public class InteractiveAnimation : MonoBehaviour
     }
 
  
-    private void PlayerAnimation()
+    public void PlayerAnimation()
     {
         if (linkMovePoint == null) return;
 
-        switch (linkMovePoint.PlayerSpecialAnimation)
-        {
-            case PlayerSpecialAnimationType.FoodAbsorb_Left:
-                CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Absorb_Left);
-                break;
-            case PlayerSpecialAnimationType.FoodAbsorb_Right:
-                CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Absorb_Right);
-                break;
-        }
+        linkMovePoint.PlayerSpecialAnimation();
     }
 }

@@ -14,7 +14,7 @@ public class MovePointInputController : MonoBehaviour
 
     [Header("������ɫ")]
     public InteractiveAnimation interactiveAnimation;
-    public  PlayerSpecialAnimationType  PlayerSpecialAnimation = PlayerSpecialAnimationType.Null;
+    public  PlayerSpecialAnimationType  SpecialAnimation = PlayerSpecialAnimationType.Null;
     private MovePoint _mp;
 
     [Header("��ֹ����")]
@@ -190,7 +190,13 @@ public class MovePointInputController : MonoBehaviour
         if (keyInput.keyInput == KeyDirectionType.Space)
         {
             if (interactiveAnimation != null)
+            {
                 interactiveAnimation.success = true;
+            }
+            else
+            {
+                PlayerSpecialAnimation();
+            }
         }
 
         // ��ͷ
@@ -222,6 +228,20 @@ public class MovePointInputController : MonoBehaviour
 
         PlayerController.Instance.Success(keyInput.keyInput == KeyDirectionType.Space);
         
+    }
+
+    public void PlayerSpecialAnimation()
+    {
+
+        switch (SpecialAnimation)
+        {
+            case PlayerSpecialAnimationType.FoodAbsorb_Left:
+                CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Absorb_Left);
+                break;
+            case PlayerSpecialAnimationType.FoodAbsorb_Right:
+                CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Absorb_Right);
+                break;
+        }
     }
 
     public void ResetMovePointInput()
