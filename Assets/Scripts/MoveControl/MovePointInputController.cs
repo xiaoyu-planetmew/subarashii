@@ -13,8 +13,8 @@ public class MovePointInputController : MonoBehaviour
     public bool powerfulEffect = false;
 
     [Header("������ɫ")]
-    public InteractiveAnimation interactiveAnimation;
-    public  PlayerSpecialAnimationType  SpecialAnimation = PlayerSpecialAnimationType.Null;
+    public InteractiveAnimation interactiveAnimation1;
+    public PlayerSpecialAnimationType  SpecialAnimation = PlayerSpecialAnimationType.Null;
     private MovePoint _mp;
 
     [Header("��ֹ����")]
@@ -30,8 +30,8 @@ public class MovePointInputController : MonoBehaviour
     private void Start()
     {
         ResetMovePointInput();
-        if (interactiveAnimation != null)
-            interactiveAnimation.linkMovePoint = this;
+        if (interactiveAnimation1 != null)
+            interactiveAnimation1.linkMovePoint = this;
         _mp = GetComponent<MovePoint>();
     }
 
@@ -184,15 +184,15 @@ public class MovePointInputController : MonoBehaviour
 
         // ���Ƕ���
         // Character Animation
-        if(!interactiveAnimation)
+        if(!interactiveAnimation1)
             CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Good);
 
         // ����������ɫ����
         if (keyInput.keyInput == KeyDirectionType.Space)
         {
-            if (interactiveAnimation != null)
+            if (interactiveAnimation1 != null)
             {
-                interactiveAnimation.success = true;
+                interactiveAnimation1.success = true;
             }
             else
             {
@@ -242,6 +242,15 @@ public class MovePointInputController : MonoBehaviour
                 break;
             case PlayerSpecialAnimationType.SpaceAbsorb_Right:
                 CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Absorb_Right);
+                break;
+            case PlayerSpecialAnimationType.SpaceCharge1:
+                CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Charge);
+                break;
+            case PlayerSpecialAnimationType.SpaceSmash:
+                CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Smash);
+                break;
+            case PlayerSpecialAnimationType.SpaceGuard:
+                CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Guard);
                 break;
         }
     }
@@ -319,7 +328,7 @@ public enum PlayerSpecialAnimationType
     Null,
     SpaceAbsorb_Left,
     SpaceAbsorb_Right,
-    SpaceCharege1,
+    SpaceCharge1,
     SpaceGuard,
     SpaceSmash,
 }
