@@ -237,10 +237,10 @@ public class MovePointInputController : MonoBehaviour
 
         switch (SpecialAnimation)
         {
-            case PlayerSpecialAnimationType.FoodAbsorb_Left:
+            case PlayerSpecialAnimationType.SpaceAbsorb_Left:
                 CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Absorb_Left);
                 break;
-            case PlayerSpecialAnimationType.FoodAbsorb_Right:
+            case PlayerSpecialAnimationType.SpaceAbsorb_Right:
                 CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Absorb_Right);
                 break;
         }
@@ -317,6 +317,9 @@ public enum KeyDirectionType
 public enum PlayerSpecialAnimationType
 { 
     Null,
-    FoodAbsorb_Left,
-    FoodAbsorb_Right,
+    SpaceAbsorb_Left,
+    SpaceAbsorb_Right,
+    SpaceCharege1,
+    SpaceGuard,
+    SpaceSmash,
 }
