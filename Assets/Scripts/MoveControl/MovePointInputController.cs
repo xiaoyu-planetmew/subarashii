@@ -14,6 +14,7 @@ public class MovePointInputController : MonoBehaviour
 
     [Header("������ɫ")]
     public InteractiveAnimation interactiveAnimation1;
+    public InteractiveAnimation interactiveAnimation2;
     public PlayerSpecialAnimationType  SpecialAnimation = PlayerSpecialAnimationType.Null;
     private MovePoint _mp;
 
@@ -32,6 +33,8 @@ public class MovePointInputController : MonoBehaviour
         ResetMovePointInput();
         if (interactiveAnimation1 != null)
             interactiveAnimation1.linkMovePoint = this;
+        if (interactiveAnimation2 != null)
+            interactiveAnimation2.linkMovePoint = this;
         _mp = GetComponent<MovePoint>();
     }
 
@@ -184,7 +187,7 @@ public class MovePointInputController : MonoBehaviour
 
         // ���Ƕ���
         // Character Animation
-        if(!interactiveAnimation1)
+        if(!interactiveAnimation1 && !interactiveAnimation2)//两个同时为空
             CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Good);
 
         // ����������ɫ����
@@ -195,6 +198,11 @@ public class MovePointInputController : MonoBehaviour
                 interactiveAnimation1.success = true;
                 interactiveAnimation1.active = true;
                 //Debug.Log("interactiveAnimation1 is success");
+            }
+            if (interactiveAnimation2 != null)
+            {
+                interactiveAnimation2.success = true;
+                interactiveAnimation2.active = true;
             }
             else
             {

@@ -924,6 +924,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 630067221}
     - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: interactiveAnimation2
+      value: 
+      objectReference: {fileID: 1739816502}
+    - target: {fileID: 1152722335200759203, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: PlayerSpecialAnimation
       value: 1
       objectReference: {fileID: 0}
@@ -7732,7 +7736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2290059760814597577, guid: 2bf28395ad6e7674bb722618ec874e4d, type: 3}
       propertyPath: failureAnimation
-      value: absorb
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2290059760814597577, guid: 2bf28395ad6e7674bb722618ec874e4d, type: 3}
       propertyPath: successAnimation
@@ -24793,7 +24797,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2290059760814597577, guid: 2bf28395ad6e7674bb722618ec874e4d, type: 3}
       propertyPath: failureAnimation
-      value: absorb
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2290059760814597577, guid: 2bf28395ad6e7674bb722618ec874e4d, type: 3}
       propertyPath: successAnimation
@@ -25454,6 +25458,17 @@ MonoBehaviour:
   unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
+--- !u!114 &1739816502 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2290059760814597577, guid: 2bf28395ad6e7674bb722618ec874e4d, type: 3}
+  m_PrefabInstance: {fileID: 511173123}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6b38f0d9c620074ebfc43ce9936a311, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1740054677 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1152722335200759224, guid: a31772f3a009b384a9837b3026273804, type: 3}
