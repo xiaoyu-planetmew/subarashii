@@ -193,6 +193,7 @@ public class MovePointInputController : MonoBehaviour
             if (interactiveAnimation1 != null)
             {
                 interactiveAnimation1.success = true;
+                interactiveAnimation1.active = true;
                 //Debug.Log("interactiveAnimation1 is success");
             }
             else

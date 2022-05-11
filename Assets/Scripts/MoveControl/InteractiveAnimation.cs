@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class InteractiveAnimation : MonoBehaviour
 {
-    [Header("ÊÇ·ñ×Ô¶¯²¥·Å")]
+    [Header("ï¿½Ç·ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½")]
     public bool autoPlay = false;
 
-    [Header("°´¼ü´¥·¢")]
+    [Header("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½")]
     public string successAnimation;
     public string failureAnimation;
 
     [HideInInspector] public bool success;
+    [HideInInspector] public bool active;
     [HideInInspector] public MovePointInputController linkMovePoint;
     private bool startPlayAnimation;
     private Animator anim;
@@ -23,16 +24,18 @@ public class InteractiveAnimation : MonoBehaviour
             anim = transform.parent.GetComponent<Animator>();
 
         startPlayAnimation = false;
+        active = false;
     }
 
     private void Update()
     {
-        if(startPlayAnimation)
+        if(startPlayAnimation && active)
         {
             anim.SetTrigger(success ? successAnimation : failureAnimation);
             PlayerAnimation();
             Debug.Log("success = "+success);
             startPlayAnimation = false;
+            active = false;
         }
     }
 
