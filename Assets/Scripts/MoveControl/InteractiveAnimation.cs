@@ -31,7 +31,7 @@ public class InteractiveAnimation : MonoBehaviour
         {
             anim.SetTrigger(success ? successAnimation : failureAnimation);
             PlayerAnimation();
-
+            Debug.Log("success = "+success);
             startPlayAnimation = false;
         }
     }
