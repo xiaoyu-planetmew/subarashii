@@ -29,6 +29,13 @@ public class InteractiveAnimation : MonoBehaviour
 
     private void Update()
     {
+        if (Vector3.Distance(GameObject.FindGameObjectWithTag("Player").transform.position, anim.transform.position) > 30)
+        {
+            anim.enabled = false;
+        }else
+        {
+            anim.enabled = true;
+        }
         if(startPlayAnimation && active)
         {
             anim.SetTrigger(success ? successAnimation : failureAnimation);
