@@ -48,7 +48,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 0.8
 --- !u!50 &4641336840792344823
 Rigidbody2D:
   serializedVersion: 4
@@ -82,6 +82,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6b38f0d9c620074ebfc43ce9936a311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  autoPlay: 0
   successAnimation: 
   failureAnimation: 
   success: 0
+  active: 0
+  linkMovePoint: {fileID: 0}

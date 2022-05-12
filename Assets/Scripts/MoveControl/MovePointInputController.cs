@@ -187,7 +187,7 @@ public class MovePointInputController : MonoBehaviour
 
         // ���Ƕ���
         // Character Animation
-        if(!interactiveAnimation1 && !interactiveAnimation2)//两个同时为空
+        if(!interactiveAnimation1 && !interactiveAnimation2 /*&& SpecialAnimation == PlayerSpecialAnimationType.Null*/)//三个同时为空?
             CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Good);
 
         // ����������ɫ����
@@ -254,10 +254,13 @@ public class MovePointInputController : MonoBehaviour
                 CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Absorb_Right);
                 break;
             case PlayerSpecialAnimationType.SpaceCharge1:
-                CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Charge);
+                CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Charge1);
                 break;
-            case PlayerSpecialAnimationType.SpaceSmash:
-                CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Smash);
+            case PlayerSpecialAnimationType.SpaceSmash_Left:
+                CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Smash_Left);
+                break;
+            case PlayerSpecialAnimationType.SpaceSmash_Right:
+                CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Smash_Right);
                 break;
             case PlayerSpecialAnimationType.SpaceGuard:
                 CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Guard);
@@ -340,5 +343,6 @@ public enum PlayerSpecialAnimationType
     SpaceAbsorb_Right,
     SpaceCharge1,
     SpaceGuard,
-    SpaceSmash,
+    SpaceSmash_Left,
+    SpaceSmash_Right,
 }

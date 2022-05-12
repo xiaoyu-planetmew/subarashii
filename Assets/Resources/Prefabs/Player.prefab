@@ -180,10 +180,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blood: 3
   restartPos: {fileID: 0}
+  HP: {fileID: 0}
   startPlaying: 0
   comboNum: 0
   totalPoints: 0
   successPoints: 0
+  totalMovePoints: 0
 --- !u!114 &6337140465834833733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,6 +225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6373131738a7a4c418aff2c79c2422dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   wavyCircles:
   - {fileID: 6337140467404421080}
   - {fileID: 6337140467194153953}
@@ -549,7 +552,7 @@ Animator:
   m_GameObject: {fileID: 6337140466245495075}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e6ace7b249d650a4da45895aa96612ac, type: 2}
+  m_Controller: {fileID: 9100000, guid: 86a74a76842de7a4d8bf4ca0d0aebe1f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -647,6 +650,26 @@ MonoBehaviour:
     randomTime: {x: 0, y: 0}
     animationEvents:
     - game over
+  - animsType: 8
+    randomTime: {x: 0, y: 0}
+    animationEvents:
+    - smash_left
+  - animsType: 9
+    randomTime: {x: 0, y: 0}
+    animationEvents:
+    - smash_right
+  - animsType: 10
+    randomTime: {x: 0, y: 0}
+    animationEvents:
+    - guard
+  - animsType: 6
+    randomTime: {x: 0, y: 0}
+    animationEvents:
+    - talk
+  - animsType: 7
+    randomTime: {x: 0, y: 0}
+    animationEvents:
+    - charge1
   nowEventIndex: 0
 --- !u!1 &6337140466344877559
 GameObject:
