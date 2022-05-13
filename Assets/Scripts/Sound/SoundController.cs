@@ -37,6 +37,9 @@ public class SoundController : MonoBehaviour
     public AkEvent GameOver;
     public AkEvent PauseAll;
     public AkEvent ResumeAll;
+    public AkEvent Input_Arrow_Success_White;
+    public AkEvent Input_Arrow_Success_Color;
+    public AkEvent Input_Space_Success_White;
 
     public static SoundController Instance;
     private void Awake()

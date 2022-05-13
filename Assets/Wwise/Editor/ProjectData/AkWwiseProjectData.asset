@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 2ac004a949d9074b991a29f817866ae5
     GuidInternal: 
-    m_lastTime: -8585517464811578454
+    m_lastTime: -8585513480418644638
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: e6224f82002cc843803a5c90543ccd5c
     GuidInternal: 
-    m_lastTime: -8585517464811678479
+    m_lastTime: -8585513480430266919
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -65,7 +65,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Subarashii
     guid: fc999c091955554c892bcafb2b0bb30d
     GuidInternal: 
-    m_lastTime: -8585500960456314362
+    m_lastTime: -8585501009715855522
     List:
     - name: Master Bus
       guid: 011b8f8379f49e4a8beb96dc6cda5434
@@ -127,7 +127,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d5f2fd580a4ae34f9909285e0919ae8f
     GuidInternal: 
-    m_lastTime: -8585513129733509632
+    m_lastTime: -8585513335912811290
     List:
     - name: SoundBankTest
       guid: c0793be83b094f419f12d55481d60c77
@@ -154,7 +154,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Subarashii
     guid: bb59c71a64251748bd2e36fd1cabb9aa
     GuidInternal: 
-    m_lastTime: -8585499248793396649
+    m_lastTime: -8585499336592158183
     List:
     - name: SoundBank
       guid: 1b861bf19af8cf4982b897ca2f1c8174
@@ -182,7 +182,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6e88041042cea04791b2de4cdade51e0
     GuidInternal: 
-    m_lastTime: -8585514004086310481
+    m_lastTime: -8585513477742183117
     List:
     - name: Play_Music_level1_BPM100_32bit48khz
       guid: e76414383be9b94c859c0362eede1a52
@@ -229,7 +229,7 @@ MonoBehaviour:
     ParentPath: Events\Subarashii
     guid: 63796efd22d4f34992e8dbfe894f0a8d
     GuidInternal: 
-    m_lastTime: -8585499248796707395
+    m_lastTime: -8585491779527635637
     List:
     - name: Boss_Attack
       guid: d082697ccabd084e8069dbfc3c565917
@@ -621,6 +621,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1
       minDuration: 1
+    - name: Input_Arrow_Success_Color
+      guid: 4f5140ad8f3c9144b268bc43824e8211
+      id: 3484099237
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Input_Arrow_Success_Color
+        ObjectType: 3
+        guid: 4f5140ad8f3c9144b268bc43824e8211
+      Path: Events\Subarashii\SFX\Input_Arrow_Success_Color
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Input_Arrow_Success_White
+      guid: b82025cd9aed9648886d1214a0c537c3
+      id: 1955071559
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Input_Arrow_Success_White
+        ObjectType: 3
+        guid: b82025cd9aed9648886d1214a0c537c3
+      Path: Events\Subarashii\SFX\Input_Arrow_Success_White
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Input_Space_Miss
       guid: b1f6572235e8d54abfa846c4e8aec2c1
       id: 4120751531
@@ -661,6 +701,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.640401
       minDuration: 0.5
+    - name: Input_Space_Success_White
+      guid: 03943902e83b084c86e07936b4e3bc05
+      id: 3121998914
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Subarashii
+        ObjectType: 12
+        guid: 63796efd22d4f34992e8dbfe894f0a8d
+      - ElementName: SFX
+        ObjectType: 4
+        guid: bea5fbbe4df49b4db266f99867907f2d
+      - ElementName: Input_Space_Success_White
+        ObjectType: 3
+        guid: 03943902e83b084c86e07936b4e3bc05
+      Path: Events\Subarashii\SFX\Input_Space_Success_White
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Level_1
       guid: 34b18267e5d6d44289cc8f4026b2cb6b
       id: 1290008369
@@ -1713,7 +1773,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 55cd09d2cbb25a459366fa0a94db3528
     GuidInternal: 
-    m_lastTime: -8585517464811698488
+    m_lastTime: -8585513480446411926
     List: []
   - PhysicalPath: Game Parameters\Subarashii.wwu
     PathAndIcons:
@@ -1726,7 +1786,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Subarashii
     guid: ca84f0cd6b68bf4dbabd953a76f57a8c
     GuidInternal: 
-    m_lastTime: -8585500960469707552
+    m_lastTime: -8585501013381556833
     List:
     - name: MasterVolume
       guid: 4989e7ca548f51479d1b4d3a45192c5f
@@ -1805,7 +1865,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: f7fe67bbec39ae43be5794fa01ca0119
     GuidInternal: 
-    m_lastTime: -8585517464811618464
+    m_lastTime: -8585513480418684532
     List: []
   - PhysicalPath: States\Subarashii.wwu
     PathAndIcons:
@@ -1818,7 +1878,7 @@ MonoBehaviour:
     ParentPath: States\Subarashii
     guid: 119f975107b6ce428724a59901f24adc
     GuidInternal: 
-    m_lastTime: -8585501105979960052
+    m_lastTime: -8585501144241122412
     List:
     - name: Level_Music_State
       guid: 088876470bf6e245a9bfea21bc24a48a
@@ -1948,7 +2008,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 0a7d20405e55f149b7a739dd8a462128
     GuidInternal: 
-    m_lastTime: -8585517464811618464
+    m_lastTime: -8585513480418674563
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -1962,7 +2022,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: eae9b8cc6ab16942b5b2a2edeb5389d0
     GuidInternal: 
-    m_lastTime: -8585517464811588460
+    m_lastTime: -8585513480418664590
     List: []
   - PhysicalPath: Triggers\Subarashii.wwu
     PathAndIcons:
@@ -1975,7 +2035,7 @@ MonoBehaviour:
     ParentPath: Triggers\Subarashii
     guid: 9c4de8e5b452914f80a1c3edc3542d75
     GuidInternal: 
-    m_lastTime: -8585499248793386638
+    m_lastTime: -8585499608534638962
     List:
     - name: Tip_Double
       guid: 370fe1f2019d8845a8b969b08342c9e1
