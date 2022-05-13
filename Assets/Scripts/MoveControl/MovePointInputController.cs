@@ -187,7 +187,7 @@ public class MovePointInputController : MonoBehaviour
 
         // ���Ƕ���
         // Character Animation
-        if(!interactiveAnimation1 && !interactiveAnimation2 /*&& SpecialAnimation == PlayerSpecialAnimationType.Null*/)//三个同时为空?
+        if(!interactiveAnimation1 && !interactiveAnimation2 && SpecialAnimation == PlayerSpecialAnimationType.Null)//三个同时为空?
             CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Good);
 
         // ����������ɫ����
@@ -204,7 +204,7 @@ public class MovePointInputController : MonoBehaviour
                 interactiveAnimation2.success = true;
                 interactiveAnimation2.active = true;
             }
-            else
+            if(SpecialAnimation != PlayerSpecialAnimationType.Null)
             {
                 PlayerSpecialAnimation();
             }

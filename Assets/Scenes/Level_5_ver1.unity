@@ -622,6 +622,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!224 &65905947 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3571327816135998554, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+  m_PrefabInstance: {fileID: 448435525}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &123859583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2243,6 +2248,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3571327815865288413, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571327815883002168, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571327815950560453, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571327816135998555, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3571327816298794114, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2330,6 +2351,22 @@ PrefabInstance:
     - target: {fileID: 3571327816298794126, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571327816402464602, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571327817676476090, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571327817678097579, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571327817685219498, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
@@ -2911,9 +2948,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12f0c600e43b8dd4db18298e323d4467, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blood: 3
+  blood: 999
   restartPos: {fileID: 0}
-  HP: {fileID: 0}
+  HP: {fileID: 65905947}
   startPlaying: 0
   comboNum: 0
   totalPoints: 0
@@ -8808,6 +8845,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1960545390}
         m_TargetAssemblyTypeName: LevelEvents, Assembly-CSharp
         m_MethodName: Level_5_Leave
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1960545391}
+        m_TargetAssemblyTypeName: FinishManager, Assembly-CSharp
+        m_MethodName: ShowStuff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
