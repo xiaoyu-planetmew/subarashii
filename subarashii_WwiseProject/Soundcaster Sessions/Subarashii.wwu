@@ -18,8 +18,16 @@
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Input_Arrow_Miss" ID="{971DD53B-9A08-4F68-B17C-0B30CB231BF3}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Tip_Triple" ID="{41C2B42C-96FB-4A42-ACCC-849A161330F6}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}"/>
 							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Input_Arrow__Success" ID="{FA7C4E30-BB6F-4075-AF0F-9C2A89AF3C2F}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}"/>
+							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Pause_Level_1_Music" ID="{7147AD29-C1F0-4E2A-9923-B05CF20E292F}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}"/>
@@ -46,7 +54,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Play" ID="{E76F4632-67E5-4561-B69C-356DBF0DB932}"/>
-						<CurrentStateRef Name="MainMusic" ID="{62FE2A25-AA67-4EA0-A10C-8384CB444D33}"/>
+						<CurrentStateRef Name="Tutorial" ID="{897F8961-AD16-48C2-B051-A2C8D145475F}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

@@ -359,7 +359,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="SFX_DOOROPEN" ID="{875CB335-83BA-43C8-817E-0C8F84BAD7E0}" ShortID="448345341">
+								<Sound Name="SFX_DoorOpen_V2" ID="{D7939D61-E502-4C27-B57F-CDFEA4670FE0}" ShortID="321475506">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{943BFE36-370F-4ACE-BBAC-C0274EC82E4A}"/>
@@ -369,23 +369,23 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="SFX_DOOROPEN" ID="{508EF3E5-BA00-49A1-97E5-BB287BD029BA}">
+										<AudioFileSource Name="SFX_DoorOpen_V2" ID="{DA25350F-13B1-444A-90C3-CDC521DCE8F8}">
 											<Language>SFX</Language>
-											<AudioFile>SFX\SFX_DOOROPEN.wav</AudioFile>
+											<AudioFile>SFX_DoorOpen_V2.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="1014367769"/>
+												<MediaID ID="779423621"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="SFX_DOOROPEN" ID="{508EF3E5-BA00-49A1-97E5-BB287BD029BA}" Platform="Linked"/>
+										<ActiveSource Name="SFX_DoorOpen_V2" ID="{DA25350F-13B1-444A-90C3-CDC521DCE8F8}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 							<ObjectLists/>
 							<Playlist>
-								<ItemRef Name="SFX_DOOROPEN" ID="{875CB335-83BA-43C8-817E-0C8F84BAD7E0}"/>
+								<ItemRef Name="SFX_DoorOpen_V2" ID="{D7939D61-E502-4C27-B57F-CDFEA4670FE0}"/>
 							</Playlist>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Food_Absorb" ID="{281B0564-BB53-4A22-AE10-D76AD24DFCE0}" ShortID="476228504">
@@ -485,7 +485,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="SFX_Impacting" ID="{038A43F4-C9D8-4DE4-8623-234A527A4E44}" ShortID="159709510">
+								<Sound Name="SFX_impacting_V2" ID="{9914D77B-963F-472E-BDC3-E1AE48569075}" ShortID="413311650">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{943BFE36-370F-4ACE-BBAC-C0274EC82E4A}"/>
@@ -495,23 +495,23 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="SFX_Impacting" ID="{7A0F061C-3E2C-4D15-9149-ECB6FFBDB938}">
+										<AudioFileSource Name="SFX_impacting_V2" ID="{4FECFBEF-5FFF-49B8-9047-D170D01E1B72}">
 											<Language>SFX</Language>
-											<AudioFile>SFX\SFX_Impacting.wav</AudioFile>
+											<AudioFile>SFX_impacting_V2.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="309706795"/>
+												<MediaID ID="409741816"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="SFX_Impacting" ID="{7A0F061C-3E2C-4D15-9149-ECB6FFBDB938}" Platform="Linked"/>
+										<ActiveSource Name="SFX_impacting_V2" ID="{4FECFBEF-5FFF-49B8-9047-D170D01E1B72}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 							<ObjectLists/>
 							<Playlist>
-								<ItemRef Name="SFX_Impacting" ID="{038A43F4-C9D8-4DE4-8623-234A527A4E44}"/>
+								<ItemRef Name="SFX_impacting_V2" ID="{9914D77B-963F-472E-BDC3-E1AE48569075}"/>
 							</Playlist>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Space_Food" ID="{70DC1C3E-6AA9-4535-8983-39274D0903C2}" ShortID="696357003">
@@ -992,7 +992,7 @@
 					</ChildrenList>
 					<ObjectLists/>
 				</RandomSequenceContainer>
-				<RandomSequenceContainer Name="Input_Arrow_Success" ID="{FA56FFB1-37A3-4E50-8C84-4611AEED4BA8}" ShortID="221153083">
+				<RandomSequenceContainer Name="Input_Arrow_Success_White" ID="{FA56FFB1-37A3-4E50-8C84-4611AEED4BA8}" ShortID="221153083">
 					<PropertyList>
 						<Property Name="MaxSoundPerInstance" Type="int16">
 							<ValueList>
@@ -1038,10 +1038,33 @@
 								<ActiveSource Name="SFX_trigger_arrow_perfect" ID="{B47AEA5C-C882-40FA-AC14-89585991A68E}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="SFX_trigger_space1_V2" ID="{DDA5BBB7-A0C6-4C27-8A2A-56A5B9695C62}" ShortID="298641891">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{943BFE36-370F-4ACE-BBAC-C0274EC82E4A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{824F22E6-2C00-43C8-803A-5C90543CCD5C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_trigger_space1_V2" ID="{95F73650-56AB-4F42-A594-B505CA1982FC}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_trigger_space1_V2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="546977104"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_trigger_space1_V2" ID="{95F73650-56AB-4F42-A594-B505CA1982FC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<ObjectLists/>
 					<Playlist>
-						<ItemRef Name="SFX_trigger_arrow_perfect" ID="{9109431C-E169-422A-BCC3-663DFC14B74B}"/>
+						<ItemRef Name="SFX_trigger_space1_V2" ID="{DDA5BBB7-A0C6-4C27-8A2A-56A5B9695C62}"/>
 					</Playlist>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Input_Arrow_Miss" ID="{E4060E24-D1C3-4E58-8D8F-4B1E6654DB20}" ShortID="349369483">
@@ -1230,10 +1253,33 @@
 										<ActiveSource Name="SFX_trigger_spcae_barriage" ID="{D28C10E2-F361-4349-8291-ACA50F24C2BB}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="SFX_space_barriage_V2" ID="{F99C2FB7-CBF8-471D-90DA-4A35C859465B}" ShortID="314096036">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{943BFE36-370F-4ACE-BBAC-C0274EC82E4A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{824F22E6-2C00-43C8-803A-5C90543CCD5C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_space_barriage_V2" ID="{F609FC4E-ADCC-4EE1-8F52-AD7390779984}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_space_barriage_V2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="234559512"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_space_barriage_V2" ID="{F609FC4E-ADCC-4EE1-8F52-AD7390779984}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<ObjectLists/>
 							<Playlist>
-								<ItemRef Name="SFX_trigger_spcae_barriage" ID="{077B9FFF-D725-48E7-96AB-FDA268EF77F6}"/>
+								<ItemRef Name="SFX_space_barriage_V2" ID="{F99C2FB7-CBF8-471D-90DA-4A35C859465B}"/>
 							</Playlist>
 						</RandomSequenceContainer>
 					</ChildrenList>
@@ -1276,10 +1322,33 @@
 										<ActiveSource Name="SFX_trigger_spcae_hinder" ID="{FBF646C3-0DDF-4577-9E84-C3BB522A4934}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="SFX_space_hinder_V2" ID="{D06802DD-4CCA-4041-BC36-43A06FE7B300}" ShortID="37393042">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{943BFE36-370F-4ACE-BBAC-C0274EC82E4A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{824F22E6-2C00-43C8-803A-5C90543CCD5C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_space_hinder_V2" ID="{26A2EAC8-B299-4DFD-82A5-501E2F53B5C3}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_space_hinder_V2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="916221930"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_space_hinder_V2" ID="{26A2EAC8-B299-4DFD-82A5-501E2F53B5C3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<ObjectLists/>
 							<Playlist>
-								<ItemRef Name="SFX_trigger_spcae_hinder" ID="{DD118E48-A24B-40B7-8B2A-3C9613B25CED}"/>
+								<ItemRef Name="SFX_space_hinder_V2" ID="{D06802DD-4CCA-4041-BC36-43A06FE7B300}"/>
 							</Playlist>
 						</RandomSequenceContainer>
 					</ChildrenList>
@@ -1528,6 +1597,90 @@
 					<ObjectLists/>
 					<Playlist>
 						<ItemRef Name="SFX_GameOver" ID="{CCCF5B02-C4B9-4D44-B820-96ABED7B8725}"/>
+					</Playlist>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Input_Space_Success_White" ID="{A24D9B42-193B-42B8-BCD6-A3F7A1EFE97E}" ShortID="531848541">
+					<PropertyList>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{943BFE36-370F-4ACE-BBAC-C0274EC82E4A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{824F22E6-2C00-43C8-803A-5C90543CCD5C}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SFX_trigger_space3_V2" ID="{0F397C14-555E-411B-BDAA-875D639FD300}" ShortID="1004214846">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{943BFE36-370F-4ACE-BBAC-C0274EC82E4A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{824F22E6-2C00-43C8-803A-5C90543CCD5C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_trigger_space3_V2" ID="{7B94A9D9-6F12-4348-90A3-AAD036FCF6DE}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_trigger_space3_V2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="56319215"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_trigger_space3_V2" ID="{7B94A9D9-6F12-4348-90A3-AAD036FCF6DE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+					<Playlist>
+						<ItemRef Name="SFX_trigger_space3_V2" ID="{0F397C14-555E-411B-BDAA-875D639FD300}"/>
+					</Playlist>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Input_Arrow_Success_Color" ID="{D1D16F98-73F3-4E9C-BC19-C5D3F2F1715D}" ShortID="466384369">
+					<PropertyList>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{943BFE36-370F-4ACE-BBAC-C0274EC82E4A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{824F22E6-2C00-43C8-803A-5C90543CCD5C}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SFX_trigger_space2_V2" ID="{FE247C48-142D-4F97-B3CB-DB5D4045B562}" ShortID="212723574">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{943BFE36-370F-4ACE-BBAC-C0274EC82E4A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{824F22E6-2C00-43C8-803A-5C90543CCD5C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_trigger_space2_V2" ID="{4B7597FE-FDA2-40C6-892C-D7C8494CF81B}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_trigger_space2_V2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="173953459"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_trigger_space2_V2" ID="{4B7597FE-FDA2-40C6-892C-D7C8494CF81B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+					<Playlist>
+						<ItemRef Name="SFX_trigger_space2_V2" ID="{FE247C48-142D-4F97-B3CB-DB5D4045B562}"/>
 					</Playlist>
 				</RandomSequenceContainer>
 			</ChildrenList>

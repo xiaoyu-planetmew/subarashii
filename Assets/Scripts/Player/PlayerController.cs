@@ -67,6 +67,7 @@ public class PlayerController : MonoBehaviour
                 HP.GetChild(2).gameObject.GetComponent<Image>().enabled = true;
                 break;
             }
+            default:break;
         }
         try
         {

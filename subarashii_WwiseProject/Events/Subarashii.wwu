@@ -747,7 +747,7 @@
 								<Action Name="" ID="{1BE3C2B3-95D3-42B8-A56C-2E6C28B3A956}" ShortID="213782502">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Input_Arrow_Success" ID="{FA56FFB1-37A3-4E50-8C84-4611AEED4BA8}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+											<ObjectRef Name="Input_Arrow_Success_White" ID="{FA56FFB1-37A3-4E50-8C84-4611AEED4BA8}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -881,6 +881,39 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="GameOver" ID="{B711C74B-869D-4BAF-B1C5-9B4351ABD18A}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Input_Arrow_Success_White" ID="{CD2520B8-ED9A-4896-886D-1214A0C537C3}">
+							<ChildrenList>
+								<Action Name="" ID="{6A6B5B51-26A3-477E-BDA1-0920DF58F549}" ShortID="201700819">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Input_Arrow_Success_White" ID="{FA56FFB1-37A3-4E50-8C84-4611AEED4BA8}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Input_Arrow_Success_Color" ID="{AD40514F-3C8F-4491-B268-BC43824E8211}">
+							<ChildrenList>
+								<Action Name="" ID="{96E3F279-BB63-481F-A94E-ED426F7649C3}" ShortID="973364360">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Input_Arrow_Success_Color" ID="{D1D16F98-73F3-4E9C-BC19-C5D3F2F1715D}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Input_Space_Success_White" ID="{02399403-3BE8-4C08-86E0-7936B4E3BC05}">
+							<ChildrenList>
+								<Action Name="" ID="{9A593D2B-0926-4E74-BF35-AF54E5E8BCFA}" ShortID="8130621">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Input_Space_Success_White" ID="{A24D9B42-193B-42B8-BCD6-A3F7A1EFE97E}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

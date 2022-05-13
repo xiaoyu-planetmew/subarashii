@@ -4809,7 +4809,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blood: 3
   restartPos: {fileID: 0}
-  HP: {fileID: 0}
+  HP: {fileID: 1052145888}
   startPlaying: 0
   comboNum: 0
   totalPoints: 0
@@ -9613,6 +9613,11 @@ MonoBehaviour:
 --- !u!1 &1052145887 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4668944813161024715, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+  m_PrefabInstance: {fileID: 1052145876}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1052145888 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3571327816135998554, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
   m_PrefabInstance: {fileID: 1052145876}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1062947003
