@@ -11930,6 +11930,10 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: 4103626559419494189, guid: a31772f3a009b384a9837b3026273804, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9131344476728961440, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_Radius
       value: 3

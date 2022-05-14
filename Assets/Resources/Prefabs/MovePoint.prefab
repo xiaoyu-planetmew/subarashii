@@ -196,8 +196,9 @@ MonoBehaviour:
     keyInput: 6
     nowInputStatus: 0
   powerfulEffect: 0
-  interactiveAnimation: {fileID: 0}
-  PlayerSpecialAnimation: 0
+  interactiveAnimation1: {fileID: 0}
+  interactiveAnimation2: {fileID: 0}
+  SpecialAnimation: 0
   dontAccerate: 0
   specialActiveNextMovePoints: 0
   specialActiveNum: 0
@@ -214,6 +215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   specialHint: 0
+  ComboTiming: 0
   arrowPrefab: {fileID: 0}
   active: 0
 --- !u!1001 &6796702058855575505
@@ -279,13 +281,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arrow
       objectReference: {fileID: 0}
+    - target: {fileID: 4070023225318792746, guid: 68641fc22c13c124483f67acb5753514, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5661327726568411190, guid: 68641fc22c13c124483f67acb5753514, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5871449385061021976, guid: 68641fc22c13c124483f67acb5753514, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68641fc22c13c124483f67acb5753514, type: 3}
