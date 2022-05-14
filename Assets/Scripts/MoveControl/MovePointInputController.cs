@@ -178,7 +178,7 @@ public class MovePointInputController : MonoBehaviour
         ResetMovePointInput();
 
         //Combo
-        PlayerController.Instance.comboNum++;
+        //PlayerController.Instance.comboNum++;
 
         // �ɹ���Ч
         // �����һ���������ק��Ч
@@ -223,18 +223,33 @@ public class MovePointInputController : MonoBehaviour
         //����
         if (keyInput.keyInput == KeyDirectionType.Space)
         {
-            SoundController.Instance.Input_Space_Success.HandleEvent(gameObject);
-
-        }
-        else if (keyInput.keyInput != KeyDirectionType.Null)
-        {
-            if(PlayerController.Instance.comboNum>=3)
+            if (GetComponent<MovePointDisplay>().specialHint)
             {
-                SoundController.Instance.Input_Arrow_Combo.HandleEvent(gameObject);
+                SoundController.Instance.Input_Arrow_Success_Color.HandleEvent(gameObject);//彩色空格音效
             }
             else
             {
-                SoundController.Instance.Input_Arrow_Success.HandleEvent(gameObject);
+                SoundController.Instance.Input_Space_Success_White.HandleEvent(gameObject);//普通空格音效
+            }
+            //SoundController.Instance.Input_Space_Success.HandleEvent(gameObject);
+        }
+        else if (keyInput.keyInput != KeyDirectionType.Null)
+        {
+            if(PlayerController.Instance.comboNum>=3)//combo加值已注释，这段不会触发
+            {
+                SoundController.Instance.Input_Arrow_Combo.HandleEvent(gameObject);//不触发
+            }
+            else
+            {
+                if (GetComponent<MovePointDisplay>().specialHint)
+                {
+                    SoundController.Instance.Input_Arrow_Success_Color.HandleEvent(gameObject);//彩色空格音效
+                }
+                else
+                {
+                    SoundController.Instance.Input_Arrow_Success_White.HandleEvent(gameObject);//普通空格音效
+                }
+                //SoundController.Instance.Input_Arrow_Success.HandleEvent(gameObject);
             }
         }
 
