@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>D:\meijun\subarashii\subarashii_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\meijun\subarashii\subarashii_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\meijun\subarashii\subarashii_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>F:\subarashii\subarashii_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>F:\subarashii\subarashii_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>F:\subarashii\subarashii_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\meijun\subarashii\subarashii_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>F:\subarashii\subarashii_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -21,7 +21,7 @@
 				<GameParameter Id="2918011349" Name="MasterVolume" ObjectPath="\Game Parameters\Subarashii\Volume\MasterVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1661994096" Language="SFX" Hash="3300535218">
+		<SoundBank Id="1661994096" Language="SFX" Hash="2105373519">
 			<ObjectPath>\SoundBanks\Subarashii\SoundBank</ObjectPath>
 			<ShortName>SoundBank</ShortName>
 			<Path>SoundBank.bnk</Path>
@@ -75,19 +75,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3146435922" Name="Door_Impacting" ObjectPath="\Events\Subarashii\SFX\Level_1\Door_Impacting" DurationType="OneShot" DurationMin="1." DurationMax="1.">
+				<Event Id="3146435922" Name="Door_Impacting" ObjectPath="\Events\Subarashii\SFX\Level_1\Door_Impacting" DurationType="OneShot" DurationMin="0.476187" DurationMax="0.476187">
 					<IncludedMemoryFiles>
-						<File Id="309706795" Language="SFX">
-							<ShortName>SFX\SFX_Impacting.wav</ShortName>
-							<Path>SFX\SFX\SFX_Impacting_10C4C929.wem</Path>
+						<File Id="409741816" Language="SFX">
+							<ShortName>SFX_impacting_V2.wav</ShortName>
+							<Path>SFX\SFX_impacting_V2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="535830432" Name="Door_Open" ObjectPath="\Events\Subarashii\SFX\Level_1\Door_Open" DurationType="OneShot" DurationMin="2." DurationMax="2.">
+				<Event Id="535830432" Name="Door_Open" ObjectPath="\Events\Subarashii\SFX\Level_1\Door_Open" DurationType="OneShot" DurationMin="1.023792" DurationMax="1.023792">
 					<IncludedMemoryFiles>
-						<File Id="1014367769" Language="SFX">
-							<ShortName>SFX\SFX_DOOROPEN.wav</ShortName>
-							<Path>SFX\SFX\SFX_DOOROPEN_10C4C929.wem</Path>
+						<File Id="779423621" Language="SFX">
+							<ShortName>SFX_DoorOpen_V2.wav</ShortName>
+							<Path>SFX\SFX_DoorOpen_V2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -107,8 +107,12 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1720845381" Name="Food_Barriage" ObjectPath="\Events\Subarashii\SFX\Level_2\Food_Barriage" DurationType="OneShot" DurationMin="2.5" DurationMax="2.5">
+				<Event Id="1720845381" Name="Food_Barriage" ObjectPath="\Events\Subarashii\SFX\Level_2\Food_Barriage" DurationType="OneShot" DurationMin="1." DurationMax="1.">
 					<IncludedMemoryFiles>
+						<File Id="234559512" Language="SFX">
+							<ShortName>SFX_space_barriage_V2.wav</ShortName>
+							<Path>SFX\SFX_space_barriage_V2_10C4C929.wem</Path>
+						</File>
 						<File Id="365881016" Language="SFX">
 							<ShortName>SFX\SFX_trigger_spcae_barriage.wav</ShortName>
 							<Path>SFX\SFX\SFX_trigger_spcae_barriage_10C4C929.wem</Path>
@@ -131,11 +135,15 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="822197044" Name="Input_Arrow__Success" ObjectPath="\Events\Subarashii\SFX\Input_Arrow__Success" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+				<Event Id="822197044" Name="Input_Arrow__Success" ObjectPath="\Events\Subarashii\SFX\Input_Arrow__Success" DurationType="OneShot" DurationMin="0.625" DurationMax="0.625">
 					<IncludedMemoryFiles>
 						<File Id="343457234" Language="SFX">
 							<ShortName>SFX\SFX_trigger_arrow_perfect.wav</ShortName>
 							<Path>SFX\SFX\SFX_trigger_arrow_perfect_10C4C929.wem</Path>
+						</File>
+						<File Id="546977104" Language="SFX">
+							<ShortName>SFX_trigger_space1_V2.wav</ShortName>
+							<Path>SFX\SFX_trigger_space1_V2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -163,6 +171,26 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3484099237" Name="Input_Arrow_Success_Color" ObjectPath="\Events\Subarashii\SFX\Input_Arrow_Success_Color" DurationType="OneShot" DurationMin="0.625" DurationMax="0.625">
+					<IncludedMemoryFiles>
+						<File Id="173953459" Language="SFX">
+							<ShortName>SFX_trigger_space2_V2.wav</ShortName>
+							<Path>SFX\SFX_trigger_space2_V2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1955071559" Name="Input_Arrow_Success_White" ObjectPath="\Events\Subarashii\SFX\Input_Arrow_Success_White" DurationType="OneShot" DurationMin="0.625" DurationMax="0.625">
+					<IncludedMemoryFiles>
+						<File Id="343457234" Language="SFX">
+							<ShortName>SFX\SFX_trigger_arrow_perfect.wav</ShortName>
+							<Path>SFX\SFX\SFX_trigger_arrow_perfect_10C4C929.wem</Path>
+						</File>
+						<File Id="546977104" Language="SFX">
+							<ShortName>SFX_trigger_space1_V2.wav</ShortName>
+							<Path>SFX\SFX_trigger_space1_V2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="4120751531" Name="Input_Space_Miss" ObjectPath="\Events\Subarashii\SFX\Input_Space_Miss" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
 					<IncludedMemoryFiles>
 						<File Id="640276241" Language="SFX">
@@ -184,6 +212,14 @@
 						<File Id="851934408" Language="SFX">
 							<ShortName>SFX\SFX_trigger_spcae_3.wav</ShortName>
 							<Path>SFX\SFX\SFX_trigger_spcae_3_78D5FC8B.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3121998914" Name="Input_Space_Success_White" ObjectPath="\Events\Subarashii\SFX\Input_Space_Success_White" DurationType="OneShot" DurationMin="0.625" DurationMax="0.625">
+					<IncludedMemoryFiles>
+						<File Id="56319215" Language="SFX">
+							<ShortName>SFX_trigger_space3_V2.wav</ShortName>
+							<Path>SFX\SFX_trigger_space3_V2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -407,8 +443,12 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4232218210" Name="Space_Hinder" ObjectPath="\Events\Subarashii\SFX\Level_3\Space_Hinder" DurationType="OneShot" DurationMin="2.5" DurationMax="2.5">
+				<Event Id="4232218210" Name="Space_Hinder" ObjectPath="\Events\Subarashii\SFX\Level_3\Space_Hinder" DurationType="OneShot" DurationMin="1." DurationMax="1.">
 					<IncludedMemoryFiles>
+						<File Id="234559512" Language="SFX">
+							<ShortName>SFX_space_barriage_V2.wav</ShortName>
+							<Path>SFX\SFX_space_barriage_V2_10C4C929.wem</Path>
+						</File>
 						<File Id="365881016" Language="SFX">
 							<ShortName>SFX\SFX_trigger_spcae_barriage.wav</ShortName>
 							<Path>SFX\SFX\SFX_trigger_spcae_barriage_10C4C929.wem</Path>
@@ -570,7 +610,7 @@
 				<Trigger Id="4147001613" Name="Tip_TripleTip_ChangeTriple" ObjectPath="\Triggers\Subarashii\Tip_TripleTip_ChangeTriple"/>
 			</Triggers>
 		</SoundBank>
-		<SoundBank Id="1946707388" Language="SFX" Hash="263616266">
+		<SoundBank Id="1946707388" Language="SFX" Hash="2292885545">
 			<ObjectPath>\SoundBanks\Default Work Unit\SoundBankTest</ObjectPath>
 			<ShortName>SoundBankTest</ShortName>
 			<Path>SoundBankTest.bnk</Path>

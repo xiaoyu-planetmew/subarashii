@@ -31,8 +31,11 @@ namespace AK
         static const AkUniqueID INPUT_ARROW_COMBO = 3952070454U;
         static const AkUniqueID INPUT_ARROW_MENU = 2196209329U;
         static const AkUniqueID INPUT_ARROW_MISS = 2683451828U;
+        static const AkUniqueID INPUT_ARROW_SUCCESS_COLOR = 3484099237U;
+        static const AkUniqueID INPUT_ARROW_SUCCESS_WHITE = 1955071559U;
         static const AkUniqueID INPUT_SPACE_MISS = 4120751531U;
         static const AkUniqueID INPUT_SPACE_SUCCESS = 1130099208U;
+        static const AkUniqueID INPUT_SPACE_SUCCESS_WHITE = 3121998914U;
         static const AkUniqueID PAUSE_ALL = 3864097025U;
         static const AkUniqueID PAUSE_LEVEL_1_MUSIC = 2283933274U;
         static const AkUniqueID PAUSE_LEVEL_2_MUSIC = 3499643389U;
