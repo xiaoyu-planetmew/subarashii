@@ -190,9 +190,30 @@ public class MovePointInputController : MonoBehaviour
         if(!interactiveAnimation1 && !interactiveAnimation2 && SpecialAnimation == PlayerSpecialAnimationType.Null)//三个同时为空?
             CharacterAnimationController.Instance.ChangeAnimationEvent(AnimationEventType.Good);
 
+        //输入箭头，并且角色播放特殊动画
+        if(keyInput.keyInput == KeyDirectionType.Down || keyInput.keyInput == KeyDirectionType.Left || keyInput.keyInput == KeyDirectionType.Right 
+            || keyInput.keyInput == KeyDirectionType.Up)
+        {
+            if (interactiveAnimation1 != null)
+            {
+                interactiveAnimation1.success = true;
+                interactiveAnimation1.active = true;
+            }
+            if (interactiveAnimation2 != null)
+            {
+                interactiveAnimation2.success = true;
+                interactiveAnimation2.active = true;
+            }
+            if (SpecialAnimation != PlayerSpecialAnimationType.Null)
+            {
+                PlayerSpecialAnimation();
+            }
+        }
+
         // ����������ɫ����
         if (keyInput.keyInput == KeyDirectionType.Space)
         {
+            //Debug.Log("KeyIput Space is Checked");
             if (interactiveAnimation1 != null)
             {
                 interactiveAnimation1.success = true;
@@ -203,10 +224,12 @@ public class MovePointInputController : MonoBehaviour
             {
                 interactiveAnimation2.success = true;
                 interactiveAnimation2.active = true;
+                //Debug.Log("interactiveAnimation2 is success");
             }
             if(SpecialAnimation != PlayerSpecialAnimationType.Null)
             {
                 PlayerSpecialAnimation();
+                //Debug.Log("Player Special Animation is Played");
             }
         }
         
