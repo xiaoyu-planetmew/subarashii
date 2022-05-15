@@ -8,6 +8,8 @@ public class ArrowDisplay : MonoBehaviour
     public ArrowPrefab[] arrows;
     public GameObject hint;
 
+    public TipType Tip;
+
     private KeyDirectionType thisArrow;
     private ArrowPrefab showingArrow;
     private float timeToArriveMP;
@@ -96,10 +98,24 @@ public class ArrowDisplay : MonoBehaviour
             showingArrow.hint_Normal.SetActive(true);
             showingArrow.hint_Normal.GetComponent<Animator>().speed = speed;
         }
+
+        //c播放combo timinig同时播放tip的声音
         if(linkMPDisplay.ComboTiming)
         {
-            
             GameObject.Find("comboTime").GetComponent<Animator>().SetTrigger("Show");
+
+            switch (Tip)
+            {
+                case TipType.Tip_Triple:
+                    SoundController.Instance.Tip_Triple.HandleEvent(gameObject);
+                    break;
+                case TipType.Tip_Double:
+                    SoundController.Instance.Tip_Double.HandleEvent(gameObject);
+                    break;
+                case TipType.Tip_TripleChange:
+                    SoundController.Instance.Tip_TripleChange.HandleEvent(gameObject);
+                    break;
+            }
         }
 
     }
@@ -154,4 +170,10 @@ public class ArrowPrefab
     public GameObject hint_Normal;
     public GameObject hint_Special;
 
+}
+public enum TipType
+{
+    Tip_Triple,
+    Tip_Double,
+    Tip_TripleChange,
 }

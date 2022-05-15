@@ -5017,7 +5017,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 625516214270961484, guid: a34f4498c0e4c0a4d818c0958e7cc568, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 625516214270961486, guid: a34f4498c0e4c0a4d818c0958e7cc568, type: 3}
       propertyPath: m_RootOrder
@@ -8748,7 +8748,7 @@ GameObject:
   - component: {fileID: 531148564}
   - component: {fileID: 531148572}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Player (canceled)
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23429,12 +23429,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1444897699}
   m_Layer: 0
-  m_Name: TipSFX
+  m_Name: TipSFX (canceled)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1444897699
 Transform:
   m_ObjectHideFlags: 0
