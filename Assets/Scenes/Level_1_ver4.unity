@@ -8748,7 +8748,7 @@ GameObject:
   - component: {fileID: 531148564}
   - component: {fileID: 531148572}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Player (canceled)
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23429,12 +23429,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1444897699}
   m_Layer: 0
-  m_Name: TipSFX
+  m_Name: TipSFX (canceled)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1444897699
 Transform:
   m_ObjectHideFlags: 0
