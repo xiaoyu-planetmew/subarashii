@@ -6369,7 +6369,37 @@ MonoBehaviour:
   textBackground: {fileID: 793329442}
   nextPageButton: {fileID: 0}
   textfiles:
+  - {fileID: 4900000, guid: a13d7a78d9565ca44bd5ce2be6f8d209, type: 3}
   - {fileID: 4900000, guid: ee77a1c0a3954c449be269a0064ce88b, type: 3}
+  afterDialogEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1960545392}
+        m_TargetAssemblyTypeName: Level0Control, Assembly-CSharp
+        m_MethodName: dialog2Start
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1960545392}
+        m_TargetAssemblyTypeName: Level0Control, Assembly-CSharp
+        m_MethodName: CapsuleAnim2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   isTalking: 0
   index: 0
   textList: []
@@ -6882,6 +6912,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a47ff2fcd244ad4798dc50de23be7b4, type: 3}
+--- !u!1 &1457109922 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 691596675801190227, guid: 0a47ff2fcd244ad4798dc50de23be7b4, type: 3}
+  m_PrefabInstance: {fileID: 1457109921}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1460192957
 GameObject:
   m_ObjectHideFlags: 0
@@ -9621,6 +9656,7 @@ GameObject:
   - component: {fileID: 1960545389}
   - component: {fileID: 1960545390}
   - component: {fileID: 1960545391}
+  - component: {fileID: 1960545392}
   m_Layer: 0
   m_Name: Level_1
   m_TagString: Untagged
@@ -9781,6 +9817,19 @@ MonoBehaviour:
   clearNum: {fileID: 1593617576}
   missNum: {fileID: 1593617575}
   Stuff: {fileID: 607381589}
+--- !u!114 &1960545392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960545385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95bdc5abbd38fd949aa1e981a5b5787e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Capsule: {fileID: 1457109922}
 --- !u!1 &2018027078
 GameObject:
   m_ObjectHideFlags: 0
