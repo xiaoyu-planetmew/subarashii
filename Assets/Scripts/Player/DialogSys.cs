@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.Events;
 public class DialogSys : MonoBehaviour
 {
     public static DialogSys Instance;
@@ -17,6 +17,8 @@ public class DialogSys : MonoBehaviour
     public GameObject nextPageButton;
     //public GameObject sceneTransButton;
     public List<TextAsset> textfiles = new List<TextAsset>();
+    public List<UnityEvent> afterDialogEvents = new List<UnityEvent>();
+
     //public List<TextAsset> textfilesE = new List<TextAsset>();
     //public List<TextAsset> textfilesJ = new List<TextAsset>();
     //public bool firstMeet;
@@ -54,9 +56,10 @@ public class DialogSys : MonoBehaviour
         }
         */
     }
-    public void dialogStart(int eventNum)
+    public void dialogStart(int Num)
     {
-        GetTextFromFile(textfiles[eventNum]);
+        GetTextFromFile(textfiles[Num]);
+        eventNum = Num;
         fileChoose();
     }
     public void dialogNext()
@@ -72,6 +75,8 @@ public class DialogSys : MonoBehaviour
                 //textLabelcn.gameObject.SetActive(false);
                 //textLabelen.gameObject.SetActive(false);
                 isTalking = false;
+                afterDialogEvents[eventNum].Invoke();
+
                 TutorialTrackController.Instance.FinishTutorial();
         }
         if(index < textList.Count && isTalking)
