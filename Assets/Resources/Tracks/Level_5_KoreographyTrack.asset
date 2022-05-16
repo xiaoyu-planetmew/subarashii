@@ -76,8 +76,10 @@ MonoBehaviour:
     mEndSample: 3748571
   - mStartSample: 3839999
     mEndSample: 3839999
-  - mStartSample: 3931428
-    mEndSample: 3931428
+  - mStartSample: 4548571
+    mEndSample: 4548571
+  - mStartSample: 4571428
+    mEndSample: 4571428
   _SerializedPayloadTypes:
   - SonicBloom.Koreo.TextPayload
   _AssetPayloads: []

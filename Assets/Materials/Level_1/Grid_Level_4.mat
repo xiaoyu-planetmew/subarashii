@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Grid_Level_1
+  m_Name: Grid_Level_4
   m_Shader: {fileID: -6465566751694194690, guid: 0107abcc752328740b1bfbebe0715df9, type: 3}
   m_ShaderKeywords: _ENABLE_FOG_ON_TRANSPARENT _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 4
@@ -38,7 +38,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_0be04f35e61c493ba12bbfdfc9a6be08: 200
+    - Vector1_0be04f35e61c493ba12bbfdfc9a6be08: 300
     - Vector1_1139ed3854e646ae8b43430a11837b1d: 0.9
     - _AddPrecomputedVelocity: 0
     - _AlphaCutoffEnable: 0
