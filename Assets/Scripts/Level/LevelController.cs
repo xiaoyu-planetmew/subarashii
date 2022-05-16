@@ -111,6 +111,7 @@ public class LevelController : MonoBehaviour
         }
         TrackInLevel.Instance.InitTrackMovePoint();
 
+        //食物reset
         InteractiveAnimation[] interAnims = FindObjectsOfType<InteractiveAnimation>();
         foreach(InteractiveAnimation interAnim in interAnims)
         {
