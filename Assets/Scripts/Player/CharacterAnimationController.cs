@@ -58,6 +58,12 @@ public class CharacterAnimationController : MonoBehaviour
         }
     }
 
+    void PlayerAbsorbSFX()
+    {
+        //在animation中event调用
+        SoundController.Instance.Food_Aborb.HandleEvent(gameObject);
+    }
+
     public void PlayAnimation()
     {
         int randomAnimIndex = Random.Range(0, animations[nowEventIndex].animationEvents.Length);
