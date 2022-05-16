@@ -111,6 +111,12 @@ public class LevelController : MonoBehaviour
         }
         TrackInLevel.Instance.InitTrackMovePoint();
 
+        InteractiveAnimation[] interAnims = FindObjectsOfType<InteractiveAnimation>();
+        foreach(InteractiveAnimation interAnim in interAnims)
+        {
+            interAnim.ResetAnimation();
+        }
+
         // 重置角色（位置、动画、血量） / reset Player(posisiton, display, blood)
         PlayerController.Instance.ResetPlayer();
         PlayerEffectController.Instance.ResetPlayerEffect();

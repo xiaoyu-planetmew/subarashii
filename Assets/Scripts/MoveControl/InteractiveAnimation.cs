@@ -62,7 +62,11 @@ public class InteractiveAnimation : MonoBehaviour
         }
     }
 
- 
+    public void ResetAnimation()
+    {
+        anim.SetTrigger("reset");
+    }
+
     public void PlayerAnimation()
     {
         if (linkMovePoint == null) return;
