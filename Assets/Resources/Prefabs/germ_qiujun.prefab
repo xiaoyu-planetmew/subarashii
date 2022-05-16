@@ -113,6 +113,7 @@ GameObject:
   - component: {fileID: 2155278013059610307}
   - component: {fileID: 2155278013059610306}
   - component: {fileID: 2155278013059610317}
+  - component: {fileID: 8187405227166788938}
   m_Layer: 0
   m_Name: germ_qiujun
   m_TagString: Untagged
@@ -205,3 +206,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8187405227166788938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2155278013059610316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6419c1b269e1af4bb3a2c0db30da8a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

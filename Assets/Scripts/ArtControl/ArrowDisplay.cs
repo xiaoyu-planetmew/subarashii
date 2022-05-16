@@ -18,6 +18,10 @@ public class ArrowDisplay : MonoBehaviour
     [HideInInspector] public bool isNull = false;
     private bool hasEnter;
 
+    [Header("Level3 菌群")]
+    public Animator germ;
+    public Animator germEmo;
+
     private void Awake()
     {
         //ResetArrow();
@@ -58,6 +62,18 @@ public class ArrowDisplay : MonoBehaviour
             }
 
             hasEnter = true;
+
+            //level3 播放菌群appear动画
+            if (LevelController.Instance.level == Level.Level_3_ver1)
+            {
+                Debug.Log("Is level3");
+                if (!germ && !germEmo)//如果两个都不为空
+                {
+                    Debug.Log("germ animation triggered");
+                    germ.SetTrigger("appear");
+                    germEmo.SetTrigger("appear");
+                }
+            }
         }
     }
 
@@ -99,11 +115,10 @@ public class ArrowDisplay : MonoBehaviour
             showingArrow.hint_Normal.GetComponent<Animator>().speed = speed;
         }
 
-        //c播放combo timinig同时播放tip的声音
+        //播放combo timinig同时播放tip的声音
         if(linkMPDisplay.ComboTiming)
         {
             GameObject.Find("comboTime").GetComponent<Animator>().SetTrigger("Show");
-
             switch (Tip)
             {
                 case TipType.Tip_Triple:
@@ -117,7 +132,6 @@ public class ArrowDisplay : MonoBehaviour
                     break;
             }
         }
-
     }
 
 
