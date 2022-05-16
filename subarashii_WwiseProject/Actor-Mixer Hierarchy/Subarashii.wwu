@@ -480,6 +480,11 @@
 						<RandomSequenceContainer Name="Door_Impacting" ID="{F290FD63-DB46-4F04-A87C-23EF7C9E0A56}" ShortID="836052017">
 							<PropertyList>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
