@@ -602,7 +602,7 @@
 										<Action Name="" ID="{FA6D63AB-8491-437D-9F2D-2A745CBCD88C}" ShortID="223901704">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Space_Barriage" ID="{7B9E04E2-43CE-40E4-BD5F-7DF1E2D6256D}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
+													<ObjectRef Name="Space_Hinder" ID="{6E1FCA35-8FF1-4545-BF9C-C58C05E6F28F}" WorkUnitID="{432A2476-33CB-48C5-AD5A-8DAE4108B4BE}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
