@@ -67,7 +67,7 @@ public class ArrowDisplay : MonoBehaviour
             if (LevelController.Instance.level == Level.Level_3_ver1)
             {
                 Debug.Log("Is level3");
-                if (!germ && !germEmo)//如果两个都不为空
+                if (germ != null && germEmo != null)//如果两个都不为空
                 {
                     Debug.Log("germ animation triggered");
                     germ.SetTrigger("appear");
