@@ -433,6 +433,11 @@
 						<RandomSequenceContainer Name="Food_Happy" ID="{37EE39FF-5A35-46DF-B554-882D212B4505}" ShortID="579200167">
 							<PropertyList>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">

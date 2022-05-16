@@ -6,20 +6,31 @@ public class Level0Control : MonoBehaviour
 {
     public GameObject Capsule;
     bool openFinished = false;
+
+    public int pressNum;
     // Start is called before the first frame update
     void Start()
     {
-        
+        pressNum = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.anyKeyDown && !openFinished)
+
+/*        if(Input.anyKeyDown && !openFinished)
         {
-            DialogSys.Instance.dialogNext();
-            CapsuleAnim1();
-        }
+            if(pressNum < 3)
+            {
+                DialogSys.Instance.dialogNext();
+                CapsuleAnim1();
+                pressNum++;
+            }
+            else
+            {
+
+            }
+        }*/
     }
     public void level0Start()
     {
