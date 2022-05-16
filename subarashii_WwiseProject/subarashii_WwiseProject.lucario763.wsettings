@@ -3,15 +3,30 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{094CFC3D-4C6C-4EAB-97F5-267BDFF428A1}">
 			<PropertyList>
+				<Property Name="Event Action List\{04D2F067-43DA-4D42-BC0B-E2509D3CD219}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{1EE0CB5E-633A-45F1-BCCA-A90868BEF2FF}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{206E1D9E-8C4D-4960-BD63-8FDE3255F213}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{25555C80-378C-412A-A98A-192B51E2B509}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{381E671F-D239-49C4-A924-AF25B228AE60}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{41C2B42C-96FB-4A42-ACCC-849A161330F6}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{4AD25224-5FC5-4B2D-83CA-9942390DD80E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{4B5482D8-A8A6-435B-9B74-3FBFC0DA0ACB}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{58E6EFD8-E27F-4958-8DAE-F442C58BE0BA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{66454D14-2B64-4BCD-9447-6B8211E0DF99}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{6A751824-9892-4F4D-8AEA-09324B6612C0}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{6C69019C-83DB-4D5D-AAC4-69B2E76C4EA0}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{740A3BD5-127B-4243-B36F-F9C51EAC1CF0}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{83F44708-DCC3-4CC8-9E60-240A841C7B54}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{86C58F65-A5D4-48D7-BD40-0B4BCB51D221}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{891D58F7-CBEC-440A-B9FC-3E7E7FCBEDE1}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{8ABAC748-2410-42A4-9A64-3F0CCAEEE834}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{8D435277-7FFD-438D-8785-CBB330425B2A}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{91B8692F-94AE-4695-B80B-B7EFA1A1E217}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B08725D4-DD3D-41C2-8A7B-B3C122879A30}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{B4898583-A648-48F3-A93D-883D29284EB5}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{C0CDD860-0F06-4C25-8331-2642C8D32BD7}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{EB87E175-52BE-4B38-9544-CC1EEF5B47B9}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{FE7D21B9-927C-4BB9-9522-DF9DB7D32E54}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
