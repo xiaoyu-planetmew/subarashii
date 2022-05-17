@@ -10558,6 +10558,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4668944814113708423, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: Level_4_ver1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
 --- !u!1 &1052145877 stripped
@@ -13298,7 +13302,7 @@ MonoBehaviour:
   textBackground: {fileID: 1052145889}
   nextPageButton: {fileID: 0}
   textfiles:
-  - {fileID: 4900000, guid: 53bfdf58688520d4f99a40855c128a54, type: 3}
+  - {fileID: 4900000, guid: 580c9e86870566745a313d10f30b5d60, type: 3}
   afterDialogEvents:
   - m_PersistentCalls:
       m_Calls:
