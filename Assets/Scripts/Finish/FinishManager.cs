@@ -55,24 +55,35 @@ public class FinishManager : MonoBehaviour
             finishBackground.sprite = finishBackgrounds[0];
             finishClass.gameObject.SetActive(true);
             finishImage.sprite = finishImages[0];
-            
-            if(hearts == 1)
+            if(total-score == 0)
+            {
+                finishClass.sprite = finishClasses[2];
+            }
+            if(total-score == 1 || total-score == 2 || total-score == 3)
+            {
+                finishClass.sprite = finishClasses[1];
+            }
+            if(total-score >= 4)
             {
                 finishClass.sprite = finishClasses[0];
+            }
+            if(hearts == 1)
+            {
+                //finishClass.sprite = finishClasses[0];
                 HPHearts.GetChild(0).gameObject.GetComponent<Image>().enabled = true;
                 HPHearts.GetChild(1).gameObject.GetComponent<Image>().enabled = false;
                 HPHearts.GetChild(2).gameObject.GetComponent<Image>().enabled = false;
             }
             if(hearts == 2)
             {
-                finishClass.sprite = finishClasses[1];
+                //finishClass.sprite = finishClasses[1];
                 HPHearts.GetChild(0).gameObject.GetComponent<Image>().enabled = true;
                 HPHearts.GetChild(1).gameObject.GetComponent<Image>().enabled = true;
                 HPHearts.GetChild(2).gameObject.GetComponent<Image>().enabled = false;
             }
             if(hearts == 3)
             {
-                finishClass.sprite = finishClasses[2];
+                //finishClass.sprite = finishClasses[2];
                 HPHearts.GetChild(0).gameObject.GetComponent<Image>().enabled = true;
                 HPHearts.GetChild(1).gameObject.GetComponent<Image>().enabled = true;
                 HPHearts.GetChild(2).gameObject.GetComponent<Image>().enabled = true;
