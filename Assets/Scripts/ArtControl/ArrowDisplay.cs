@@ -27,7 +27,8 @@ public class ArrowDisplay : MonoBehaviour
     public ChiliMPAnimation chiliMPAnim;
     public Animator chili;
     public ChiliAnimation chiliAnim;
-
+    public Animator bulletMovePoint;
+    public BulletAnimation bulletAnim;
 
     private void Awake()
     {
@@ -85,6 +86,19 @@ public class ArrowDisplay : MonoBehaviour
             //level4 辣椒动画
             if (LevelController.Instance.level == Level.Level_4_ver1)
             {
+                if(bulletMovePoint != null)
+                {
+                    switch (bulletAnim)
+                    {
+                        case BulletAnimation.attack:
+                            bulletMovePoint.SetTrigger("attack");
+                            break;
+                        case BulletAnimation.back:
+                            bulletMovePoint.SetTrigger("back");
+                            break;
+                    }
+                }
+
                 if(chili != null && chiliMovePoint != null)
                 {
                     switch (chiliAnim)
@@ -104,6 +118,9 @@ public class ArrowDisplay : MonoBehaviour
                         case ChiliAnimation.proud:
                             chili.SetTrigger("proud");
                             break;
+                        case ChiliAnimation.idle:
+                            chili.SetTrigger("idle");
+                            break;
                     }
                     switch (chiliMPAnim)
                     {
@@ -122,7 +139,12 @@ public class ArrowDisplay : MonoBehaviour
                         case ChiliMPAnimation.proud:
                             chiliMovePoint.SetTrigger("proud");
                             break;
-
+                        case ChiliMPAnimation.appear:
+                            chiliMovePoint.SetTrigger("appear");
+                            break;
+                        case ChiliMPAnimation.leave:
+                            chiliMovePoint.SetTrigger("leave");
+                            break;
                     }
                 }
             }
@@ -251,6 +273,8 @@ public enum ChiliMPAnimation
     hit,
     proud,
     defeat,
+    appear,
+    leave,
 }
 public enum ChiliAnimation
 {
@@ -260,4 +284,10 @@ public enum ChiliAnimation
     proud,
     defeat,
     idle,
+}
+
+public enum BulletAnimation
+{
+    attack,
+    back,
 }
