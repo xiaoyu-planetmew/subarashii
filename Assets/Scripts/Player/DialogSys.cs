@@ -45,6 +45,16 @@ public class DialogSys : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isTalking)
+        {
+            if (Input.anyKeyDown)
+            {
+                DialogSys.Instance.dialogNext();
+                SoundController.Instance.Button_Off.HandleEvent(gameObject);
+            }
+
+        }
+
         /*
         if((Mathf.Abs(npc.transform.position.x - player.transform.position.x) <= 5) && !isTalking)
         {
