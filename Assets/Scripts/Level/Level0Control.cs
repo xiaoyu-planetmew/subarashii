@@ -6,6 +6,7 @@ public class Level0Control : MonoBehaviour
 {
     public GameObject Capsule;
     bool openFinished = false;
+    public Animator player;
 
     public int pressNum;
     int hitCount = 0;
@@ -26,8 +27,16 @@ public class Level0Control : MonoBehaviour
                 CapsuleAnim2();
                 StopAllCoroutines();
                 StartCoroutine(Open());
+                player.SetTrigger("open");
+                SoundController.Instance.Door_Open.HandleEvent(gameObject);
+                SoundController.Instance.Input_Arrow_Success_White.HandleEvent(gameObject);
             }
-            if(!isShaking && hitCount < 3) StartCoroutine(Shake());
+            if (!isShaking && hitCount < 3)
+            {
+                StartCoroutine(Shake());
+                SoundController.Instance.Door_Impacting.HandleEvent(gameObject);
+                SoundController.Instance.Input_Arrow_Success_Color.HandleEvent(gameObject);
+            }
 
         }
 /*        if(Input.anyKeyDown && !openFinished)
