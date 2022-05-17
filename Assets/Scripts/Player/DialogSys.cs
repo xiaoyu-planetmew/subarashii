@@ -69,6 +69,7 @@ public class DialogSys : MonoBehaviour
         if(index == textList.Count)
         {
                 index = 0;
+                SoundController.Instance.Talk_Radio_Stop.HandleEvent(gameObject);
                 textBackground.gameObject.SetActive(false);
                 //nextPageButton.gameObject.SetActive(false);
             
@@ -81,6 +82,7 @@ public class DialogSys : MonoBehaviour
         }
         if(index < textList.Count && isTalking)
         {
+                SoundController.Instance.Talk_Buzz.HandleEvent(gameObject);
                 StartCoroutine(SetText());
                 textBackground.gameObject.SetActive(true);
         }
@@ -160,6 +162,7 @@ public class DialogSys : MonoBehaviour
         //textLabelen.gameObject.SetActive(true);
         index = 0;
         textBackground.gameObject.SetActive(true);
+        SoundController.Instance.Talk_Radio_Play.HandleEvent(gameObject);
         //textLabelleft.GetComponent<Text>().text = textList[index];
         //nextPageButton.SetActive(false);
         StartCoroutine(SetText());
@@ -208,6 +211,7 @@ public class DialogSys : MonoBehaviour
     
     IEnumerator SetText()
     {
+        
         textFinished = false;
         textLabel.GetComponent<Text>().text = "";
         for(int i = 0; i < textList[index].Length; i++)
