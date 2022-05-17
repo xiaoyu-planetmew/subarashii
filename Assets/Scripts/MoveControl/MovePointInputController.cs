@@ -167,6 +167,48 @@ public class MovePointInputController : MonoBehaviour
         }
         
         PlayerController.Instance.Miss();
+
+        if (keyInput.keyInput == KeyDirectionType.Down || keyInput.keyInput == KeyDirectionType.Left || keyInput.keyInput == KeyDirectionType.Right
+    || keyInput.keyInput == KeyDirectionType.Up)
+        {
+            if (interactiveAnimation1 != null)
+            {
+                interactiveAnimation1.success = false;
+                interactiveAnimation1.active = true;
+            }
+            if (interactiveAnimation2 != null)
+            {
+                interactiveAnimation2.success = false;
+                interactiveAnimation2.active = true;
+            }
+            if (SpecialAnimation != PlayerSpecialAnimationType.Null)
+            {
+                PlayerSpecialAnimation();
+            }
+        }
+
+        // ����������ɫ����
+        if (keyInput.keyInput == KeyDirectionType.Space)
+        {
+            //Debug.Log("KeyIput Space is Checked");
+            if (interactiveAnimation1 != null)
+            {
+                interactiveAnimation1.success = false;
+                interactiveAnimation1.active = true;
+                //Debug.Log("interactiveAnimation1 is success");
+            }
+            if (interactiveAnimation2 != null)
+            {
+                interactiveAnimation2.success = false;
+                interactiveAnimation2.active = true;
+                //Debug.Log("interactiveAnimation2 is success");
+            }
+            if (SpecialAnimation != PlayerSpecialAnimationType.Null)
+            {
+                PlayerSpecialAnimation();
+                //Debug.Log("Player Special Animation is Played");
+            }
+        }
     }
 
     /// <summary>

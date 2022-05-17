@@ -41,7 +41,10 @@ public class InteractiveAnimation : MonoBehaviour
             anim.SetTrigger(success ? successAnimation : failureAnimation);
             PlayerAnimation();
             Debug.Log("success = "+success);
-            startPlayAnimation = false;
+            if(LevelController.Instance.level != Level.Level_4_ver1)
+            {
+                startPlayAnimation = false;
+            }
             active = false;
         }
     }

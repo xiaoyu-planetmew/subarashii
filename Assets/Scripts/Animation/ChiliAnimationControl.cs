@@ -4,12 +4,8 @@ using UnityEngine;
 
 public class ChiliAnimationControl : MonoBehaviour
 {
-    private Animator anim;
+    public Animator anim;
 
-    private void Start()
-    {
-        anim = GetComponentInChildren<Animator>();
-    }
     void ChiliAnim_Debut()
     {
         anim.SetTrigger("debut");
