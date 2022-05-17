@@ -29,13 +29,13 @@ public class LevelController : MonoBehaviour
     {
         Instance = this;
 
-        if(level!=Level.MainMenu)
+        if(level!=Level.MainMenu || level != Level.Level_1_Start)
             InitiateLevel();
     }
 
     private void Start()
     {
-        if (level == Level.MainMenu) 
+        if (level == Level.MainMenu || level == Level.Level_1_Start) 
         {
             sceneChangeEvents.Invoke();
 
@@ -125,6 +125,7 @@ public class LevelController : MonoBehaviour
         {
             interAnim.ResetAnimation();
         }
+        sceneChangeEvents.Invoke();
 
         // 重置角色（位置、动画、血量） / reset Player(posisiton, display, blood)
         PlayerController.Instance.ResetPlayer();

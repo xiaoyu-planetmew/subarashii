@@ -29,7 +29,10 @@ public class PlayerController : MonoBehaviour
     {
         originBlood = blood;
         startPlaying = false;
-        totalMovePoints = LevelController.Instance.startMovePoint.transform.parent.childCount;
+        if(LevelController.Instance.startMovePoint != null)
+        {
+            totalMovePoints = LevelController.Instance.startMovePoint.transform.parent.childCount;
+        }
         if (restartPos != null)
             originPos = restartPos.position;
         else

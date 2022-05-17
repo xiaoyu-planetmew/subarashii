@@ -12442,6 +12442,78 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6b38f0d9c620074ebfc43ce9936a311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1028182891
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1028182893}
+  - component: {fileID: 1028182892}
+  m_Layer: 0
+  m_Name: DialogManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1028182892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028182891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d977421406ff438449f3a41bba0be5c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventNum: 0
+  textLabel: {fileID: 1245546040}
+  textBackground: {fileID: 1245546039}
+  nextPageButton: {fileID: 0}
+  textfiles:
+  - {fileID: 4900000, guid: 53bfdf58688520d4f99a40855c128a54, type: 3}
+  afterDialogEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1960545389}
+        m_TargetAssemblyTypeName: TutorialTrackController, Assembly-CSharp
+        m_MethodName: FinishTutorial
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  isTalking: 0
+  index: 0
+  textList: []
+  textTalker: []
+  textSpeed: 0.1
+  leftAudio: []
+  rightAudio: []
+  output: 
+--- !u!4 &1028182893
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028182891}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1040369294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15070,6 +15142,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3571327816488606153, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
 --- !u!1 &1245546029 stripped
@@ -15162,6 +15238,16 @@ MonoBehaviour:
 --- !u!1 &1245546038 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4668944813161024715, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+  m_PrefabInstance: {fileID: 1245546028}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1245546039 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3571327816488606153, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+  m_PrefabInstance: {fileID: 1245546028}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1245546040 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3571327817295702924, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
   m_PrefabInstance: {fileID: 1245546028}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1246306112
@@ -24528,7 +24614,19 @@ MonoBehaviour:
   startMovePoint: {fileID: 1152722334224814349}
   sceneChangeEvents:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1028182892}
+        m_TargetAssemblyTypeName: DialogSys, Assembly-CSharp
+        m_MethodName: dialogStart
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   scenLeaveEvents:
     m_PersistentCalls:
       m_Calls:
