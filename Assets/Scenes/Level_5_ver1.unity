@@ -1923,6 +1923,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 625516214270961487, guid: a34f4498c0e4c0a4d818c0958e7cc568, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ab74701cb97b7ae4b9eb866a44fdb90f, type: 2}
+    - target: {fileID: 625516214270961487, guid: a34f4498c0e4c0a4d818c0958e7cc568, type: 3}
       propertyPath: m_Parameters.widthMultiplier
       value: 10
       objectReference: {fileID: 0}
