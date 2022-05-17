@@ -19,7 +19,7 @@ public class Level0Control : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.S))
+        if(Input.GetKey(KeyCode.DownArrow))
         {
             if(hitCount >= 3)
             {
