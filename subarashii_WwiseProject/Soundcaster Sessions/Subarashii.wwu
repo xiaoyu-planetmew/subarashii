@@ -167,6 +167,14 @@
 							<ObjectRef Name="Play_Level_1_Music" ID="{58E6EFD8-E27F-4958-8DAE-F442C58BE0BA}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}"/>
 							<Position X="0" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Talk_Radio_Play" ID="{DA1A8D64-B19D-4AB4-B49B-68C147ED18B6}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Talk_Radio_Stop" ID="{3888587A-A377-411F-8B74-8A2CBBD3BD4D}" WorkUnitID="{FD6E7963-D422-49F3-92E8-DBFE894F0A8D}"/>
+							<Position X="2" Y="1"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
