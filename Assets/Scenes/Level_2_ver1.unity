@@ -3899,6 +3899,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 625516214270961487, guid: a34f4498c0e4c0a4d818c0958e7cc568, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 049ce85cb42419e47bc1cd6932bc36b4, type: 2}
+    - target: {fileID: 625516214270961487, guid: a34f4498c0e4c0a4d818c0958e7cc568, type: 3}
       propertyPath: m_Parameters.widthMultiplier
       value: 10
       objectReference: {fileID: 0}
@@ -19941,7 +19945,7 @@ MonoBehaviour:
       enableBigTilePrepass: 0
       isFptlEnabled: 0
   clearColorMode: 1
-  backgroundColorHDR: {r: 0, g: 0.59607846, b: 0.7176471, a: 0}
+  backgroundColorHDR: {r: 0.1764706, g: 0.9137255, b: 0.31764707, a: 0}
   clearDepth: 1
   volumeLayerMask:
     serializedVersion: 2

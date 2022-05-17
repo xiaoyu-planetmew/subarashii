@@ -49,7 +49,7 @@ public class PlayerMoveController : MonoBehaviour
     private void FixedUpdate()
     {
         //根据点和时间移动
-        if(startMove && !LevelController.Instance.isPausing)
+        if(startMove && !LevelController.Instance.isPausing && PlayerController.Instance.startPlaying)
         {
             MoveByPoints();
         }
@@ -136,7 +136,7 @@ public class PlayerMoveController : MonoBehaviour
         if (nowMovePoint.nextPoint != null)
         {
             //计算下一段路线
-            MoveToPoint(nowMovePoint.GetNextOrBranchPoint());
+            MoveToPoint(nowMovePoint.nextPoint);
         }
         else
         {
