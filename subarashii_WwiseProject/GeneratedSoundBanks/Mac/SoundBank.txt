@@ -82,6 +82,7 @@ Trigger	ID	Name			Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	29973254	SFX_button_off	F:\subarashii\subarashii_WwiseProject\.cache\Mac\SFX\SFX\SFX_button_off_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Button_Off\SFX_button_off		192064
+	54908918	SFX_trigger_spcae_hinder	F:\subarashii\subarashii_WwiseProject\.cache\Mac\SFX\SFX\SFX_trigger_spcae_hinder_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Level_3\Space_Hinder\SFX_trigger_spcae_hinder		96064
 	56319215	SFX_trigger_space3_V2	F:\subarashii\subarashii_WwiseProject\.cache\Mac\SFX\SFX_trigger_space3_V2_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Input_Space_Success_White\SFX_trigger_space3_V2		120064
 	100296075	SFX_shit	F:\subarashii\subarashii_WwiseProject\.cache\Mac\SFX\SFX\SFX_shit_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Level_5\Final_Shit\SFX_shit		2112064
 	111535056	SFX_tip_triple	F:\subarashii\subarashii_WwiseProject\.cache\Mac\SFX\SFX\SFX_tip_triple_D79FB2B7.wem		\Interactive Music Hierarchy\Subarashii\Tip_Triple\SFX_tip_triple		179192
@@ -125,6 +126,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	862353582	Music_level1(tutorial)_BPM100_32bit48khz	F:\subarashii\subarashii_WwiseProject\.cache\Mac\SFX\Music_level1(tutorial)_BPM100_32bit48khz_D79FB2B7.wem		\Interactive Music Hierarchy\Subarashii\Level_1_Music\Tutorial\Music_level1(tutorial)_BPM100_32bit48khz\Music_level1(tutorial)_BPM100_32bit48khz		1843264
 	871437218	Music_level1_BPM100_32bit48khz	F:\subarashii\subarashii_WwiseProject\.cache\Mac\SFX\Music_level1_BPM100_32bit48khz_D79FB2B7.wem		\Interactive Music Hierarchy\Subarashii\Level_1_Music\MainMusic\Music_level1_BPM100_32bit48khz\Music_level1_BPM100_32bit48khz		19353744
 	900534526	SFX_talk2	F:\subarashii\subarashii_WwiseProject\.cache\Mac\SFX\SFX\SFX_talk2_F970B1DB.wem		\Actor-Mixer Hierarchy\Subarashii\Talking_2\Talking_2_01\SFX_talk2		40636
+	916221930	SFX_space_hinder_V2	F:\subarashii\subarashii_WwiseProject\.cache\Mac\SFX\SFX_space_hinder_V2_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Level_3\Space_Hinder\SFX_space_hinder_V2		96064
 	918644783	song2	F:\subarashii\subarashii_WwiseProject\.cache\Mac\SFX\song2_D79FB2B7.wem		\Interactive Music Hierarchy\Subarashii\Level_2_Music\MainMusic\song2\song2		21976680
 	942345587	song4_tutorial	F:\subarashii\subarashii_WwiseProject\.cache\Mac\SFX\song4_tutorial_D79FB2B7.wem		\Interactive Music Hierarchy\Subarashii\Level_4_Music\MainMusic\song4_tutorial\song4_tutorial		1053324
 	1015430339	SFX_trigger_arrow_miss	F:\subarashii\subarashii_WwiseProject\.cache\Mac\SFX\SFX\SFX_trigger_arrow_miss_10C4C929.wem		\Actor-Mixer Hierarchy\Subarashii\Input_Arrow_Miss\SFX_trigger_arrow_miss		192064

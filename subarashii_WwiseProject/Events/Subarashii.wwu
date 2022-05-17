@@ -650,6 +650,7 @@
 										<Action Name="" ID="{77BD658D-88BC-46D8-88FC-B4FD5600C8AF}" ShortID="226585552">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
