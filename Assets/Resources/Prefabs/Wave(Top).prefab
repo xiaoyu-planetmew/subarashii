@@ -4814,6 +4814,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2421979800394946411}
   - component: {fileID: 1635987502729305922}
+  - component: {fileID: 4282451848198230032}
   m_Layer: 0
   m_Name: Wave(Top)
   m_TagString: Untagged
@@ -4852,6 +4853,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   children: []
+--- !u!210 &4282451848198230032
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2421979800394946410}
+  m_Enabled: 1
+  m_SortingLayerID: -938379781
+  m_SortingLayer: 3
+  m_SortingOrder: 5
 --- !u!1001 &2500820350254670784
 PrefabInstance:
   m_ObjectHideFlags: 0

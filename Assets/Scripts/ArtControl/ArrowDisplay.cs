@@ -22,6 +22,13 @@ public class ArrowDisplay : MonoBehaviour
     public Animator germ;
     public Animator germEmo;
 
+    [Header("Level4 辣椒")]
+    public Animator chiliMovePoint;
+    public ChiliMPAnimation chiliMPAnim;
+    public Animator chili;
+    public ChiliAnimation chiliAnim;
+
+
     private void Awake()
     {
         //ResetArrow();
@@ -72,6 +79,51 @@ public class ArrowDisplay : MonoBehaviour
                     Debug.Log("germ animation triggered");
                     germ.SetTrigger("appear");
                     germEmo.SetTrigger("appear");
+                }
+            }
+
+            //level4 辣椒动画
+            if (LevelController.Instance.level == Level.Level_4_ver1)
+            {
+                if(chili != null && chiliMovePoint != null)
+                {
+                    switch (chiliAnim)
+                    {
+                        case ChiliAnimation.attack:
+                            chili.SetTrigger("attack");
+                            break;
+                        case ChiliAnimation.debut:
+                            chili.SetTrigger("debut");
+                            break;
+                        case ChiliAnimation.hit:
+                            chili.SetTrigger("hit");
+                            break;
+                        case ChiliAnimation.defeat:
+                            chili.SetTrigger("defeat");
+                            break;
+                        case ChiliAnimation.proud:
+                            chili.SetTrigger("proud");
+                            break;
+                    }
+                    switch (chiliMPAnim)
+                    {
+                        case ChiliMPAnimation.attack:
+                            chiliMovePoint.SetTrigger("attack");
+                            break;
+                        case ChiliMPAnimation.debut:
+                            chiliMovePoint.SetTrigger("debut");
+                            break;
+                        case ChiliMPAnimation.hit:
+                            chiliMovePoint.SetTrigger("hit");
+                            break;
+                        case ChiliMPAnimation.defeat:
+                            chiliMovePoint.SetTrigger("defeat");
+                            break;
+                        case ChiliMPAnimation.proud:
+                            chiliMovePoint.SetTrigger("proud");
+                            break;
+
+                    }
                 }
             }
         }
@@ -190,4 +242,22 @@ public enum TipType
     Tip_Triple,
     Tip_Double,
     Tip_TripleChange,
+}
+
+public enum ChiliMPAnimation
+{
+    debut,
+    attack,
+    hit,
+    proud,
+    defeat,
+}
+public enum ChiliAnimation
+{
+    debut,
+    attack,
+    hit,
+    proud,
+    defeat,
+    idle,
 }

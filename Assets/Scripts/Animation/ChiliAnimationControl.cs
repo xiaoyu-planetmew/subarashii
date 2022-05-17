@@ -34,6 +34,10 @@ public class ChiliAnimationControl : MonoBehaviour
     {
         anim.SetTrigger("proud");
     }
+    void ChiliAnim_Idle()
+    {
+        anim.SetTrigger("idle");
+    }
 
     //bossÉùÒô¿ØÖÆ²¿·Ö
     void ChiliExploreSFX()

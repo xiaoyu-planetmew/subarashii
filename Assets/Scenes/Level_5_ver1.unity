@@ -2793,6 +2793,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4668944813161024715, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
   m_PrefabInstance: {fileID: 448435525}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &448435536 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3571327816109129304, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+  m_PrefabInstance: {fileID: 448435525}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &450468244
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10765,7 +10770,7 @@ MonoBehaviour:
         m_CallState: 2
   trackController: []
   mainMusicPlayingTimer: 0
-  pauseMenu: {fileID: 0}
+  pauseMenu: {fileID: 448435536}
   finishThisLevel: 0
   isPausing: 0
 --- !u!4 &1960545388

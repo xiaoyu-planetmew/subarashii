@@ -201,6 +201,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2421979800394946411, guid: 14b9e576cf678bb418d40174435569c4, type: 3}
   m_PrefabInstance: {fileID: 1151902}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5232649 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3571327816109129304, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+  m_PrefabInstance: {fileID: 1245546028}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &10210517
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24541,7 +24546,7 @@ MonoBehaviour:
         m_CallState: 2
   trackController: []
   mainMusicPlayingTimer: 0
-  pauseMenu: {fileID: 0}
+  pauseMenu: {fileID: 5232649}
   finishThisLevel: 0
   isPausing: 0
 --- !u!4 &1960545388
