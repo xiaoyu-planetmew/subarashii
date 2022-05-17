@@ -51,8 +51,16 @@ public class LevelController : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Escape) && !SceneController.Instance.sceneChanging)
         {
-            Pause();
-            pauseMenu.SetActive(true);
+            if (!isPausing)
+            {
+                Pause();
+                pauseMenu.SetActive(true);
+            }
+            else
+            {
+                Resume();
+                pauseMenu.SetActive(false);
+            }
         }
 
         if (startPlayingMainMusic)
