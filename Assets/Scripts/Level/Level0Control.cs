@@ -21,7 +21,7 @@ public class Level0Control : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.DownArrow))
         {
-            if(hitCount >= 3)
+            if(hitCount == 3)
             {
                 CapsuleAnim2();
                 StopAllCoroutines();

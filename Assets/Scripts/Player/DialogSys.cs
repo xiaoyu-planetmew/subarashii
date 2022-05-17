@@ -77,6 +77,7 @@ public class DialogSys : MonoBehaviour
                 //textLabelen.gameObject.SetActive(false);
                 isTalking = false;
                 afterDialogEvents[eventNum].Invoke();
+                
                 return;
                 //TutorialTrackController.Instance.FinishTutorial();
         }
