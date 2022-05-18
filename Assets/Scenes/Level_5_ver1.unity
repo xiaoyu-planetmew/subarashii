@@ -1132,12 +1132,27 @@ MonoBehaviour:
   nextPageButton: {fileID: 0}
   textfiles:
   - {fileID: 4900000, guid: a31088cfd63917b4098bd8d8a9ca1c53, type: 3}
+  - {fileID: 4900000, guid: 4b5f28b7e891f504e8e18a59c6480795, type: 3}
   afterDialogEvents:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1960545391}
         m_TargetAssemblyTypeName: FinishManager, Assembly-CSharp
         m_MethodName: ShowStuff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1960545389}
+        m_TargetAssemblyTypeName: TutorialTrackController, Assembly-CSharp
+        m_MethodName: FinishTutorial
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3943,7 +3958,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759224, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 247.38
+      value: 244.08
       objectReference: {fileID: 0}
     - target: {fileID: 1152722335200759224, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10857,14 +10872,14 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1960545389}
-        m_TargetAssemblyTypeName: TutorialTrackController, Assembly-CSharp
-        m_MethodName: FinishTutorial
-        m_Mode: 1
+      - m_Target: {fileID: 159070605}
+        m_TargetAssemblyTypeName: DialogSys, Assembly-CSharp
+        m_MethodName: dialogStart
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

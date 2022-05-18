@@ -15,7 +15,7 @@ public class FinalCheckPoint : MonoBehaviour
                 FinishManager.Instance.FinishPlaying((int)LevelController.Instance.level - 1, PlayerController.Instance.blood, PlayerController.Instance.successPoints, PlayerController.Instance.totalPoints);
             else
             {
-
+                LevelController.Instance.FinishLevel();
             }
             
         }
