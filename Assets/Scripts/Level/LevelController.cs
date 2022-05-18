@@ -155,6 +155,11 @@ public class LevelController : MonoBehaviour
         StartCoroutine(WaitAnimation());
         
     }
+    public void FinishLevel()
+    {
+        if (LevelController.Instance != null)
+            LevelController.Instance.scenLeaveEvents.Invoke();
+    }
 
     private IEnumerator WaitAnimation()
     {

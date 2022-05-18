@@ -1131,13 +1131,13 @@ MonoBehaviour:
   textBackground: {fileID: 448435537}
   nextPageButton: {fileID: 0}
   textfiles:
-  - {fileID: 4900000, guid: 9a1bfa0e307ebd54f8567f348e74db8f, type: 3}
+  - {fileID: 4900000, guid: a31088cfd63917b4098bd8d8a9ca1c53, type: 3}
   afterDialogEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1960545389}
-        m_TargetAssemblyTypeName: TutorialTrackController, Assembly-CSharp
-        m_MethodName: FinishTutorial
+      - m_Target: {fileID: 1960545391}
+        m_TargetAssemblyTypeName: FinishManager, Assembly-CSharp
+        m_MethodName: ShowStuff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2594,6 +2594,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3571327815904889219, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 484933242}
+    - target: {fileID: 3571327815904889219, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571327815904889219, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ButtonEvents, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3571327815950560453, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2691,6 +2703,26 @@ PrefabInstance:
       value: Canvas
       objectReference: {fileID: 0}
     - target: {fileID: 3571327816402464602, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571327816706480721, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571327816706480721, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1960545387}
+    - target: {fileID: 3571327816706480721, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FinishLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571327816706480721, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571327816706480723, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -3074,6 +3106,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1152722335200759224, guid: a31772f3a009b384a9837b3026273804, type: 3}
   m_PrefabInstance: {fileID: 473386611}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &484933237 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3571327815904889229, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+  m_PrefabInstance: {fileID: 448435525}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &484933242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484933237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb63f77ca55d7c549ac2bc152cdad806, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &500255972
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10808,6 +10857,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1960545389}
+        m_TargetAssemblyTypeName: TutorialTrackController, Assembly-CSharp
+        m_MethodName: FinishTutorial
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   scenLeaveEvents:
     m_PersistentCalls:
       m_Calls:
@@ -10825,7 +10886,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1960545391}
         m_TargetAssemblyTypeName: FinishManager, Assembly-CSharp
-        m_MethodName: ShowStuff
+        m_MethodName: Level5Finish
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

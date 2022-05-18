@@ -46,7 +46,7 @@ public class SceneController : MonoBehaviour
         StartCoroutine(WaitEffectComplete(toLevel));
     }
 
-    private IEnumerator WaitEffectComplete(Level toLevel)
+    public IEnumerator WaitEffectComplete(Level toLevel)
     {
         yield return new WaitForSeconds(2f);
 

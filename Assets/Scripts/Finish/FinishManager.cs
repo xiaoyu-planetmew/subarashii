@@ -102,8 +102,14 @@ public class FinishManager : MonoBehaviour
         clearNum.text = score.ToString();
         missNum.text = (total-score).ToString();
     }
+    public void Level5Finish()
+    {
+        DialogSys.Instance.dialogStart(0);
+        PlayerController.Instance.startPlaying = false;
+    }
     public void ShowStuff()
     {
+        //DialogSys.Instance.dialogStart(0);
         PlayerController.Instance.startPlaying = false;
         Stuff.SetActive(true);
         SoundController.Instance.Final_Shit.HandleEvent(WwiseManager.Instance.gameObject);
