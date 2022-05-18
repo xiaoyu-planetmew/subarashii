@@ -7262,6 +7262,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3571327817678097579, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4668944814113708423, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
       value: Level_5_ver1
@@ -30444,7 +30448,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1863567756521628866, guid: 4f52f6813ae6b1341863c7d2fcd59fc6, type: 3}
       propertyPath: m_LocalScale.y
-      value: 108.4
+      value: 205.77
       objectReference: {fileID: 0}
     - target: {fileID: 1863567756521628866, guid: 4f52f6813ae6b1341863c7d2fcd59fc6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -30489,6 +30493,10 @@ PrefabInstance:
     - target: {fileID: 1863567756521628878, guid: 4f52f6813ae6b1341863c7d2fcd59fc6, type: 3}
       propertyPath: m_Name
       value: Grid
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863567756521628878, guid: 4f52f6813ae6b1341863c7d2fcd59fc6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f52f6813ae6b1341863c7d2fcd59fc6, type: 3}
