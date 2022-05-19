@@ -49,7 +49,8 @@ public class LevelController : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape) && !SceneController.Instance.sceneChanging)
+        if(level!=Level.MainMenu || level != Level.Level_1_Start){
+        if(Input.GetKeyDown(KeyCode.Escape) && !SceneController.Instance.sceneChanging && pauseMenu != null)
         {
             if (!isPausing)
             {
@@ -61,8 +62,8 @@ public class LevelController : MonoBehaviour
                 Resume();
                 pauseMenu.SetActive(false);
             }
+        }else return;
         }
-
         if (startPlayingMainMusic)
             mainMusicPlayingTimer += Time.unscaledDeltaTime;
     }
