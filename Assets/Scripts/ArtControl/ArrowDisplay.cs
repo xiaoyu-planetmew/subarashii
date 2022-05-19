@@ -18,11 +18,11 @@ public class ArrowDisplay : MonoBehaviour
     [HideInInspector] public bool isNull = false;
     private bool hasEnter;
 
-    [Header("Level3 菌群")]
+    //[Header("Level3 菌群")]
     public Animator germ;
     public Animator germEmo;
 
-    [Header("Level4 辣椒")]
+    //[Header("Level4 辣椒")]
     public Animator chiliMovePoint;
     public ChiliMPAnimation chiliMPAnim;
     public Animator chili;

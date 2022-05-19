@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class MovePoint : MonoBehaviour
 {
-    [Header("�ƶ��ڵ����")]
+    //[Header("�ƶ��ڵ����")]
 
-    [Tooltip("���ӵ���һ���ڵ�")] 
+    //[Tooltip("���ӵ���һ���ڵ�")] 
     public MovePoint nextPoint;
 
-    [Tooltip("֧�߽ڵ�")]
+    //[Tooltip("֧�߽ڵ�")]
     public MovePoint branchPoint;
 
-    [Tooltip("�ƶ�����һ���ڵ���м䱴������, ���ƶ�˳������")] 
+    //[Tooltip("�ƶ�����һ���ڵ���м䱴������, ���ƶ�˳������")] 
     public Transform[] besizerControlPoints;
 
     public float timeToNextMovePoint = 1;

@@ -56,35 +56,35 @@ public class TutorialTrackController : MonoBehaviour
     }
 
     /// <summary>
-    /// 获取教学部分BGM一个小节的剩余播放时间
+    /// 锟斤拷取锟斤拷学锟斤拷锟斤拷BGM一锟斤拷小锟节碉拷剩锟洁播锟斤拷时锟斤拷
     /// </summary>
     /// <returns></returns>
     private float GetLastOneBarPlayingTime()
     {
-        //获取剩余小节时间
+        //锟斤拷取剩锟斤拷小锟斤拷时锟斤拷
         float leftTime = timeOfOneBar - (timer - Mathf.Floor(timer / timeOfOneBar) * timeOfOneBar);
 
 
-        Debug.Log("推迟时间" + leftTime + " 已播小节 "+ Mathf.Floor(timer / timeOfOneBar) + " 时间" + (timer - Mathf.Floor(timer / timeOfOneBar) * timeOfOneBar));
+        Debug.Log("锟狡筹拷时锟斤拷" + leftTime + " 锟窖诧拷小锟斤拷 "+ Mathf.Floor(timer / timeOfOneBar) + " 时锟斤拷" + (timer - Mathf.Floor(timer / timeOfOneBar) * timeOfOneBar));
 
 
         return leftTime;
     }
 
     /// <summary>
-    /// 结束教学环节并开始游戏
+    /// 锟斤拷锟斤拷锟斤拷学锟斤拷锟节诧拷锟斤拷始锟斤拷戏
     /// </summary>
     public void FinishTutorial()
     {
-        //切换音乐
+        //锟叫伙拷锟斤拷锟斤拷
         SwitchToMain.HandleEvent(WwiseManager.Instance.gameObject);
 
-        // 同步游戏开始
+        // 同锟斤拷锟斤拷戏锟斤拷始
         StartCoroutine(SynGameStart(GetLastOneBarPlayingTime()));
     }
 
     /// <summary>
-    /// 同步开始
+    /// 同锟斤拷锟斤拷始
     /// </summary>
     /// <param name="time"></param>
     /// <returns></returns>
@@ -93,7 +93,7 @@ public class TutorialTrackController : MonoBehaviour
 
         yield return new WaitForSeconds(time);
 
-        LevelController.Instance.StartLevel(); //从教学起始点开始
+        LevelController.Instance.StartLevel(); //锟接斤拷学锟斤拷始锟姐开始
 
 
     }

@@ -5,21 +5,21 @@ using UnityEngine;
 
 public class PlayerMoveController : MonoBehaviour
 {
-    [Header("µãÖ®¼äµÄÀëÉ¢ÊýÁ¿")]
+    //[Header("ï¿½ï¿½Ö®ï¿½ï¿½ï¿½ï¿½ï¿½É¢ï¿½ï¿½ï¿½ï¿½")]
     public int lineSegmentNum = 150;
 
-    [Header("³É¹¦Ê±³å´ÌËÙ¶È")]
+    //[Header("ï¿½É¹ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Ù¶ï¿½")]
     public float acceratedSpeed = 3f;
 
     public static PlayerMoveController Instance;
 
-    private List<Vector3> movePoints; //ÀëÉ¢»¯µÄ´ýÒÆ¶¯µã
-    private float moveDeltaTime; //ÀëÉ¢µãÖ®¼äµÄÒÆ¶¯Ê±¼ä
+    private List<Vector3> movePoints; //ï¿½ï¿½É¢ï¿½ï¿½ï¿½Ä´ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½
+    private float moveDeltaTime; //ï¿½ï¿½É¢ï¿½ï¿½Ö®ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½Ê±ï¿½ï¿½
     private float originMoveDeltaTime;
     private bool startMove;
     private float timer;
     private float aTimer;
-    private MovePoint nowMovePoint; //µ±Ç°ÕýÔÚ×ßµÄ
+    private MovePoint nowMovePoint; //ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ßµï¿½
     private float mpSegTotalTime;
     private float aSpeed;
     private int nowPoint;
@@ -27,7 +27,7 @@ public class PlayerMoveController : MonoBehaviour
     private bool waitForOneFrame;
     private int accelerateNum;
 
-    [SerializeField] private bool accelerated; //ÊÇ·ñ¼ÓËÙ³å´Ì
+    [SerializeField] private bool accelerated; //ï¿½Ç·ï¿½ï¿½ï¿½Ù³ï¿½ï¿½
     private bool finishedAccelerate;
     private float saveAcceleratedTime;
 
@@ -48,7 +48,7 @@ public class PlayerMoveController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //¸ù¾ÝµãºÍÊ±¼äÒÆ¶¯
+        //ï¿½ï¿½ï¿½Ýµï¿½ï¿½Ê±ï¿½ï¿½ï¿½Æ¶ï¿½
         if(startMove && !LevelController.Instance.isPausing && PlayerController.Instance.startPlaying)
         {
             MoveByPoints();
@@ -77,13 +77,13 @@ public class PlayerMoveController : MonoBehaviour
         transform.position = movePoints[nowPoint];
 
 
-        //¶¯Ì¬¼ÆËãËÙ¶È
+        //ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶ï¿½
         if(accelerated)
         {
             accelerateNum++;
 
             aSpeed = aSpeed - 0.1f / nowMovePoint.timeToNextMovePoint;
-            Debug.Log("¶¯Ì¬ËÙ¶È¼õÐ¡µ½ " + aSpeed);
+            Debug.Log("ï¿½ï¿½Ì¬ï¿½Ù¶È¼ï¿½Ð¡ï¿½ï¿½ " + aSpeed);
 
             float leftTime = nowMovePoint.nextPoint.timeInTrack - LevelController.Instance.mainMusicPlayingTimer;
             float leftATime = aSpeed * moveDeltaTime * (movePoints.Count - nowPoint);
@@ -102,22 +102,22 @@ public class PlayerMoveController : MonoBehaviour
                     
                     if (aSpeed <= 0) aSpeed = 1;
 
-                    Debug.Log("ÔÈËÙ " + aSpeed + "Ê£ÓàÊ±¼ä" + (nowMovePoint.nextPoint.timeInTrack - LevelController.Instance.mainMusicPlayingTimer));
+                    Debug.Log("ï¿½ï¿½ï¿½ï¿½ " + aSpeed + "Ê£ï¿½ï¿½Ê±ï¿½ï¿½" + (nowMovePoint.nextPoint.timeInTrack - LevelController.Instance.mainMusicPlayingTimer));
                 }
                 finishedAccelerate = true;
-                Debug.Log("»Ö¸´ÔÈËÙ");
+                Debug.Log("ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½");
             }
         }
 
         if(nowPoint >= movePoints.Count - 2)
         {
-            //µ½×îºóÒ»¸öµã
+            //ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½
             ArrivedLastPoint();
         }
     }
 
     /// <summary>
-    /// µ½×îºóÒ»¸öµã
+    /// ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½
     /// </summary>
     private void ArrivedLastPoint()
     {
@@ -135,7 +135,7 @@ public class PlayerMoveController : MonoBehaviour
 
         if (nowMovePoint.nextPoint != null)
         {
-            //¼ÆËãÏÂÒ»¶ÎÂ·Ïß
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Â·ï¿½ï¿½
             MoveToPoint(nowMovePoint.nextPoint);
         }
         else
@@ -148,8 +148,8 @@ public class PlayerMoveController : MonoBehaviour
             if (nowMovePoint.nextPoint != null && (nowMovePoint.nextPoint.timeInTrack - LevelController.Instance.mainMusicPlayingTimer) > 0)
             {
                 aSpeed = nowMovePoint.timeToNextMovePoint / (nowMovePoint.nextPoint.timeInTrack - LevelController.Instance.mainMusicPlayingTimer);
-                Debug.Log("µ½ÏÂÒ»½ÚµãÊ±¼ä " + (nowMovePoint.nextPoint.timeInTrack - LevelController.Instance.mainMusicPlayingTimer)
-                + "¹Ì¶¨Ê±¼ä " + nowMovePoint.timeToNextMovePoint + " ½Úµã¶¯Ì¬ËÙ¶È " + aSpeed);
+                Debug.Log("ï¿½ï¿½ï¿½ï¿½Ò»ï¿½Úµï¿½Ê±ï¿½ï¿½ " + (nowMovePoint.nextPoint.timeInTrack - LevelController.Instance.mainMusicPlayingTimer)
+                + "ï¿½Ì¶ï¿½Ê±ï¿½ï¿½ " + nowMovePoint.timeToNextMovePoint + " ï¿½Úµã¶¯Ì¬ï¿½Ù¶ï¿½ " + aSpeed);
             }
 
             
@@ -157,7 +157,7 @@ public class PlayerMoveController : MonoBehaviour
         
     }
 
-    //³å´Ì
+    //ï¿½ï¿½ï¿½
     public void AccerateMove()
     {
         accelerated = true;
@@ -166,13 +166,13 @@ public class PlayerMoveController : MonoBehaviour
         saveAcceleratedTime = 0;
         accelerateNum = 0;
 
-        //ÔÚÇ°Ò»¸ö½áÎ²´¦¼ÓËÙÊ±
+        //ï¿½ï¿½Ç°Ò»ï¿½ï¿½ï¿½ï¿½Î²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±
         if (nowPoint> movePoints.Count * 0.8)
         {
-            //±£´æÊ±¼ä
+            //ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
             //saveAcceleratedTime = mpSegTotalTime - timer;
 
-            //Ìø¹ý½×¶Î
+            //ï¿½ï¿½ï¿½ï¿½ï¿½×¶ï¿½
             //ArrivedLastPoint();
 
             //waitForOneFrame = true;
@@ -181,28 +181,28 @@ public class PlayerMoveController : MonoBehaviour
     }
 
     /// <summary>
-    /// ÔÚÄ¿±êÊ±¼äÀï£¬ÒÆ¶¯µ½ÏÂÒ»¸öµã
+    /// ï¿½ï¿½Ä¿ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï£¬ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½
     /// </summary>
-    /// <param name="thisMovePoint">Ä¿±êµã</param>
+    /// <param name="thisMovePoint">Ä¿ï¿½ï¿½ï¿½</param>
     public void MoveToPoint(MovePoint thisMovePoint)
     {
         nowMovePoint = thisMovePoint;
 
-        // ¼ÆËãµ½ÏÂÒ»¸öµãµÄÇúÏßµÄËùÓÐÖÐ¼äµã
+        // ï¿½ï¿½ï¿½ãµ½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ßµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¼ï¿½ï¿½
         movePoints.Clear();
         CalculateAllNextPoints(thisMovePoint.basePoints);
 
-        // ¼ÆËãÃ¿²½Ê±¼ä
+        // ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½Ê±ï¿½ï¿½
         mpSegTotalTime = thisMovePoint.timeToNextMovePoint;
         originMoveDeltaTime = thisMovePoint.timeToNextMovePoint / movePoints.Count;
         moveDeltaTime = originMoveDeltaTime;
 
-        // ¿ªÊ¼
+        // ï¿½ï¿½Ê¼
         startMove = true;
     }
 
     /// <summary>
-    /// ¼ÆËãµ½ÏÂÒ»¸öµãµÄÇúÏßµÄËùÓÐÖÐ¼äµã
+    /// ï¿½ï¿½ï¿½ãµ½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ßµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¼ï¿½ï¿½
     /// </summary>
     private void CalculateAllNextPoints(Vector3[] basePoints)
     {
@@ -217,9 +217,9 @@ public class PlayerMoveController : MonoBehaviour
     }
 
     /// <summary>
-    /// ¼ÆËãËùÓÐ½ÚµãÒÔ¼°¿ØÖÆµã×ø±ê
+    /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð½Úµï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½
     /// </summary>
-    /// <param name="path">ËùÓÐ½ÚµãµÄ´æ´¢Êý×é</param>
+    /// <param name="path">ï¿½ï¿½ï¿½Ð½Úµï¿½Ä´æ´¢ï¿½ï¿½ï¿½ï¿½</param>
     /// <returns></returns>
     public Vector3[] PathControlPointGenerator(Vector3[] path)
     {
@@ -245,7 +245,7 @@ public class PlayerMoveController : MonoBehaviour
     }
 
     /// <summary>
-    /// ¼ÆËãÇúÏßµÄÈÎÒâµãµÄÎ»ÖÃ
+    /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ßµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½
     /// </summary>
     /// <param name="pos"></param>
     /// <param name="t"></param>

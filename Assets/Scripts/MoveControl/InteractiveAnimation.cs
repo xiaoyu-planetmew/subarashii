@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class InteractiveAnimation : MonoBehaviour
 {
-    [Header("�Ƿ��Զ�����")]
+    //[Header("�Ƿ��Զ�����")]
     public bool autoPlay = false;
 
-    [Header("��������")]
+    //[Header("��������")]
     public string successAnimation;
     public string failureAnimation;
 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TrackManager : MonoBehaviour
 {
-    [Header("������")]
+    //[Header("������")]
     public long sampleRate = 48000;
 
     public static TrackManager Instance;

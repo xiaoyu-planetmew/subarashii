@@ -5,13 +5,13 @@ using UnityEngine;
 [RequireComponent(typeof(LevelController))]
 public class TrackInLevel : MonoBehaviour
 {
-    [Header("ÒôÀÖ¿ªÊ¼½Úµã(Ê±¼äÎª0µÄµã)")]
+    //[Header("ï¿½ï¿½ï¿½Ö¿ï¿½Ê¼ï¿½Úµï¿½(Ê±ï¿½ï¿½Îª0ï¿½Äµï¿½)")]
     public MovePoint startPoint;
 
-    [Header("ÒôÀÖ½áÊø½Úµã£¨µ¹ÊýµÚ¶þ¸öµã£©")]
+    //[Header("ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½Úµã£¨ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ã£©")]
     public MovePoint endPoint;
 
-    [Header("Òô¹ìÎÄ¼þÃû")]
+    //[Header("ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½")]
     public string trackFile;
 
     public static TrackInLevel Instance;
@@ -26,7 +26,7 @@ public class TrackInLevel : MonoBehaviour
         if (endPoint.nextPoint != null)
             endPoint.nextPoint.gameObject.AddComponent<FinalCheckPoint>();
         else
-            Debug.LogError("Teack In LevelµÄµ¹ÊýµÚ¶þ¸öµãÈ±×îºóÒ»¸öµã");
+            Debug.LogError("Teack In Levelï¿½Äµï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½È±ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½");
 
         InitTrackMovePoint();
     }

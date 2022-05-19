@@ -5,23 +5,23 @@ using UnityEngine.UI;
 [RequireComponent(typeof(MovePoint))]
 public class MovePointInputController : MonoBehaviour
 {
-    [Header("��������")]
-    [Tooltip("�˽ڵ���������")]
+    //[Header("��������")]
+    //[Tooltip("�˽ڵ���������")]
     public MovePointInput keyInput;
 
-    [Header("������ק")]
+    //[Header("������ק")]
     public bool powerfulEffect = false;
 
-    [Header("������ɫ")]
+    //[Header("������ɫ")]
     public InteractiveAnimation interactiveAnimation1;
     public InteractiveAnimation interactiveAnimation2;
     public PlayerSpecialAnimationType  SpecialAnimation = PlayerSpecialAnimationType.Null;
     private MovePoint _mp;
 
-    [Header("��ֹ����")]
+    //[Header("��ֹ����")]
     public bool dontAccerate = false;
 
-    [Header("特殊激活")]
+    //y[Header("特殊激活")]
     public bool specialActiveNextMovePoints = false;
     public int specialActiveNum = 0;
 

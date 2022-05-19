@@ -5,16 +5,16 @@ using UnityEngine.Events;
 
 public class LevelController : MonoBehaviour
 {
-    [Header("当前关卡")]
+    //[Header("当前关卡")]
     public Level level = Level.Level_1_ver4;
 
-    [Header("起始MovePoint(谱面时间0点)")]
+    //[Header("起始MovePoint(谱面时间0点)")]
     public MovePoint startMovePoint;
 
-    [Header("关卡进入事件")]
+    //[Header("关卡进入事件")]
     public UnityEvent sceneChangeEvents;
 
-    [Header("关卡结束事件")]
+    //[Header("关卡结束事件")]
     public UnityEvent scenLeaveEvents;
 
     public static LevelController Instance;

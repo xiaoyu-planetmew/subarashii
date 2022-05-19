@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
-    [Header("Ѫ��")]
+    //[Header("Ѫ��")]
     public int blood = 3;
 
-    [Header("���¿�ʼλ��")]
+    //[Header("���¿�ʼλ��")]
     public Transform restartPos;
     public Transform HP;
 
