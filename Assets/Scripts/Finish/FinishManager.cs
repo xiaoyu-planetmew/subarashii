@@ -22,6 +22,7 @@ public class FinishManager : MonoBehaviour
     public Text clearNum;
     public Text missNum;
     public GameObject Stuff;
+    public GameObject Level5BlackBackground;
     private void Awake()
     {
         Instance = this;
@@ -105,6 +106,7 @@ public class FinishManager : MonoBehaviour
     public void Level5Finish()
     {
         DialogSys.Instance.dialogStart(0);
+        Level5BlackBackground.SetActive(true);
         PlayerController.Instance.startPlaying = false;
     }
     public void ShowStuff()
@@ -114,11 +116,14 @@ public class FinishManager : MonoBehaviour
         Stuff.SetActive(true);
         SoundController.Instance.Final_Shit.HandleEvent(WwiseManager.Instance.gameObject);
         Stuff.GetComponent<Image>().DOFade(1, 5);
+        
         StartCoroutine(StuffButton());
     }
     IEnumerator StuffButton()
     {
+        
         yield return new WaitForSeconds(5f);
+        Level5BlackBackground.SetActive(false);
         Stuff.transform.GetChild(0).gameObject.SetActive(true);
     }
 }

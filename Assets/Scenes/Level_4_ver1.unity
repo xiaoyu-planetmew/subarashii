@@ -7152,24 +7152,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3571327815865288403, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
-      propertyPath: m_Text
-      value: '4
-
-'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3571327815950560453, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3571327816109129304, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3571327816135998555, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3571327816298794114, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -7257,18 +7239,6 @@ PrefabInstance:
     - target: {fileID: 3571327816298794126, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
       propertyPath: m_Name
       value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 3571327816298794126, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3571327817678097579, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4668944814113708423, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
-      value: Level_5_ver1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
