@@ -11,11 +11,11 @@ public class MovePointDisplay : MonoBehaviour
 
     [HideInInspector] public ArrowDisplay arrowPrefab;
     [HideInInspector] public bool active;
-    private MovePoint mp;
+    [SerializeField] private MovePoint mp;
 
     private void Start()
     {
-        mp = GetComponent<MovePoint>();
+        //mp = GetComponent<MovePoint>();
 
         //InitiateDisplay();
     }

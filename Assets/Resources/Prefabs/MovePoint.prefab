@@ -218,6 +218,7 @@ MonoBehaviour:
   ComboTiming: 0
   arrowPrefab: {fileID: 0}
   active: 0
+  mp: {fileID: 1152722335200759228}
 --- !u!1001 &6796702058855575505
 PrefabInstance:
   m_ObjectHideFlags: 0
