@@ -79,7 +79,7 @@ public class TrackManager : MonoBehaviour
 
             }
 
-            if(_mp!=track.endPoint) Debug.LogError("Track�������ڳ����еĵ�����Track����Ϊ " + trackTimeList.Count);
+            //if(_mp!=track.endPoint) Debug.LogError("Track�������ڳ����еĵ�����Track����Ϊ " + trackTimeList.Count);
         }
 
         
