@@ -4456,6 +4456,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3571327815865288413, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571327815883002168, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571327815950560453, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571327816135998555, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3571327816298794114, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -4544,6 +4560,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3571327816402464602, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3571327816488606153, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -4573,6 +4593,18 @@ PrefabInstance:
       value: LevelController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3571327816706480723, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571327817676476090, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571327817678097579, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571327817685219498, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
