@@ -62,7 +62,7 @@ public class LevelController : MonoBehaviour
                 Resume();
                 pauseMenu.SetActive(false);
             }
-        }else return;
+        }
         }
         if (startPlayingMainMusic)
             mainMusicPlayingTimer += Time.unscaledDeltaTime;
