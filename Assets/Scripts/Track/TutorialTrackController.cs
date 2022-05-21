@@ -24,7 +24,11 @@ public class TutorialTrackController : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(LateStartPlayMusic());
+        if(LevelController.Instance.level != Level.Level_5_ver1 && LevelController.Instance.level != Level.Level_Finished)
+        {
+            StartCoroutine(LateStartPlayMusic());
+        }
+        
     }
 
     private void Update()
