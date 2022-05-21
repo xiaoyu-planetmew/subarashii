@@ -11,12 +11,14 @@ public class FinalCheckPoint : MonoBehaviour
             PlayerController.Instance.startPlaying = false;
             LevelController.Instance.finishThisLevel = true;
 
-            //if (LevelController.Instance.level!=Level.Level_5_ver1)
+            if (LevelController.Instance.level!=Level.Level_5_ver1)
                 FinishManager.Instance.FinishPlaying((int)LevelController.Instance.level - 1, PlayerController.Instance.blood, PlayerController.Instance.successPoints, PlayerController.Instance.totalPoints);
-            //else
-            //{
-               // LevelController.Instance.FinishLevel();
-            //}
+            else
+            {
+                LevelController.Instance.FinishLevel();
+                SceneController.Instance.ChangeScene("Level_Finished");
+                Time.timeScale = 1;
+            }
             
         }
     }
