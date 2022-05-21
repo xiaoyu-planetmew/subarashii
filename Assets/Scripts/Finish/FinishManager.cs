@@ -107,12 +107,12 @@ public class FinishManager : MonoBehaviour
     {
         DialogSys.Instance.dialogStart(0);
         Level5BlackBackground.SetActive(true);
-        PlayerController.Instance.startPlaying = false;
+        //PlayerController.Instance.startPlaying = false;
     }
     public void ShowStuff()
     {
         //DialogSys.Instance.dialogStart(0);
-        PlayerController.Instance.startPlaying = false;
+        //PlayerController.Instance.startPlaying = false;
         Stuff.SetActive(true);
         SoundController.Instance.Final_Shit.HandleEvent(WwiseManager.Instance.gameObject);
         Stuff.GetComponent<Image>().DOFade(1, 5);
@@ -121,9 +121,9 @@ public class FinishManager : MonoBehaviour
     }
     IEnumerator StuffButton()
     {
-        
-        yield return new WaitForSeconds(5f);
         Level5BlackBackground.SetActive(false);
+        yield return new WaitForSeconds(5f);
+        
         Stuff.transform.GetChild(0).gameObject.SetActive(true);
     }
 }

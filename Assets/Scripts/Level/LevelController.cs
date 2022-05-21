@@ -29,13 +29,13 @@ public class LevelController : MonoBehaviour
     {
         Instance = this;
 
-        if(level!=Level.MainMenu || level != Level.Level_1_Start)
+        if(level!=Level.MainMenu || level != Level.Level_1_Start || level != Level.Level_Finished)
             InitiateLevel();
     }
 
     private void Start()
     {
-        if (level == Level.MainMenu || level == Level.Level_1_Start) 
+        if (level == Level.MainMenu || level == Level.Level_1_Start || level == Level.Level_Finished) 
         {
             sceneChangeEvents.Invoke();
 
@@ -49,7 +49,7 @@ public class LevelController : MonoBehaviour
 
     private void Update()
     {
-        if(level!=Level.MainMenu || level != Level.Level_1_Start){
+        if(level!=Level.MainMenu && level != Level.Level_1_Start && level != Level.Level_Finished){
         if(Input.GetKeyDown(KeyCode.Escape) && !SceneController.Instance.sceneChanging && pauseMenu != null)
         {
             if (!isPausing)
@@ -235,5 +235,6 @@ public enum Level
     Level_4_ver1 = 4,
     Level_5_ver1 = 5,
     Level_1_Start = 6,
+    Level_Finished = 7,
 }
 

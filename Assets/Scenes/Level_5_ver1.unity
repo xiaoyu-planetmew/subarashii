@@ -831,6 +831,14 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 531148568}
+    - target: {fileID: 3626575881214346426, guid: db989c36ec7618741a18302fdaa85443, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 62.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626575881214346426, guid: db989c36ec7618741a18302fdaa85443, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.84
+      objectReference: {fileID: 0}
     - target: {fileID: 7169988520132921861, guid: db989c36ec7618741a18302fdaa85443, type: 3}
       propertyPath: m_Follow
       value: 
@@ -4607,6 +4615,10 @@ PrefabInstance:
     - target: {fileID: 3571327817685219498, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4668944814113708423, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: Level_Finished
       objectReference: {fileID: 0}
     - target: {fileID: 5806962576007034508, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
       propertyPath: m_LocalScale.x
@@ -10858,18 +10870,6 @@ MonoBehaviour:
   sceneChangeEvents:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1960545390}
-        m_TargetAssemblyTypeName: LevelEvents, Assembly-CSharp
-        m_MethodName: Level_5_Enter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 159070605}
         m_TargetAssemblyTypeName: DialogSys, Assembly-CSharp
         m_MethodName: dialogStart
@@ -10888,18 +10888,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1960545390}
         m_TargetAssemblyTypeName: LevelEvents, Assembly-CSharp
         m_MethodName: Level_5_Leave
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1960545391}
-        m_TargetAssemblyTypeName: FinishManager, Assembly-CSharp
-        m_MethodName: Level5Finish
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11361,7 +11349,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2024885986
 Transform:
   m_ObjectHideFlags: 0
