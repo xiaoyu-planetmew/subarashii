@@ -35638,6 +35638,7 @@ GameObject:
   - component: {fileID: 2137967976}
   - component: {fileID: 2137967978}
   - component: {fileID: 2137967977}
+  - component: {fileID: 2137967979}
   m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
@@ -35706,6 +35707,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2137967975}
   m_CullTransparentMesh: 1
+--- !u!114 &2137967979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137967975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c31c4bdc5b4c1d448aca25d7d80b3d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites: []
+  fonts:
+  - {fileID: 12800000, guid: 6fb1f6fd2de72434bb810bcfd2003687, type: 3}
+  - {fileID: 12800000, guid: 81d429b06e2953f468bdb11900a0a9a8, type: 3}
+  - {fileID: 12800000, guid: 81d429b06e2953f468bdb11900a0a9a8, type: 3}
 --- !u!4 &2145078216 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 878163857581015020, guid: b64f104e5bc14724d874bbeac22430e9, type: 3}
