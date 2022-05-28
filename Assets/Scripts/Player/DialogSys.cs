@@ -15,6 +15,9 @@ public class DialogSys : MonoBehaviour
     public GameObject textBackground;
     //public GameObject startButton;
     public GameObject nextPageButton;
+    public List<TextAsset> textfilesCN = new List<TextAsset>();
+    public List<TextAsset> textfilesEN = new List<TextAsset>();
+    public List<TextAsset> textfilesJP = new List<TextAsset>();
     //public GameObject sceneTransButton;
     public List<TextAsset> textfiles = new List<TextAsset>();
     public List<UnityEvent> afterDialogEvents = new List<UnityEvent>();
@@ -22,7 +25,7 @@ public class DialogSys : MonoBehaviour
     //public List<TextAsset> textfilesE = new List<TextAsset>();
     //public List<TextAsset> textfilesJ = new List<TextAsset>();
     //public bool firstMeet;
-    public bool isTalking;
+    public bool isTalking = false;
     //private bool holdTarget;
     public int index;
     public List<string> textList = new List<string>();
@@ -40,12 +43,19 @@ public class DialogSys : MonoBehaviour
     }
     void Start()
     {
+        textfiles.Clear();
+        for(int i=0; i<textfilesCN.Count; i++)
+        {
+            if(LanguageManager.Instance.LanguageNum == 0) textfiles.Add(textfilesCN[i]);
+            if(LanguageManager.Instance.LanguageNum == 1) textfiles.Add(textfilesEN[i]);
+            if(LanguageManager.Instance.LanguageNum == 2) textfiles.Add(textfilesJP[i]);
+        }
         //firstMeet = true;        
     }
     // Update is called once per frame
     void Update()
     {
-        if (isTalking)
+        if (isTalking && textFinished)
         {
             if (Input.anyKeyDown)
             {
@@ -68,9 +78,12 @@ public class DialogSys : MonoBehaviour
     }
     public void dialogStart(int Num)
     {
-        GetTextFromFile(textfiles[Num]);
-        eventNum = Num;
-        fileChoose();
+        if(!isTalking)
+        {
+            GetTextFromFile(textfiles[Num]);
+            eventNum = Num;
+            fileChoose();
+        }
     }
     public void dialogNext()
     {

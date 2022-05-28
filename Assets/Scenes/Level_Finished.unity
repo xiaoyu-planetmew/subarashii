@@ -24400,8 +24400,13 @@ MonoBehaviour:
   textLabel: {fileID: 1066220501}
   textBackground: {fileID: 1066220500}
   nextPageButton: {fileID: 0}
-  textfiles:
-  - {fileID: 4900000, guid: a31088cfd63917b4098bd8d8a9ca1c53, type: 3}
+  textfilesCN:
+  - {fileID: 4900000, guid: edbbb308ac96ffd4eb492cbce59967a0, type: 3}
+  textfilesEN:
+  - {fileID: 4900000, guid: 4856fea0fd7731149874ee785c335297, type: 3}
+  textfilesJP:
+  - {fileID: 4900000, guid: d9cae4f753d7f914280080c3bbcf8b86, type: 3}
+  textfiles: []
   afterDialogEvents:
   - m_PersistentCalls:
       m_Calls:

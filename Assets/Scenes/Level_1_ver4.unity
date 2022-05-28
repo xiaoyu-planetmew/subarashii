@@ -20650,8 +20650,13 @@ MonoBehaviour:
   textLabel: {fileID: 2137967975}
   textBackground: {fileID: 793329442}
   nextPageButton: {fileID: 0}
-  textfiles:
-  - {fileID: 4900000, guid: 9b4a856ca5585334aa4d1bd88fabdf70, type: 3}
+  textfilesCN:
+  - {fileID: 4900000, guid: 60437e58c3564dc4aa09afedfab4dd3f, type: 3}
+  textfilesEN:
+  - {fileID: 4900000, guid: 35b3bfd89e20af84192b27f7c86997c9, type: 3}
+  textfilesJP:
+  - {fileID: 4900000, guid: 5c686b79e5f5ac1488f77dd1b7759fe0, type: 3}
+  textfiles: []
   afterDialogEvents:
   - m_PersistentCalls:
       m_Calls:
@@ -31860,6 +31865,7 @@ MonoBehaviour:
   clearNum: {fileID: 1593617576}
   missNum: {fileID: 1593617575}
   Stuff: {fileID: 607381589}
+  Level5BlackBackground: {fileID: 0}
 --- !u!1001 &1973712938
 PrefabInstance:
   m_ObjectHideFlags: 0
