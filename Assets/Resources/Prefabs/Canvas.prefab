@@ -2591,6 +2591,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f9f164faf2aef4948848a4bf98954ec9, type: 3}
   - {fileID: 21300000, guid: f9f164faf2aef4948848a4bf98954ec9, type: 3}
   fonts: []
+  size: 
 --- !u!1 &3571327816647609778
 GameObject:
   m_ObjectHideFlags: 0
@@ -4296,6 +4297,7 @@ MonoBehaviour:
   - {fileID: 12800000, guid: 6fb1f6fd2de72434bb810bcfd2003687, type: 3}
   - {fileID: 12800000, guid: 81d429b06e2953f468bdb11900a0a9a8, type: 3}
   - {fileID: 12800000, guid: 81d429b06e2953f468bdb11900a0a9a8, type: 3}
+  size: 3a0000003a00000028000000
 --- !u!1 &3571327817366794426
 GameObject:
   m_ObjectHideFlags: 0

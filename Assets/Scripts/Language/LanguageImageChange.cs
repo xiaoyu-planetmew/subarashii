@@ -7,6 +7,7 @@ public class LanguageImageChange : MonoBehaviour
 {
     public List<Sprite> sprites = new List<Sprite>();
     public List<Font> fonts = new List<Font>();
+    public List<int> size = new List<int>();
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,7 @@ public class LanguageImageChange : MonoBehaviour
         if(this.gameObject.GetComponent<Text>())
         {
             this.GetComponent<Text>().font = fonts[LanguageManager.Instance.LanguageNum];
+            this.GetComponent<Text>().fontSize = size[LanguageManager.Instance.LanguageNum];
         }
     }
 
