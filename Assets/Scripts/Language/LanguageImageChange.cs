@@ -11,6 +11,8 @@ public class LanguageImageChange : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if(GameObject.Find("Manager").GetComponent<LanguageManager>())
+        {
         if(this.gameObject.GetComponent<Image>())
         {
             this.GetComponent<Image>().sprite = sprites[LanguageManager.Instance.LanguageNum];
@@ -20,6 +22,18 @@ public class LanguageImageChange : MonoBehaviour
         {
             this.GetComponent<Text>().font = fonts[LanguageManager.Instance.LanguageNum];
             this.GetComponent<Text>().fontSize = size[LanguageManager.Instance.LanguageNum];
+        }
+        }else{
+            if(this.gameObject.GetComponent<Image>())
+        {
+            this.GetComponent<Image>().sprite = sprites[0];
+            this.GetComponent<RectTransform>().sizeDelta = new Vector2(sprites[0].bounds.size.x * 100, sprites[0].bounds.size.y * 100);
+        }
+        if(this.gameObject.GetComponent<Text>())
+        {
+            this.GetComponent<Text>().font = fonts[0];
+            this.GetComponent<Text>().fontSize = size[0];
+        }
         }
     }
 

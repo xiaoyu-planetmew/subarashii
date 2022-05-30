@@ -44,11 +44,20 @@ public class DialogSys : MonoBehaviour
     void Start()
     {
         textfiles.Clear();
+        if(GameObject.Find("Manager").GetComponent<LanguageManager>())
+        {
         for(int i=0; i<textfilesCN.Count; i++)
         {
             if(LanguageManager.Instance.LanguageNum == 0) textfiles.Add(textfilesCN[i]);
             if(LanguageManager.Instance.LanguageNum == 1) textfiles.Add(textfilesEN[i]);
             if(LanguageManager.Instance.LanguageNum == 2) textfiles.Add(textfilesJP[i]);
+        }
+        }
+        else{
+            for(int i=0; i<textfilesCN.Count; i++)
+        {
+            textfiles.Add(textfilesCN[i]);
+        }
         }
         //firstMeet = true;        
     }
