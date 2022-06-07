@@ -15063,6 +15063,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1333271008794367316, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: size.Array.data[1]
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1333271008794367316, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
+      propertyPath: size.Array.data[2]
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 3571327816298794114, guid: 31ffc0e1db1ec764e8bba110cd128195, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -20575,7 +20583,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9131344476728961440, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_Radius
-      value: 3
+      value: 2.72
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a31772f3a009b384a9837b3026273804, type: 3}
@@ -22007,7 +22015,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9131344476728961440, guid: a31772f3a009b384a9837b3026273804, type: 3}
       propertyPath: m_Radius
-      value: 2.56
+      value: 2.31
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a31772f3a009b384a9837b3026273804, type: 3}

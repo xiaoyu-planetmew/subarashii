@@ -13,27 +13,29 @@ public class LanguageImageChange : MonoBehaviour
     {
         if(GameObject.Find("Manager").GetComponent<LanguageManager>())
         {
-        if(this.gameObject.GetComponent<Image>())
-        {
-            this.GetComponent<Image>().sprite = sprites[LanguageManager.Instance.LanguageNum];
-            this.GetComponent<RectTransform>().sizeDelta = new Vector2(sprites[LanguageManager.Instance.LanguageNum].bounds.size.x * 100, sprites[LanguageManager.Instance.LanguageNum].bounds.size.y * 100);
+            if (this.gameObject.GetComponent<Image>())
+            {
+                this.GetComponent<Image>().sprite = sprites[LanguageManager.Instance.LanguageNum];
+                this.GetComponent<RectTransform>().sizeDelta = new Vector2(sprites[LanguageManager.Instance.LanguageNum].bounds.size.x * 100, sprites[LanguageManager.Instance.LanguageNum].bounds.size.y * 100);
+            }
+            if (this.gameObject.GetComponent<Text>())
+            {
+                this.GetComponent<Text>().font = fonts[LanguageManager.Instance.LanguageNum];
+                this.GetComponent<Text>().fontSize = size[LanguageManager.Instance.LanguageNum];
+            }
         }
-        if(this.gameObject.GetComponent<Text>())
+        else
         {
-            this.GetComponent<Text>().font = fonts[LanguageManager.Instance.LanguageNum];
-            this.GetComponent<Text>().fontSize = size[LanguageManager.Instance.LanguageNum];
-        }
-        }else{
-            if(this.gameObject.GetComponent<Image>())
-        {
-            this.GetComponent<Image>().sprite = sprites[0];
-            this.GetComponent<RectTransform>().sizeDelta = new Vector2(sprites[0].bounds.size.x * 100, sprites[0].bounds.size.y * 100);
-        }
-        if(this.gameObject.GetComponent<Text>())
-        {
-            this.GetComponent<Text>().font = fonts[0];
-            this.GetComponent<Text>().fontSize = size[0];
-        }
+            if (this.gameObject.GetComponent<Image>())
+            {
+                this.GetComponent<Image>().sprite = sprites[0];
+                this.GetComponent<RectTransform>().sizeDelta = new Vector2(sprites[0].bounds.size.x * 100, sprites[0].bounds.size.y * 100);
+            }
+            if (this.gameObject.GetComponent<Text>())
+            {
+                this.GetComponent<Text>().font = fonts[0];
+                this.GetComponent<Text>().fontSize = size[0];
+            }
         }
     }
 
